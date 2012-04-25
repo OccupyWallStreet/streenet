@@ -571,6 +571,10 @@ ul.quicktabs-tabs li.active a{
 }
 
 /*---------------------------------------------ARTICLE NODES------------------------------------------*/
+#quicktabs-learn article{
+	margin-top: 2.5em;
+}
+
 .field-name-field-image{
 	float: left;
 	margin: 0;
@@ -767,6 +771,29 @@ read
 	padding: 15px 0px 1px 10px;
 }
 
+/*ul.quicktabs-tabs.quicktabs-style-arrows {
+	font: bold 12px/170% Verdana;
+	border-bottom: 0px solid #CCC;
+	padding: 0 10px 0 0!important;
+	line-height: 22px;
+	margin: 20px 0 20px 0;
+}
+
+#block-quicktabs-learn ul.quicktabs-tabs.quicktabs-style-arrows li a {
+	padding: 5px 10px;
+	background-color: #CFD1D2;
+	text-decoration: none;
+	letter-spacing: 1px;
+	font-weight: normal;
+	text-transform: uppercase;
+}
+
+#block-quicktabs-learn ul.quicktabs-tabs.quicktabs-style-arrows li.active a, 
+#block-quicktabs-learn ul.quicktabs-tabs.quicktabs-style-arrows li a:hover {
+	background: transparent url(/sites/all/themes/files/learntabs.png) no-repeat center bottom;
+}
+
+*/
 #learn_sidebar_block {
 	background-color: black;
 	font-size: 0;
