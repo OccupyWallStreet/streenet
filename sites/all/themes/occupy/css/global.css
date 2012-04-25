@@ -608,6 +608,10 @@ ul.quicktabs-tabs li.active a{
 	width: 49%;
 }
 
+.view-ows-stories-read-page- .stories-block-row .views-row-4,
+.view-ows-stories-read-page- .stories-block-row .view-row-2{
+	margin-left: 10px;
+}
 
 .view-ows-stories-read-page- .stories-block-date {
 	display: block;
