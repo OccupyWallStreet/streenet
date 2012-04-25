@@ -246,9 +246,16 @@ ul li.leaf {
 	line-height: 1.2em;
 }
 
-.views-ows-announcements a{
+#block-views-ows-announcements-block a,
+#block-views-ows-announcements-block a:link,
+#block-views-ows-announcements-block a:visited{
 	color: #A51D35;
+	text-decoration: underline;
 }
+#block-views-ows-announcements-block a:hover{
+	color:#000;
+}
+
 #block-views-ows-announcements-block .views-row-first {
 	border-right: 1px solid;
 	float: left;
@@ -454,10 +461,26 @@ ul.quicktabs-tabs li.active a{
 	padding: 0;
 }
 
-/*.views-field-field-ga-consensed{
- color: #2F89BA	;
+.cat-head-GA{
+	border-bottom: 1px #2F89BA solid;
+	color: #2F89BA;
 }
-*/
+
+.cat-head-News{
+	border-bottom: 1px #999 solid;
+	color: #999;
+}
+
+.cat-head-Feature{
+	color: #fc0;
+	border-bottom: 1px #fc0 solid
+}
+
+.cat-head-Event{
+	color: #F4922E;
+	border-bottom: 1px #F4922E solid
+}
+
 .block-syndicate {
 	float: left;
 	margin: 0;
@@ -512,7 +535,6 @@ ul.quicktabs-tabs li.active a{
     text-decoration: none;
 }
 .views-field-field-story-category {
-    border-bottom: 1px solid;
     color: #000000;
     float: left;
     font-family: 'LeagueGothicRegular';
@@ -520,16 +542,18 @@ ul.quicktabs-tabs li.active a{
     margin: 0;
     width: 94%;
 }
+
 .consensed-field-label {
     background: url("/sites/all/themes/files/GA-Consensed-Icon.png") no-repeat scroll 0 0 transparent;
     font-size: 0;
-    margin: 30px 0 0 180px;
-    padding: 30px;
+    padding: 12px;
     position: absolute;
     z-index: 10000000;
+		left: 190px;
+		top: 16px
 }
 .views-field-field-image {
-    margin: 37px 0 0;
+    margin: 24px 0 0;
     padding: 0;
     position: relative;
     z-index: 1;
@@ -550,8 +574,9 @@ ul.quicktabs-tabs li.active a{
 	display: block;
 	background-color: white;
 	float: left;
-	width: 50%;
+	width: 220px;
 }
+
 .view-ows-stories-read-page- .stories-block-date {
 	display: block;
 	background-color: #FFCD05;
@@ -571,8 +596,11 @@ ul.quicktabs-tabs li.active a{
 }
 
 /*---------------------------------------------ARTICLE NODES------------------------------------------*/
+#quicktabs-learn{
+	margin-top: 1em;
+}
 #quicktabs-learn article{
-	margin-top: 2.5em;
+	margin-top: 1.5em;
 }
 
 .field-name-field-image{
@@ -771,29 +799,6 @@ read
 	padding: 15px 0px 1px 10px;
 }
 
-/*ul.quicktabs-tabs.quicktabs-style-arrows {
-	font: bold 12px/170% Verdana;
-	border-bottom: 0px solid #CCC;
-	padding: 0 10px 0 0!important;
-	line-height: 22px;
-	margin: 20px 0 20px 0;
-}
-
-#block-quicktabs-learn ul.quicktabs-tabs.quicktabs-style-arrows li a {
-	padding: 5px 10px;
-	background-color: #CFD1D2;
-	text-decoration: none;
-	letter-spacing: 1px;
-	font-weight: normal;
-	text-transform: uppercase;
-}
-
-#block-quicktabs-learn ul.quicktabs-tabs.quicktabs-style-arrows li.active a, 
-#block-quicktabs-learn ul.quicktabs-tabs.quicktabs-style-arrows li a:hover {
-	background: transparent url(/sites/all/themes/files/learntabs.png) no-repeat center bottom;
-}
-
-*/
 #learn_sidebar_block {
 	background-color: black;
 	font-size: 0;
@@ -801,6 +806,7 @@ read
 	-moz-border-radius: 5px;
 	border-radius: 5px;
 }
+
 .learn_sidebar_text {
 	padding: 0 0 0 10px;
 	text-transform: uppercase;
@@ -810,9 +816,11 @@ read
 	letter-spacing: 1px;
 	text-transform: uppercase;
 }
+
 .know-your-rights {
 	margin: 0 0 5px 0;
 }
+
 .faq-block-title {
 	text-transform: uppercase;
 	color: black;
