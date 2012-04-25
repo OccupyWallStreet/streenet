@@ -138,6 +138,7 @@ ul li.leaf {
 .newsletter-wrapper {
 	float: left;
 	width: 100%;
+	margin-top: 1.5em;
 }
 
 .newsletter-wrapper p {
@@ -430,6 +431,11 @@ ul.quicktabs-tabs li {
 	margin: 0;
 	padding: 0;
 }
+
+/*.views-field-field-ga-consensed{
+ color: #2F89BA	;
+}
+*/
 .block-syndicate {
 	float: left;
 	margin: 0;
