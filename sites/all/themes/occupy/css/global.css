@@ -452,7 +452,36 @@ ul.quicktabs-tabs li.active a{
 	min-height: 450px;
 }
 /*--------------------------------------------CONTENT----------------------------------------*/
+
+
+#zone-content-wrapper .views-row-1,
+#zone-content-wrapper .views-row-5,
+#zone-content-wrapper .views-row-9,
+#zone-content-wrapper .views-row-13,
+#zone-content-wrapper .views-row-17,
+#zone-content-wrapper .views-row-21,
+#zone-content-wrapper .views-row-25,
+#zone-content-wrapper .views-row-29,
+#zone-content-wrapper .views-row-33{
+	margin-left: 0;
+}
+
+#zone-content-wrapper .views-row-4,
+#zone-content-wrapper .views-row-8,
+#zone-content-wrapper .views-row-12,
+#zone-content-wrapper .views-row-16,
+#zone-content-wrapper .views-row-20,
+#zone-content-wrapper .views-row-24,
+#zone-content-wrapper .views-row-28,
+#zone-content-wrapper .views-row-32,
+#zone-content-wrapper .views-row-36{
+	margin-right: 0;
+}
+
+
+
 /*---------------------------------------STORIES BLOCK OF 8----------------------------------*/
+
 #storiestitle {
 	text-transform: uppercase;
 	letter-spacing: 1px;
@@ -574,8 +603,9 @@ ul.quicktabs-tabs li.active a{
 	display: block;
 	background-color: white;
 	float: left;
-	width: 220px;
+	width: 50%;
 }
+
 
 .view-ows-stories-read-page- .stories-block-date {
 	display: block;
