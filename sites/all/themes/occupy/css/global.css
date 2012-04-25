@@ -411,7 +411,6 @@ ul.quicktabs-tabs li {
 #quicktabs-featured .view-footer a {
   font-family: 'PTSansRegular';
   font-size: 13px;
-  text-transform: uppercase;
   text-decoration: none;
   color: #FFF;
 }
@@ -594,7 +593,7 @@ ul.quicktabs-tabs li {
 }
 
 /*-------------------------------------------------NEWS-----------------------------------------------*/
-.stories-title h2,
+#storiestitle h2,
 .front-news-view-title {
 	font-family: 'LeagueGothicRegular';
 	font-size: 27px;
