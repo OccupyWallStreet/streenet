@@ -245,6 +245,10 @@ ul li.leaf {
 	text-transform: uppercase;
 	line-height: 1.2em;
 }
+
+.views-ows-announcements a{
+	color: #A51D35;
+}
 #block-views-ows-announcements-block .views-row-first {
 	border-right: 1px solid;
 	float: left;
