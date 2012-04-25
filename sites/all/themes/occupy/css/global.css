@@ -297,6 +297,7 @@ ul li.leaf {
 	-moz-opacity: 0.6;
 	z-index: 9
 }
+
 #mycontent {
 	position:absolute;
 	top: 195px;
@@ -305,11 +306,18 @@ ul li.leaf {
 	color: #ffffff;
 	font-size: 14px;
 }
+
+#mycontent h2{
+	text-transform: uppercase;
+	line-height: 1;
+}
 .views-slideshow-cycle-main-frame-row-item a:link, 
 .views-slideshow-cycle-main-frame-row-item a:visited {
-	font-size: 35px;
+	font-size: 36px;
+	line-height: 1;
 	color: #FECD48;
-	letter-spacing: .2px;
+	letter-spacing: 1px;
+	text-decoration: none;
 	font-weight: normal;
 }
 /*.quicktabs-loaded {
@@ -359,7 +367,7 @@ ul.quicktabs-tabs li {
 #quicktabs-container-feeds {
 	border-top: 1px solid;
 	padding: 20px 0 0 0;
-	overflow: scroll;
+	overflow: auto;
 	max-height: 360px;
 }
 /* Slideshow Pager "dots" */
@@ -550,18 +558,35 @@ ul.quicktabs-tabs li {
 	font-size: 0;
 	margin: 10px 0;
 }
-.views-field-field-tags {
-	background-color: lightgray;
-	-webkit-border-radius: 3px;
+.field-name-field-tags {
+/*	background-color: lightgray;
+*/	-webkit-border-radius: 3px;
 	border-radius: 3px;
 	-moz-border-radius: 3px;
-	padding: 5px;
+	padding: 0;
 	font-size: 14px;
-	margin: 2px 4px 2px 0;
-	float: left;
+	margin: 2px 0 2px 0;
+	float: right;
 	font-size: 14px;
 	color: gray;
 }
+
+.field-name-field-tags .field-label{
+	line-height: 2;
+}
+.field-name-field-tags  .field-item{
+	border-radius: 3px;
+	background:#222;
+	margin: 0 2px 0 0;
+}
+
+.field-name-field-tags  .field-item a{
+	color: #fff;
+	text-decoration: none;
+	display: inline-block;
+	padding: .25em .5em;
+}
+
 /*-------------------------------------------------NEWS-----------------------------------------------*/
 .front-news-view-title {
 	font-family: 'LeagueGothicRegular';
@@ -1019,6 +1044,9 @@ ul.quicktabs-tabs.quicktabs-style-arrows {
 	padding: 0;
 }
 
+#zone-footer{
+}
+
 #section-footer {
     background: url("/sites/all/themes/files/footer.jpg") repeat-x scroll center bottom transparent;
     margin: 0;
@@ -1029,6 +1057,15 @@ ul.quicktabs-tabs.quicktabs-style-arrows {
 	margin: 0;
 	padding: 0;
 }
+
+#region-footer-first,
+#region-footer-second,
+#region-footer-third,
+#region-footer-fourth	{
+	position: relative;
+	top: 12px;
+}
+
 #zone-footer .block-title,
 #zone-footer .block-title a,
 #zone-footer .block-title a:link,
