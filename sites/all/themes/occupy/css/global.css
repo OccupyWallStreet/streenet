@@ -232,10 +232,10 @@ ul li.leaf {
 	float: left;
 	margin: 0;
 	padding: 0;
-	border-top: 1px darkRed dashed;
+	border-top: 1px #A51D35 dashed;
 }
 .view-ows-announcements {
-	color: darkRed;
+	color: #A51D35;
 	float: left;
 	font-size: 18px;
 	font-weight: normal;
