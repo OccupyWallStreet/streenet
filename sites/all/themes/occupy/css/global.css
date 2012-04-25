@@ -605,12 +605,11 @@ ul.quicktabs-tabs li.active a{
 	display: block;
 	background-color: white;
 	float: left;
-	width: 49%;
 }
 
-.view-ows-stories-read-page- .stories-block-row .views-row-4,
-.view-ows-stories-read-page- .stories-block-row .view-row-2{
-	margin-left: 10px;
+.block-ows-stories-read-page--block-1 .view-row-4,
+.block-ows-stories-read-page--block-1 .view-row-2{
+	margin-right: 0px !important;
 }
 
 .view-ows-stories-read-page- .stories-block-date {
