@@ -369,12 +369,26 @@ ul.quicktabs-tabs li {
 	position: relative;
 	z-index: 1;
 }
+
 #quicktabs-container-feeds {
-	border-top: 1px solid;
+	border-top: 1px #aaa solid;
 	padding: 20px 0 0 0;
 	overflow: auto;
 	max-height: 360px;
 }
+
+#quicktabs-container-feeds .item-list ul li{
+	padding: .5em 0 .5em 0;
+	margin: 0;
+	line-height: 1.25;
+	border-bottom: 1px #dedede solid;
+}
+
+#quicktabs-container-feeds .views-field-title a{
+	color: #666;
+	
+}
+
 /* Slideshow Pager "dots" */
 #quicktabs-featured .views-slideshow-controls-bottom {
   display: inline-block;
@@ -597,6 +611,11 @@ ul.quicktabs-tabs li {
 }
 
 /*-------------------------------------------------NEWS-----------------------------------------------*/
+
+.block-views-ows-news-widget-block{
+	
+}
+
 #storiestitle h2,
 .front-news-view-title {
 	font-family: 'LeagueGothicRegular';
