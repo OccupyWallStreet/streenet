@@ -594,6 +594,7 @@ ul.quicktabs-tabs li {
 }
 
 /*-------------------------------------------------NEWS-----------------------------------------------*/
+.stories-title h2,
 .front-news-view-title {
 	font-family: 'LeagueGothicRegular';
 	font-size: 27px;
