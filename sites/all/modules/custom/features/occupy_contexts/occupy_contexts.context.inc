@@ -30,25 +30,25 @@ function occupy_contexts_context_default_contexts() {
           'module' => 'views',
           'delta' => 'ows_locations_map-block',
           'region' => 'content',
-          'weight' => '-9',
+          'weight' => '-10',
         ),
         'views-ows_locations_map-block_1' => array(
           'module' => 'views',
           'delta' => 'ows_locations_map-block_1',
           'region' => 'sidebar_second',
-          'weight' => '-45',
+          'weight' => '-10',
         ),
-        'block-30' => array(
-          'module' => 'block',
-          'delta' => 30,
+        'boxes-how_to_find_us' => array(
+          'module' => 'boxes',
+          'delta' => 'how_to_find_us',
           'region' => 'sidebar_second',
-          'weight' => '-44',
+          'weight' => '-9',
         ),
-        'block-31' => array(
-          'module' => 'block',
-          'delta' => 31,
+        'boxes-contact_phone_number' => array(
+          'module' => 'boxes',
+          'delta' => 'contact_phone_number',
           'region' => 'sidebar_second',
-          'weight' => '-43',
+          'weight' => '-8',
         ),
         'block-25' => array(
           'module' => 'block',
@@ -140,18 +140,6 @@ function occupy_contexts_context_default_contexts() {
           'region' => 'preface_seventh',
           'weight' => '-10',
         ),
-        'block-19' => array(
-          'module' => 'block',
-          'delta' => 19,
-          'region' => 'postscript_first',
-          'weight' => '-10',
-        ),
-        'block-20' => array(
-          'module' => 'block',
-          'delta' => 20,
-          'region' => 'postscript_second',
-          'weight' => '-10',
-        ),
       ),
     ),
     'delta' => array(
@@ -182,9 +170,9 @@ function occupy_contexts_context_default_contexts() {
   $context->reactions = array(
     'block' => array(
       'blocks' => array(
-        'views-ows_stories-block_1' => array(
+        'views-ows_stories-block_2' => array(
           'module' => 'views',
-          'delta' => 'ows_stories-block_1',
+          'delta' => 'ows_stories-block_2',
           'region' => 'content',
           'weight' => '-10',
         ),

@@ -551,7 +551,6 @@ The <strong>General Assembly</strong> is an open, participatory, and horizontall
   $handler->display->display_options['exposed_form']['type'] = 'basic';
   $handler->display->display_options['pager']['type'] = 'none';
   $handler->display->display_options['style_plugin'] = 'openlayers_map';
-  $handler->display->display_options['style_options']['map'] = 'ows_locations';
   /* Field: Content: Title */
   $handler->display->display_options['fields']['title']['id'] = 'title';
   $handler->display->display_options['fields']['title']['table'] = 'node';
@@ -586,8 +585,9 @@ The <strong>General Assembly</strong> is an open, participatory, and horizontall
   /* Display: Block */
   $handler = $view->new_display('block', 'Block', 'block');
 
-  /* Display: Block */
-  $handler = $view->new_display('block', 'Block', 'block_1');
+  /* Display: Contact: Map Buttons */
+  $handler = $view->new_display('block', 'Contact: Map Buttons', 'block_1');
+  $handler->display->display_options['display_description'] = 'Sidebar buttons map locations';
   $handler->display->display_options['defaults']['style_plugin'] = FALSE;
   $handler->display->display_options['style_plugin'] = 'default';
   $handler->display->display_options['defaults']['style_options'] = FALSE;
@@ -659,7 +659,7 @@ The <strong>General Assembly</strong> is an open, participatory, and horizontall
   $handler->display->display_options['sorts']['title']['table'] = 'node';
   $handler->display->display_options['sorts']['title']['field'] = 'title';
   $handler->display->display_options['defaults']['arguments'] = FALSE;
-  $handler->display->display_options['block_description'] = 'Contact Buttons';
+  $handler->display->display_options['block_description'] = 'Contact: Map Buttons';
   $export['ows_locations_map'] = $view;
 
   $view = new view;
@@ -748,7 +748,6 @@ The <strong>General Assembly</strong> is an open, participatory, and horizontall
   $handler->display->display_options['fields']['timestamp']['table'] = 'aggregator_item';
   $handler->display->display_options['fields']['timestamp']['field'] = 'timestamp';
   $handler->display->display_options['fields']['timestamp']['label'] = '';
-  $handler->display->display_options['fields']['timestamp']['exclude'] = TRUE;
   $handler->display->display_options['fields']['timestamp']['alter']['alter_text'] = 0;
   $handler->display->display_options['fields']['timestamp']['alter']['make_link'] = 0;
   $handler->display->display_options['fields']['timestamp']['alter']['absolute'] = 0;
@@ -789,8 +788,9 @@ The <strong>General Assembly</strong> is an open, participatory, and horizontall
   $handler->display->display_options['fields']['description']['alter']['ellipsis'] = 1;
   $handler->display->display_options['fields']['description']['alter']['more_link'] = 0;
   $handler->display->display_options['fields']['description']['alter']['more_link_text'] = 'Read More';
-  $handler->display->display_options['fields']['description']['alter']['strip_tags'] = 0;
+  $handler->display->display_options['fields']['description']['alter']['strip_tags'] = 1;
   $handler->display->display_options['fields']['description']['alter']['trim'] = 1;
+  $handler->display->display_options['fields']['description']['alter']['preserve_tags'] = '<strong><b><em><i>';
   $handler->display->display_options['fields']['description']['alter']['html'] = 0;
   $handler->display->display_options['fields']['description']['element_type'] = 'div';
   $handler->display->display_options['fields']['description']['element_class'] = 'news-body-field';
@@ -904,13 +904,14 @@ The <strong>General Assembly</strong> is an open, participatory, and horizontall
   $handler->display->display_options['fields']['timestamp']['alter']['absolute'] = 0;
   $handler->display->display_options['fields']['timestamp']['alter']['external'] = 0;
   $handler->display->display_options['fields']['timestamp']['alter']['replace_spaces'] = 0;
-  $handler->display->display_options['fields']['timestamp']['alter']['trim_whitespace'] = 0;
-  $handler->display->display_options['fields']['timestamp']['alter']['nl2br'] = 0;
+  $handler->display->display_options['fields']['timestamp']['alter']['trim_whitespace'] = 1;
+  $handler->display->display_options['fields']['timestamp']['alter']['nl2br'] = 1;
   $handler->display->display_options['fields']['timestamp']['alter']['word_boundary'] = 1;
   $handler->display->display_options['fields']['timestamp']['alter']['ellipsis'] = 1;
   $handler->display->display_options['fields']['timestamp']['alter']['more_link'] = 0;
-  $handler->display->display_options['fields']['timestamp']['alter']['strip_tags'] = 0;
+  $handler->display->display_options['fields']['timestamp']['alter']['strip_tags'] = 1;
   $handler->display->display_options['fields']['timestamp']['alter']['trim'] = 0;
+  $handler->display->display_options['fields']['timestamp']['alter']['preserve_tags'] = '<em><i>';
   $handler->display->display_options['fields']['timestamp']['alter']['html'] = 0;
   $handler->display->display_options['fields']['timestamp']['element_label_colon'] = FALSE;
   $handler->display->display_options['fields']['timestamp']['element_default_classes'] = 1;
@@ -930,14 +931,14 @@ The <strong>General Assembly</strong> is an open, participatory, and horizontall
   $handler->display->display_options['fields']['description']['alter']['replace_spaces'] = 0;
   $handler->display->display_options['fields']['description']['alter']['trim_whitespace'] = 1;
   $handler->display->display_options['fields']['description']['alter']['nl2br'] = 1;
-  $handler->display->display_options['fields']['description']['alter']['max_length'] = '144';
-  $handler->display->display_options['fields']['description']['alter']['word_boundary'] = 1;
-  $handler->display->display_options['fields']['description']['alter']['ellipsis'] = 1;
-  $handler->display->display_options['fields']['description']['alter']['more_link'] = 0;
+  $handler->display->display_options['fields']['description']['alter']['max_length'] = '175';
+  $handler->display->display_options['fields']['description']['alter']['word_boundary'] = 0;
+  $handler->display->display_options['fields']['description']['alter']['ellipsis'] = 0;
+  $handler->display->display_options['fields']['description']['alter']['more_link'] = 1;
   $handler->display->display_options['fields']['description']['alter']['more_link_text'] = 'Read More';
   $handler->display->display_options['fields']['description']['alter']['strip_tags'] = 1;
   $handler->display->display_options['fields']['description']['alter']['trim'] = 1;
-  $handler->display->display_options['fields']['description']['alter']['preserve_tags'] = '<b> <br> <strong> <em>';
+  $handler->display->display_options['fields']['description']['alter']['preserve_tags'] = '<strong><b><em><i>';
   $handler->display->display_options['fields']['description']['alter']['html'] = 0;
   $handler->display->display_options['fields']['description']['element_label_colon'] = FALSE;
   $handler->display->display_options['fields']['description']['element_default_classes'] = 1;
@@ -973,7 +974,6 @@ The <strong>General Assembly</strong> is an open, participatory, and horizontall
 
   /* Display: Master */
   $handler = $view->new_display('default', 'Master', 'default');
-  $handler->display->display_options['title'] = 'Stories';
   $handler->display->display_options['css_class'] = 'stories-view-block';
   $handler->display->display_options['access']['type'] = 'perm';
   $handler->display->display_options['cache']['type'] = 'none';
@@ -1152,8 +1152,21 @@ The <strong>General Assembly</strong> is an open, participatory, and horizontall
     'story' => 'story',
   );
 
+  /* Display: Page */
+  $handler = $view->new_display('page', 'Page', 'page_1');
+  $handler->display->display_options['defaults']['pager'] = FALSE;
+  $handler->display->display_options['pager']['type'] = 'some';
+  $handler->display->display_options['pager']['options']['items_per_page'] = '8';
+  $handler->display->display_options['pager']['options']['offset'] = '4';
+  $handler->display->display_options['path'] = 'read';
+  $handler->display->display_options['menu']['type'] = 'normal';
+  $handler->display->display_options['menu']['title'] = 'READ';
+  $handler->display->display_options['menu']['description'] = 'Stories Archive';
+  $handler->display->display_options['menu']['weight'] = '0';
+  $handler->display->display_options['menu']['context'] = 0;
+
   /* Display: Block */
-  $handler = $view->new_display('block', 'Block', 'block_1');
+  $handler = $view->new_display('block', 'Block', 'block_2');
   $handler->display->display_options['defaults']['use_more'] = FALSE;
   $handler->display->display_options['use_more'] = TRUE;
   $handler->display->display_options['use_more_text'] = 'View Full Archive';
@@ -1163,7 +1176,7 @@ The <strong>General Assembly</strong> is an open, participatory, and horizontall
   $handler->display->display_options['pager']['options']['offset'] = '';
 
   /* Display: Page */
-  $handler = $view->new_display('page', 'Page', 'page_1');
+  $handler = $view->new_display('page', 'Page', 'page_2');
   $handler->display->display_options['defaults']['pager'] = FALSE;
   $handler->display->display_options['pager']['type'] = 'some';
   $handler->display->display_options['pager']['options']['items_per_page'] = '8';
