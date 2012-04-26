@@ -160,11 +160,13 @@ ul li.leaf {
 	float: left;
 	margin: 0 0 0 10px;
 }*/
+
 #email-Primary {
 	float: left;
 	margin: 0;
 	width: 50%;
 }
+
 .newsletter-email-submit-button {
 	float: left;
 	margin: 0
@@ -534,12 +536,12 @@ ul.quicktabs-tabs li.active a{
     padding: 10px 10px 0;
     width: 85.5%;
 }
+
 .stories-block-date a:visited {
     display: block;
     background-color: #666766;
     color: #FFFFFF;
     padding: 10px 10px 0;
-    width: 85.5%;
 }
 
 .stories-block-title {
@@ -669,6 +671,7 @@ ul.quicktabs-tabs li.active a{
 .field-name-field-tags .field-label{
 	line-height: 2;
 }
+
 .field-name-field-tags  .field-item{
 	border-radius: 3px;
 	background:#222;
