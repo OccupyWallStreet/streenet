@@ -532,15 +532,15 @@ ul.quicktabs-tabs li.active a{
     color: #000000 !important;
     margin: 0;
     padding: 10px 10px 0;
-/*    width: 85.6%;
-*/}
+    width: 85.5%;
+}
 .stories-block-date a:visited {
     display: block;
     background-color: #666766;
     color: #FFFFFF;
     padding: 10px 10px 0;
-/*    width: 85.6%;
-*/}
+    width: 85.5%;
+}
 
 .stories-block-title {
     display: block;
