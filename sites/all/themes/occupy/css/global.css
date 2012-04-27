@@ -1020,7 +1020,6 @@ ul.quicktabs-tabs li.active a{
 }
 
 .view-ows-events .view-content {
-	background: #EDEDED;
 	padding: 15px 15px 50px 0;
 }
 
@@ -1037,7 +1036,9 @@ ul.quicktabs-tabs li.active a{
 }
 
 .view-ows-events .views-row{
+	background: #EDEDED;
 	padding: 1em;
+	margin-bottom: 1px;
 }
 
 
