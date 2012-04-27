@@ -15,7 +15,14 @@
     attach: function (context, settings) {
       $('div.newsletter-email-submit-button input.form-submit', context).click(function() {
         var email = $('div.newsletter-email input#email-Primary').val();
-        if (email) {
+				
+				//validate
+				if( !email.test( /^[a-z0-9._%-]+@[a-z0-9.-]+\.[a-z]{2,4}$/i ) ){
+					alert("Please enter a valid email address.");
+					return false;
+				}
+        
+				if (email) {
           // send the data to civi
           var profileId = 26;
           var groupId = 14;
@@ -36,7 +43,7 @@
             //'complete': ows_civi_complete
           });
 
-          $('div.newsletter-email input#email-Primary').val('Thanks!');
+          $('div.newsletter-email input#email-Primary').val('Thanks for signing up!');
 
           return false;
         }
