@@ -427,12 +427,6 @@ function occupy_contexts_context_default_contexts() {
           'region' => 'footer_sixth',
           'weight' => '-10',
         ),
-        'block-32' => array(
-          'module' => 'block',
-          'delta' => 32,
-          'region' => 'footer_seventh',
-          'weight' => '-10',
-        ),
         'block-3' => array(
           'module' => 'block',
           'delta' => 3,
