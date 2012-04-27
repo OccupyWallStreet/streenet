@@ -1051,7 +1051,8 @@ ul.quicktabs-tabs li.active a{
 
 .view-ows-events h5 a{
 	color: #232323;
-	text-decoration: none;	
+	text-decoration: none;
+	margin-bottom: 0;
 }
 
 .view-ows-events .views-row:hover h5 a,
