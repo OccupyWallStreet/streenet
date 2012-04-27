@@ -1036,14 +1036,29 @@ ul.quicktabs-tabs li.active a{
 	width: 40%;
 }
 
+.view-ows-events .views-row{
+	padding: 1em;
+}
+
+
 .view-ows-events h5{
 	padding-right: 3em;
+	color: #232323;
+	line-height: 1.2;
 	background: url('/sites/all/themes/files/blackthing.png') center right no-repeat;
 }
 
-.contribute-block-title-field{
-	width: 80%;
+.view-ows-events h5 a{
+	color: #232323;
+	text-decoration: none;	
 }
+
+.view-ows-events .views-row:hover h5 a,
+.view-ows-events h5 a:hover{
+	color: #232323;
+	text-decoration: underline;	
+}
+
 
 .contribute-block-title-field a {
 	font-size: 14px;
