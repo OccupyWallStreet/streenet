@@ -1047,12 +1047,12 @@ ul.quicktabs-tabs li.active a{
 	color: #232323;
 	line-height: 1.2;
 	background: url('/sites/all/themes/files/blackthing.png') center right no-repeat;
+	margin-bottom: 0;
 }
 
 .view-ows-events h5 a{
 	color: #232323;
 	text-decoration: none;
-	margin-bottom: 0;
 }
 
 .view-ows-events .views-row:hover h5 a,
