@@ -72,7 +72,7 @@ function occupy_boxes_default_box() {
   $box->api_version = 1;
   $box->delta = 'join_team_box';
   $box->plugin_key = 'simple';
-  $box->title = '<none>';
+  $box->title = '';
   $box->description = 'Join Our Content Team Box';
   $box->options = array(
     'body' => array(

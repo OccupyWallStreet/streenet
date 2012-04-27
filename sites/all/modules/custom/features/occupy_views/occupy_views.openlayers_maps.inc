@@ -35,9 +35,11 @@ function occupy_views_openlayers_maps() {
     ),
     'behaviors' => array(
       'openlayers_behavior_argparser' => array(
-        'anchor' => 0,
+        'anchor' => 1,
       ),
-      'openlayers_behavior_keyboarddefaults' => array(),
+      'openlayers_behavior_attribution' => array(
+        'seperator' => '',
+      ),
       'openlayers_behavior_layerswitcher' => array(
         'ascending' => 0,
         'roundedCorner' => 1,
@@ -52,12 +54,10 @@ function occupy_views_openlayers_maps() {
         'zoomWorldIcon' => 0,
         'panIcons' => 1,
       ),
-      'openlayers_behavior_permalink' => array(
-        'anchor' => 0,
-      ),
       'openlayers_behavior_popup' => array(
         'layers' => array(
           'ows_locations_openlayers_1' => 'ows_locations_openlayers_1',
+          'geofield_formatter' => 0,
         ),
       ),
       'openlayers_behavior_scaleline' => array(),
@@ -69,22 +69,23 @@ function occupy_views_openlayers_maps() {
       'osm_cycle' => 'osm_cycle',
       'mapquest_osm' => 'mapquest_osm',
       'mapquest_openaerial' => 'mapquest_openaerial',
+      'geofield_formatter' => 'geofield_formatter',
       'ows_locations_openlayers_1' => 'ows_locations_openlayers_1',
     ),
     'layer_weight' => array(
+      'geofield_formatter' => '0',
       'ows_locations_openlayers_1' => '0',
       'openlayers_geojson_picture_this' => '0',
-      'geofield_formatter' => '0',
     ),
     'layer_styles' => array(
-      'geofield_formatter' => '0',
       'openlayers_geojson_picture_this' => '0',
-      'ows_locations_openlayers_1' => 'default_marker_black_small',
+      'ows_locations_openlayers_1' => 'default_marker_black',
+      'geofield_formatter' => '0',
     ),
     'layer_styles_select' => array(
-      'geofield_formatter' => '0',
       'openlayers_geojson_picture_this' => '0',
-      'ows_locations_openlayers_1' => 'default_marker_black_small',
+      'ows_locations_openlayers_1' => 'default_marker_black',
+      'geofield_formatter' => '0',
     ),
     'layer_activated' => array(
       'ows_locations_openlayers_1' => 'ows_locations_openlayers_1',
