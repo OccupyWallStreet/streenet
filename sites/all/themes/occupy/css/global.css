@@ -11,9 +11,11 @@ h1, h2, h3, h4{
 h1 {
 	font-size: 40px;
 }
+
 h2 {
 	font-size: 33px;
 }
+
 h3 {
 	font-size: 27px;
 }
@@ -819,8 +821,8 @@ ul.quicktabs-tabs li.active a{
 	z-index: 9;
 }
 
-#my-content-single-featured-story h2 a{
-	font-size: 30px !important;
+#my-content-single-featured-story h2{
+	font-size: 42px;
 }
 
 #my-content-single-featured-story {
