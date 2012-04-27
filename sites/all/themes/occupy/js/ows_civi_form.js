@@ -17,7 +17,9 @@
         var email = $('div.newsletter-email input#email-Primary').val();
 				
 				//validate
-				if( !email.test( /^[a-z0-9._%-]+@[a-z0-9.-]+\.[a-z]{2,4}$/i ) ){
+				
+				var emailpatt = /^[a-z0-9._%-]+@[a-z0-9.-]+\.[a-z]{2,4}$/i;
+				if( !emailpatt.test( email ) ){
 					alert("Please enter a valid email address.");
 					return false;
 				}
