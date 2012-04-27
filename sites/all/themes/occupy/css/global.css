@@ -1018,22 +1018,33 @@ ul.quicktabs-tabs li.active a{
 .view-ows-events {
 	/*padding: 15px*/;
 }
+
 .view-ows-events .view-content {
 	background: #EDEDED;
 	padding: 15px 15px 50px 0;
 }
-.contribute-block-date-field {
+
+.contribute-block-location-name-field,
+.view-ows-events .date-display-single{
 	float: left;
 	width: 55%;
 	margin: 0;
 	font-size: 11px;
 }
+
 .contribute-block-location-name-field {
-	float: left;
-	font-size: 11px;
-	margin: 0;
 	width: 40%;
 }
+
+.view-ows-events h5{
+	padding-right: 3em;
+	background: url('/sites/all/themes/files/blackthing.png') center right no-repeat;
+}
+
+.contribute-block-title-field{
+	width: 80%;
+}
+
 .contribute-block-title-field a {
 	font-size: 14px;
 	color: black;
@@ -1042,13 +1053,14 @@ ul.quicktabs-tabs li.active a{
 	float: left;
 }
 
-.blackthing {
+/*.blackthing {
 	background: url('/sites/all/themes/files/blackthing.png') no-repeat;
 	padding: 15px 20px;
 	font-size: 0;
 	float: right;
 	margin: 0px 0 0 10px;
 }
+*/
 /*--------------------------------------------BLOCKS (Bottom Row)------------------------------------*/
 .block-16, .block-17, .block-18 {
 	background: #EDEDED;
