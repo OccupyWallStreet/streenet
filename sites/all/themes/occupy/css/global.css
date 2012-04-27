@@ -894,6 +894,16 @@ ul.quicktabs-tabs li.active a{
 	text-transform: uppercase;
 }
 
+.learn_sidebar_text a{
+	color:#fff;
+	text-decoration: none;
+}
+
+.learn_sidebar_text a:hover{
+	color:#fff;
+	text-decoration: underline;
+}
+
 .know-your-rights {
 	margin: 0 0 5px 0;
 }
