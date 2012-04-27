@@ -781,15 +781,15 @@ ul.quicktabs-tabs li.active a{
 	padding: 0;
 	line-height: .8em;
 }
-read
 .view-nodequeue-3 p {
 	margin: 0 100px 0 0;
 }
+
 #transparency-single-featured-story {
 	position: absolute;
-	top: 120px;
+	top: 150px;
 	left: 0px;
-	width: 380px;
+	width: 370px;
 	height: 20%;
 	background-color: black;
 	filter: alpha(opacity=60);
@@ -797,14 +797,20 @@ read
 	-moz-opacity: 0.6;
 	z-index: 9;
 }
+
+#my-content-single-featured-story h2 a{
+	font-size: 30px !important;
+}
+
 #my-content-single-featured-story {
+	font-size: 12px;
 	position: absolute;
-	top: 135px;
+	top: 150px;
 	left: 10px;
 	z-index: 999;
 	color: white;
-	font-size: 12px;
 }
+
 .view-nodequeue-3 a:link, 
 .view-nodequeue-3 a:visited {
 	font-size: 25px;
@@ -1014,11 +1020,12 @@ read
 	text-decoration: none;
 	float: left;
 }
+
 .blackthing {
 	background: url('/sites/all/themes/files/blackthing.png') no-repeat;
 	padding: 15px 20px;
 	font-size: 0;
-	float: left;
+	float: right;
 	margin: 0px 0 0 10px;
 }
 /*--------------------------------------------BLOCKS (Bottom Row)------------------------------------*/
