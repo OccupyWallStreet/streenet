@@ -810,12 +810,12 @@ ul.quicktabs-tabs li.active a{
 
 #transparency-single-featured-story {
 	position: absolute;
-	top: 150px;
+	bottom: 0;
 	left: 0px;
-	width: 370px;
+	width: 100%;
 	height: 20%;
 	background-color: black;
-	filter: alpha(opacity=60);
+	filter: alpha(opacity=70);
 	opacity: 0.6;
 	-moz-opacity: 0.6;
 	z-index: 9;
@@ -828,7 +828,7 @@ ul.quicktabs-tabs li.active a{
 #my-content-single-featured-story {
 	font-size: 12px;
 	position: absolute;
-	top: 150px;
+	bottom: 1em;
 	left: 10px;
 	z-index: 999;
 	color: white;
