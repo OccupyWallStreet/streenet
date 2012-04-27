@@ -493,7 +493,7 @@ ul.quicktabs-tabs li.active a{
 }
 
 .cat-head{
-	border-bottom: 1px #dedede solid;	
+	border-bottom: 1px #999 solid;	
 }
 
 .cat-head-GA{
@@ -502,8 +502,8 @@ ul.quicktabs-tabs li.active a{
 }
 
 .cat-head-News{
-	border-bottom: 1px #999 solid;
-	color: #999;
+	border-bottom: 1px #666 solid;
+	color: #666;
 }
 
 .cat-head-Feature{
