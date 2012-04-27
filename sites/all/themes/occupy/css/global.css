@@ -492,6 +492,10 @@ ul.quicktabs-tabs li.active a{
 	padding: 0;
 }
 
+.cat-head{
+	border-bottom: 1px #dedede solid;	
+}
+
 .cat-head-GA{
 	border-bottom: 1px #2F89BA solid;
 	color: #2F89BA;
