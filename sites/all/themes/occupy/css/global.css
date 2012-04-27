@@ -517,10 +517,17 @@ ul.quicktabs-tabs li.active a{
 	margin: 0;
 	padding: 8px 0 0 0;
 }
+
+
 #page-title {
     letter-spacing: 1px;
 		text-transform: uppercase;
 }
+
+.page-user h1#page-title{
+	text-transform: normal !important;
+}
+
 .stories-block-row {
     display: block;
     background-color: #FFFFFF;
@@ -608,6 +615,7 @@ ul.quicktabs-tabs li.active a{
 	display: block;
 	background-color: white;
 	float: left;
+	width: 50%;
 }
 
 .block-ows-stories-read-page--block-1 .view-row-4,
