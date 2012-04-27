@@ -524,8 +524,9 @@ ul.quicktabs-tabs li.active a{
 
 
 #page-title {
-    letter-spacing: 1px;
-		text-transform: uppercase;
+	letter-spacing: 1px;
+	line-height: 1.125em;
+	text-transform: uppercase;
 }
 
 .page-user h1#page-title{
