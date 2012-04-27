@@ -636,6 +636,7 @@ ul.quicktabs-tabs li.active a{
 	padding: 10px 10px 0;
 	width: 87%;
 }
+
 .view-ows-stories-read-page- .stories-block-title {
 	display: block;
 	background-color: #FFCD05;
@@ -669,9 +670,28 @@ ul.quicktabs-tabs li.active a{
 	font-size: 0;
 	margin: 10px 0;
 }
+
+.block-views-tags-block-block h2.block-title{
+	float: left;
+	text-transform: uppercase;
+	letter-spacing: 1px;
+	margin-right: .25em;
+}
+
+.block-views-tags-block-block .tags-block-tag{
+	-webkit-border-radius: 3px;
+	border-radius: 3px;
+	-moz-border-radius: 3px;
+	background: #dedede;
+	padding: .25em .25em;
+	margin-right: .125em;
+	float: left;	
+}
+
 .field-name-field-tags {
 /*	background-color: lightgray;
-*/	-webkit-border-radius: 3px;
+*/
+	-webkit-border-radius: 3px;
 	border-radius: 3px;
 	-moz-border-radius: 3px;
 	padding: 0;
