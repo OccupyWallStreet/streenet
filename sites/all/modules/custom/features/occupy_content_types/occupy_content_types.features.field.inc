@@ -515,7 +515,7 @@ function occupy_content_types_field_default_fields() {
       ),
       'module' => 'image',
       'settings' => array(
-        'default_image' => '69',
+        'default_image' => '77',
         'uri_scheme' => 'public',
       ),
       'translatable' => '0',
@@ -815,7 +815,7 @@ function occupy_content_types_field_default_fields() {
       ),
       'module' => 'image',
       'settings' => array(
-        'default_image' => '69',
+        'default_image' => '77',
         'uri_scheme' => 'public',
       ),
       'translatable' => '0',
@@ -1534,7 +1534,7 @@ function occupy_content_types_field_default_fields() {
       ),
       'module' => 'image',
       'settings' => array(
-        'default_image' => '69',
+        'default_image' => '77',
         'uri_scheme' => 'public',
       ),
       'translatable' => '0',

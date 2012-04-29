@@ -20,7 +20,11 @@ function occupy_boxes_default_box() {
   $box->options = array(
     'body' => array(
       'value' => '<div class="contact-phone-background">1
-	<div class="contact-number-text">855 NYCGA 411</div>
+	<div class="contact-number-text">SMS</div>
+	<div class="contact-phone-text">Text "<strong>@OWSCom</strong>" to <strong>23559</strong> for daily messages about OWS news and events</div>
+	<div class="contact-phone-text">Text "<strong>@OccupyAlert</strong>" to <strong>23559</strong> for emergency alerts from OWS</div>
+	<div class="contact-number-text">&nbsp;</div>
+	<div class="contact-number-text">855 NYCGA 411 (855-692-4241)</div>
 	<div class="contact-phone-text">Toll-free, real time voice access to events, schedule and announcements</div>
 </div>
 ',
@@ -39,7 +43,11 @@ function occupy_boxes_default_box() {
   $box->description = 'Download Our Press Kit.';
   $box->options = array(
     'body' => array(
-      'value' => '<div class="contact-phone-background">1<div class="contact-number-text">Download Our Press Kit.</div><div class="contact-phone-text">Some messages about what that involves.</div></div>',
+      'value' => '<!--<div class="contact-phone-background">1
+	<div class="contact-number-text">Download Our Press Kit.</div>
+	<div class="contact-phone-text">Some messages about what that involves.</div>
+</div>-->
+',
       'format' => 'full_html',
     ),
     'additional_classes' => 'box-class',
@@ -76,7 +84,12 @@ function occupy_boxes_default_box() {
   $box->description = 'Join Our Content Team Box';
   $box->options = array(
     'body' => array(
-      'value' => '<div class="node-blocks-background">1<div class="contact-number-text">Join Our Content Team.</div><div class="contact-phone-text">Some messages about what that involves.</div></div>',
+      'value' => '<div class="node-blocks-background">1
+	<div class="contact-number-text"><a href="/contribute-content" style="text-decoration: none; color: rgb(254, 205, 72);">Join Our Content Team.</a></div>
+	<div class="contact-phone-text">Find out how to get involved.</div>
+</div>
+<p>&nbsp;</p>
+',
       'format' => 'full_html',
     ),
     'additional_classes' => 'box-class',
