@@ -362,7 +362,7 @@ ul.quicktabs-tabs li.active{
 ul.quicktabs-tabs li a{
 	display: inline-block;
 	height: 100%;
-	padding-top: 6px;
+	padding-top: 0px;
 	padding-left: 12px;
 	padding-right: 12px;
 	text-decoration: none;
