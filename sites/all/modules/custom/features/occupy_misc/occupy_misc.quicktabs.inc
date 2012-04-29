@@ -114,24 +114,15 @@ function occupy_misc_quicktabs_default_quicktabs() {
       'weight' => '-98',
       'type' => 'node',
     ),
-    3 => array(
-      'nid' => '23',
-      'teaser' => 0,
-      'hide_title' => 0,
-      'title' => 'Good Neighbor',
-      'weight' => '-97',
-      'type' => 'node',
-    ),
   );
   $quicktabs->renderer = 'quicktabs';
-  $quicktabs->style = 'default';
+  $quicktabs->style = 'nostyle';
   $quicktabs->options = array();
 
   // Translatables
   // Included for use with string extractors like potx.
   t('Autonomy');
   t('Declaration');
-  t('Good Neighbor');
   t('Learn');
   t('Solidarity');
 

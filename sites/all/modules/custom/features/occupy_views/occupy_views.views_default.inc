@@ -219,14 +219,17 @@ function occupy_views_views_default_views() {
   $handler->display->display_options['pager']['type'] = 'some';
   $handler->display->display_options['pager']['options']['items_per_page'] = '3';
   $handler->display->display_options['style_plugin'] = 'default';
+  $handler->display->display_options['style_options']['row_class'] = 'clearfix';
   $handler->display->display_options['row_plugin'] = 'fields';
+  $handler->display->display_options['row_options']['hide_empty'] = 1;
+  $handler->display->display_options['row_options']['default_field_elements'] = 0;
   /* Header: Global: Text area */
   $handler->display->display_options['header']['area']['id'] = 'area';
   $handler->display->display_options['header']['area']['table'] = 'views';
   $handler->display->display_options['header']['area']['field'] = 'area';
   $handler->display->display_options['header']['area']['empty'] = TRUE;
   $handler->display->display_options['header']['area']['content'] = '<div class="custom-title-wrapper"><div class="custom-title-first">Attend</div><div class="custom-title-second">Actions & Events</div></div>
-The <strong>General Assembly</strong> is an open, participatory, and horizontally organized process through which decisions are made based upon collective agreement or "consensus."';
+There are many OWS-affiliated events taking place every day including assemblies, skill shares, open spaces, direct actions and performances. Come out and participate in democracy in action!';
   $handler->display->display_options['header']['area']['format'] = 'full_html';
   $handler->display->display_options['header']['area']['tokenize'] = 0;
   /* No results behavior: Global: Text area */
@@ -243,6 +246,7 @@ The <strong>General Assembly</strong> is an open, participatory, and horizontall
   $handler->display->display_options['fields']['field_date']['field'] = 'field_date';
   $handler->display->display_options['fields']['field_date']['label'] = '';
   $handler->display->display_options['fields']['field_date']['alter']['alter_text'] = 0;
+  $handler->display->display_options['fields']['field_date']['alter']['text'] = '<p class="date">[field_date]</p>';
   $handler->display->display_options['fields']['field_date']['alter']['make_link'] = 0;
   $handler->display->display_options['fields']['field_date']['alter']['absolute'] = 0;
   $handler->display->display_options['fields']['field_date']['alter']['external'] = 0;
@@ -255,12 +259,10 @@ The <strong>General Assembly</strong> is an open, participatory, and horizontall
   $handler->display->display_options['fields']['field_date']['alter']['strip_tags'] = 0;
   $handler->display->display_options['fields']['field_date']['alter']['trim'] = 0;
   $handler->display->display_options['fields']['field_date']['alter']['html'] = 0;
-  $handler->display->display_options['fields']['field_date']['element_type'] = 'div';
+  $handler->display->display_options['fields']['field_date']['element_type'] = '0';
   $handler->display->display_options['fields']['field_date']['element_class'] = 'contribute-block-date-field';
-  $handler->display->display_options['fields']['field_date']['element_label_type'] = 'div';
-  $handler->display->display_options['fields']['field_date']['element_label_class'] = 'contribute-block-date-field-wrapper';
   $handler->display->display_options['fields']['field_date']['element_label_colon'] = FALSE;
-  $handler->display->display_options['fields']['field_date']['element_default_classes'] = 1;
+  $handler->display->display_options['fields']['field_date']['element_default_classes'] = 0;
   $handler->display->display_options['fields']['field_date']['hide_empty'] = 1;
   $handler->display->display_options['fields']['field_date']['empty_zero'] = 0;
   $handler->display->display_options['fields']['field_date']['hide_alter_empty'] = 1;
@@ -277,7 +279,8 @@ The <strong>General Assembly</strong> is an open, participatory, and horizontall
   $handler->display->display_options['fields']['field_address']['table'] = 'field_data_field_address';
   $handler->display->display_options['fields']['field_address']['field'] = 'field_address';
   $handler->display->display_options['fields']['field_address']['label'] = '';
-  $handler->display->display_options['fields']['field_address']['alter']['alter_text'] = 1;
+  $handler->display->display_options['fields']['field_address']['alter']['alter_text'] = 0;
+  $handler->display->display_options['fields']['field_address']['alter']['text'] = '<p class="address">[field_address]</p>';
   $handler->display->display_options['fields']['field_address']['alter']['make_link'] = 0;
   $handler->display->display_options['fields']['field_address']['alter']['absolute'] = 0;
   $handler->display->display_options['fields']['field_address']['alter']['external'] = 0;
@@ -290,10 +293,10 @@ The <strong>General Assembly</strong> is an open, participatory, and horizontall
   $handler->display->display_options['fields']['field_address']['alter']['strip_tags'] = 0;
   $handler->display->display_options['fields']['field_address']['alter']['trim'] = 0;
   $handler->display->display_options['fields']['field_address']['alter']['html'] = 0;
-  $handler->display->display_options['fields']['field_address']['element_type'] = 'div';
+  $handler->display->display_options['fields']['field_address']['element_type'] = 'span';
   $handler->display->display_options['fields']['field_address']['element_class'] = '.contribute-block-location-name-field';
   $handler->display->display_options['fields']['field_address']['element_label_colon'] = FALSE;
-  $handler->display->display_options['fields']['field_address']['element_default_classes'] = 1;
+  $handler->display->display_options['fields']['field_address']['element_default_classes'] = 0;
   $handler->display->display_options['fields']['field_address']['hide_empty'] = 0;
   $handler->display->display_options['fields']['field_address']['empty_zero'] = 0;
   $handler->display->display_options['fields']['field_address']['hide_alter_empty'] = 1;
@@ -311,6 +314,7 @@ The <strong>General Assembly</strong> is an open, participatory, and horizontall
   $handler->display->display_options['fields']['title']['field'] = 'title';
   $handler->display->display_options['fields']['title']['label'] = '';
   $handler->display->display_options['fields']['title']['alter']['alter_text'] = 0;
+  $handler->display->display_options['fields']['title']['alter']['text'] = '<h5>[title]</h5>';
   $handler->display->display_options['fields']['title']['alter']['make_link'] = 0;
   $handler->display->display_options['fields']['title']['alter']['absolute'] = 0;
   $handler->display->display_options['fields']['title']['alter']['external'] = 0;
@@ -323,41 +327,13 @@ The <strong>General Assembly</strong> is an open, participatory, and horizontall
   $handler->display->display_options['fields']['title']['alter']['strip_tags'] = 0;
   $handler->display->display_options['fields']['title']['alter']['trim'] = 0;
   $handler->display->display_options['fields']['title']['alter']['html'] = 0;
-  $handler->display->display_options['fields']['title']['element_type'] = 'div';
-  $handler->display->display_options['fields']['title']['element_class'] = 'contribute-block-title-field';
-  $handler->display->display_options['fields']['title']['element_label_type'] = 'div';
-  $handler->display->display_options['fields']['title']['element_label_class'] = 'contribute-block-title-field-wrapper';
+  $handler->display->display_options['fields']['title']['element_type'] = 'h5';
   $handler->display->display_options['fields']['title']['element_label_colon'] = FALSE;
-  $handler->display->display_options['fields']['title']['element_default_classes'] = 1;
+  $handler->display->display_options['fields']['title']['element_default_classes'] = 0;
   $handler->display->display_options['fields']['title']['hide_empty'] = 0;
   $handler->display->display_options['fields']['title']['empty_zero'] = 0;
   $handler->display->display_options['fields']['title']['hide_alter_empty'] = 1;
   $handler->display->display_options['fields']['title']['link_to_node'] = 1;
-  /* Field: Content: Body */
-  $handler->display->display_options['fields']['body']['id'] = 'body';
-  $handler->display->display_options['fields']['body']['table'] = 'field_data_body';
-  $handler->display->display_options['fields']['body']['field'] = 'body';
-  $handler->display->display_options['fields']['body']['label'] = '';
-  $handler->display->display_options['fields']['body']['alter']['alter_text'] = 1;
-  $handler->display->display_options['fields']['body']['alter']['text'] = '<div class="blackthing">0</div>';
-  $handler->display->display_options['fields']['body']['alter']['make_link'] = 0;
-  $handler->display->display_options['fields']['body']['alter']['absolute'] = 0;
-  $handler->display->display_options['fields']['body']['alter']['external'] = 0;
-  $handler->display->display_options['fields']['body']['alter']['replace_spaces'] = 0;
-  $handler->display->display_options['fields']['body']['alter']['trim_whitespace'] = 0;
-  $handler->display->display_options['fields']['body']['alter']['nl2br'] = 0;
-  $handler->display->display_options['fields']['body']['alter']['word_boundary'] = 1;
-  $handler->display->display_options['fields']['body']['alter']['ellipsis'] = 1;
-  $handler->display->display_options['fields']['body']['alter']['more_link'] = 0;
-  $handler->display->display_options['fields']['body']['alter']['strip_tags'] = 0;
-  $handler->display->display_options['fields']['body']['alter']['trim'] = 0;
-  $handler->display->display_options['fields']['body']['alter']['html'] = 0;
-  $handler->display->display_options['fields']['body']['element_label_colon'] = FALSE;
-  $handler->display->display_options['fields']['body']['element_default_classes'] = 1;
-  $handler->display->display_options['fields']['body']['hide_empty'] = 0;
-  $handler->display->display_options['fields']['body']['empty_zero'] = 0;
-  $handler->display->display_options['fields']['body']['hide_alter_empty'] = 1;
-  $handler->display->display_options['fields']['body']['field_api_classes'] = 0;
   /* Sort criterion: Content: Date -  start date (field_date) */
   $handler->display->display_options['sorts']['field_date_value']['id'] = 'field_date_value';
   $handler->display->display_options['sorts']['field_date_value']['table'] = 'field_data_field_date';
@@ -975,6 +951,7 @@ The <strong>General Assembly</strong> is an open, participatory, and horizontall
   /* Display: Master */
   $handler = $view->new_display('default', 'Master', 'default');
   $handler->display->display_options['css_class'] = 'stories-view-block';
+  $handler->display->display_options['use_more_text'] = 'View Archive';
   $handler->display->display_options['access']['type'] = 'perm';
   $handler->display->display_options['cache']['type'] = 'none';
   $handler->display->display_options['query']['type'] = 'views_query';
@@ -988,12 +965,30 @@ The <strong>General Assembly</strong> is an open, participatory, and horizontall
   $handler->display->display_options['row_plugin'] = 'fields';
   $handler->display->display_options['row_options']['hide_empty'] = 1;
   $handler->display->display_options['row_options']['default_field_elements'] = 1;
+  /* Header: Global: Text area */
+  $handler->display->display_options['header']['area']['id'] = 'area';
+  $handler->display->display_options['header']['area']['table'] = 'views';
+  $handler->display->display_options['header']['area']['field'] = 'area';
+  $handler->display->display_options['header']['area']['empty'] = FALSE;
+  /* Relationship: Nodequeue: Queue */
+  $handler->display->display_options['relationships']['nodequeue_rel']['id'] = 'nodequeue_rel';
+  $handler->display->display_options['relationships']['nodequeue_rel']['table'] = 'node';
+  $handler->display->display_options['relationships']['nodequeue_rel']['field'] = 'nodequeue_rel';
+  $handler->display->display_options['relationships']['nodequeue_rel']['label'] = 'Single Featured queue';
+  $handler->display->display_options['relationships']['nodequeue_rel']['required'] = 0;
+  $handler->display->display_options['relationships']['nodequeue_rel']['limit'] = 1;
+  $handler->display->display_options['relationships']['nodequeue_rel']['names'] = array(
+    'single_featured_story' => 'single_featured_story',
+    'featured_stories' => 0,
+    'featured_videos' => 0,
+  );
   /* Field: Content: Category */
   $handler->display->display_options['fields']['field_story_category']['id'] = 'field_story_category';
   $handler->display->display_options['fields']['field_story_category']['table'] = 'field_data_field_story_category';
   $handler->display->display_options['fields']['field_story_category']['field'] = 'field_story_category';
   $handler->display->display_options['fields']['field_story_category']['label'] = '';
-  $handler->display->display_options['fields']['field_story_category']['alter']['alter_text'] = 0;
+  $handler->display->display_options['fields']['field_story_category']['alter']['alter_text'] = 1;
+  $handler->display->display_options['fields']['field_story_category']['alter']['text'] = '<div class="cat-head cat-head-[field_story_category]">[field_story_category]</div>';
   $handler->display->display_options['fields']['field_story_category']['alter']['make_link'] = 0;
   $handler->display->display_options['fields']['field_story_category']['alter']['absolute'] = 0;
   $handler->display->display_options['fields']['field_story_category']['alter']['external'] = 0;
@@ -1151,6 +1146,12 @@ The <strong>General Assembly</strong> is an open, participatory, and horizontall
     'event' => 'event',
     'story' => 'story',
   );
+  /* Filter criterion: Nodequeue: In queue */
+  $handler->display->display_options['filters']['in_queue']['id'] = 'in_queue';
+  $handler->display->display_options['filters']['in_queue']['table'] = 'nodequeue_nodes';
+  $handler->display->display_options['filters']['in_queue']['field'] = 'in_queue';
+  $handler->display->display_options['filters']['in_queue']['relationship'] = 'nodequeue_rel';
+  $handler->display->display_options['filters']['in_queue']['value'] = '0';
 
   /* Display: Page */
   $handler = $view->new_display('page', 'Page', 'page_1');
@@ -1158,6 +1159,7 @@ The <strong>General Assembly</strong> is an open, participatory, and horizontall
   $handler->display->display_options['pager']['type'] = 'some';
   $handler->display->display_options['pager']['options']['items_per_page'] = '8';
   $handler->display->display_options['pager']['options']['offset'] = '4';
+  $handler->display->display_options['defaults']['header'] = FALSE;
   $handler->display->display_options['path'] = 'read';
   $handler->display->display_options['menu']['type'] = 'normal';
   $handler->display->display_options['menu']['title'] = 'READ';
@@ -1169,24 +1171,45 @@ The <strong>General Assembly</strong> is an open, participatory, and horizontall
   $handler = $view->new_display('block', 'Block', 'block_2');
   $handler->display->display_options['defaults']['use_more'] = FALSE;
   $handler->display->display_options['use_more'] = TRUE;
-  $handler->display->display_options['use_more_text'] = 'View Full Archive';
   $handler->display->display_options['defaults']['pager'] = FALSE;
   $handler->display->display_options['pager']['type'] = 'some';
   $handler->display->display_options['pager']['options']['items_per_page'] = '8';
   $handler->display->display_options['pager']['options']['offset'] = '';
-
-  /* Display: Page */
-  $handler = $view->new_display('page', 'Page', 'page_2');
-  $handler->display->display_options['defaults']['pager'] = FALSE;
-  $handler->display->display_options['pager']['type'] = 'some';
-  $handler->display->display_options['pager']['options']['items_per_page'] = '8';
-  $handler->display->display_options['pager']['options']['offset'] = '4';
-  $handler->display->display_options['path'] = 'read';
-  $handler->display->display_options['menu']['type'] = 'normal';
-  $handler->display->display_options['menu']['title'] = 'READ';
-  $handler->display->display_options['menu']['description'] = 'Stories Archive';
-  $handler->display->display_options['menu']['weight'] = '0';
-  $handler->display->display_options['menu']['context'] = 0;
+  $handler->display->display_options['defaults']['relationships'] = FALSE;
+  /* Relationship: Nodequeue: Queue */
+  $handler->display->display_options['relationships']['nodequeue_rel']['id'] = 'nodequeue_rel';
+  $handler->display->display_options['relationships']['nodequeue_rel']['table'] = 'node';
+  $handler->display->display_options['relationships']['nodequeue_rel']['field'] = 'nodequeue_rel';
+  $handler->display->display_options['relationships']['nodequeue_rel']['label'] = 'Featured Stories queue';
+  $handler->display->display_options['relationships']['nodequeue_rel']['required'] = 0;
+  $handler->display->display_options['relationships']['nodequeue_rel']['limit'] = 1;
+  $handler->display->display_options['relationships']['nodequeue_rel']['names'] = array(
+    'featured_stories' => 'featured_stories',
+    'single_featured_story' => 'single_featured_story',
+    'featured_videos' => 0,
+  );
+  $handler->display->display_options['defaults']['filters'] = FALSE;
+  /* Filter criterion: Content: Published */
+  $handler->display->display_options['filters']['status']['id'] = 'status';
+  $handler->display->display_options['filters']['status']['table'] = 'node';
+  $handler->display->display_options['filters']['status']['field'] = 'status';
+  $handler->display->display_options['filters']['status']['value'] = 1;
+  $handler->display->display_options['filters']['status']['group'] = 1;
+  $handler->display->display_options['filters']['status']['expose']['operator'] = FALSE;
+  /* Filter criterion: Content: Type */
+  $handler->display->display_options['filters']['type']['id'] = 'type';
+  $handler->display->display_options['filters']['type']['table'] = 'node';
+  $handler->display->display_options['filters']['type']['field'] = 'type';
+  $handler->display->display_options['filters']['type']['value'] = array(
+    'event' => 'event',
+    'story' => 'story',
+  );
+  /* Filter criterion: Nodequeue: In queue */
+  $handler->display->display_options['filters']['in_queue']['id'] = 'in_queue';
+  $handler->display->display_options['filters']['in_queue']['table'] = 'nodequeue_nodes';
+  $handler->display->display_options['filters']['in_queue']['field'] = 'in_queue';
+  $handler->display->display_options['filters']['in_queue']['relationship'] = 'nodequeue_rel';
+  $handler->display->display_options['filters']['in_queue']['value'] = '0';
   $export['ows_stories'] = $view;
 
   $view = new view;
@@ -1233,7 +1256,8 @@ The <strong>General Assembly</strong> is an open, participatory, and horizontall
   $handler->display->display_options['fields']['field_story_category']['table'] = 'field_data_field_story_category';
   $handler->display->display_options['fields']['field_story_category']['field'] = 'field_story_category';
   $handler->display->display_options['fields']['field_story_category']['label'] = '';
-  $handler->display->display_options['fields']['field_story_category']['alter']['alter_text'] = 0;
+  $handler->display->display_options['fields']['field_story_category']['alter']['alter_text'] = 1;
+  $handler->display->display_options['fields']['field_story_category']['alter']['text'] = '<div class="cat-head cat-head-[field_story_category]">[field_story_category]</div>';
   $handler->display->display_options['fields']['field_story_category']['alter']['make_link'] = 0;
   $handler->display->display_options['fields']['field_story_category']['alter']['absolute'] = 0;
   $handler->display->display_options['fields']['field_story_category']['alter']['external'] = 0;
@@ -1543,7 +1567,7 @@ The <strong>General Assembly</strong> is an open, participatory, and horizontall
 
   /* Display: Master */
   $handler = $view->new_display('default', 'Master', 'default');
-  $handler->display->display_options['title'] = 'Tags Block';
+  $handler->display->display_options['title'] = 'Tags';
   $handler->display->display_options['access']['type'] = 'perm';
   $handler->display->display_options['cache']['type'] = 'none';
   $handler->display->display_options['query']['type'] = 'views_query';
