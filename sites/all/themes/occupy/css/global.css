@@ -345,10 +345,11 @@ ul.quicktabs-tabs{
 
 ul.quicktabs-tabs li{
 	font-size: 18px;
+	line-height: 18px;
 	text-transform: uppercase;
 	letter-spacing: 1px;
-	padding-bottom:3px;
-	position:relative;
+/*	padding-bottom:3px;
+*/	position:relative;
 	top: 6px;
 	margin: 0 1px 0 0;
 }
@@ -924,8 +925,13 @@ ul.quicktabs-tabs li.active a{
 	background-color: #F9F9F9;
 	font-size: 0;
 }
+
 .faq-sidebar-letter {
-	font-size: 40px;
+	font-size: 42px;
+	margin-top: 0;
+	line-height: 32px;
+	position: relative;
+	top: -10px;
 	text-transform: uppercase;
 	color: black;
 	letter-spacing: 1px;
