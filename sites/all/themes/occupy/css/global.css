@@ -363,9 +363,7 @@ ul.quicktabs-tabs li.active{
 ul.quicktabs-tabs li a{
 	display: inline-block;
 	height: 100%;
-	padding-top: 0px;
-	padding-left: 12px;
-	padding-right: 12px;
+	padding: 6px 12px;
 	text-decoration: none;
 	background-color: #CFD1D2;	
 }
@@ -931,7 +929,7 @@ ul.quicktabs-tabs li.active a{
 	margin-top: 0;
 	line-height: 32px;
 	position: relative;
-	top: -10px;
+	top: -6px;
 	text-transform: uppercase;
 	color: black;
 	letter-spacing: 1px;
