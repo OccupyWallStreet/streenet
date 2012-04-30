@@ -398,7 +398,7 @@ ul.quicktabs-tabs li.active a{
 #quicktabs-featured .views-slideshow-controls-bottom {
   display: inline-block;
   float: left;
-  margin-left: 25px;
+  margin-left: 12px;
   position: relative;
   top: -38px;
   z-index: 50;
