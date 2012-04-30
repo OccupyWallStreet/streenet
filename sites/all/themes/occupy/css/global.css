@@ -355,13 +355,13 @@ ul.quicktabs-tabs li.active{
 ul.quicktabs-tabs li a{
 	display: inline-block;
 	height: 100%;
-	padding: 4px 12px 2px 12px;
+	padding: 4px 0 2px 0;
 	text-decoration: none;
 	background-color: #CFD1D2;	
 }
 
 ul.quicktabs-tabs li.active a{
-	
+	background-color: #fc0;		
 }
 
 .views_slideshow_main .views-field-field-image {
