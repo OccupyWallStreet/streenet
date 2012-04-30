@@ -346,7 +346,7 @@ ul.quicktabs-tabs li{
 	padding: 0 0 2px 0 !important;
 	margin: 0 1px 0 0;
 	position: relative;
-	top: 2px;
+	top: 1px;
 }
 
 ul.quicktabs-tabs li.active{
