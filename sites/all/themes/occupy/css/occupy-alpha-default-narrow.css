@@ -1,1 +1,22 @@
 /* This file will hold styles that are loaded using the same media query as the narrow grid. */
+/*.stories-block-row{
+	border: 2px #000 solid;
+	width: 100% !important;
+}
+
+.region-preface-second .views-field-field-image,
+.region-preface-second .stories-block-row img{
+	width: 100% !important;
+	height: auto !important;
+}
+
+
+.zone-footer-wrapper .block{
+	float: left;
+}
+
+#region-menu{
+	margin: 0;
+	padding: 0;
+
+}*/
