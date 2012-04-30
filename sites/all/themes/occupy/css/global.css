@@ -459,6 +459,7 @@ ul.quicktabs-tabs li.active a{
 #region-content blockquote{
 	padding-left: 1em;
 	border-left: #dedede;
+	font-size: 1.2em;
 }
 
 #zone-content-wrapper .views-row-1,
