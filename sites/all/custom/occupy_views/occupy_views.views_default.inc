@@ -229,7 +229,7 @@ function occupy_views_views_default_views() {
   $handler->display->display_options['header']['area']['field'] = 'area';
   $handler->display->display_options['header']['area']['empty'] = TRUE;
   $handler->display->display_options['header']['area']['content'] = '<div class="custom-title-wrapper"><div class="custom-title-first">Attend</div><div class="custom-title-second">Actions & Events</div></div>
-There are many OWS-affiliated events taking place every day including assemblies, skill shares, open spaces, direct actions and performances. Come out and participate in democracy in action!';
+The <strong>General Assembly</strong> is an open, participatory, and horizontally organized process through which decisions are made based upon collective agreement or "consensus."';
   $handler->display->display_options['header']['area']['format'] = 'full_html';
   $handler->display->display_options['header']['area']['tokenize'] = 0;
   /* No results behavior: Global: Text area */
@@ -951,7 +951,6 @@ There are many OWS-affiliated events taking place every day including assemblies
   /* Display: Master */
   $handler = $view->new_display('default', 'Master', 'default');
   $handler->display->display_options['css_class'] = 'stories-view-block';
-  $handler->display->display_options['use_more_text'] = 'View Archive';
   $handler->display->display_options['access']['type'] = 'perm';
   $handler->display->display_options['cache']['type'] = 'none';
   $handler->display->display_options['query']['type'] = 'views_query';

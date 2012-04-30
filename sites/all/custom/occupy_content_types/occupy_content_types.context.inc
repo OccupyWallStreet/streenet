@@ -1,13 +1,13 @@
 <?php
 /**
  * @file
- * occupy_articles_events.context.inc
+ * occupy_content_types.context.inc
  */
 
 /**
  * Implements hook_context_default_contexts().
  */
-function occupy_articles_events_context_default_contexts() {
+function occupy_content_types_context_default_contexts() {
   $export = array();
 
   $context = new stdClass();
@@ -34,19 +34,19 @@ function occupy_articles_events_context_default_contexts() {
           'module' => 'views',
           'delta' => 'tags_block-block',
           'region' => 'sidebar_second',
-          'weight' => '-48',
+          'weight' => '-10',
         ),
-        'boxes-join_team_box' => array(
-          'module' => 'boxes',
-          'delta' => 'join_team_box',
+        'block-33' => array(
+          'module' => 'block',
+          'delta' => 33,
           'region' => 'sidebar_second',
-          'weight' => '-47',
+          'weight' => '-9',
         ),
-        'boxes-download_press_kit' => array(
-          'module' => 'boxes',
-          'delta' => 'download_press_kit',
+        'block-34' => array(
+          'module' => 'block',
+          'delta' => 34,
           'region' => 'sidebar_second',
-          'weight' => NULL,
+          'weight' => '-8',
         ),
       ),
     ),
