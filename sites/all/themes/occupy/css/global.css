@@ -360,7 +360,8 @@ ul.quicktabs-tabs li a{
 }
 
 ul.quicktabs-tabs li.active a{
-	background-color: #fc0;		
+	background-color: #fc0;
+	width: 100%;	
 }
 
 .views_slideshow_main .views-field-field-image {
