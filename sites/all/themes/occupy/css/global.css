@@ -343,9 +343,6 @@ ul.quicktabs-tabs li{
 	line-height: 18px;
 	text-transform: uppercase;
 	letter-spacing: 1px;
-/*	padding-bottom:3px;
-*/	position:relative;
-	top: 6px;
 	margin: 0 1px 0 0;
 }
 
@@ -404,6 +401,7 @@ ul.quicktabs-tabs li.active a{
   z-index: 50;
   line-height: 1em;
 }
+
 #quicktabs-featured .views-slideshow-controls-bottom .views-slideshow-pager-field-item {
   color: #666;
   width: 24px;
