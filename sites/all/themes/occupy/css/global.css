@@ -345,6 +345,8 @@ ul.quicktabs-tabs li{
 	letter-spacing: 1px;
 	padding: 0 0 0 0 !important;
 	margin: 0 1px 0 0;
+	position: relative;
+	top: 2px;
 }
 
 ul.quicktabs-tabs li.active{
