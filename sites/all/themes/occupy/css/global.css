@@ -453,7 +453,7 @@ ul.quicktabs-tabs li.active a{
 
 
 #region-content{
-	font-size: 1.25em;
+	font-size: 14px;
 }
 
 #region-content blockquote{
@@ -829,7 +829,7 @@ ul.quicktabs-tabs li.active a{
 }
 
 #my-content-single-featured-story {
-	font-size: 12px;
+	font-size: 14px;
 	position: absolute;
 	bottom: 1em;
 	left: 10px;
