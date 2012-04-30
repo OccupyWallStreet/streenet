@@ -343,12 +343,12 @@ ul.quicktabs-tabs li{
 	line-height: 18px;
 	text-transform: uppercase;
 	letter-spacing: 1px;
+	padding: 0 0 0 0 !important;
 	margin: 0 1px 0 0;
 }
 
 ul.quicktabs-tabs li.active{
 	background: url("/sites/all/themes/files/featured.png") no-repeat scroll center bottom transparent;
-	position: relative;
 	z-index: 999;
 }
 
@@ -361,7 +361,7 @@ ul.quicktabs-tabs li a{
 
 ul.quicktabs-tabs li.active a{
 	background-color: #fc0;
-	width: 100%;	
+	width: 100%;
 }
 
 .views_slideshow_main .views-field-field-image {
