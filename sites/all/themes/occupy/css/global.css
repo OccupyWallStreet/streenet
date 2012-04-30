@@ -158,11 +158,6 @@ ul li.leaf {
 	font-weight: normal;
 }
 
-/*.newsletter-email {
-	float: left;
-	margin: 0 0 0 10px;
-}*/
-
 #email-Primary {
 	float: left;
 	margin: 0;
@@ -216,7 +211,7 @@ ul li.leaf {
 	color: black;
 	outline: 0;
 	padding: 2px 3px;
-	font-size: 13px;
+	font-size: 12px;
 	font-family: Arial, sans-serif;
 	height: 1.8em;
 	border-color: #848484 #C1C1C1 #E1E1E1;
@@ -452,13 +447,14 @@ ul.quicktabs-tabs li.active a{
 /*--------------------------------------------CONTENT----------------------------------------*/
 
 
-#region-content{
+article{
 	font-size: 14px;
 }
 
-#region-content blockquote{
+article blockquote{
 	padding-left: 1em;
-	border-left: #dedede;
+	border-left: 1px #dedede solid;
+	color: #666;
 	font-size: 1.2em;
 }
 
@@ -570,6 +566,8 @@ ul.quicktabs-tabs li.active a{
     min-height: 40px;
     padding: 5px 10px 15px;
     width: 85.5%;
+		font-size: 14px;
+		line-height: 1.2;
 }
 .stories-block-title a {
     color: #000000 !important;
@@ -634,16 +632,17 @@ ul.quicktabs-tabs li.active a{
 	margin-right: 0px !important;
 }
 
-.view-ows-stories-read-page- .stories-block-date {
+.stories-block-date {
 	display: block;
 	background-color: #FFCD05;
 	color: black !important;
 	margin: 0;
 	padding: 10px 10px 0;
 	width: 87%;
+	font-size: 11px;
 }
 
-.view-ows-stories-read-page- .stories-block-title {
+.stories-block-title {
 	display: block;
 	background-color: #FFCD05;
 	color: black !important;
@@ -741,6 +740,7 @@ ul.quicktabs-tabs li.active a{
 	font-size: 27px;
 	letter-spacing: 1px;
 }
+
 #block-views-ows-news-widget-block .views-field-title a{
 	font-size: 15px;
 	text-decoration: none;
@@ -755,6 +755,7 @@ ul.quicktabs-tabs li.active a{
 	min-height: 170px;
 	max-height: 170px;
 }
+
 .news-title-field a {
 	font-family: 'PTSansRegular';
 	font-size: 15px;
@@ -766,9 +767,10 @@ ul.quicktabs-tabs li.active a{
 	font-size: 14px;
 	padding-top: 10px;
 }
+
 .views-field-title-1 a:link, 
 .views-field-title-1 a:visited {
-	font-size: 11px;
+	line-height: 1.2;
 	color: black;
 	text-decoration: none;
 	font-weight: normal;
@@ -949,7 +951,7 @@ ul.quicktabs-tabs li.active a{
 }
 .faq-sidebar-text {
 	color: black;
-	font-size: 13px;
+	font-size: 14px;
 	margin: 0 0 0 40px;
 }
 /*----------------------------------------BEGIN CONTRIBUTE PAGE------------------------------------*/
@@ -1091,14 +1093,6 @@ ul.quicktabs-tabs li.active a{
 	float: left;
 }
 
-/*.blackthing {
-	background: url('/sites/all/themes/files/blackthing.png') no-repeat;
-	padding: 15px 20px;
-	font-size: 0;
-	float: right;
-	margin: 0px 0 0 10px;
-}
-*/
 /*--------------------------------------------BLOCKS (Bottom Row)------------------------------------*/
 .block-16, .block-17, .block-18 {
 	background: #EDEDED;
@@ -1177,7 +1171,7 @@ ul.quicktabs-tabs li.active a{
 	font-weight: bolder;
 }
 .contact-text {
-	font-size: 13px;
+	font-size: 14px;
 	color: black;
 	float: left;
 	padding: 4px 10px 0 0;
@@ -1189,7 +1183,7 @@ ul.quicktabs-tabs li.active a{
 	float: left;
 }
 .contact-bold-text {
-	font-size: 13px;
+	font-size: 14px;
 	font-weight: bold;
 }
 .contact-phone-background {
@@ -1203,7 +1197,7 @@ ul.quicktabs-tabs li.active a{
 }
 .contact-phone-text {
 	color: #fff;
-	font-size: 13px;
+	font-size: 14px;
 }
 /*---------------------------------POSTSCRIPT ZONE---------------------------------*/
 #zone-postscript-wrapper {
