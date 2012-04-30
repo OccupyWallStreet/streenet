@@ -452,6 +452,15 @@ ul.quicktabs-tabs li.active a{
 /*--------------------------------------------CONTENT----------------------------------------*/
 
 
+#region-content{
+	font-size: 1.25em;
+}
+
+#region-content blockquote{
+	padding-left: 1em;
+	border-left: #dedede;
+}
+
 #zone-content-wrapper .views-row-1,
 #zone-content-wrapper .views-row-5,
 #zone-content-wrapper .views-row-9,
@@ -671,7 +680,7 @@ ul.quicktabs-tabs li.active a{
 	float: left;
 	text-transform: uppercase;
 	letter-spacing: 1px;
-	margin-right: .25em;
+	margin: 0 .25em .25em 0;
 }
 
 .block-views-tags-block-block .tags-block-tag{
