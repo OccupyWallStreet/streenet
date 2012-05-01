@@ -182,7 +182,7 @@ $databases = array (
   array (
     'default' => 
     array (
-      'database' => 'occupy2',
+      'database' => 'occupy',
       'username' => 'occupy',
       'password' => 'password',
       'host' => 'localhost',

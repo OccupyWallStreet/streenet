@@ -64,14 +64,12 @@ h1.site-name, h2.site-name {
     color: #FFFFFF;
     text-decoration: none;
 }
-.site-slogan, .block-menu {
+.site-slogan, 
+.block-menu {
     color: #FECD48;
     font-size: 1.7em;
     font-weight: normal;
     letter-spacing: 2px;
-}
-.site-slogan{
-	font-size: 1.5em;
 }
 /*---------------------------------------------MAIN MENU-----------------------------------------*/
 li.expanded, li.collapsed, li.leaf {
@@ -123,6 +121,7 @@ ul li.leaf {
 	padding: 20px 0;
 	width: 100%;
 	color: #3A3A3A;
+	letter-spacing: .1em;
 }
 /*-----------------------------------------NEWSLETTER FORM------------------------------------*/
 .block-15 {
@@ -665,6 +664,10 @@ article blockquote{
 	margin: 0;
 	padding: 0 15px 0 0;
 }
+.field-name-field-image-caption {
+	margin: 0;
+}
+	
 .field-name-body {
 	margin: 0;
 	padding: 0;
