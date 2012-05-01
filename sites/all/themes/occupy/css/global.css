@@ -450,11 +450,14 @@ article{
 	font-size: 14px;
 }
 
-article ul{
+article ul,
+article ol{
 	list-style-position: inside;
 }
 
 article blockquote{
+	clear: both;
+	margin-left: 1em;
 	padding-left: 1em;
 	border-left: 1px #dedede solid;
 	color: #666;
