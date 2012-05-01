@@ -343,28 +343,26 @@ ul.quicktabs-tabs li{
 	line-height: 18px;
 	text-transform: uppercase;
 	letter-spacing: 1px;
-/*	padding-bottom:3px;
-*/	position:relative;
-	top: 6px;
+	padding: 0 0 2px 0 !important;
 	margin: 0 1px 0 0;
+	position: relative;
+	top: 1px;
 }
 
 ul.quicktabs-tabs li.active{
 	background: url("/sites/all/themes/files/featured.png") no-repeat scroll center bottom transparent;
-	position: relative;
 	z-index: 999;
 }
 
 ul.quicktabs-tabs li a{
 	display: inline-block;
-	height: 100%;
 	padding: 4px 12px 2px 12px;
 	text-decoration: none;
 	background-color: #CFD1D2;	
 }
 
 ul.quicktabs-tabs li.active a{
-	background-color: #fc0;		
+	background-color: #fc0;
 }
 
 .views_slideshow_main .views-field-field-image {
@@ -404,6 +402,7 @@ ul.quicktabs-tabs li.active a{
   z-index: 50;
   line-height: 1em;
 }
+
 #quicktabs-featured .views-slideshow-controls-bottom .views-slideshow-pager-field-item {
   color: #666;
   width: 24px;
