@@ -457,7 +457,8 @@ article ol{
 
 article blockquote{
 	clear: both;
-	margin: 1em 0 0 1em;
+	margin: 0 0 0 1em;
+	padding-top: 1em;
 	padding-left: 1em;
 	border-left: 1px #dedede solid;
 	color: #666;
