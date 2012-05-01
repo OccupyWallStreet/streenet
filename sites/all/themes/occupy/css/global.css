@@ -566,14 +566,15 @@ article blockquote{
 
 .stories-block-title {
     display: block;
-		background-color: #FFCD05;
+	background-color: #FFCD05;
     color: #000000 !important;
     margin-bottom: 15px;
     min-height: 40px;
+    max-height: 40px;
     padding: 5px 10px 15px;
     width: 85.5%;
-		font-size: 14px;
-		line-height: 1.2;
+	font-size: 14px;
+	line-height: 1.2;
 }
 .stories-block-title a {
     color: #000000 !important;
