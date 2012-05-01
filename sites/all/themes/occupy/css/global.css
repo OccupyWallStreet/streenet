@@ -673,9 +673,15 @@ article blockquote{
 	padding: 0 15px 0 0;
 }
 .field-name-field-image-caption {
-	margin: 0;
+	padding: 0px 50px 0px 0px;
+	float: left;
+	font-size: 12px;
 }
-	
+.field-name-field-image-source {
+	padding: 0px 120px 10px 0;
+	float: left;
+	font-size: 12px;
+}
 .field-name-body {
 	margin: 0;
 	padding: 0;
