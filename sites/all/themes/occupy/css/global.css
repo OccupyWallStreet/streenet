@@ -654,6 +654,7 @@ article blockquote{
 	color: black !important;
 	margin-bottom: 15px;
 	min-height: 40px;
+	max-height: 40px;
 	padding: 5px 10px 15px;
 	width: 85%;
 }
@@ -1142,7 +1143,7 @@ article blockquote{
 .contact-page-block-wrapper {
 	padding: 10px 20px;
 	background: #ddd;
-	min-height: 200px;
+	min-height: 250px;
 }
 .shipping-block-title {
 	font-size: 40px;
