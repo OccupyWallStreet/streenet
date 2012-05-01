@@ -450,6 +450,10 @@ article{
 	font-size: 14px;
 }
 
+article ul{
+	list-style-position: inside;
+}
+
 article blockquote{
 	padding-left: 1em;
 	border-left: 1px #dedede solid;
