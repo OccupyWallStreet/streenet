@@ -7,6 +7,7 @@
 h1, h2, h3, h4{
 	font-family: 'LeagueGothicRegular';	
 	font-weight: normal;
+	text-transform: uppercase;
 }
 h1 {
 	font-size: 40px;
@@ -64,12 +65,14 @@ h1.site-name, h2.site-name {
     color: #FFFFFF;
     text-decoration: none;
 }
-.site-slogan, 
-.block-menu {
+.site-slogan, .block-menu {
     color: #FECD48;
     font-size: 1.7em;
     font-weight: normal;
     letter-spacing: 2px;
+}
+.site-slogan{
+	font-size: 1.5em;
 }
 /*---------------------------------------------MAIN MENU-----------------------------------------*/
 li.expanded, li.collapsed, li.leaf {
@@ -121,7 +124,6 @@ ul li.leaf {
 	padding: 20px 0;
 	width: 100%;
 	color: #3A3A3A;
-	letter-spacing: .1em;
 }
 /*-----------------------------------------NEWSLETTER FORM------------------------------------*/
 .block-15 {
@@ -445,25 +447,6 @@ ul.quicktabs-tabs li.active a{
 /*--------------------------------------------CONTENT----------------------------------------*/
 
 
-article{
-	font-size: 14px;
-}
-
-article ul,
-article ol{
-	list-style-position: inside;
-}
-
-article blockquote{
-	clear: both;
-	margin: 0 0 0 1em;
-	padding-top: 1em;
-	padding-left: 1em;
-	border-left: 1px #dedede solid;
-	color: #666;
-	font-size: 1.2em;
-}
-
 #zone-content-wrapper .views-row-1,
 #zone-content-wrapper .views-row-5,
 #zone-content-wrapper .views-row-9,
@@ -488,6 +471,9 @@ article blockquote{
 	margin-right: 0;
 }
 
+#block-system-main {
+	
+}
 
 
 /*---------------------------------------STORIES BLOCK OF 8----------------------------------*/
@@ -505,24 +491,35 @@ article blockquote{
 }
 
 .cat-head-GA{
-	border-bottom: 1px #2F89BA solid;
-	color: #2F89BA;
+	border-bottom: 1px #fc0; solid;
+	color: #fc0;
 }
 
 .cat-head-News{
-	border-bottom: 1px #666 solid;
-	color: #666;
+	border-bottom: 1px #B50028 solid;
+	color: #B50028
 }
 
 .cat-head-Feature{
-	color: #fc0;
-	border-bottom: 1px #fc0 solid
+	color: #FFCD05;
+	border-bottom: 1px #FFCD05 solid
 }
 
 .cat-head-Event{
 	color: #F4922E;
 	border-bottom: 1px #F4922E solid
 }
+
+.cat-head-Editorial{
+	color: #3088B9;
+	border-bottom: 1px #3088B9 solid
+}
+
+.cat-head-Analysis{
+	color: #2F89BA;
+	border-bottom: 1px #2F89BA solid
+}
+
 
 .block-syndicate {
 	float: left;
@@ -566,15 +563,14 @@ article blockquote{
 
 .stories-block-title {
     display: block;
-	background-color: #FFCD05;
+		background-color: #FFCD05;
     color: #000000 !important;
     margin-bottom: 15px;
     min-height: 40px;
-    max-height: 40px;
     padding: 5px 10px 15px;
     width: 85.5%;
-	font-size: 14px;
-	line-height: 1.2;
+		font-size: 14px;
+		line-height: 1.2;
 }
 .stories-block-title a {
     color: #000000 !important;
@@ -660,6 +656,116 @@ article blockquote{
 }
 
 /*---------------------------------------------ARTICLE NODES------------------------------------------*/
+article {
+	font-size: 14px;
+}
+
+article p {
+	line-height: 1.5em;
+}
+
+article .field-name-body {}
+
+article .field-name-body h2 {
+	letter-spacing: .5px;
+	margin-bottom: 5px;
+}
+
+article blockquote,
+article blockquote p {
+	font-size: 27px;
+	line-height: 1.2em;
+	margin-right: 25px;
+	margin-left: 25px;	
+}
+
+article blockquote p {
+	font-family: 'LeagueGothicRegular';	
+	font-weight: normal;
+	text-transform: uppercase;
+}
+
+article blockquote p:before {
+	content: '\2018 ';
+	height: 0;
+	margin-left: -.15em;
+}
+
+article blockquote p:after {
+	content: ' \2019';
+	height: 0;
+}
+
+/*Story Metadata*/
+article .field-name-field-author,
+article .field-name-field-source,
+article .field-name-field-image-caption,
+article .field-name-field-image-source {
+	font-size: 12px;
+	color:#aeaeae;
+}
+
+article .field-name-field-source .field-label {
+	font-weight: normal;
+}
+
+article .field-name-field-author .field-item:before {
+	content:'By ';
+}
+
+article .field-name-field-image-caption,
+article .field-name-field-image-source {
+	float: left;
+	padding: 0;
+	display: inline;
+	margin: 0 15px 15px 0;
+}
+
+article .field-name-field-image-caption,
+article .caption {
+	clear: left;
+	/*text-transform: uppercase;*/
+	width: 288px;
+	padding-left: 12px;
+}
+
+article .field-name-field-image-source {
+	width: 213px;
+	padding-right: 12px;
+}
+
+article .field-name-field-image-source .field-label {
+	font-weight: normal;
+}
+
+article .field-name-field-date {}
+article .field-name-field-date .field-label {}
+
+/*Event Story Type*/
+.node-type-event .field-name-field-date .field-label,
+.node-type-event .field-name-field-date .field-item,
+.node-type-event .addressfield-container-inline:before {
+	font-family: 'LeagueGothicRegular';	
+	font-weight: normal;
+	text-transform: uppercase;
+	font-size: 24px;
+}
+
+.node-type-event .addressfield-container-inline {}
+
+.node-type-event > .field-name-field-address .name-block:before {
+	content:"Location\a";
+	white-space: pre;
+}
+
+.node-type-event .field-name-field-address .country {
+	display: none;
+}
+
+.node-type-event .field-name-field-address .field-items {
+	padding-bottom: 45px;
+}
+
 #quicktabs-learn{
 	margin-top: 1em;
 }
@@ -667,21 +773,17 @@ article blockquote{
 	margin-top: 1.5em;
 }
 
-.field-name-field-image{
+.field-name-field-image {
 	float: left;
 	margin: 0;
-	padding: 0 15px 0 0;
+	padding: 0 15px 15px 0;
 }
-.field-name-field-image-caption {
-	padding: 0px 50px 0px 0px;
-	float: left;
-	font-size: 12px;
-}
-.field-name-field-image-source {
-	padding: 0px 120px 10px 0;
-	float: left;
-	font-size: 12px;
-}
+
+/*article .field-items img {
+	padding-top: 15px;
+	padding-bottom: 27px;
+}*/
+
 .field-name-body {
 	margin: 0;
 	padding: 0;
@@ -743,7 +845,6 @@ article blockquote{
 /*-------------------------------------------------NEWS-----------------------------------------------*/
 
 .block-views-ows-news-widget-block{
-	
 }
 
 .views-field-timestamp{
@@ -1153,7 +1254,7 @@ article blockquote{
 .contact-page-block-wrapper {
 	padding: 10px 20px;
 	background: #ddd;
-	min-height: 250px;
+	min-height: 200px;
 }
 .shipping-block-title {
 	font-size: 40px;
