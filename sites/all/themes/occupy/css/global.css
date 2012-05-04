@@ -675,8 +675,8 @@ article blockquote,
 article blockquote p {
 	font-size: 27px;
 	line-height: 1.2em;
-	margin-right: 25px;
-	margin-left: 25px;	
+	margin-right: 20px;
+	margin-left: 20px;	
 }
 
 article blockquote p {
@@ -705,7 +705,10 @@ article .field-name-field-image-source {
 	color:#aeaeae;
 }
 
-article .field-name-field-source .field-label {
+article .field-name-field-author .field-label,
+article .field-name-field-source .field-label,
+article .field-name-field-image-caption .field-label,
+article .field-name-field-image-source .field-label {
 	font-weight: normal;
 }
 
