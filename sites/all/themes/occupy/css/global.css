@@ -664,10 +664,15 @@ article p {
 	line-height: 1.5em;
 }
 
-article .field-name-body {}
-
-article .field-name-body h2 {
+article h1,
+article h2,
+article h3 {
 	letter-spacing: .5px;
+	line-height: 1.2em;
+}
+
+article h2,
+article h3 {
 	margin-bottom: 5px;
 }
 
@@ -696,13 +701,18 @@ article blockquote p:after {
 	height: 0;
 }
 
+article cite{
+	color:#aeaeae;
+	font-style: italic;
+}
+
 /*Story Metadata*/
 article .field-name-field-author,
 article .field-name-field-source,
 article .field-name-field-image-caption,
 article .field-name-field-image-source {
 	font-size: 12px;
-	color:#eaeaea;
+	color:#aeaeae;
 }
 
 article .field-name-field-author .field-label,
@@ -756,7 +766,7 @@ article .field-name-field-date .field-label {}
 
 .node-type-event .addressfield-container-inline {}
 
-.node-type-event > .field-name-field-address .name-block:before {
+.node-type-event .field-name-field-address .name-block:before {
 	content:"Location\a";
 	white-space: pre;
 }
