@@ -475,10 +475,33 @@ ul.quicktabs-tabs li.active a{
 	
 }
 
+/*------------------------------------------ Story Cards ------------------------------------------*/ 
+
+.ows-stories-content{
+	background: #ffcd05;
+	width: 85%;
+	padding: 5%;
+	max-height: 240px;
+}
+
+.ows-stories-content h5 a{
+	text-decoration: none;
+	color: ;
+}
+
+
+/*------------------------------------------STORIES BLOCK OF 4----------------------------------------*/
+
+.view-ows-stories-read-page- .stories-block-row {
+	display: block;
+	background-color: white;
+	float: left;
+	width: 50%;
+}
 
 /*---------------------------------------STORIES BLOCK OF 8----------------------------------*/
 
-#storiestitle {
+#title {
 	text-transform: uppercase;
 	letter-spacing: 1px;
 	float: left;
@@ -491,7 +514,7 @@ ul.quicktabs-tabs li.active a{
 }
 
 .cat-head-GA{
-	border-bottom: 1px #fc0; solid;
+	border-bottom: 1px #fc0 solid;
 	color: #fc0;
 }
 
@@ -545,38 +568,25 @@ ul.quicktabs-tabs li.active a{
     width: 25%;
 }
 
+.stories-block-date a:visited,
 .stories-block-date {
     display: block;
-		background-color: #FFCD05;
-    color: #000000 !important;
-    margin: 0;
-    padding: 10px 10px 0;
-    width: 85.5%;
-}
-
-.stories-block-date a:visited {
     display: block;
-    background-color: #666766;
-    color: #FFFFFF;
-    padding: 10px 10px 0;
 }
 
 .stories-block-title {
-    display: block;
-		background-color: #FFCD05;
-    color: #000000 !important;
     margin-bottom: 15px;
-    min-height: 40px;
-    padding: 5px 10px 15px;
-    width: 85.5%;
+		/*min-height: 40px;*/
 		font-size: 14px;
 		line-height: 1.2;
 }
+
 .stories-block-title a {
-    color: #000000 !important;
+    color: #000;
     font-weight: bold;
     text-decoration: none;
 }
+
 .stories-block-title a:visited {
     margin-bottom: 15px;
     min-height: 40px;
@@ -622,6 +632,7 @@ ul.quicktabs-tabs li.active a{
 .more-link a {
 	color: #000;
 }
+
 /*------------------------------------------STORIES BLOCK OF 4----------------------------------------*/
 .view-ows-stories-read-page- .stories-block-row {
 	display: block;
