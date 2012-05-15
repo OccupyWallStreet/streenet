@@ -951,6 +951,7 @@ There are many OWS-affiliated events taking place every day including assemblies
   /* Display: Master */
   $handler = $view->new_display('default', 'Master', 'default');
   $handler->display->display_options['css_class'] = 'stories-view-block';
+  $handler->display->display_options['use_more'] = TRUE;
   $handler->display->display_options['use_more_text'] = 'View Archive';
   $handler->display->display_options['access']['type'] = 'perm';
   $handler->display->display_options['cache']['type'] = 'none';
@@ -1157,7 +1158,7 @@ There are many OWS-affiliated events taking place every day including assemblies
   $handler = $view->new_display('page', 'Page', 'page_1');
   $handler->display->display_options['defaults']['pager'] = FALSE;
   $handler->display->display_options['pager']['type'] = 'some';
-  $handler->display->display_options['pager']['options']['items_per_page'] = '0';
+  $handler->display->display_options['pager']['options']['items_per_page'] = '8';
   $handler->display->display_options['pager']['options']['offset'] = '4';
   $handler->display->display_options['defaults']['header'] = FALSE;
   $handler->display->display_options['path'] = 'read';

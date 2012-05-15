@@ -27,6 +27,7 @@ function occupy_boxes_default_box() {
 	<div class="contact-number-text">855 NYCGA 411 (855-692-4241)</div>
 	<div class="contact-phone-text">Toll-free, real time voice access to events, schedule and announcements</div>
 </div>
+<p>&nbsp;</p>
 ',
       'format' => 'full_html',
     ),
