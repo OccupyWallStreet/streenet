@@ -549,6 +549,7 @@ function occupy_content_types_field_default_fields() {
       'required' => 1,
       'settings' => array(
         'alt_field' => 0,
+        'default_image' => 0,
         'file_directory' => 'event_images',
         'file_extensions' => 'png gif jpg jpeg',
         'max_filesize' => '',
@@ -845,6 +846,7 @@ function occupy_content_types_field_default_fields() {
       'required' => 0,
       'settings' => array(
         'alt_field' => 0,
+        'default_image' => 0,
         'file_directory' => '',
         'file_extensions' => 'png gif jpg jpeg',
         'max_filesize' => '',
@@ -1572,6 +1574,7 @@ function occupy_content_types_field_default_fields() {
       'required' => 0,
       'settings' => array(
         'alt_field' => 1,
+        'default_image' => 0,
         'file_directory' => 'story_images',
         'file_extensions' => 'png gif jpg jpeg',
         'max_filesize' => '',
@@ -1919,7 +1922,7 @@ function occupy_content_types_field_default_fields() {
       'entity_type' => 'node',
       'field_name' => 'field_tags',
       'label' => 'Tags',
-      'required' => 0,
+      'required' => 1,
       'settings' => array(
         'user_register_form' => FALSE,
       ),
