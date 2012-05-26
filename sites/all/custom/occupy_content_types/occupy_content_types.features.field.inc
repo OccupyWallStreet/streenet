@@ -1413,18 +1413,17 @@ function occupy_content_types_field_default_fields() {
       'description' => '',
       'display' => array(
         'default' => array(
-          'label' => 'hidden',
+          'label' => 'inline',
           'module' => 'text',
           'settings' => array(),
           'type' => 'text_default',
           'weight' => '0',
         ),
         'teaser' => array(
-          'label' => 'hidden',
-          'module' => 'text',
+          'label' => 'above',
           'settings' => array(),
-          'type' => 'text_default',
-          'weight' => '3',
+          'type' => 'hidden',
+          'weight' => 0,
         ),
       ),
       'entity_type' => 'node',
@@ -1492,7 +1491,7 @@ function occupy_content_types_field_default_fields() {
           'label' => 'above',
           'settings' => array(),
           'type' => 'hidden',
-          'weight' => '6',
+          'weight' => 0,
         ),
       ),
       'entity_type' => 'node',
@@ -1642,7 +1641,7 @@ function occupy_content_types_field_default_fields() {
           'label' => 'above',
           'settings' => array(),
           'type' => 'hidden',
-          'weight' => '4',
+          'weight' => 0,
         ),
       ),
       'entity_type' => 'node',
@@ -1709,7 +1708,7 @@ function occupy_content_types_field_default_fields() {
           'label' => 'above',
           'settings' => array(),
           'type' => 'hidden',
-          'weight' => '5',
+          'weight' => 0,
         ),
       ),
       'entity_type' => 'node',
@@ -1727,83 +1726,6 @@ function occupy_content_types_field_default_fields() {
         ),
         'type' => 'text_textfield',
         'weight' => '6',
-      ),
-    ),
-  );
-
-  // Exported field: 'node-story-field_publish_date'
-  $fields['node-story-field_publish_date'] = array(
-    'field_config' => array(
-      'active' => '1',
-      'cardinality' => '1',
-      'deleted' => '0',
-      'entity_types' => array(),
-      'field_name' => 'field_publish_date',
-      'foreign keys' => array(),
-      'indexes' => array(),
-      'module' => 'date',
-      'settings' => array(
-        'cache_count' => '4',
-        'cache_enabled' => 0,
-        'granularity' => array(
-          'day' => 'day',
-          'hour' => 0,
-          'minute' => 0,
-          'month' => 'month',
-          'second' => 0,
-          'year' => 'year',
-        ),
-        'timezone_db' => '',
-        'todate' => '',
-        'tz_handling' => 'none',
-      ),
-      'translatable' => '0',
-      'type' => 'datetime',
-    ),
-    'field_instance' => array(
-      'bundle' => 'story',
-      'deleted' => '0',
-      'description' => '',
-      'display' => array(
-        'default' => array(
-          'label' => 'above',
-          'settings' => array(),
-          'type' => 'hidden',
-          'weight' => '9',
-        ),
-        'teaser' => array(
-          'label' => 'hidden',
-          'module' => 'date',
-          'settings' => array(),
-          'type' => 'date_plain',
-          'weight' => '2',
-        ),
-      ),
-      'entity_type' => 'node',
-      'field_name' => 'field_publish_date',
-      'label' => 'Publish Date',
-      'required' => 1,
-      'settings' => array(
-        'default_value' => 'now',
-        'default_value2' => 'same',
-        'default_value_code' => '',
-        'default_value_code2' => '',
-        'user_register_form' => FALSE,
-      ),
-      'widget' => array(
-        'active' => 1,
-        'module' => 'date',
-        'settings' => array(
-          'display_all_day' => 0,
-          'increment' => '15',
-          'input_format' => 'm/d/Y - g:i:sa',
-          'input_format_custom' => '',
-          'label_position' => 'above',
-          'text_parts' => array(),
-          'year_range' => '-3:+3',
-        ),
-        'type' => 'date_popup',
-        'weight' => '3',
       ),
     ),
   );
@@ -1853,7 +1775,7 @@ function occupy_content_types_field_default_fields() {
           'label' => 'above',
           'settings' => array(),
           'type' => 'hidden',
-          'weight' => '8',
+          'weight' => '2',
         ),
       ),
       'entity_type' => 'node',
@@ -1925,7 +1847,7 @@ function occupy_content_types_field_default_fields() {
           'label' => 'above',
           'settings' => array(),
           'type' => 'hidden',
-          'weight' => '7',
+          'weight' => 0,
         ),
       ),
       'entity_type' => 'node',
@@ -1994,7 +1916,7 @@ function occupy_content_types_field_default_fields() {
           'label' => 'above',
           'settings' => array(),
           'type' => 'hidden',
-          'weight' => '9',
+          'weight' => '3',
         ),
       ),
       'entity_type' => 'node',
@@ -2162,7 +2084,6 @@ function occupy_content_types_field_default_fields() {
   t('Image');
   t('Image Caption');
   t('Image Source');
-  t('Publish Date');
   t('Source');
   t('Tags');
   t('Video');
