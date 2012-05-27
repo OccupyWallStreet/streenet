@@ -768,6 +768,10 @@ article .field-name-field-date .field-label {}
 /*Event Story Type*/
 .node-type-event .field-name-field-date .field-label,
 .node-type-event .field-name-field-date .field-item,
+.node-type-event .field-name-field-address .field-label,
+.node-type-event .field-name-field-address .street-block,
+.node-type-event .field-name-field-address .thoroughfare,
+.node-type-event .field-name-field-address .locality-block,
 .node-type-event .addressfield-container-inline:before {
 	font-family: 'LeagueGothicRegular';	
 	font-weight: normal;
@@ -775,12 +779,23 @@ article .field-name-field-date .field-label {}
 	font-size: 24px;
 }
 
+.node-type-event .field-name-field-date .field-item,
+.node-type-event .field-name-field-address .street-block,
+.node-type-event .field-name-field-address .thoroughfare,
+.node-type-event .field-name-field-address .locality-block {
+	line-height: 1.1em;
+}
+
+.node-type-event .field-name-field-address .field-label {
+	padding-top: 15px;
+}
+
 .node-type-event .addressfield-container-inline {}
 
-.node-type-event .field-name-field-address .name-block:before {
+/*.node-type-event .field-name-field-address .name-block:before {
 	content:"Location\a";
 	white-space: pre;
-}
+}*/
 
 .node-type-event .field-name-field-address .country {
 	display: none;
