@@ -530,8 +530,8 @@ function occupy_content_types_field_default_fields() {
           'label' => 'hidden',
           'module' => 'image',
           'settings' => array(
-            'image_link' => '',
-            'image_style' => '',
+            'image_link' => 'file',
+            'image_style' => 'story-node-image',
           ),
           'type' => 'image',
           'weight' => '1',
@@ -857,7 +857,7 @@ function occupy_content_types_field_default_fields() {
       ),
       'widget' => array(
         'active' => 1,
-        'module' => 'media',
+        'module' => 'image',
         'settings' => array(
           'allowed_schemes' => array(
             'private' => 'private',
@@ -869,9 +869,10 @@ function occupy_content_types_field_default_fields() {
             'image' => 'image',
             'video' => 0,
           ),
+          'preview_image_style' => 'thumbnail',
           'progress_indicator' => 'throbber',
         ),
-        'type' => 'media_generic',
+        'type' => 'image_image',
         'weight' => '2',
       ),
     ),
@@ -1551,8 +1552,8 @@ function occupy_content_types_field_default_fields() {
           'label' => 'hidden',
           'module' => 'image',
           'settings' => array(
-            'image_link' => '',
-            'image_style' => '540x380',
+            'image_link' => 'file',
+            'image_style' => 'story-node-image',
           ),
           'type' => 'image',
           'weight' => '2',
