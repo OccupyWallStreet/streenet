@@ -1549,8 +1549,8 @@ function occupy_content_types_field_default_fields() {
           'label' => 'hidden',
           'module' => 'image',
           'settings' => array(
-            'image_link' => 'file',
-            'image_style' => 'story-node-image',
+            'image_link' => '',
+            'image_style' => '380w-story-node',
           ),
           'type' => 'image',
           'weight' => '2',
