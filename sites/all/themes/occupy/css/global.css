@@ -741,21 +741,25 @@ article .field-name-field-image-caption,
 article .field-name-field-image-source {
 	float: left;
 	padding: 0;
-	display: inline;
 	margin: 0 15px 15px 0;
+	/* border:1px solid red; */
 }
 
 article .field-name-field-image-caption,
 article .caption {
 	clear: left;
 	/*text-transform: uppercase;*/
-	width: 288px;
+	width: 200px;
 	padding-left: 12px;
+	padding-right: 167px;
+	/* border:1px dotted green; */
 }
 
 article .field-name-field-image-source {
-	width: 213px;
+	width: 140px;
+	margin-left: -170px;
 	padding-right: 12px;
+	text-align: right;
 }
 
 article .field-name-field-image-source .field-label {
