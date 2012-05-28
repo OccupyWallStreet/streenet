@@ -913,7 +913,7 @@ There are many OWS-affiliated events taking place every day including assemblies
   $handler->display->display_options['fields']['description']['alter']['max_length'] = '175';
   $handler->display->display_options['fields']['description']['alter']['word_boundary'] = 0;
   $handler->display->display_options['fields']['description']['alter']['ellipsis'] = 0;
-  $handler->display->display_options['fields']['description']['alter']['more_link'] = 1;
+  $handler->display->display_options['fields']['description']['alter']['more_link'] = 0;
   $handler->display->display_options['fields']['description']['alter']['more_link_text'] = 'Read More';
   $handler->display->display_options['fields']['description']['alter']['strip_tags'] = 1;
   $handler->display->display_options['fields']['description']['alter']['trim'] = 1;
