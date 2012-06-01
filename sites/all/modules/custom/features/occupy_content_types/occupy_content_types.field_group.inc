@@ -77,6 +77,38 @@ function occupy_content_types_field_group_info() {
   $field_group = new stdClass();
   $field_group->disabled = FALSE; /* Edit this to true to make a default field_group disabled initially */
   $field_group->api_version = 1;
+  $field_group->identifier = 'group_image_meta_wrapper|node|story|default';
+  $field_group->group_name = 'group_image_meta_wrapper';
+  $field_group->entity_type = 'node';
+  $field_group->bundle = 'story';
+  $field_group->mode = 'default';
+  $field_group->parent_name = 'group_image_wrapper';
+  $field_group->data = array(
+    'label' => 'Image Metadata',
+    'weight' => '4',
+    'children' => array(
+      0 => 'field_image_caption',
+      1 => 'field_image_source',
+    ),
+    'format_type' => 'div',
+    'format_settings' => array(
+      'label' => 'Image Metadata',
+      'instance_settings' => array(
+        'classes' => 'image-metadata-wrapper',
+        'description' => '',
+        'show_label' => '0',
+        'label_element' => 'h3',
+        'effect' => 'none',
+        'speed' => 'fast',
+      ),
+      'formatter' => 'open',
+    ),
+  );
+  $export['group_image_meta_wrapper|node|story|default'] = $field_group;
+
+  $field_group = new stdClass();
+  $field_group->disabled = FALSE; /* Edit this to true to make a default field_group disabled initially */
+  $field_group->api_version = 1;
   $field_group->identifier = 'group_image_wrapper|node|event|default';
   $field_group->group_name = 'group_image_wrapper';
   $field_group->entity_type = 'node';
@@ -88,8 +120,8 @@ function occupy_content_types_field_group_info() {
     'weight' => '1',
     'children' => array(
       0 => 'field_image',
-      1 => 'field_image_source',
-      2 => 'field_image_caption',
+      1 => 'field_image_caption',
+      2 => 'field_image_source',
     ),
     'format_type' => 'div',
     'format_settings' => array(
@@ -121,8 +153,7 @@ function occupy_content_types_field_group_info() {
     'weight' => '3',
     'children' => array(
       0 => 'field_image',
-      1 => 'field_image_caption',
-      2 => 'field_image_source',
+      1 => 'group_image_meta_wrapper',
     ),
     'format_type' => 'div',
     'format_settings' => array(
