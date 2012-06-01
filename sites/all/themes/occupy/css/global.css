@@ -767,66 +767,40 @@ article cite{
 		}
 		.field-name-field-image-caption {}
 
-
-/*Event Story Type*/
-.node-type-event .field-name-field-date .field-label,
-.node-type-event .field-name-field-date .field-item,
-.node-type-event .field-name-field-address .field-label,
-.node-type-event .field-name-field-address .street-block,
-.node-type-event .field-name-field-address .thoroughfare,
-.node-type-event .field-name-field-address .locality-block,
-.node-type-event .addressfield-container-inline:before {
-	font-family: 'LeagueGothicRegular';	
-	font-weight: normal;
-	text-transform: uppercase;
-	font-size: 24px;
+/*Event Content Type*/
+.group_event_details {
+	width:285px;;
+	margin-left: 400px;
 }
 
-.node-type-event .field-name-field-date .field-item,
-.node-type-event .field-name-field-address .street-block,
-.node-type-event .field-name-field-address .thoroughfare,
-.node-type-event .field-name-field-address .locality-block {
-	line-height: 1.1em;
-}
+	.group_event_details .field-name-field-address {
+		padding-top:15px;
+	}
 
-.node-type-event .field-name-field-address .field-label {
-	padding-top: 15px;
-}
+	.group_event_details .field-label,
+	.group_event_details .field-item,
+	.group_event_details .name-block,
+	.group_event_details .street-block,
+	.group_event_details .locality-block,
+	.group_event_details .thoroughfare {
+		font-family: 'LeagueGothicRegular' !important;	
+		font-weight: normal;
+		text-transform: uppercase;
+	}
+	.group_event_details .field-label {
+		font-size: 27px;	
+	}
+	.group_event_details .field-item {
+		font-size: 23px;	
+	}
 
-.node-type-event .addressfield-container-inline {}
-
-/*.node-type-event .field-name-field-address .name-block:before {
-	content:"Location\a";
-	white-space: pre;
-}*/
-
-.node-type-event .field-name-field-address .country {
-	display: none;
-}
-
-.node-type-event .field-name-field-address .field-items {
-	padding-bottom: 45px;
-}
-
+/*Quicktabs*/
 #quicktabs-learn{
 	margin-top: 1em;
 }
 #quicktabs-learn article{
 	margin-top: 1.5em;
 }
-
-/*
-.field-name-field-image {
-	float: left;
-	margin: 0;
-	padding: 0 15px 15px 0;
-}
-*/
-
-/*article .field-items img {
-	padding-top: 15px;
-	padding-bottom: 27px;
-}*/
 
 .field-name-body {
 	margin: 0;
