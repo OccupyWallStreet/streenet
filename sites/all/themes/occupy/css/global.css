@@ -771,6 +771,7 @@ article cite{
 .group_event_details {
 	width:285px;;
 	margin-left: 400px;
+	padding-bottom: 15px;
 }
 
 	.group_event_details .field-name-field-address {
@@ -786,12 +787,18 @@ article cite{
 		font-family: 'LeagueGothicRegular' !important;	
 		font-weight: normal;
 		text-transform: uppercase;
+		line-height: 1.25em;
 	}
 	.group_event_details .field-label {
 		font-size: 27px;	
 	}
 	.group_event_details .field-item {
 		font-size: 23px;	
+	}
+	/*Fix formatting from /sites/all/modules/addressfield/addressfield.css*/
+	.group_event_details .addressfield-container-inline:after {
+		content:inherit;
+		clear: none;
 	}
 
 /*Quicktabs*/
