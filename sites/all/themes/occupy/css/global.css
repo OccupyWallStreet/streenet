@@ -1489,6 +1489,7 @@ color: #000;
 }
 
 .pager li a {
+  color: #ffde96;
   display: inline-block;
 }
 
@@ -1500,9 +1501,13 @@ color: #000;
 }
 
 .pager li.pager-current {
+  background-color: #a51d35;
+  color: white;
   padding:4px 8px;
   font-weight: bold;
 }
+
+#a51d35
 
 .pager li.pager-first a,
 .pager li.pager-previous a,
@@ -1511,6 +1516,11 @@ color: #000;
   width: 50px;
   text-align:center;
   padding: 4px 0;
+  white-space:nowrap;
+}
+
+.pager li.pager-previous a {
+	width: 70px;
 }
 
 .pager li.pager-next {
@@ -1528,6 +1538,9 @@ color: #000;
 }
 
 /* Pagers color */
+
+ul.pager{}
+
 .pager li.pager-ellipsis,
 .pager li.pager-current,
 .pager li a {
@@ -1537,16 +1550,18 @@ color: #000;
 .pager li {
   border-right: 1px solid;
   border-color: #ddd #bbb #999;
-  color: #333;
+  color: #ffcc00;
   font: bold 12px/1.2 Arial, sans-serif;
   outline: 0;
 }
 
 .pager li.pager-current {
-  background: #ddd url(../images/button.png) repeat-x;
-  background: -webkit-gradient(linear, left top, left bottom, color-stop(0, #1a1a1a), color-stop(1, #5a5a5a));
-  background: -moz-linear-gradient(top center, #1a1a1a 0%, #5a5a5a 100%);
-  color: #FFF;
+  /*background: #ddd url(../images/button.png) repeat-x;
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0, #a51d35), color-stop(1, #a6080e));
+  background-color: #a51d35;
+  background: -moz-linear-gradient(top center, #a51d35 0%, #a6080e 100%);*/
+  background-color:#000;
+  color: #fff;
   outline: 0;
 }
 
@@ -1557,19 +1572,19 @@ color: #000;
 
 .pager li a {
   background: #ddd url(../images/button.png) repeat-x;
-  background: -webkit-gradient(linear, left top, left bottom, color-stop(0, #fff), color-stop(1, #ddd));
-  background: -moz-linear-gradient(top center, #fff 0%, #ddd 100%);
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0, #ffcc00), color-stop(1, #ffdf5f));
+  background: -moz-linear-gradient(top center, #ffcc00 0%, #ffdf5f 100%);
   cursor: pointer;
 }
 
 .pager li a:hover {
-  background:#FFF;
-  color:#454545;
+  background:#a51d35;
+  color: white;
 }
 
 /* Add default border radius to list items & links */
 .pager {
-  background:#ebebeb;
+  background:black;
   border:1px solid;
   border-color: #ddd #bbb #999;
   border-radius: 5px;
