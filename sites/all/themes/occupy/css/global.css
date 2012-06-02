@@ -737,14 +737,19 @@ article cite{
 }
 
 /*Story Metadata*/
-		.field-name-field-author,
-		.field-name-field-source,
-		.field-name-field-image-caption,
-		.field-name-field-image-source {
-			font-size: 12px;
-			color:#aeaeae;
-		}
-.group-byline {}
+.group-byline,
+.group-image-wrapper {
+	font-size: 12px;
+	}
+	
+.group-byline {
+	color:#666;
+	padding-bottom: 6px;
+}
+.group-image-wrapper {
+	color:#aeaeae;
+}
+
 	.field-name-field-author {}
 		.field-name-field-author .field-item:before {
 			content:'By ';
