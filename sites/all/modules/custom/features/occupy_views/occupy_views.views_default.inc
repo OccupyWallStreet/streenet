@@ -1192,7 +1192,7 @@ There are many OWS-affiliated events taking place every day including assemblies
   $handler->display->display_options['defaults']['pager'] = FALSE;
   $handler->display->display_options['pager']['type'] = 'full';
   $handler->display->display_options['pager']['options']['items_per_page'] = '16';
-  $handler->display->display_options['pager']['options']['offset'] = '2';
+  $handler->display->display_options['pager']['options']['offset'] = '4';
   $handler->display->display_options['pager']['options']['id'] = '0';
   $handler->display->display_options['pager']['options']['expose']['items_per_page_options_all'] = 1;
   $handler->display->display_options['defaults']['header'] = FALSE;
