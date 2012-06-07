@@ -23,6 +23,8 @@ function occupy_views_views_default_views() {
   /* Display: Master */
   $handler = $view->new_display('default', 'Master', 'default');
   $handler->display->display_options['title'] = 'New York City General Assembly Consense Documents';
+  $handler->display->display_options['use_ajax'] = TRUE;
+  $handler->display->display_options['hide_attachment_summary'] = TRUE;
   $handler->display->display_options['access']['type'] = 'perm';
   $handler->display->display_options['cache']['type'] = 'none';
   $handler->display->display_options['query']['type'] = 'views_query';
@@ -832,6 +834,7 @@ There are many OWS-affiliated events taking place every day including assemblies
   $handler = $view->new_display('default', 'Master', 'default');
   $handler->display->display_options['title'] = 'OWS News';
   $handler->display->display_options['css_class'] = 'news-block-view';
+  $handler->display->display_options['use_ajax'] = TRUE;
   $handler->display->display_options['use_more_text'] = 'View Full Archives';
   $handler->display->display_options['access']['type'] = 'none';
   $handler->display->display_options['cache']['type'] = 'none';
@@ -839,7 +842,7 @@ There are many OWS-affiliated events taking place every day including assemblies
   $handler->display->display_options['query']['options']['query_comment'] = FALSE;
   $handler->display->display_options['exposed_form']['type'] = 'basic';
   $handler->display->display_options['pager']['type'] = 'some';
-  $handler->display->display_options['pager']['options']['items_per_page'] = '5';
+  $handler->display->display_options['pager']['options']['items_per_page'] = '8';
   $handler->display->display_options['pager']['options']['offset'] = '0';
   $handler->display->display_options['style_plugin'] = 'list';
   $handler->display->display_options['row_plugin'] = 'fields';
@@ -910,7 +913,7 @@ There are many OWS-affiliated events taking place every day including assemblies
   $handler->display->display_options['fields']['description']['alter']['max_length'] = '175';
   $handler->display->display_options['fields']['description']['alter']['word_boundary'] = 0;
   $handler->display->display_options['fields']['description']['alter']['ellipsis'] = 0;
-  $handler->display->display_options['fields']['description']['alter']['more_link'] = 1;
+  $handler->display->display_options['fields']['description']['alter']['more_link'] = 0;
   $handler->display->display_options['fields']['description']['alter']['more_link_text'] = 'Read More';
   $handler->display->display_options['fields']['description']['alter']['strip_tags'] = 1;
   $handler->display->display_options['fields']['description']['alter']['trim'] = 1;
@@ -921,6 +924,34 @@ There are many OWS-affiliated events taking place every day including assemblies
   $handler->display->display_options['fields']['description']['hide_empty'] = 1;
   $handler->display->display_options['fields']['description']['empty_zero'] = 0;
   $handler->display->display_options['fields']['description']['hide_alter_empty'] = 1;
+  /* Field: Aggregator: Link */
+  $handler->display->display_options['fields']['link']['id'] = 'link';
+  $handler->display->display_options['fields']['link']['table'] = 'aggregator_item';
+  $handler->display->display_options['fields']['link']['field'] = 'link';
+  $handler->display->display_options['fields']['link']['label'] = '';
+  $handler->display->display_options['fields']['link']['alter']['alter_text'] = 1;
+  $handler->display->display_options['fields']['link']['alter']['text'] = '<a href="[link]" target="_blank">Read More</a>';
+  $handler->display->display_options['fields']['link']['alter']['make_link'] = 0;
+  $handler->display->display_options['fields']['link']['alter']['path'] = '[link]';
+  $handler->display->display_options['fields']['link']['alter']['absolute'] = 0;
+  $handler->display->display_options['fields']['link']['alter']['external'] = 0;
+  $handler->display->display_options['fields']['link']['alter']['replace_spaces'] = 0;
+  $handler->display->display_options['fields']['link']['alter']['trim_whitespace'] = 0;
+  $handler->display->display_options['fields']['link']['alter']['nl2br'] = 0;
+  $handler->display->display_options['fields']['link']['alter']['word_boundary'] = 1;
+  $handler->display->display_options['fields']['link']['alter']['ellipsis'] = 1;
+  $handler->display->display_options['fields']['link']['alter']['more_link'] = 0;
+  $handler->display->display_options['fields']['link']['alter']['strip_tags'] = 0;
+  $handler->display->display_options['fields']['link']['alter']['trim'] = 0;
+  $handler->display->display_options['fields']['link']['alter']['html'] = 0;
+  $handler->display->display_options['fields']['link']['element_type'] = 'span';
+  $handler->display->display_options['fields']['link']['element_class'] = 'news-widget-link';
+  $handler->display->display_options['fields']['link']['element_label_colon'] = FALSE;
+  $handler->display->display_options['fields']['link']['element_default_classes'] = 0;
+  $handler->display->display_options['fields']['link']['hide_empty'] = 0;
+  $handler->display->display_options['fields']['link']['empty_zero'] = 0;
+  $handler->display->display_options['fields']['link']['hide_alter_empty'] = 1;
+  $handler->display->display_options['fields']['link']['display_as_link'] = 0;
   /* Sort criterion: Aggregator: Timestamp */
   $handler->display->display_options['sorts']['timestamp']['id'] = 'timestamp';
   $handler->display->display_options['sorts']['timestamp']['table'] = 'aggregator_item';
@@ -951,8 +982,8 @@ There are many OWS-affiliated events taking place every day including assemblies
   /* Display: Master */
   $handler = $view->new_display('default', 'Master', 'default');
   $handler->display->display_options['css_class'] = 'stories-view-block';
-  $handler->display->display_options['use_more'] = TRUE;
-  $handler->display->display_options['use_more_text'] = 'View Archive';
+  $handler->display->display_options['use_ajax'] = TRUE;
+  $handler->display->display_options['use_more_text'] = 'View More';
   $handler->display->display_options['access']['type'] = 'perm';
   $handler->display->display_options['cache']['type'] = 'none';
   $handler->display->display_options['query']['type'] = 'views_query';
@@ -1014,6 +1045,7 @@ There are many OWS-affiliated events taking place every day including assemblies
   $handler->display->display_options['fields']['field_ga_consensed']['table'] = 'field_data_field_ga_consensed';
   $handler->display->display_options['fields']['field_ga_consensed']['field'] = 'field_ga_consensed';
   $handler->display->display_options['fields']['field_ga_consensed']['label'] = '';
+  $handler->display->display_options['fields']['field_ga_consensed']['exclude'] = TRUE;
   $handler->display->display_options['fields']['field_ga_consensed']['alter']['alter_text'] = 0;
   $handler->display->display_options['fields']['field_ga_consensed']['alter']['make_link'] = 0;
   $handler->display->display_options['fields']['field_ga_consensed']['alter']['absolute'] = 0;
@@ -1059,9 +1091,10 @@ There are many OWS-affiliated events taking place every day including assemblies
   $handler->display->display_options['fields']['field_image']['element_class'] = 'stories-block-image';
   $handler->display->display_options['fields']['field_image']['element_label_colon'] = FALSE;
   $handler->display->display_options['fields']['field_image']['element_default_classes'] = 1;
-  $handler->display->display_options['fields']['field_image']['hide_empty'] = 1;
+  $handler->display->display_options['fields']['field_image']['empty'] = '<img src="/sites/all/themes/files/default-story-image.jpg">';
+  $handler->display->display_options['fields']['field_image']['hide_empty'] = 0;
   $handler->display->display_options['fields']['field_image']['empty_zero'] = 0;
-  $handler->display->display_options['fields']['field_image']['hide_alter_empty'] = 1;
+  $handler->display->display_options['fields']['field_image']['hide_alter_empty'] = 0;
   $handler->display->display_options['fields']['field_image']['click_sort_column'] = 'fid';
   $handler->display->display_options['fields']['field_image']['settings'] = array(
     'image_style' => '220x117',
@@ -1157,9 +1190,11 @@ There are many OWS-affiliated events taking place every day including assemblies
   /* Display: Page */
   $handler = $view->new_display('page', 'Page', 'page_1');
   $handler->display->display_options['defaults']['pager'] = FALSE;
-  $handler->display->display_options['pager']['type'] = 'some';
-  $handler->display->display_options['pager']['options']['items_per_page'] = '8';
+  $handler->display->display_options['pager']['type'] = 'full';
+  $handler->display->display_options['pager']['options']['items_per_page'] = '16';
   $handler->display->display_options['pager']['options']['offset'] = '4';
+  $handler->display->display_options['pager']['options']['id'] = '0';
+  $handler->display->display_options['pager']['options']['expose']['items_per_page_options_all'] = 1;
   $handler->display->display_options['defaults']['header'] = FALSE;
   $handler->display->display_options['path'] = 'read';
   $handler->display->display_options['menu']['type'] = 'normal';
@@ -1205,12 +1240,6 @@ There are many OWS-affiliated events taking place every day including assemblies
     'event' => 'event',
     'story' => 'story',
   );
-  /* Filter criterion: Nodequeue: In queue */
-  $handler->display->display_options['filters']['in_queue']['id'] = 'in_queue';
-  $handler->display->display_options['filters']['in_queue']['table'] = 'nodequeue_nodes';
-  $handler->display->display_options['filters']['in_queue']['field'] = 'in_queue';
-  $handler->display->display_options['filters']['in_queue']['relationship'] = 'nodequeue_rel';
-  $handler->display->display_options['filters']['in_queue']['value'] = '0';
   $export['ows_stories'] = $view;
 
   $view = new view;

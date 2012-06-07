@@ -1,7 +1,0 @@
-<?php
-/**
- * @file
- * Code for the Occupy Content Types feature.
- */
-
-include_once 'occupy_content_types.features.inc';
