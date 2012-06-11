@@ -1240,12 +1240,6 @@ There are many OWS-affiliated events taking place every day including assemblies
     'event' => 'event',
     'story' => 'story',
   );
-  /* Filter criterion: Nodequeue: In queue */
-  $handler->display->display_options['filters']['in_queue']['id'] = 'in_queue';
-  $handler->display->display_options['filters']['in_queue']['table'] = 'nodequeue_nodes';
-  $handler->display->display_options['filters']['in_queue']['field'] = 'in_queue';
-  $handler->display->display_options['filters']['in_queue']['relationship'] = 'nodequeue_rel';
-  $handler->display->display_options['filters']['in_queue']['value'] = '0';
   $export['ows_stories'] = $view;
 
   $view = new view;
