@@ -590,7 +590,8 @@ ul.quicktabs-tabs li.active a{
 
 .stories-block-title a:visited {
     margin-bottom: 15px;
-    min-height: 50px;
+    /*fix display when stories list 3 row story items*/
+    min-height: 51px;
     padding: 5px 10px 15px;
     width: 85.5%;
     color: #666 !important;
