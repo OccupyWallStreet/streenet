@@ -231,7 +231,7 @@ function occupy_views_views_default_views() {
   $handler->display->display_options['header']['area']['field'] = 'area';
   $handler->display->display_options['header']['area']['empty'] = TRUE;
   $handler->display->display_options['header']['area']['content'] = '<div class="custom-title-wrapper"><div class="custom-title-first">Attend</div><div class="custom-title-second">Actions & Events</div></div>
-There are many OWS-affiliated events taking place every day including assemblies, skill shares, open spaces, direct actions and performances. Come out and participate in democracy in action!';
+There are many <a href="http://www.nycga.net/events/" target="_blank">OWS-affiliated events</a> taking place every day including assemblies, skill shares, open spaces, direct actions and performances. Come out and participate in democracy in action!';
   $handler->display->display_options['header']['area']['format'] = 'full_html';
   $handler->display->display_options['header']['area']['tokenize'] = 0;
   /* No results behavior: Global: Text area */
@@ -1357,9 +1357,10 @@ There are many OWS-affiliated events taking place every day including assemblies
   $handler->display->display_options['fields']['field_image']['element_class'] = 'stories-block-image';
   $handler->display->display_options['fields']['field_image']['element_label_colon'] = FALSE;
   $handler->display->display_options['fields']['field_image']['element_default_classes'] = 1;
-  $handler->display->display_options['fields']['field_image']['hide_empty'] = 1;
+  $handler->display->display_options['fields']['field_image']['empty'] = '<img src="/sites/all/themes/files/default-story-image.jpg">';
+  $handler->display->display_options['fields']['field_image']['hide_empty'] = 0;
   $handler->display->display_options['fields']['field_image']['empty_zero'] = 0;
-  $handler->display->display_options['fields']['field_image']['hide_alter_empty'] = 1;
+  $handler->display->display_options['fields']['field_image']['hide_alter_empty'] = 0;
   $handler->display->display_options['fields']['field_image']['click_sort_column'] = 'fid';
   $handler->display->display_options['fields']['field_image']['settings'] = array(
     'image_style' => '220x117',
