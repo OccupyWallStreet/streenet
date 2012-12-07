@@ -4,18 +4,15 @@
  
 /*--------------------------------------------TYPOGRAPHY-------------------------------------------*/
 
-h1, h2, h3, h4{
+h1, h2, h3, h4, h4{
 	font-family: 'LeagueGothicRegular';	
 	font-weight: normal;
 	text-transform: uppercase;
 }
-h1 {
-	font-size: 40px;
-}
 
-h2 {
-	font-size: 33px;
-}
+h1 { font-size: 40px; }
+
+h2 { font-size: 33px; }
 
 h3 {
 	font-size: 27px;
@@ -485,6 +482,11 @@ ul.quicktabs-tabs li.active a{
 	max-height: 240px;
 }
 
+.node-teaser {
+
+}
+
+.node-teaser h5 a,
 .ows-stories-content h5 a{
 	text-decoration: none;
 	color: ;
