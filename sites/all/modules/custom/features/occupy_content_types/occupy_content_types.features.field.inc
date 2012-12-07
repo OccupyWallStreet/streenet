@@ -502,7 +502,7 @@ function occupy_content_types_field_default_fields() {
   $fields['node-event-field_image'] = array(
     'field_config' => array(
       'active' => '1',
-      'cardinality' => '-1',
+      'cardinality' => '1',
       'deleted' => '0',
       'entity_types' => array(),
       'field_name' => 'field_image',
@@ -998,7 +998,7 @@ function occupy_content_types_field_default_fields() {
   $fields['node-ga_policy-field_image'] = array(
     'field_config' => array(
       'active' => '1',
-      'cardinality' => '-1',
+      'cardinality' => '1',
       'deleted' => '0',
       'entity_types' => array(),
       'field_name' => 'field_image',
@@ -1547,7 +1547,7 @@ function occupy_content_types_field_default_fields() {
           'module' => 'text',
           'settings' => array(),
           'type' => 'text_default',
-          'weight' => '5',
+          'weight' => '3',
         ),
         'teaser' => array(
           'label' => 'hidden',
@@ -1687,7 +1687,7 @@ function occupy_content_types_field_default_fields() {
           'label' => 'above',
           'settings' => array(),
           'type' => 'hidden',
-          'weight' => '7',
+          'weight' => '4',
         ),
         'teaser' => array(
           'label' => 'above',
@@ -1719,7 +1719,7 @@ function occupy_content_types_field_default_fields() {
   $fields['node-story-field_image'] = array(
     'field_config' => array(
       'active' => '1',
-      'cardinality' => '-1',
+      'cardinality' => '1',
       'deleted' => '0',
       'entity_types' => array(),
       'field_name' => 'field_image',
@@ -2040,10 +2040,11 @@ function occupy_content_types_field_default_fields() {
       'description' => '',
       'display' => array(
         'default' => array(
-          'label' => 'above',
+          'label' => 'hidden',
+          'module' => 'taxonomy',
           'settings' => array(),
-          'type' => 'hidden',
-          'weight' => '6',
+          'type' => 'taxonomy_term_reference_rss_category',
+          'weight' => '0',
         ),
         'teaser' => array(
           'label' => 'above',
@@ -2112,7 +2113,7 @@ function occupy_content_types_field_default_fields() {
           'label' => 'inline',
           'settings' => array(),
           'type' => 'hidden',
-          'weight' => '8',
+          'weight' => '5',
         ),
         'teaser' => array(
           'label' => 'above',

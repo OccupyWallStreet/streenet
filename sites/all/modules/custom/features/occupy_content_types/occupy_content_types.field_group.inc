@@ -21,7 +21,7 @@ function occupy_content_types_field_group_info() {
   $field_group->parent_name = '';
   $field_group->data = array(
     'label' => 'Byline',
-    'weight' => '0',
+    'weight' => '1',
     'children' => array(
       0 => 'field_source',
       1 => 'field_author',
@@ -150,7 +150,7 @@ function occupy_content_types_field_group_info() {
   $field_group->parent_name = '';
   $field_group->data = array(
     'label' => 'Image wrapper',
-    'weight' => '3',
+    'weight' => '2',
     'children' => array(
       0 => 'field_image',
       1 => 'group_image_meta_wrapper',
