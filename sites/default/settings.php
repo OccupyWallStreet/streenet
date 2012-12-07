@@ -511,3 +511,18 @@ $conf['404_fast_html'] = '<html xmlns="http://www.w3.org/1999/xhtml"><head><titl
  */
 # $conf['pressflow_smart_start'] = TRUE;
 
+
+      /**
+      * Kalabox local settings
+      */
+       
+      $databases['default']['default'] = array(
+      'driver' => 'mysql',
+      'database' => 'occupywallstreet_net_kala',
+      'username' => 'root',
+      'password' => 'password',
+      'host' => 'kala',
+      'prefix' => '',
+      );
+    
+      
