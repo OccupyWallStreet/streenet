@@ -561,3 +561,18 @@ $conf['404_fast_html'] = '<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML+RDFa 1.0//EN"
  */
 # $conf['pressflow_smart_start'] = TRUE;
 
+
+      /**
+      * Kalabox local settings
+      */
+       
+      $databases['default']['default'] = array(
+      'driver' => 'mysql',
+      'database' => 'streetnet_kala',
+      'username' => 'root',
+      'password' => 'password',
+      'host' => 'kala',
+      'prefix' => '',
+      );
+    
+      
