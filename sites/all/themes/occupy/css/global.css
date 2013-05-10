@@ -331,29 +331,23 @@ ul li.leaf {
 	font-weight: normal;
 }
 
-ul.quicktabs-tabs{
-	margin: 0 !important;
-	padding: 0 !important;
-	vertical-align: baseline;
+.item-list ul.quicktabs-tabs { position: relative; z-index: 115; }
+.item-list ul.quicktabs-tabs,
+.item-list ul.quicktabs-tabs li {
+  padding: 0 0 0;
+  margin: 0 1px 0 0;
 }
 
-ul.quicktabs-tabs li{
-	text-transform: uppercase;
-	letter-spacing: 1px;
-	padding: 0 0 2px 0 !important;
-	margin: 0 1px 0 0;
-	position: relative;
-	top: 1px;
-}
 
-ul.quicktabs-tabs li.active{
+.item-list ul.quicktabs-tabs li.active{
 	background: url("/sites/all/themes/files/featured.png") no-repeat scroll center bottom transparent;
 	z-index: 999;
+  padding-bottom: .375em;
 }
 
 ul.quicktabs-tabs li a{
 	display: inline-block;
-	padding: 4px 12px 2px 12px;
+	padding: 4px 12px 3px 12px;
 	text-decoration: none;
 	background-color: #CFD1D2;	
 }
