@@ -12,11 +12,11 @@ Type and Vertical Rythm Definitions
 
 @font-face {
   font-family: LeagueGothic;
-  src:  url("/sites/all/themes/occupy/fonts/leaguegothic/League_Gothic.eot");
-  src:  url("/sites/all/themes/occupy/fonts/leaguegothic/League_Gothic.eot?#iefix") format("embedded-opentype"),
-        url("/sites/all/themes/occupy/fonts/leaguegothic/League_Gothic.ttf") format("truetype"),
-        url("/sites/all/themes/occupy/fonts/leaguegothic/League_Gothic.woff") format("woff"),
-        url("/sites/all/themes/occupy/fonts/leaguegothic/League_Gothic.svg#dosislight") format("svg");
+  src:  url("/sites/all/themes/occupy/fonts/leaguegothic/webfonts/leaguegothic-regular-webfont.eot");
+  src:  url("/sites/all/themes/occupy/fonts/leaguegothic/webfonts/leaguegothic-regular-webfont.eot?#iefix") format("embedded-opentype"),
+        url("/sites/all/themes/occupy/fonts/leaguegothic/webfonts/leaguegothic-regular-webfont.ttf") format("truetype"),
+        url("/sites/all/themes/occupy/fonts/leaguegothic/webfonts/leaguegothic-regular-webfont.woff") format("woff"),
+        url("/sites/all/themes/occupy/fonts/leaguegothic/webfonts/leaguegothic-regular-webfont.svg#dosislight") format("svg");
         font-weight: 300;
 }
 
