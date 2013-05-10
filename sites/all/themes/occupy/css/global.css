@@ -5,7 +5,7 @@
 /*--------------------------------------------TYPOGRAPHY-------------------------------------------*/
 
 h1, h2, h3, h4, h4{
-	font-family: 'LeagueGothicRegular';	
+	font-family: 'LeagueGothic';	
 	font-weight: normal;
 	text-transform: uppercase;
 }
@@ -23,7 +23,7 @@ h4 {
 
 h5 {
 	font-size: 14px;
-	font-family: 'PTSansRegular';
+	font-family: 'PTSans';
    font-weight: bold;
 }
 h6 {
@@ -31,7 +31,7 @@ h6 {
 	font-weight: normal;
 }
 p, div {
-    font-family: 'PTSansRegular';
+    font-family: 'PTSans';
     font-weight: normal;
 }
 
@@ -99,7 +99,7 @@ ul li.leaf {
 }*/
 #block-system-main-menu li a, #block-system-main-menu li a:link {
     color: #FECD48;
-    font-family: 'LeagueGothicRegular';
+    font-family: 'LeagueGothic';
     font-weight: normal;
     letter-spacing: 1px;
     text-decoration: none;
@@ -150,7 +150,7 @@ ul li.leaf {
 .newsletter-text {
 	float: left;
 	margin: 0 10px 0 0;
-	font-family: 'LeagueGothicRegular';
+	font-family: 'LeagueGothic';
 	font-size: 21px;
 	letter-spacing: 1px;
 	text-transform: uppercase;
@@ -275,11 +275,11 @@ ul li.leaf {
 }
 
 .announcements-view {
-	font-family: 'LeagueGothicRegular';
+	font-family: 'LeagueGothic';
 	padding: 0 10px 0 0;
 }
 .announcements-view p {
-  font-family: 'LeagueGothicRegular';
+  font-family: 'LeagueGothic';
   margin: 0;
 }
 /*--------------------------------------FEATURED SECTION--------------------------------------*/
@@ -338,8 +338,6 @@ ul.quicktabs-tabs{
 }
 
 ul.quicktabs-tabs li{
-	font-size: 18px;
-	line-height: 18px;
 	text-transform: uppercase;
 	letter-spacing: 1px;
 	padding: 0 0 2px 0 !important;
@@ -430,7 +428,7 @@ ul.quicktabs-tabs li.active a{
   margin: 0px 0px 0px 10px;
 }
 #quicktabs-featured .view-footer a {
-  font-family: 'PTSansRegular';
+  font-family: 'PTSans';
   font-size: 13px;
   text-decoration: none;
   color: #FFF;
@@ -604,7 +602,7 @@ ul.quicktabs-tabs li.active a{
 .views-field-field-story-category {
     color: #000000;
     float: left;
-    font-family: 'LeagueGothicRegular';
+    font-family: 'LeagueGothic';
     font-size: 12px;
     margin: 0;
     width: 94%;
@@ -630,7 +628,7 @@ ul.quicktabs-tabs li.active a{
 	letter-spacing: 1px;
 	text-transform: uppercase;
 	color: black;
-	font-family: 'LeagueGothicRegular';
+	font-family: 'LeagueGothic';
 	font-size: 20px;
 }
 .more-link a {
@@ -718,7 +716,7 @@ article blockquote p {
 }
 
 article blockquote p {
-	font-family: 'LeagueGothicRegular';	
+	font-family: 'LeagueGothic';	
 	font-weight: normal;
 	text-transform: uppercase;
 }
@@ -792,7 +790,7 @@ article cite{
 	.group_event_details .street-block,
 	.group_event_details .locality-block,
 	.group_event_details .thoroughfare {
-		font-family: 'LeagueGothicRegular' !important;	
+		font-family: 'LeagueGothic' !important;	
 		font-weight: normal;
 		text-transform: uppercase;
 		line-height: 1.25em;
@@ -887,7 +885,7 @@ article cite{
 
 #storiestitle h2,
 .front-news-view-title {
-	font-family: 'LeagueGothicRegular';
+	font-family: 'LeagueGothic';
 	font-size: 27px;
 	letter-spacing: 1px;
 }
@@ -908,7 +906,7 @@ article cite{
 }
 
 .news-title-field a {
-	font-family: 'PTSansRegular';
+	font-family: 'PTSans';
 	font-size: 15px;
 	color: black;
 	text-decoration: none;
@@ -939,7 +937,7 @@ article cite{
 	width: 98%;
 	font-size: 11px;
 	margin: 2px 0 4px 0;
-	font-family: 'PTSansRegular';
+	font-family: 'PTSans';
 }
 #block-views-nodequeue-3-block .item-list ul li {
 	margin: 0;
@@ -1008,13 +1006,13 @@ article cite{
 }
 .view-ga-consense-docs .views-field-title {
 	font-size: 30px;
-	font-family: 'LeagueGothicRegular';
+	font-family: 'LeagueGothic';
 	letter-spacing: 1px;
 }
 .block-quicktabs-learn h2.block-title {
 	font-size: 46px;
 	margin: 0;
-	font-family: 'LeagueGothicRegular';
+	font-family: 'LeagueGothic';
 	letter-spacing: 1px;
 	text-transform: uppercase;
 	font-weight: normal;
@@ -1048,7 +1046,7 @@ article cite{
 	text-transform: uppercase;
 	font-size: 20px;
 	color: white;
-	font-family: 'LeagueGothicRegular';
+	font-family: 'LeagueGothic';
 	letter-spacing: 1px;
 	text-transform: uppercase;
 }
@@ -1071,7 +1069,7 @@ article cite{
 	text-transform: uppercase;
 	color: black;
 	letter-spacing: 1px;
-	font-family: 'LeagueGothicRegular';
+	font-family: 'LeagueGothic';
 	font-size: 30px;
 	text-align: center;
 	margin-top: 40px;
@@ -1096,7 +1094,7 @@ article cite{
 	text-transform: uppercase;
 	color: black;
 	letter-spacing: 1px;
-	font-family: 'LeagueGothicRegular';
+	font-family: 'LeagueGothic';
 	float: left;
 	padding: 0 20px 0 0;
 }
@@ -1113,7 +1111,7 @@ article cite{
 	letter-spacing: 1px;
 	text-transform: uppercase;
 	font-weight: normal;
-	font-family: 'LeagueGothicRegular';
+	font-family: 'LeagueGothic';
 	float: left;
 	padding: 0 5px 0 0;
 }
@@ -1123,7 +1121,7 @@ article cite{
 	letter-spacing: 1px;
 	text-transform: uppercase;
 	font-weight: normal;
-	font-family: 'LeagueGothicRegular';
+	font-family: 'LeagueGothic';
 	color: #FECD48;
 }
 .custom-title-third {
@@ -1132,7 +1130,7 @@ article cite{
 	letter-spacing: 1px;
 	text-transform: uppercase;
 	font-weight: normal;
-	font-family: 'LeagueGothicRegular';
+	font-family: 'LeagueGothic';
 	float: left;
 	padding: 2px 5px 0 0;
 }
@@ -1142,7 +1140,7 @@ article cite{
 	letter-spacing: 1px;
 	text-transform: uppercase;
 	font-weight: normal;
-	font-family: 'LeagueGothicRegular';
+	font-family: 'LeagueGothic';
 	color: #FECD48;		
 	float: left;
 	padding: 2px 5px 0 0;
@@ -1257,7 +1255,7 @@ article cite{
 	letter-spacing: 1px;
 	text-transform: uppercase;
 	font-weight: normal;
-	font-family: 'LeagueGothicRegular';
+	font-family: 'LeagueGothic';
 	color: #3188B9;
 	padding: 0 5px 0 0;
 }
@@ -1267,7 +1265,7 @@ article cite{
 	letter-spacing: 1px;
 	text-transform: uppercase;
 	font-weight: normal;
-	font-family: 'LeagueGothicRegular';
+	font-family: 'LeagueGothic';
 	color: #B50028;
 	padding: 0 5px 0 0;
 }
@@ -1277,7 +1275,7 @@ article cite{
 	letter-spacing: 1px;
 	text-transform: uppercase;
 	font-weight: normal;
-	font-family: 'LeagueGothicRegular';
+	font-family: 'LeagueGothic';
 	color: #F4922F;
 	padding: 0 5px 0 0;
 }
@@ -1291,21 +1289,21 @@ article cite{
 }
 .shipping-block-title {
 	font-size: 40px;
-	font-family: 'LeagueGothicRegular';
+	font-family: 'LeagueGothic';
 	text-transform: uppercase;
 	letter-spacing: 1px;
 	color: #3188B9;
 }
 .information-block-title {
 	font-size: 40px;
-	font-family: 'LeagueGothicRegular';
+	font-family: 'LeagueGothic';
 	text-transform: uppercase;
 	letter-spacing: 1px;
 	color: #B50028;
 }
 .press-block-title {
 	font-size: 40px;
-	font-family: 'LeagueGothicRegular';
+	font-family: 'LeagueGothic';
 	text-transform: uppercase;
 	letter-spacing: 1px;
 	color: #F4922F;
@@ -1416,7 +1414,7 @@ article cite{
 	color: #000;
 }
 .donate {
-    font-family: 'LeagueGothicRegular';
+    font-family: 'LeagueGothic';
     font-size: 2.25em;
     font-weight: normal;
     letter-spacing: 2px;
@@ -1427,7 +1425,7 @@ article cite{
 	color: #000;
 }
 .connect {
-    font-family: 'LeagueGothicRegular';
+    font-family: 'LeagueGothic';
     font-size: 2.25em;
     font-weight: normal;
     letter-spacing: 2px;
