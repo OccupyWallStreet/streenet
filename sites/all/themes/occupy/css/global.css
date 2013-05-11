@@ -484,6 +484,9 @@ ul.quicktabs-tabs li.active a{
 	color: ;
 }
 
+.stories-block-row {
+  min-height : 260px;
+}
 
 /*------------------------------------------STORIES BLOCK OF 4----------------------------------------*/
 
