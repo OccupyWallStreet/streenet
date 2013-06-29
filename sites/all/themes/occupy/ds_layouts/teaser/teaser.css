@@ -1,0 +1,119 @@
+/*.ows-stories-content{
+  background: #ffcd05;
+  width: 85%;
+  padding: 5%;
+}
+*/
+
+/*
+article.node-teaser h5 a,
+.ows-stories-content h5 a{
+  text-decoration: none;
+}
+*/
+
+article.view-mode-teaser,
+article.view-mode-featured_story {
+  display: inline-block;
+  vertical-align: top;
+  margin: 0 15px 10px 0;
+  float: left;
+  min-height: 235px;
+}
+
+article.view-mode-teaser {
+  background-color: #ffcd05;  
+  width: 220px;
+}
+
+article.view-mode-teaser .field-name-field-story-category {
+  background: #fff;
+}
+
+article.view-mode-teaser .group-byline {
+  color:#333;
+  padding: .75em;
+}
+
+article.view-mode-teaser .field-name-title h4 {
+  margin: .5em 0;
+  height: 2.5em;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+article.view-mode-teaser .field-name-title h4 a {
+  text-decoration: none;
+}
+
+article.view-mode-teaser .field-name-field-author .field-item {
+  width: 200px;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+
+article.view-mode-teaser .field-name-field-author .field-item:before {
+  content:'By ';
+}
+
+article.view-mode-teaser .field-name-field-author .field-item:hover {
+  width: auto;
+  position: absolute;
+  z-index: 350;
+  overflow: visible;
+  text-overflow: visible;
+  background: #ffcd05;
+  box-shadow: 1px 1px 2px rgba( 0, 0, 0, .4 );
+  display: inline-block;
+  box-sizing: padding-box;
+  padding: .125em;
+}
+
+
+article.view-mode-featured_story {
+  width: 450px;
+  height: 480px;
+  position: relative;
+  overflow: hidden;
+}
+
+article.view-mode-featured_story .group_content{
+  margin-top: .125em;
+  border-top: 1px #222 solid;
+}
+
+article.view-mode-featured_story:before {
+  content: "Featured Story";
+  width: 450px;
+  background-color: #fff;
+}
+
+
+article.view-mode-featured_story img {
+}
+
+article.view-mode-featured_story .group-byline {
+  box-sizing: border-box;
+  margin-right: 12px;
+  position: absolute;
+  bottom: 0;
+  left: 0px;
+  width: 100%;
+  height: 28%;
+  background-color: #000;
+  background-color: rgba( 0, 0, 0, .85 );
+  z-index: 9;
+  color: #dedede;
+  padding: .75em 1em;
+}
+
+article.view-mode-featured_story h2, 
+article.view-mode-featured_story h2 a {
+  color: #ffcd05;
+  letter-spacing: .0875em;
+  text-decoration: none;
+}
+
+/*---------------------------------------------------READ PAGE----------------------------------------*/
+

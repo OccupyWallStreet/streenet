@@ -1,0 +1,67 @@
+#region-content {
+  font-size: 15px;
+}
+
+#region-content  h1#page-title {
+  display: none;
+}
+
+#region-content article {
+  width: 48em;
+  float: left;
+  margin-right: 2em;
+}
+
+#region-content article .group-byline {
+  color:#666;
+  padding-bottom: 6px;
+}
+
+
+#region-content aside {
+  width: 12em;
+  margin-left: 48em;
+}
+
+
+#region-content aside .owstech-share {
+  margin-top: 1.925em;
+}
+
+#region-content aside .owstech-share h4.actuator {
+  font-size: 1.25em;
+  font-weight: 300;
+  background:#333;
+}
+
+#region-content aside .owstech-share .drawer {
+  padding: .25em .5em .25em .25em;
+}
+
+#region-content aside .links.inline {
+  margin-bottom: 2em;
+  display: block;
+}
+
+#region-content aside.links.inline li {
+  margin-bottom: 1px;
+}
+
+#region-content aside .links.inline a {
+  display: block;
+  background: #dedede;
+  color: #000;
+  margin: 0;
+  padding: .125em .25em;
+}
+
+#region-content aside .statistics_counter {
+  display: block;
+  box-sizing: border-box;
+  width: 100%;
+  background: #000;
+  color: #eee;
+  margin-top: .25em;
+  padding: .25em .5em;
+  line-height: 2;
+}
