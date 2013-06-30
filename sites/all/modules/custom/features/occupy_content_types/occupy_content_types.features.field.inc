@@ -10,7 +10,7 @@
 function occupy_content_types_field_default_fields() {
   $fields = array();
 
-  // Exported field: 'node-announcement-body'
+  // Exported field: 'node-announcement-body'.
   $fields['node-announcement-body'] = array(
     'field_config' => array(
       'active' => '1',
@@ -33,6 +33,7 @@ function occupy_content_types_field_default_fields() {
           0 => 'format',
         ),
       ),
+      'locked' => '0',
       'module' => 'text',
       'settings' => array(),
       'translatable' => '0',
@@ -83,7 +84,7 @@ function occupy_content_types_field_default_fields() {
     ),
   );
 
-  // Exported field: 'node-event-body'
+  // Exported field: 'node-event-body'.
   $fields['node-event-body'] = array(
     'field_config' => array(
       'active' => '1',
@@ -106,6 +107,7 @@ function occupy_content_types_field_default_fields() {
           0 => 'format',
         ),
       ),
+      'locked' => '0',
       'module' => 'text',
       'settings' => array(),
       'translatable' => '0',
@@ -155,7 +157,7 @@ function occupy_content_types_field_default_fields() {
     ),
   );
 
-  // Exported field: 'node-event-field_address'
+  // Exported field: 'node-event-field_address'.
   $fields['node-event-field_address'] = array(
     'field_config' => array(
       'active' => '1',
@@ -165,6 +167,7 @@ function occupy_content_types_field_default_fields() {
       'field_name' => 'field_address',
       'foreign keys' => array(),
       'indexes' => array(),
+      'locked' => '0',
       'module' => 'addressfield',
       'settings' => array(),
       'translatable' => '0',
@@ -220,7 +223,7 @@ function occupy_content_types_field_default_fields() {
     ),
   );
 
-  // Exported field: 'node-event-field_author'
+  // Exported field: 'node-event-field_author'.
   $fields['node-event-field_author'] = array(
     'field_config' => array(
       'active' => '1',
@@ -241,6 +244,7 @@ function occupy_content_types_field_default_fields() {
           0 => 'format',
         ),
       ),
+      'locked' => '0',
       'module' => 'text',
       'settings' => array(
         'max_length' => '255',
@@ -288,7 +292,7 @@ function occupy_content_types_field_default_fields() {
     ),
   );
 
-  // Exported field: 'node-event-field_date'
+  // Exported field: 'node-event-field_date'.
   $fields['node-event-field_date'] = array(
     'field_config' => array(
       'active' => '1',
@@ -298,6 +302,7 @@ function occupy_content_types_field_default_fields() {
       'field_name' => 'field_date',
       'foreign keys' => array(),
       'indexes' => array(),
+      'locked' => '0',
       'module' => 'date',
       'settings' => array(
         'cache_count' => '4',
@@ -371,7 +376,7 @@ function occupy_content_types_field_default_fields() {
     ),
   );
 
-  // Exported field: 'node-event-field_ga_consensed'
+  // Exported field: 'node-event-field_ga_consensed'.
   $fields['node-event-field_ga_consensed'] = array(
     'field_config' => array(
       'active' => '1',
@@ -385,6 +390,7 @@ function occupy_content_types_field_default_fields() {
           0 => 'value',
         ),
       ),
+      'locked' => '0',
       'module' => 'list',
       'settings' => array(
         'allowed_values' => array(
@@ -438,7 +444,7 @@ function occupy_content_types_field_default_fields() {
     ),
   );
 
-  // Exported field: 'node-event-field_geofield'
+  // Exported field: 'node-event-field_geofield'.
   $fields['node-event-field_geofield'] = array(
     'field_config' => array(
       'active' => '1',
@@ -448,6 +454,7 @@ function occupy_content_types_field_default_fields() {
       'field_name' => 'field_geofield',
       'foreign keys' => array(),
       'indexes' => array(),
+      'locked' => '0',
       'module' => 'geofield',
       'settings' => array(),
       'translatable' => '0',
@@ -498,7 +505,7 @@ function occupy_content_types_field_default_fields() {
     ),
   );
 
-  // Exported field: 'node-event-field_image'
+  // Exported field: 'node-event-field_image'.
   $fields['node-event-field_image'] = array(
     'field_config' => array(
       'active' => '1',
@@ -519,6 +526,7 @@ function occupy_content_types_field_default_fields() {
           0 => 'fid',
         ),
       ),
+      'locked' => '0',
       'module' => 'image',
       'settings' => array(
         'default_image' => 0,
@@ -577,7 +585,7 @@ function occupy_content_types_field_default_fields() {
     ),
   );
 
-  // Exported field: 'node-event-field_image_caption'
+  // Exported field: 'node-event-field_image_caption'.
   $fields['node-event-field_image_caption'] = array(
     'field_config' => array(
       'active' => '1',
@@ -598,6 +606,7 @@ function occupy_content_types_field_default_fields() {
           0 => 'format',
         ),
       ),
+      'locked' => '0',
       'module' => 'text',
       'settings' => array(
         'max_length' => '255',
@@ -645,7 +654,7 @@ function occupy_content_types_field_default_fields() {
     ),
   );
 
-  // Exported field: 'node-event-field_image_source'
+  // Exported field: 'node-event-field_image_source'.
   $fields['node-event-field_image_source'] = array(
     'field_config' => array(
       'active' => '1',
@@ -666,6 +675,7 @@ function occupy_content_types_field_default_fields() {
           0 => 'format',
         ),
       ),
+      'locked' => '0',
       'module' => 'text',
       'settings' => array(
         'max_length' => '255',
@@ -713,7 +723,7 @@ function occupy_content_types_field_default_fields() {
     ),
   );
 
-  // Exported field: 'node-event-field_source'
+  // Exported field: 'node-event-field_source'.
   $fields['node-event-field_source'] = array(
     'field_config' => array(
       'active' => '1',
@@ -734,6 +744,7 @@ function occupy_content_types_field_default_fields() {
           0 => 'format',
         ),
       ),
+      'locked' => '0',
       'module' => 'text',
       'settings' => array(
         'max_length' => '255',
@@ -781,7 +792,7 @@ function occupy_content_types_field_default_fields() {
     ),
   );
 
-  // Exported field: 'node-event-field_story_category'
+  // Exported field: 'node-event-field_story_category'.
   $fields['node-event-field_story_category'] = array(
     'field_config' => array(
       'active' => '1',
@@ -802,6 +813,7 @@ function occupy_content_types_field_default_fields() {
           0 => 'tid',
         ),
       ),
+      'locked' => '0',
       'module' => 'taxonomy',
       'settings' => array(
         'allowed_values' => array(
@@ -850,7 +862,7 @@ function occupy_content_types_field_default_fields() {
     ),
   );
 
-  // Exported field: 'node-event-field_tags'
+  // Exported field: 'node-event-field_tags'.
   $fields['node-event-field_tags'] = array(
     'field_config' => array(
       'active' => '1',
@@ -871,6 +883,7 @@ function occupy_content_types_field_default_fields() {
           0 => 'tid',
         ),
       ),
+      'locked' => '0',
       'module' => 'taxonomy',
       'settings' => array(
         'allowed_values' => array(
@@ -922,7 +935,7 @@ function occupy_content_types_field_default_fields() {
     ),
   );
 
-  // Exported field: 'node-ga_policy-body'
+  // Exported field: 'node-ga_policy-body'.
   $fields['node-ga_policy-body'] = array(
     'field_config' => array(
       'active' => '1',
@@ -945,6 +958,7 @@ function occupy_content_types_field_default_fields() {
           0 => 'format',
         ),
       ),
+      'locked' => '0',
       'module' => 'text',
       'settings' => array(),
       'translatable' => '0',
@@ -994,7 +1008,7 @@ function occupy_content_types_field_default_fields() {
     ),
   );
 
-  // Exported field: 'node-ga_policy-field_image'
+  // Exported field: 'node-ga_policy-field_image'.
   $fields['node-ga_policy-field_image'] = array(
     'field_config' => array(
       'active' => '1',
@@ -1015,6 +1029,7 @@ function occupy_content_types_field_default_fields() {
           0 => 'fid',
         ),
       ),
+      'locked' => '0',
       'module' => 'image',
       'settings' => array(
         'default_image' => 0,
@@ -1079,7 +1094,7 @@ function occupy_content_types_field_default_fields() {
     ),
   );
 
-  // Exported field: 'node-ga_policy-field_policy_date_passed'
+  // Exported field: 'node-ga_policy-field_policy_date_passed'.
   $fields['node-ga_policy-field_policy_date_passed'] = array(
     'field_config' => array(
       'active' => '1',
@@ -1100,6 +1115,7 @@ function occupy_content_types_field_default_fields() {
           0 => 'format',
         ),
       ),
+      'locked' => '0',
       'module' => 'text',
       'settings' => array(
         'max_length' => '255',
@@ -1146,7 +1162,7 @@ function occupy_content_types_field_default_fields() {
     ),
   );
 
-  // Exported field: 'node-occupy_location-body'
+  // Exported field: 'node-occupy_location-body'.
   $fields['node-occupy_location-body'] = array(
     'field_config' => array(
       'active' => '1',
@@ -1169,6 +1185,7 @@ function occupy_content_types_field_default_fields() {
           0 => 'format',
         ),
       ),
+      'locked' => '0',
       'module' => 'text',
       'settings' => array(),
       'translatable' => '0',
@@ -1216,7 +1233,7 @@ function occupy_content_types_field_default_fields() {
     ),
   );
 
-  // Exported field: 'node-occupy_location-field_address'
+  // Exported field: 'node-occupy_location-field_address'.
   $fields['node-occupy_location-field_address'] = array(
     'field_config' => array(
       'active' => '1',
@@ -1226,6 +1243,7 @@ function occupy_content_types_field_default_fields() {
       'field_name' => 'field_address',
       'foreign keys' => array(),
       'indexes' => array(),
+      'locked' => '0',
       'module' => 'addressfield',
       'settings' => array(),
       'translatable' => '0',
@@ -1292,7 +1310,7 @@ function occupy_content_types_field_default_fields() {
     ),
   );
 
-  // Exported field: 'node-occupy_location-field_geofield'
+  // Exported field: 'node-occupy_location-field_geofield'.
   $fields['node-occupy_location-field_geofield'] = array(
     'field_config' => array(
       'active' => '1',
@@ -1302,6 +1320,7 @@ function occupy_content_types_field_default_fields() {
       'field_name' => 'field_geofield',
       'foreign keys' => array(),
       'indexes' => array(),
+      'locked' => '0',
       'module' => 'geofield',
       'settings' => array(),
       'translatable' => '0',
@@ -1368,7 +1387,7 @@ function occupy_content_types_field_default_fields() {
     ),
   );
 
-  // Exported field: 'node-occupy_location-field_location_map'
+  // Exported field: 'node-occupy_location-field_location_map'.
   $fields['node-occupy_location-field_location_map'] = array(
     'field_config' => array(
       'active' => '1',
@@ -1382,6 +1401,7 @@ function occupy_content_types_field_default_fields() {
           0 => 'value',
         ),
       ),
+      'locked' => '0',
       'module' => 'list',
       'settings' => array(
         'allowed_values' => array(
@@ -1436,7 +1456,7 @@ function occupy_content_types_field_default_fields() {
     ),
   );
 
-  // Exported field: 'node-page-body'
+  // Exported field: 'node-page-body'.
   $fields['node-page-body'] = array(
     'field_config' => array(
       'active' => '1',
@@ -1459,6 +1479,7 @@ function occupy_content_types_field_default_fields() {
           0 => 'format',
         ),
       ),
+      'locked' => '0',
       'module' => 'text',
       'settings' => array(),
       'translatable' => '0',
@@ -1508,7 +1529,7 @@ function occupy_content_types_field_default_fields() {
     ),
   );
 
-  // Exported field: 'node-story-body'
+  // Exported field: 'node-story-body'.
   $fields['node-story-body'] = array(
     'field_config' => array(
       'active' => '1',
@@ -1531,6 +1552,7 @@ function occupy_content_types_field_default_fields() {
           0 => 'format',
         ),
       ),
+      'locked' => '0',
       'module' => 'text',
       'settings' => array(),
       'translatable' => '0',
@@ -1580,7 +1602,7 @@ function occupy_content_types_field_default_fields() {
     ),
   );
 
-  // Exported field: 'node-story-field_author'
+  // Exported field: 'node-story-field_author'.
   $fields['node-story-field_author'] = array(
     'field_config' => array(
       'active' => '1',
@@ -1601,6 +1623,7 @@ function occupy_content_types_field_default_fields() {
           0 => 'format',
         ),
       ),
+      'locked' => '0',
       'module' => 'text',
       'settings' => array(
         'max_length' => '255',
@@ -1625,7 +1648,7 @@ function occupy_content_types_field_default_fields() {
           'label' => 'above',
           'settings' => array(),
           'type' => 'hidden',
-          'weight' => 0,
+          'weight' => '0',
         ),
       ),
       'entity_type' => 'node',
@@ -1648,7 +1671,7 @@ function occupy_content_types_field_default_fields() {
     ),
   );
 
-  // Exported field: 'node-story-field_ga_consensed'
+  // Exported field: 'node-story-field_ga_consensed'.
   $fields['node-story-field_ga_consensed'] = array(
     'field_config' => array(
       'active' => '1',
@@ -1662,6 +1685,7 @@ function occupy_content_types_field_default_fields() {
           0 => 'value',
         ),
       ),
+      'locked' => '0',
       'module' => 'list',
       'settings' => array(
         'allowed_values' => array(
@@ -1693,7 +1717,7 @@ function occupy_content_types_field_default_fields() {
           'label' => 'above',
           'settings' => array(),
           'type' => 'hidden',
-          'weight' => 0,
+          'weight' => '0',
         ),
       ),
       'entity_type' => 'node',
@@ -1715,7 +1739,7 @@ function occupy_content_types_field_default_fields() {
     ),
   );
 
-  // Exported field: 'node-story-field_image'
+  // Exported field: 'node-story-field_image'.
   $fields['node-story-field_image'] = array(
     'field_config' => array(
       'active' => '1',
@@ -1736,6 +1760,7 @@ function occupy_content_types_field_default_fields() {
           0 => 'fid',
         ),
       ),
+      'locked' => '0',
       'module' => 'image',
       'settings' => array(
         'default_image' => 0,
@@ -1798,7 +1823,7 @@ function occupy_content_types_field_default_fields() {
     ),
   );
 
-  // Exported field: 'node-story-field_image_caption'
+  // Exported field: 'node-story-field_image_caption'.
   $fields['node-story-field_image_caption'] = array(
     'field_config' => array(
       'active' => '1',
@@ -1819,6 +1844,7 @@ function occupy_content_types_field_default_fields() {
           0 => 'format',
         ),
       ),
+      'locked' => '0',
       'module' => 'text',
       'settings' => array(
         'max_length' => '255',
@@ -1843,7 +1869,7 @@ function occupy_content_types_field_default_fields() {
           'label' => 'above',
           'settings' => array(),
           'type' => 'hidden',
-          'weight' => 0,
+          'weight' => '0',
         ),
       ),
       'entity_type' => 'node',
@@ -1865,7 +1891,7 @@ function occupy_content_types_field_default_fields() {
     ),
   );
 
-  // Exported field: 'node-story-field_image_source'
+  // Exported field: 'node-story-field_image_source'.
   $fields['node-story-field_image_source'] = array(
     'field_config' => array(
       'active' => '1',
@@ -1886,6 +1912,7 @@ function occupy_content_types_field_default_fields() {
           0 => 'format',
         ),
       ),
+      'locked' => '0',
       'module' => 'text',
       'settings' => array(
         'max_length' => '255',
@@ -1910,7 +1937,7 @@ function occupy_content_types_field_default_fields() {
           'label' => 'above',
           'settings' => array(),
           'type' => 'hidden',
-          'weight' => 0,
+          'weight' => '0',
         ),
       ),
       'entity_type' => 'node',
@@ -1932,7 +1959,7 @@ function occupy_content_types_field_default_fields() {
     ),
   );
 
-  // Exported field: 'node-story-field_source'
+  // Exported field: 'node-story-field_source'.
   $fields['node-story-field_source'] = array(
     'field_config' => array(
       'active' => '1',
@@ -1953,6 +1980,7 @@ function occupy_content_types_field_default_fields() {
           0 => 'format',
         ),
       ),
+      'locked' => '0',
       'module' => 'text',
       'settings' => array(
         'max_length' => '255',
@@ -2000,7 +2028,7 @@ function occupy_content_types_field_default_fields() {
     ),
   );
 
-  // Exported field: 'node-story-field_story_category'
+  // Exported field: 'node-story-field_story_category'.
   $fields['node-story-field_story_category'] = array(
     'field_config' => array(
       'active' => '1',
@@ -2021,6 +2049,7 @@ function occupy_content_types_field_default_fields() {
           0 => 'tid',
         ),
       ),
+      'locked' => '0',
       'module' => 'taxonomy',
       'settings' => array(
         'allowed_values' => array(
@@ -2050,7 +2079,7 @@ function occupy_content_types_field_default_fields() {
           'label' => 'above',
           'settings' => array(),
           'type' => 'hidden',
-          'weight' => 0,
+          'weight' => '0',
         ),
       ),
       'entity_type' => 'node',
@@ -2070,7 +2099,7 @@ function occupy_content_types_field_default_fields() {
     ),
   );
 
-  // Exported field: 'node-story-field_tags'
+  // Exported field: 'node-story-field_tags'.
   $fields['node-story-field_tags'] = array(
     'field_config' => array(
       'active' => '1',
@@ -2091,6 +2120,7 @@ function occupy_content_types_field_default_fields() {
           0 => 'tid',
         ),
       ),
+      'locked' => '0',
       'module' => 'taxonomy',
       'settings' => array(
         'allowed_values' => array(
@@ -2142,7 +2172,7 @@ function occupy_content_types_field_default_fields() {
     ),
   );
 
-  // Exported field: 'node-video-field_video'
+  // Exported field: 'node-video-field_video'.
   $fields['node-video-field_video'] = array(
     'field_config' => array(
       'active' => '1',
@@ -2152,6 +2182,7 @@ function occupy_content_types_field_default_fields() {
       'field_name' => 'field_video',
       'foreign keys' => array(),
       'indexes' => array(),
+      'locked' => '0',
       'module' => 'video_embed_field',
       'settings' => array(),
       'translatable' => '0',
@@ -2198,7 +2229,7 @@ function occupy_content_types_field_default_fields() {
     ),
   );
 
-  // Exported field: 'node-webform-body'
+  // Exported field: 'node-webform-body'.
   $fields['node-webform-body'] = array(
     'field_config' => array(
       'active' => '1',
@@ -2221,6 +2252,7 @@ function occupy_content_types_field_default_fields() {
           0 => 'format',
         ),
       ),
+      'locked' => '0',
       'module' => 'text',
       'settings' => array(),
       'translatable' => '0',

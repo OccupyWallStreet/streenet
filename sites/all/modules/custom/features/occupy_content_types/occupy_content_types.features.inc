@@ -8,7 +8,18 @@
  * Implements hook_ctools_plugin_api().
  */
 function occupy_content_types_ctools_plugin_api() {
-  return array("version" => "1");
+  list($module, $api) = func_get_args();
+  if ($module == "field_group" && $api == "field_group") {
+    return array("version" => "1");
+  }
+  list($module, $api) = func_get_args();
+  if ($module == "strongarm" && $api == "strongarm") {
+    return array("version" => "1");
+  }
+  list($module, $api) = func_get_args();
+  if ($module == "video_embed_field" && $api == "default_video_embed_styles") {
+    return array("version" => "1");
+  }
 }
 
 /**
@@ -17,7 +28,7 @@ function occupy_content_types_ctools_plugin_api() {
 function occupy_content_types_image_default_styles() {
   $styles = array();
 
-  // Exported image style: 220x117
+  // Exported image style: 220x117.
   $styles['220x117'] = array(
     'name' => '220x117',
     'effects' => array(
@@ -56,7 +67,7 @@ function occupy_content_types_image_default_styles() {
     ),
   );
 
-  // Exported image style: 380w-story-node
+  // Exported image style: 380w-story-node.
   $styles['380w-story-node'] = array(
     'name' => '380w-story-node',
     'effects' => array(
@@ -79,7 +90,7 @@ function occupy_content_types_image_default_styles() {
     ),
   );
 
-  // Exported image style: 450x465-featured-article
+  // Exported image style: 450x465-featured-article.
   $styles['450x465-featured-article'] = array(
     'name' => '450x465-featured-article',
     'effects' => array(
@@ -101,7 +112,7 @@ function occupy_content_types_image_default_styles() {
     ),
   );
 
-  // Exported image style: 540x380
+  // Exported image style: 540x380.
   $styles['540x380'] = array(
     'name' => '540x380',
     'effects' => array(

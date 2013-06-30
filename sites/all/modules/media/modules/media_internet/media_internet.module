@@ -53,25 +53,25 @@ function media_internet_add($form, &$form_state = array(), $types = NULL) {
     $form['#validators']['media_file_validate_types'] = array($types);
   }
 
-  $form['providers'] = array();
-  $form['providers']['header'] = array('#markup' => '<h2>' . t('Supported Providers') . '</h2>');
+  $providers = array();
   foreach (media_internet_get_providers() as $key => $provider) {
     if (empty($provider['hidden']) || $provider['hidden'] != TRUE) {
-      if (isset($provider['image'])) {
-        $form['providers'][$key] = array('#markup' => theme('image', array('path' => $provider['image'], 'title' => $provider['title'])));
-      }
-      else {
-        $form['providers'][$key] = array('#markup' => $provider['title']);
-      }
-      // Wrap the provider in a div so we can make a nice list
-      $form['providers'][$key]['#prefix'] = '<div class="media-provider">';
-      $form['providers'][$key]['#suffix'] = '</div>';
+      // @todo Convert this to show provider images in a nice format.
+      $class = drupal_clean_css_identifier(drupal_strtolower($provider['title']));
+      $providers[] = array(
+        'data' => check_plain($provider['title']),
+        'class' => array($class),
+      );
     }
   }
-  if (count($form['providers']) == 1) {
-    // Just the header, no actual providers
-    unset($form['providers']['header']);
-  }
+  $form['providers'] = array(
+    '#theme' => 'item_list',
+    '#title' => t('Supported providers'),
+    '#items' => $providers,
+    '#attributes' => array(
+      'class' => array('media-internet-providers'),
+    ),
+  );
 
   $form['actions'] = array('#type' => 'actions');
   $form['actions']['submit'] = array('#type' => 'submit', '#value' => t('Submit'));
@@ -95,10 +95,10 @@ function media_internet_add_validate($form, &$form_state) {
     $provider = media_internet_get_provider($embed_code);
     $provider->validate();
   } catch (MediaInternetNoHandlerException $e) {
-    form_set_error('url', $e->getMessage());
+    form_set_error('embed_code', $e->getMessage());
     return;
   } catch (MediaInternetValidationException $e) {
-    form_set_error('url', $e->getMessage());
+    form_set_error('embed_code', $e->getMessage());
     return;
   }
 
@@ -108,7 +108,7 @@ function media_internet_add_validate($form, &$form_state) {
     try {
       $file = $provider->getFileObject();
     } catch (Exception $e) {
-      form_set_error('url', $e->getMessage());
+      form_set_error('embed_code', $e->getMessage());
       return;
     }
 
@@ -125,7 +125,7 @@ function media_internet_add_validate($form, &$form_state) {
       else {
         $message .= ' ' . array_pop($errors);
       }
-      form_set_error('url', $message);
+      form_set_error('embed_code', $message);
       return FALSE;
     }
   }
@@ -159,12 +159,12 @@ function media_internet_add_submit($form, &$form_state) {
     $file = $provider->save();
   }
   catch (Exception $e) {
-    form_set_error('url', $e->getMessage());
+    form_set_error('embed_code', $e->getMessage());
     return;
   }
 
   if (!$file->fid) {
-    form_set_error('url', t('The file %file could not be saved. An unknown error has occurred.', array('%file' => $embed_code)));
+    form_set_error('embed_code', t('The file %file could not be saved. An unknown error has occurred.', array('%file' => $embed_code)));
     return;
   }
 
