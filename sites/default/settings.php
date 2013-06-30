@@ -572,7 +572,7 @@ $conf['404_fast_html'] = '<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML+RDFa 1.0//EN"
       'database' => 'streetnet_kala',
       'username' => 'root',
       'password' => 'password',
-      'host' => 'kala',
+      'host' => 'localhost',
       'prefix' => '',
       );
 
