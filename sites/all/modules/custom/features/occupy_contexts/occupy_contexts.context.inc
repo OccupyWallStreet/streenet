@@ -473,7 +473,6 @@ function occupy_contexts_context_default_contexts() {
   // Translatables
   // Included for use with string extractors like potx.
   t('Sitewide Context');
-  t('Sitewide context');
   $export['sitewide'] = $context;
 
   $context = new stdClass();
