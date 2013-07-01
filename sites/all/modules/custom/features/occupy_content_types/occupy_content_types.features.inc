@@ -23,6 +23,13 @@ function occupy_content_types_ctools_plugin_api() {
 }
 
 /**
+ * Implements hook_views_api().
+ */
+function occupy_content_types_views_api() {
+  return array("api" => "3.0");
+}
+
+/**
  * Implements hook_image_default_styles().
  */
 function occupy_content_types_image_default_styles() {
@@ -42,11 +49,11 @@ function occupy_content_types_image_default_styles() {
         'module' => 'image',
         'name' => 'image_scale',
         'data' => array(
-          'width' => '220',
+          'width' => 220,
           'height' => '',
           'upscale' => 1,
         ),
-        'weight' => '-10',
+        'weight' => -10,
       ),
       5 => array(
         'label' => 'Crop',
@@ -58,11 +65,11 @@ function occupy_content_types_image_default_styles() {
         'module' => 'image',
         'name' => 'image_crop',
         'data' => array(
-          'width' => '220',
-          'height' => '117',
+          'width' => 220,
+          'height' => 117,
           'anchor' => 'center-top',
         ),
-        'weight' => '-9',
+        'weight' => -9,
       ),
     ),
   );
@@ -81,11 +88,11 @@ function occupy_content_types_image_default_styles() {
         'module' => 'image',
         'name' => 'image_scale',
         'data' => array(
-          'width' => '380',
+          'width' => 380,
           'height' => '',
           'upscale' => 1,
         ),
-        'weight' => '1',
+        'weight' => 1,
       ),
     ),
   );
@@ -104,10 +111,10 @@ function occupy_content_types_image_default_styles() {
         'module' => 'image',
         'name' => 'image_scale_and_crop',
         'data' => array(
-          'width' => '450',
-          'height' => '465',
+          'width' => 450,
+          'height' => 465,
         ),
-        'weight' => '1',
+        'weight' => 1,
       ),
     ),
   );
@@ -126,11 +133,11 @@ function occupy_content_types_image_default_styles() {
         'module' => 'image',
         'name' => 'image_scale',
         'data' => array(
-          'width' => '540',
+          'width' => 540,
           'height' => '',
           'upscale' => 1,
         ),
-        'weight' => '-10',
+        'weight' => -10,
       ),
       7 => array(
         'label' => 'Crop',
@@ -142,11 +149,11 @@ function occupy_content_types_image_default_styles() {
         'module' => 'image',
         'name' => 'image_crop',
         'data' => array(
-          'width' => '540',
-          'height' => '380',
+          'width' => 540,
+          'height' => 380,
           'anchor' => 'center-top',
         ),
-        'weight' => '-9',
+        'weight' => -9,
       ),
     ),
   );

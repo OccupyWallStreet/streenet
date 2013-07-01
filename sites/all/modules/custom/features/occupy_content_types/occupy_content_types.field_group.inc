@@ -21,10 +21,11 @@ function occupy_content_types_field_group_info() {
   $field_group->parent_name = '';
   $field_group->data = array(
     'label' => 'Byline',
-    'weight' => '1',
+    'weight' => '0',
     'children' => array(
       0 => 'field_source',
       1 => 'field_author',
+      2 => 'post_date',
     ),
     'format_type' => 'div',
     'format_settings' => array(
@@ -85,7 +86,7 @@ function occupy_content_types_field_group_info() {
   $field_group->parent_name = 'group_image_wrapper';
   $field_group->data = array(
     'label' => 'Image Metadata',
-    'weight' => '4',
+    'weight' => '5',
     'children' => array(
       0 => 'field_image_caption',
       1 => 'field_image_source',
@@ -150,7 +151,7 @@ function occupy_content_types_field_group_info() {
   $field_group->parent_name = '';
   $field_group->data = array(
     'label' => 'Image wrapper',
-    'weight' => '2',
+    'weight' => '1',
     'children' => array(
       0 => 'field_image',
       1 => 'group_image_meta_wrapper',

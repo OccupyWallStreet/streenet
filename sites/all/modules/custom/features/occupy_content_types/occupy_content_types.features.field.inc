@@ -503,7 +503,10 @@ function occupy_content_types_field_default_fields() {
       'indexes' => array(),
       'locked' => '0',
       'module' => 'geofield',
-      'settings' => array(),
+      'settings' => array(
+        'backend' => 'default',
+        'srid' => '4326',
+      ),
       'translatable' => '0',
       'type' => 'geofield',
     ),
@@ -518,12 +521,6 @@ function occupy_content_types_field_default_fields() {
           'settings' => array(),
           'type' => 'hidden',
           'weight' => '5',
-        ),
-        'rss' => array(
-          'label' => 'above',
-          'settings' => array(),
-          'type' => 'hidden',
-          'weight' => '9',
         ),
         'teaser' => array(
           'label' => 'above',
@@ -546,7 +543,7 @@ function occupy_content_types_field_default_fields() {
       ),
       'widget' => array(
         'active' => 1,
-        'module' => 'geofield',
+        'module' => 'openlayers',
         'settings' => array(
           'delta_handling' => 'default',
           'geocoder_field' => 'field_address',
@@ -599,16 +596,6 @@ function occupy_content_types_field_default_fields() {
           'settings' => array(
             'image_link' => '',
             'image_style' => '380w-story-node',
-          ),
-          'type' => 'image',
-          'weight' => '1',
-        ),
-        'rss' => array(
-          'label' => 'hidden',
-          'module' => 'image',
-          'settings' => array(
-            'image_link' => '',
-            'image_style' => '220x117',
           ),
           'type' => 'image',
           'weight' => '1',
@@ -690,12 +677,6 @@ function occupy_content_types_field_default_fields() {
           'type' => 'text_default',
           'weight' => '2',
         ),
-        'rss' => array(
-          'label' => 'hidden',
-          'settings' => array(),
-          'type' => 'hidden',
-          'weight' => '6',
-        ),
         'teaser' => array(
           'label' => 'above',
           'settings' => array(),
@@ -765,12 +746,6 @@ function occupy_content_types_field_default_fields() {
           'type' => 'text_default',
           'weight' => '3',
         ),
-        'rss' => array(
-          'label' => 'hidden',
-          'settings' => array(),
-          'type' => 'hidden',
-          'weight' => '8',
-        ),
         'teaser' => array(
           'label' => 'above',
           'settings' => array(),
@@ -839,12 +814,6 @@ function occupy_content_types_field_default_fields() {
           'settings' => array(),
           'type' => 'text_default',
           'weight' => '2',
-        ),
-        'rss' => array(
-          'label' => 'hidden',
-          'settings' => array(),
-          'type' => 'hidden',
-          'weight' => '7',
         ),
         'teaser' => array(
           'label' => 'above',
@@ -919,13 +888,6 @@ function occupy_content_types_field_default_fields() {
           'type' => 'hidden',
           'weight' => '7',
         ),
-        'rss' => array(
-          'label' => 'above',
-          'module' => 'taxonomy',
-          'settings' => array(),
-          'type' => 'taxonomy_term_reference_link',
-          'weight' => '5',
-        ),
         'teaser' => array(
           'label' => 'above',
           'settings' => array(),
@@ -995,12 +957,6 @@ function occupy_content_types_field_default_fields() {
           'settings' => array(),
           'type' => 'hidden',
           'weight' => '8',
-        ),
-        'rss' => array(
-          'label' => 'above',
-          'settings' => array(),
-          'type' => 'hidden',
-          'weight' => '11',
         ),
         'teaser' => array(
           'label' => 'above',
@@ -1416,7 +1372,10 @@ function occupy_content_types_field_default_fields() {
       'indexes' => array(),
       'locked' => '0',
       'module' => 'geofield',
-      'settings' => array(),
+      'settings' => array(
+        'backend' => 'default',
+        'srid' => '4326',
+      ),
       'translatable' => '0',
       'type' => 'geofield',
     ),
@@ -1665,20 +1624,11 @@ function occupy_content_types_field_default_fields() {
           'type' => 'text_default',
           'weight' => '3',
         ),
-        'rss' => array(
-          'label' => 'hidden',
-          'module' => 'text',
-          'settings' => array(
-            'trim_length' => 600,
-          ),
-          'type' => 'text_summary_or_trimmed',
-          'weight' => '0',
-        ),
         'teaser' => array(
           'label' => 'hidden',
           'module' => 'text',
           'settings' => array(
-            'trim_length' => '200',
+            'trim_length' => 600,
           ),
           'type' => 'text_summary_or_trimmed',
           'weight' => '1',
@@ -1747,13 +1697,6 @@ function occupy_content_types_field_default_fields() {
           'type' => 'text_default',
           'weight' => '0',
         ),
-        'rss' => array(
-          'label' => 'hidden',
-          'module' => 'text',
-          'settings' => array(),
-          'type' => 'text_default',
-          'weight' => '2',
-        ),
         'teaser' => array(
           'label' => 'above',
           'settings' => array(),
@@ -1818,12 +1761,6 @@ function occupy_content_types_field_default_fields() {
       'description' => '',
       'display' => array(
         'default' => array(
-          'label' => 'above',
-          'settings' => array(),
-          'type' => 'hidden',
-          'weight' => '4',
-        ),
-        'rss' => array(
           'label' => 'above',
           'settings' => array(),
           'type' => 'hidden',
@@ -1899,16 +1836,6 @@ function occupy_content_types_field_default_fields() {
           ),
           'type' => 'image',
           'weight' => '2',
-        ),
-        'rss' => array(
-          'label' => 'hidden',
-          'module' => 'image',
-          'settings' => array(
-            'image_link' => '',
-            'image_style' => '220x117',
-          ),
-          'type' => 'image',
-          'weight' => '1',
         ),
         'teaser' => array(
           'label' => 'hidden',
@@ -1991,12 +1918,6 @@ function occupy_content_types_field_default_fields() {
           'type' => 'text_default',
           'weight' => '5',
         ),
-        'rss' => array(
-          'label' => 'hidden',
-          'settings' => array(),
-          'type' => 'hidden',
-          'weight' => '6',
-        ),
         'teaser' => array(
           'label' => 'above',
           'settings' => array(),
@@ -2065,12 +1986,6 @@ function occupy_content_types_field_default_fields() {
           'type' => 'text_default',
           'weight' => '4',
         ),
-        'rss' => array(
-          'label' => 'hidden',
-          'settings' => array(),
-          'type' => 'hidden',
-          'weight' => '7',
-        ),
         'teaser' => array(
           'label' => 'above',
           'settings' => array(),
@@ -2138,12 +2053,6 @@ function occupy_content_types_field_default_fields() {
           'settings' => array(),
           'type' => 'text_default',
           'weight' => '1',
-        ),
-        'rss' => array(
-          'label' => 'hidden',
-          'settings' => array(),
-          'type' => 'hidden',
-          'weight' => '5',
         ),
         'teaser' => array(
           'label' => 'above',
@@ -2219,13 +2128,6 @@ function occupy_content_types_field_default_fields() {
           'type' => 'taxonomy_term_reference_rss_category',
           'weight' => '0',
         ),
-        'rss' => array(
-          'label' => 'hidden',
-          'module' => 'taxonomy',
-          'settings' => array(),
-          'type' => 'taxonomy_term_reference_link',
-          'weight' => '3',
-        ),
         'teaser' => array(
           'label' => 'above',
           'settings' => array(),
@@ -2295,12 +2197,6 @@ function occupy_content_types_field_default_fields() {
           'settings' => array(),
           'type' => 'hidden',
           'weight' => '5',
-        ),
-        'rss' => array(
-          'label' => 'inline',
-          'settings' => array(),
-          'type' => 'hidden',
-          'weight' => '8',
         ),
         'teaser' => array(
           'label' => 'above',
