@@ -688,7 +688,7 @@ article {
 }
 
 article p {
-	line-height: 1.5em;
+	line-height: 1.5;
 }
 
 article h1,
@@ -807,6 +807,7 @@ article cite{
 #quicktabs-learn{
 	margin-top: 1em;
 }
+
 #quicktabs-learn article{
 	margin-top: 1.5em;
 }
