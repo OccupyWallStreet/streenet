@@ -1240,6 +1240,11 @@ article cite{
 }
 
 /*--------------------------------------------BLOCKS (Bottom Row)------------------------------------*/
+
+.layout-contribute-page-delta .region-preface-fifth {
+clear: both;
+}
+
 .block-16, .block-17, .block-18 {
 	background: #EDEDED;
 	padding: 5px 15px 0px 10px;
