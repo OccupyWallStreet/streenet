@@ -34,7 +34,6 @@ function streetnet_quicktabs_default_quicktabs() {
   $files = file_scan_directory( drupal_get_path('module', 'streetnet').'/quicktabs', '/\.inc$/' );
   foreach ($files as $filepath => $file) {
     require $filepath;
-      watchdog('streetnet', $quicktabs );
     if (isset($quicktabs)) {
       $items[$quicktabs->machine_name] = $quicktabs;
     }
