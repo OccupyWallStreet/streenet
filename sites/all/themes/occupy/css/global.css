@@ -371,6 +371,20 @@ ul.quicktabs-tabs li.active a{
 	text-decoration: none;
 }
 
+#block-quicktabs-featured{
+  width: 540px;
+  margin-right: 24px;
+  position: relative;
+  float: left;
+}
+
+#block-quicktabs-feeds {
+  display: inline-block;
+  width: 360px;
+  position: relative;
+}
+
+
 /* Slideshow Pager "dots" */
 #quicktabs-featured .views-slideshow-controls-bottom {
   display: inline-block;
@@ -475,7 +489,7 @@ ul.quicktabs-tabs li.active a{
   min-height : 260px;
 }
 
-.page-read .region-content.grid-9 { 
+#region-content.grid-9 { 
   width: 100%;
 }
 
@@ -532,6 +546,10 @@ ul.quicktabs-tabs li.active a{
 	letter-spacing: 1px;
 	line-height: 1.125em;
 	text-transform: uppercase;
+}
+
+.front #page-title { 
+  display: none;
 }
 
 .page-user h1#page-title{
@@ -1405,7 +1423,7 @@ color: #000;
 /*-----------------------------------------------PAGER CUSTOMIZATION---------------------------------------*/
 
 /* Pagers Positioning */
-.item-list .pager {
+/*.item-list .pager {
   padding:0;
   margin: 0;
 }
@@ -1442,11 +1460,9 @@ color: #000;
   color: white;
   padding:4px 8px;
   font-weight: bold;
-}
+}*/
 
-#a51d35
-
-.pager li.pager-first a,
+/*.pager li.pager-first a,
 .pager li.pager-previous a,
 .pager li.pager-next a,
 .pager li.pager-last a {
@@ -1474,8 +1490,6 @@ color: #000;
   border-right: 0;
 }
 
-/* Pagers color */
-
 ul.pager{}
 
 .pager li.pager-ellipsis,
@@ -1493,10 +1507,6 @@ ul.pager{}
 }
 
 .pager li.pager-current {
-  /*background: #ddd url(../images/button.png) repeat-x;
-  background: -webkit-gradient(linear, left top, left bottom, color-stop(0, #a51d35), color-stop(1, #a6080e));
-  background-color: #a51d35;
-  background: -moz-linear-gradient(top center, #a51d35 0%, #a6080e 100%);*/
   background-color:#000;
   color: #fff;
   outline: 0;
@@ -1519,7 +1529,6 @@ ul.pager{}
   color: white;
 }
 
-/* Add default border radius to list items & links */
 .pager {
   background:black;
   border:1px solid;
@@ -1544,4 +1553,4 @@ ul.pager{}
   -moz-border-radius: 0 5px 5px 0;
   -webkit-border-radius: 0 5px 5px 0;
 }
-
+*/

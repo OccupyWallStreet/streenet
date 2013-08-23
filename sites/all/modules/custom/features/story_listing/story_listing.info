@@ -1,0 +1,14 @@
+name = Story Listing
+description = View for story listing
+core = 7.x
+package = streetnet
+version = 7.x-1.02
+project = story_listing
+dependencies[] = content_teasers
+dependencies[] = ds
+dependencies[] = views
+features[ctools][] = views:views_default:3.0
+features[features_api][] = api:2
+features_exclude[dependencies][ctools] = ctools
+features_exclude[dependencies][streetnet] = streetnet
+project path = sites/all/modules/custom/features

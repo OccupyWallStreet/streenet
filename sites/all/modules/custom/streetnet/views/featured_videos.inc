@@ -40,7 +40,7 @@ $handler->display->display_options['fields']['field_video']['element_label_colon
 $handler->display->display_options['fields']['field_video']['click_sort_column'] = 'video_url';
 $handler->display->display_options['fields']['field_video']['type'] = 'video_embed_field_thumbnail';
 $handler->display->display_options['fields']['field_video']['settings'] = array(
-  'image_style' => '540x380',
+  'image_style' => 'homepage-feature',
   'image_link' => 'node',
 );
 /* Field: Content: Title */
@@ -147,7 +147,7 @@ $handler->display->display_options['fields']['field_video']['element_label_colon
 $handler->display->display_options['fields']['field_video']['click_sort_column'] = 'video_url';
 $handler->display->display_options['fields']['field_video']['type'] = 'video_embed_field_thumbnail';
 $handler->display->display_options['fields']['field_video']['settings'] = array(
-  'image_style' => '540x380',
+  'image_style' => 'homepage-feature',
   'image_link' => 'node',
 );
 /* Field: Content: Title */

@@ -1,0 +1,7 @@
+<?php
+/**
+ * @file
+ * Code for the Story Listing feature.
+ */
+
+include_once 'story_listing.features.inc';
