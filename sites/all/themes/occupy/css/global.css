@@ -53,24 +53,12 @@ tr:hover td, tr.even:hover td.active, tr.odd:hover td.active {
     background: url("/sites/all/themes/files/header_hashtag.jpg") no-repeat scroll center top transparent;
 }
 
-h1.site-name, h2.site-name {
-    font-size: 4.7em;
-    font-weight: normal;
-    letter-spacing: 1.29px;
+
+/*.site-slogan{
+	font-size: 1.5em;
 }
-.site-name a, .site-name a:active, .site-name a:link, .site-name a:hover {
-    color: #FFFFFF;
-    text-decoration: none;
-}
-.site-slogan, .block-menu {
-    color: #FECD48;
-    font-size: 1.7em;
-    font-weight: normal;
-    letter-spacing: 2px;
-}
-.site-slogan{
-	font-size: 1.7em;
-}
+*/
+
 /*---------------------------------------------MAIN MENU-----------------------------------------*/
 li.expanded, li.collapsed, li.leaf {
 	padding: 0;
@@ -89,7 +77,7 @@ ul li.leaf {
 #block-system-main-menu ul.menu {
     border: medium none;
     list-style: none outside none;
-    padding: 47px 0 0 0px;
+    padding: 54px 0 0 0px;
     text-align: left;
 }
 /*#block-system-main-menu .active-trail {
@@ -389,7 +377,7 @@ ul.quicktabs-tabs li.active a{
   float: left;
   margin-left: 10px;
   position: relative;
-  top: -38px;
+  top: -28px;
   z-index: 50;
   line-height: 1em;
 }
@@ -414,12 +402,12 @@ ul.quicktabs-tabs li.active a{
 #quicktabs-featured .view-footer {
   display: inline-block;
   position: relative;
-  top: -30px;
+  top: -20px;
   z-index: 50;
 }
 
 #quicktabs-featured .view-footer p {
-  margin: 0px 0px 0px 10px;
+  margin: 0 0 0 10px;
 }
 #quicktabs-featured .view-footer a {
   font-family: 'PTSans';
@@ -487,16 +475,9 @@ ul.quicktabs-tabs li.active a{
   min-height : 260px;
 }
 
-/*------------------------------------------STORIES BLOCK OF 4----------------------------------------*/
-
-.view-ows-stories-read-page- .stories-block-row {
-	display: block;
-	background-color: white;
-	float: left;
-	width: 50%;
+.page-read .region-content.grid-9 { 
+  width: 100%;
 }
-
-/*---------------------------------------STORIES BLOCK OF 8----------------------------------*/
 
 #title {
 	text-transform: uppercase;
@@ -506,40 +487,39 @@ ul.quicktabs-tabs li.active a{
 	padding: 0;
 }
 
-.cat-head{
+.category-link{
 	border-bottom: 1px #666 solid;	
 }
 
-.cat-head-GA{
+.category-link.GA{
 	border-bottom: 1px #fc0 solid;
 	color: #fc0;
 }
 
-.cat-head-News{
+.category-link.News{
 	border-bottom: 1px #B50028 solid;
 	color: #B50028
 }
 
-.cat-head-Feature{
+.category-link.Feature{
 	color: #FFCD05;
 	border-bottom: 1px #FFCD05 solid
 }
 
-.cat-head-Event{
+.category-link.Event{
 	color: #F4922E;
 	border-bottom: 1px #F4922E solid
 }
 
-.cat-head-Editorial{
+.category-link.Editorial{
 	color: #3088B9;
 	border-bottom: 1px #3088B9 solid
 }
 
-.cat-head-Analysis{
+.category-link.Analysis{
 	color: #2F89BA;
 	border-bottom: 1px #2F89BA solid
 }
-
 
 .block-syndicate {
 	float: left;
@@ -560,7 +540,7 @@ ul.quicktabs-tabs li.active a{
 
 .stories-block-row {
     display: block;
-    background-color: #FFFFFF;
+    background-color: #fff;
     float: left;
     width: 25%;
 }
@@ -631,55 +611,6 @@ ul.quicktabs-tabs li.active a{
 	color: #000;
 }
 
-/*------------------------------------------STORIES BLOCK OF 4----------------------------------------*/
-.view-ows-stories-read-page- .stories-block-row {
-	display: block;
-	background-color: white;
-	float: left;
-	width: 50%;
-}
-
-.block-ows-stories-read-page--block-1 .view-row-4,
-.block-ows-stories-read-page--block-1 .view-row-2{
-	margin-right: 0px !important;
-}
-
-.stories-block-date {
-	display: block;
-	background-color: #FFCD05;
-	color: black !important;
-	margin: 0;
-	padding: 10px 10px 0;
-	width: 85.5%;
-	font-size: 11px;
-}
-.stories-block-title {
-	display: block;
-	background-color: #FFCD05;
-	color: black !important;
-	margin-bottom: 15px;
-	min-height: 50px;
-	padding: 5px 10px 15px;
-	width: 85.5%;
-}
-#block-views-ows-stories-read-page-block-1 .stories-block-date {
-	display: block;
-	background-color: #FFCD05;
-	color: black !important;
-	margin: 0;
-	padding: 10px 10px 0;
-	width: 87%;
-	font-size: 11px;
-}
-#block-views-ows-stories-read-page-block-1 .stories-block-title {
-	display: block;
-	background-color: #FFCD05;
-	color: black !important;
-	margin-bottom: 15px;
-	min-height: 50px;
-	padding: 5px 10px 15px;
-	width: 87%;
-}
 
 
 /*---------------------------------------------ARTICLE NODES------------------------------------------*/
@@ -841,8 +772,6 @@ article cite{
 }
 
 .field-name-field-tags {
-/*	background-color: lightgray;
-*/
 	-webkit-border-radius: 3px;
 	border-radius: 3px;
 	-moz-border-radius: 3px;

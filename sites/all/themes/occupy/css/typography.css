@@ -108,12 +108,34 @@ h2.block-title {
   text-transform: uppercase;
 }
 
-h1.site-name,
+/*h1.site-name,
 h2.site-name {
     margin-top: 20px;
     font-size: 61px;
     font-weight: normal;
     letter-spacing: 1.29px;
+}*/
+
+h1.site-name,
+h2.site-name {
+  font-size: 61px;
+  font-weight: normal;
+  letter-spacing: 1.8px;
+}
+
+.site-name a,
+.site-name a:active,
+.site-name a:link,
+.site-name a:hover {
+    color: #FFFFFF;
+    text-decoration: none;
+}
+
+.site-slogan, .block-menu {
+    color: #FECD48;
+    font-size: 1.5em;
+    font-weight: normal;
+    letter-spacing: 2px;
 }
 
 #section-content article .group_byline h2 {
@@ -169,19 +191,17 @@ h6.site-slogan {
 Teasers 
 ----------------------------------------------- */
 
-article.node-teaser h4 {
+
+article.node-teaser h2 {
   color:#222;
   font-family: 'PTSans';
   font-weight: bold;
   line-height: 1.25em;
-  font-size: 1.25em;
+  font-size: 1.125em;
+  margin: 0;
   text-transform: none;
 }
 
-/*#mycontent {
-  font-size: 14px;
-}
-*/
 #region-menu ul.menu li a,
 #region-menu ul.menu li a:link {
   color: #FECD48;

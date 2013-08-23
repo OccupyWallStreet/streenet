@@ -12,7 +12,7 @@ article.node-teaser h5 a,
 }
 */
 
-article.view-mode-teaser,
+article.node-teaser,
 article.view-mode-featured_story {
   display: inline-block;
   vertical-align: top;
@@ -21,43 +21,55 @@ article.view-mode-featured_story {
   min-height: 235px;
 }
 
-article.view-mode-teaser {
+article.node-teaser .group-content{
   background-color: #ffcd05;  
   width: 220px;
 }
 
-article.view-mode-teaser .field-name-field-story-category {
-  background: #fff;
+article.node-teaser .group_story_info{
+    padding: .5em;
+    min-height: 94px;
 }
 
-article.view-mode-teaser .group-byline {
+article.node-teaser .field-name-category-link{
+  padding-top: .125em;
+  padding-bottom: .125em;
+}
+
+article.node-teaser a.category-link {
+  display: block;
+  text-decoration: none;
+}
+
+article.node-teaser .group-byline {
   color:#333;
   padding: .75em;
 }
 
-article.view-mode-teaser .field-name-title h4 {
+article.node-teaser .field-name-title h2 {
   margin: .5em 0;
   height: 2.5em;
   overflow: hidden;
   text-overflow: ellipsis;
 }
 
-article.view-mode-teaser .field-name-title h4 a {
+article.node-teaser h2 a {
   text-decoration: none;
+  color: #333;
 }
 
-article.view-mode-teaser .field-name-field-author .field-item {
+article.node-teaser .field-name-field-author .field-item {
   width: 200px;
   overflow: hidden;
   white-space: nowrap;
   text-overflow: ellipsis;
 }
 
-article.view-mode-teaser .field-name-field-author .field-item:before {
+article.node-teaser .field-name-field-author .field-item:before {
   content:'By ';
 }
 
-article.view-mode-teaser .field-name-field-author .field-item:hover {
+article.node-teaser .field-name-field-author .field-item:hover {
   width: auto;
   position: absolute;
   z-index: 350;
@@ -91,6 +103,7 @@ article.view-mode-featured_story:before {
 
 
 article.view-mode-featured_story img {
+
 }
 
 article.view-mode-featured_story .group-byline {
