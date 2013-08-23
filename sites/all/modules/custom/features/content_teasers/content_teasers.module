@@ -1,0 +1,7 @@
+<?php
+/**
+ * @file
+ * Code for the Content Teasers feature.
+ */
+
+include_once 'content_teasers.features.inc';

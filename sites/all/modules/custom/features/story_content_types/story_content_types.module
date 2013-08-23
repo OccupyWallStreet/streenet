@@ -1,0 +1,7 @@
+<?php
+/**
+ * @file
+ * Code for the Story Content Types feature.
+ */
+
+include_once 'story_content_types.features.inc';
