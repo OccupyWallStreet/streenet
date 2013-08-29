@@ -1529,7 +1529,7 @@ ul.pager{}
   color: white;
 }
 
-.pager {
+`.pager {
   background:black;
   border:1px solid;
   border-color: #ddd #bbb #999;

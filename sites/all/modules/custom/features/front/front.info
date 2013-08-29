@@ -1,0 +1,15 @@
+name = Front Page
+core = 7.x
+package = Streetnet
+version = 7.x-1.00
+project = front_page
+dependencies[] = nodequeue
+dependencies[] = streetnet_base
+dependencies[] = views
+dependencies[] = views_slideshow
+features[ctools][] = quicktabs:quicktabs:1
+features[ctools][] = views:views_default:3.0
+features[features_api][] = api:2
+features_exclude[dependencies][ctools] = ctools
+features_exclude[dependencies][quicktabs] = quicktabs
+project path = sites/all/modules/custom/features
