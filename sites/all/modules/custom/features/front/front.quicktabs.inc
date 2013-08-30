@@ -27,7 +27,7 @@ function front_quicktabs_default_quicktabs() {
       'type' => 'block',
     ),
     1 => array(
-      'bid' => 'views_delta_nodequeue_2-block',
+      'bid' => 'views_delta_featured_videos-block',
       'hide_title' => 1,
       'title' => 'Video',
       'weight' => '-99',

@@ -6,7 +6,7 @@
  */
 
 /**
- * Implements hook_feeds_parser_sources_alter().
+ * Implementation of hook_feeds_parser_sources_alter().
  *
  * @see geofield_feeds_combined_source()
  */
@@ -62,7 +62,6 @@ function geofield_feeds_combined_source($source, FeedsParserResult $result, $key
   }
   return $values;
 }
-
 
 /**
  * Implements hook_feeds_node_processor_targets_alter().
