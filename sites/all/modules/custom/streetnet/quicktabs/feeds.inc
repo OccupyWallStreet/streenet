@@ -9,23 +9,23 @@ $quicktabs->default_tab = 0;
 $quicktabs->title = 'Feeds';
 $quicktabs->tabs = array(
   0 => array(
-    'bid' => 'views_delta_ows_news_widget-block',
+    'bid' => 'views_delta_ows_in_news-block',
     'hide_title' => 1,
     'title' => 'In the News',
     'weight' => '-100',
     'type' => 'block',
   ),
   1 => array(
-    'bid' => 'aggregator_delta_feed-6',
+    'bid' => 'views_delta_ows_on_twitter-block',
     'hide_title' => 1,
-    'title' => 'NYCGA Events',
+    'title' => 'On Twitter',
     'weight' => '-99',
     'type' => 'block',
   ),
   2 => array(
-    'bid' => 'views_delta_ows_twitter_widget-block',
+    'bid' => 'views_delta_nycga_net_events_widget-block',
     'hide_title' => 1,
-    'title' => 'On Twitter',
+    'title' => 'NYCGA Events',
     'weight' => '-98',
     'type' => 'block',
   ),

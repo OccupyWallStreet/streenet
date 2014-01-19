@@ -1,7 +1,0 @@
-<?php
-/**
- * @file
- * Code for the Streetnet Base feature.
- */
-
-include_once 'streetnet_base.features.inc';

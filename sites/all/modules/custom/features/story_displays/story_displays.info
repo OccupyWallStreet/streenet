@@ -1,0 +1,13 @@
+name = Story Displays
+description = DS Settings for Stories, Events and Videos
+core = 7.x
+package = Streetnet
+version = 7.x-0.50
+project = story_displays
+dependencies[] = ctools
+dependencies[] = ds
+features[ctools][] = ds:ds:1
+features[ds_field_settings][] = node|story|default
+features[ds_layout_settings][] = node|story|default
+features[ds_layout_settings][] = node|story|full
+features[features_api][] = api:2

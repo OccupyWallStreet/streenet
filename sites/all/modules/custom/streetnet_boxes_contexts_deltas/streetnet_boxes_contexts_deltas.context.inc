@@ -236,56 +236,50 @@ function streetnet_boxes_contexts_deltas_context_default_contexts() {
   t('Contribute Page');
   $contexts['contribute'] = $context;
 
-
-$context = new stdClass();
-$context->disabled = FALSE; /* Edit this to true to make a default context disabled initially */
-$context->api_version = 3;
-$context->name = 'front';
-$context->description = 'Front Page Layout';
-$context->tag = 'Front Page Layout';
-$context->conditions = array(
-  'path' => array(
-    'values' => array(
-      '<front>' => '<front>',
-    ),
-  ),
-);
-$context->reactions = array(
-  'block' => array(
-    'blocks' => array(
-      'quicktabs-featured' => array(
-        'module' => 'quicktabs',
-        'delta' => 'featured',
-        'region' => 'preface',
-        'weight' => '-10',
-      ),
-      'quicktabs-feeds' => array(
-        'module' => 'quicktabs',
-        'delta' => 'feeds',
-        'region' => 'preface',
-        'weight' => '-9',
-      ),
-      'views-streetnet_stories-block' => array(
-        'module' => 'views',
-        'delta' => 'streetnet_stories-block',
-        'region' => 'content',
-        'weight' => '-10',
-      ),
-      'views-interocc_newsfeed-block' => array(
-        'module' => 'views',
-        'delta' => 'interocc_newsfeed-block',
-        'region' => 'content',
-        'weight' => '-8',
+  $context = new stdClass();
+  $context->disabled = FALSE; /* Edit this to true to make a default context disabled initially */
+  $context->api_version = 3;
+  $context->name = 'front';
+  $context->description = 'Front Page Layout';
+  $context->tag = 'Front Page Layout';
+  $context->conditions = array(
+    'path' => array(
+      'values' => array(
+        '<front>' => '<front>',
       ),
     ),
-  ),
-);
-$context->condition_mode = 0;
-
-// Translatables
-// Included for use with string extractors like potx.
-t('Front Page Layout');
-
+  );
+  $context->reactions = array(
+    'block' => array(
+      'blocks' => array(
+        'views-streetnet_stories-block' => array(
+          'module' => 'views',
+          'delta' => 'streetnet_stories-block',
+          'region' => 'content',
+          'weight' => '-10',
+        ),
+        'quicktabs-featured' => array(
+          'module' => 'quicktabs',
+          'delta' => 'featured',
+          'region' => 'preface_first',
+          'weight' => '-10',
+        ),
+        'quicktabs-feeds' => array(
+          'module' => 'quicktabs',
+          'delta' => 'feeds',
+          'region' => 'preface_second',
+          'weight' => '-10',
+        ),
+        'aggregator-feed-5' => array(
+          'module' => 'aggregator',
+          'delta' => 'feed-5',
+          'region' => 'postscript_first',
+          'weight' => '-10',
+        ),
+      ),
+    ),
+  );
+  $context->condition_mode = 0;
 
   // Translatables
   // Included for use with string extractors like potx.

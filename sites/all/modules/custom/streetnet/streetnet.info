@@ -1,4 +1,4 @@
-name = Streetnet Views and Quicktabs
-description = Module for storing streetnet views and quicktabs
+name = Streetnet Story Views
+description = Module for storing streetnet views
 package = Streetnet
 core = 7.x
