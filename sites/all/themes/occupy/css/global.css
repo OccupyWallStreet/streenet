@@ -1626,6 +1626,11 @@ ul.pager{}
 	float: left;
 }
 
+.content .field-name-field-tags .field-items {
+	max-width: 490px;
+}
+
+
 aside .owstech-share {
 	margin-bottom: 2em;
 }
