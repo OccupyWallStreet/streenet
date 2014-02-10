@@ -823,25 +823,27 @@ article cite{
 }
 
 .block-views-tags-block-block h2.block-title{
-	float: left;
 	text-transform: uppercase;
 	letter-spacing: 1px;
 	margin: 0 .25em .25em 0;
 }
 
+.block-views-tags-block-block {
+	margin-bottom: 2em;
+}
+
+.field-name-field-tags  .field-item,
 .block-views-tags-block-block .tags-block-tag{
 	-webkit-border-radius: 3px;
 	border-radius: 3px;
 	-moz-border-radius: 3px;
-	background: #dedede;
+	background:#222;
 	padding: .25em .25em;
-	margin-right: .25em;
-	float: left;	
+	margin: 0 .25em .25em 0;
+	float: left;
 }
 
 .field-name-field-tags {
-/*	background-color: lightgray;
-*/
 	-webkit-border-radius: 3px;
 	border-radius: 3px;
 	-moz-border-radius: 3px;
@@ -856,17 +858,15 @@ article cite{
 	line-height: 2;
 }
 
-.field-name-field-tags  .field-item{
-	border-radius: 3px;
-	background:#222;
-	margin: 0 2px 0 0;
-}
-
+.block-views-tags-block-block .tags-block-tag a,
 .field-name-field-tags  .field-item a{
 	color: #fff;
 	text-decoration: none;
 	display: inline-block;
 	padding: .25em .5em;
+}
+.field-name-field-tags  .field-item a {
+	padding: 0;
 }
 
 /*-------------------------------------------------NEWS-----------------------------------------------*/
@@ -1099,6 +1099,13 @@ article cite{
 	font-size: 14px;
 	margin: 0 0 0 40px;
 }
+
+.node-type-story .region-sidebar-second,
+.node-type-event .region-sidebar-second,
+.node-type-video .region-sidebar-second {
+	padding-top: .6675em;
+}
+
 /*----------------------------------------BEGIN CONTRIBUTE PAGE------------------------------------*/
 /*----------------------------------------BLOCK TITLES(Top Row)------------------------------------*/
 .custom-title-first {
@@ -1615,3 +1622,23 @@ ul.pager{}
   -webkit-border-radius: 0 5px 5px 0;
 }
 
+.content .owstech-share {
+	float: left;
+}
+
+aside .owstech-share {
+	margin-bottom: 2em;
+}
+.owstech-share h4.actuator {
+	font-size: 18px !important;
+	letter-spacing: .075em;
+}
+
+.owstech-share h4.actuator a {
+	padding: 0 .5em;
+	color: #fc0;
+}
+
+.owstech-share .drawer {
+	padding: .425em 0;
+}
