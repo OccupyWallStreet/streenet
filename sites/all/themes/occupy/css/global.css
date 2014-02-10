@@ -1642,3 +1642,9 @@ aside .owstech-share {
 .owstech-share .drawer {
 	padding: .425em 0;
 }
+
+/* hacky ass header fix */
+.block-block-12 p {
+	margin-bottom: 20px !important;
+
+}
