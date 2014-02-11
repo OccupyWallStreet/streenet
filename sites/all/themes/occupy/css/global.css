@@ -64,13 +64,11 @@ h1.site-name, h2.site-name {
 }
 .site-slogan, .block-menu {
     color: #FECD48;
-    font-size: 1.7em;
+
     font-weight: normal;
     letter-spacing: 2px;
 }
-.site-slogan{
-	font-size: 1.7em;
-}
+
 /*---------------------------------------------MAIN MENU-----------------------------------------*/
 li.expanded, li.collapsed, li.leaf {
 	padding: 0;
@@ -613,12 +611,19 @@ ul.quicktabs-tabs li.active a{
 		left: 190px;
 		top: 16px
 }
-.views-field-field-image {
+
+.stories-block-row .views-field-field-image {
     margin: 24px 0 0;
     padding: 0;
     position: relative;
     z-index: 1;
 }
+
+.stories-block-row .views-field-field-image img {
+	display: block;
+}
+
+
 .more-link {
 	text-align: left;
 	letter-spacing: 1px;

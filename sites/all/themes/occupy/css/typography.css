@@ -76,8 +76,8 @@ h1, h2, h3, h4, h4, h6{
   text-transform: uppercase;
 }
 
-h1 { font-size: 61px; }
-
+/*h1 { font-size: 61px; }
+*/
 h2.block-title,
 h2 { font-size: 33px; }
 
@@ -111,13 +111,13 @@ h2.block-title {
 h1.site-name,
 h2.site-name {
     margin-top: 20px;
-    font-size: 61px;
+    font-size: 61px !important;
     font-weight: normal;
     letter-spacing: 1.29px;
 }
 
 #section-content article .group_byline h2 {
-  font-size: 61px;
+  font-size: 61px !important;
   line-height: 1;
 }
 
@@ -136,9 +136,9 @@ h6.site-slogan {
 .site-slogan,
 .block-menu {
     color: #FECD48;
-    font-size: 22px;
+    font-size: 23px;
     font-weight: normal;
-    letter-spacing: 2px;
+    letter-spacing: 1px;
 }
 
 .newsletter-text {
