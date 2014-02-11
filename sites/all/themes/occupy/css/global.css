@@ -466,7 +466,7 @@ ul.quicktabs-tabs li.active a{
 /*------------------------------------------ Story Cards ------------------------------------------*/ 
 
 .ows-stories-content{
-	background: #ffcd05;
+	background: #ffcc00;
 	width: 85%;
 	padding: 5%;
 	max-height: 240px;
@@ -519,8 +519,8 @@ ul.quicktabs-tabs li.active a{
 }
 
 .cat-head-Feature{
-	color: #FFCD05;
-	border-bottom: 1px #FFCD05 solid
+	color: #ffcc00;
+	border-bottom: 1px #fc0 solid
 }
 
 .cat-head-Event{
@@ -619,6 +619,7 @@ ul.quicktabs-tabs li.active a{
     z-index: 1;
 }
 
+.stories-block-row .stories-block-image img,
 .stories-block-row .views-field-field-image img {
 	display: block;
 }
@@ -651,7 +652,7 @@ ul.quicktabs-tabs li.active a{
 
 .stories-block-date {
 	display: block;
-	background-color: #FFCD05;
+	background-color: #fc0;
 	color: black !important;
 	margin: 0;
 	padding: 10px 10px 0;
@@ -660,7 +661,7 @@ ul.quicktabs-tabs li.active a{
 }
 .stories-block-title {
 	display: block;
-	background-color: #FFCD05;
+	background-color: #fc0;
 	color: black !important;
 	margin-bottom: 15px;
 	min-height: 50px;
@@ -669,7 +670,7 @@ ul.quicktabs-tabs li.active a{
 }
 #block-views-ows-stories-read-page-block-1 .stories-block-date {
 	display: block;
-	background-color: #FFCD05;
+	background-color: #fc0;
 	color: black !important;
 	margin: 0;
 	padding: 10px 10px 0;
@@ -678,7 +679,7 @@ ul.quicktabs-tabs li.active a{
 }
 #block-views-ows-stories-read-page-block-1 .stories-block-title {
 	display: block;
-	background-color: #FFCD05;
+	background-color: #fc0;
 	color: black !important;
 	margin-bottom: 15px;
 	min-height: 50px;
@@ -1354,7 +1355,7 @@ clear: both;
 	font-size: 0;
 }
 .contact-number-text {
-	color: #FFCD05;
+	color: #fc0;
 	font-size: 15px;
 }
 .contact-phone-text {
@@ -1470,7 +1471,7 @@ clear: both;
   font-size: 15px;
 }
 /* yellow highlight
-background: #FFCD05;
+background: #fc0;
 color: #000;
 */
 .block-ows-locations-map-block-1 .field-content span {
