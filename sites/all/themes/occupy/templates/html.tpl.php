@@ -18,7 +18,7 @@
 
 <!-- Piwik -->
 <!-- On Privacy and Surveillance
-We only track internal pageviews and shares
+We only track internal pageviews and article share counts
 Our share module does no tracking on its own, 
 It only connects to the service it corresponds to when you click a share link
 The only link tracking we do via js, is logging which sharelinks you click
@@ -36,7 +36,7 @@ or track your behavior.
     var d=document, g=d.createElement("script"), s=d.getElementsByTagName("script")[0]; g.type="text/javascript";
     g.defer=true; g.async=true; g.src=u+"piwik.js"; s.parentNode.insertBefore(g,s);
 
-    var page_title = (document).attr( title );
+    var page_title = $(document).attr( title );
     console.log("page_title", page_title );
     if( $( "#sidebars .block-owstech-share" ).length ) {
       $( "#sidebars .block-owstech-share .icon.facebook" ).on( 'click', function(e) {
