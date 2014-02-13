@@ -1670,20 +1670,43 @@ aside .owstech-share {
 	margin-bottom: 2em;
 }
 
-#main-content .tabs {
+ul.primary {
+	margin: 0;
+	padding: 0;
 	position: fixed;
-	bottom: 0px;
+	z-index: 100;
+	right: 0;
+	bottom: 0;
+	font-size: 1.25em;
 }
 
-#main-content .tabs li {
-	width: auto;
+ul.primary li {
 	display: inline-block;
-	background: #000;
+	border: none !important;
+	border-right: 1px #222 solid!important;
+	margin: 0 !important;
+	padding: 0 !important;
 }
 
-#main-content .tabs li a {
+ul.primary li a {
 	display: block;
-	background: #000;
-	padding: .5em .5em .25em .5em;
+	transition: color .8;
+	-webkit-transition: background-color .8;
+	background: rgba( 0, 0, 0, 0.8 );
+	border-right: 1px #222 solid;
+	border: none;
+	margin: 0 !important;
+	padding: .5em;
 	color: #dedede;
+}
+
+ul.primary li a:hover {
+	color: #fc0;
+	background-color: #000;
+}
+
+ul.primary li.active a {
+	border: none;
+	background-color: #fc0 !important;
+	color: #000;
 }
