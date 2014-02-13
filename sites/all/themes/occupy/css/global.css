@@ -1660,7 +1660,9 @@ aside .owstech-share {
 
 }
 
-
+.page-taxonomy-term  .stories-view-block {
+	margin-top: 1.5em;
+}
 .page-taxonomy-term  .stories-view-block .view-header {
 	background: #eee;
 	border-radius: .25em;
