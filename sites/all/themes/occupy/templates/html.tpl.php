@@ -37,7 +37,7 @@ or track your behavior.
     g.defer=true; g.async=true; g.src=u+"piwik.js"; s.parentNode.insertBefore(g,s);
 
     var page_title = (document).attr( title );
-    console.log("page_title": page_title );
+    console.log("page_title", page_title );
     if( $( "#sidebars .block-owstech-share" ).length ) {
       $( "#sidebars .block-owstech-share .icon.facebook" ).on( 'click', function(e) {
         _paq.push(['trackPageView', page_title  + "shared on facebook via sidebar"]);
