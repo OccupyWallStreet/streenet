@@ -1670,18 +1670,18 @@ aside .owstech-share {
 	margin-bottom: 2em;
 }
 
-.tabs {
+#main-content .tabs {
 	position: fixed;
 	bottom: 0px;
 }
 
-.tabs li {
+#main-content .tabs li {
 	width: auto;
 	display: inline-block;
 	background: #000;
 }
 
-.tabs li a {
+#main-content .tabs li a {
 	display: block;
 	background: #000;
 	padding: .5em .5em .25em .5em;
