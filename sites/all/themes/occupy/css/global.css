@@ -563,7 +563,6 @@ ul.quicktabs-tabs li.active a{
 
 .stories-block-row {
     display: block;
-    background-color: #FFFFFF;
     float: left;
     width: 25%;
 }
@@ -645,7 +644,6 @@ ul.quicktabs-tabs li.active a{
 /*------------------------------------------STORIES BLOCK OF 4----------------------------------------*/
 .view-ows-stories-read-page- .stories-block-row {
 	display: block;
-	background-color: white;
 	float: left;
 	width: 50%;
 }
