@@ -16,6 +16,7 @@ files[] = views/geofield.views.inc
 files[] = views/handlers/geofield_handler_sort.inc
 files[] = views/handlers/geofield_handler_field.inc
 files[] = views/handlers/geofield_handler_filter.inc
+files[] = views/handlers/geofield_handler_argument_proximity.inc
 files[] = views/proximity_plugins/geofieldProximityBase.inc
 files[] = views/proximity_plugins/geofieldProximityManual.inc
 files[] = views/proximity_plugins/geofieldProximityGeocoder.inc
@@ -23,10 +24,10 @@ files[] = views/proximity_plugins/geofieldProximityEntityURL.inc
 files[] = views/proximity_plugins/geofieldProximityOtherGeofield.inc
 files[] = views/proximity_plugins/geofieldProximityCurrentUser.inc
 files[] = views/proximity_plugins/geofieldProximityExposedFilter.inc
-
-; Information added by drupal.org packaging script on 2013-06-15
-version = "7.x-2.0-alpha2+9-dev"
+files[] = views/proximity_plugins/geofieldProximityContextualFilter.inc
+; Information added by  packaging script on 2013-11-17
+version = "7.x-2.0+4-dev"
 core = "7.x"
 project = "geofield"
-datestamp = "1371302341"
+datestamp = "1384706906"
 

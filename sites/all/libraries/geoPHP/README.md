@@ -1,5 +1,5 @@
 ﻿GeoPHP is a open-source native PHP library for doing geometry operations. It is written entirely in PHP and 
-can therefore run on shared hosts. It can read and write a wide variety of formats (WKT, WKB, GeoJSON, 
+can therefore run on shared hosts. It can read and write a wide variety of formats: WKT (including EWKT), WKB (including EWKB), GeoJSON, 
 KML, GPX, GeoRSS). It works with all Simple-Feature geometries (Point, LineString, Polygon, GeometryCollection etc.)
 and can be used to get centroids, bounding-boxes, area, and a wide variety of other useful information. 
 
@@ -90,17 +90,61 @@ Clearly, more complex analysis is possible.
 	echo $geom2->envelope()->area();
 
 
+Working with PostGIS
+---------------------
+geoPHP, through it's EWKB adapter, has good integration with postGIS. Here's an example of reading and writing postGIS geometries
+
+```php
+<?php
+include_once('geoPHP.inc');
+$host =     'localhost';
+$database = 'phayes';
+$table =    'test';
+$column =   'geom';
+$user =     'phayes';
+$pass =     'supersecret';
+
+$connection = pg_connect("host=$host dbname=$database user=$user password=$pass");
+
+// Working with PostGIS and Extended-WKB
+// ----------------------------
+
+// Using asBinary and GeomFromWKB in PostGIS
+$result = pg_fetch_all(pg_query($connection, "SELECT asBinary($column) as geom FROM $table"));
+foreach ($result as $item) {
+  $wkb = pg_unescape_bytea($item['geom']); // Make sure to unescape the hex blob
+  $geom = geoPHP::load($wkb, 'ewkb'); // We now a full geoPHP Geometry object
+  
+  // Let's insert it back into the database
+  $insert_string = pg_escape_bytea($geom->out('ewkb'));
+  pg_query($connection, "INSERT INTO $table ($column) values (GeomFromWKB('$insert_string'))");
+}
+
+// Using a direct SELECT and INSERTs in PostGIS without using wrapping functions
+$result = pg_fetch_all(pg_query($connection, "SELECT $column as geom FROM $table"));
+foreach ($result as $item) {
+  $wkb = pack('H*',$item['geom']);   // Unpacking the hex blob
+  $geom = geoPHP::load($wkb, 'ewkb'); // We now have a geoPHP Geometry
+  
+  // To insert directly into postGIS we need to unpack the WKB
+  $unpacked = unpack('H*', $geom->out('ewkb'));
+  $insert_string = $unpacked[1];
+  pg_query($connection, "INSERT INTO $table ($column) values ('$insert_string')");
+}
+```
+
+
 Credit
 -------------------------------------------------
 
 Maintainer: Patrick Hayes
 
-Code From:
+Additional Contributors:
 
- * CIS by GeoMemes Research <http://www.geomemes.com>
- * gisconverter.php by Arnaud Renevier <https://github.com/arenevier/gisconverter.php>
+ * GeoMemes Research (<http://www.geomemes.com>)
+ * HighWire Press (<http://www.highwire.org>) and GeoScienceWorld (<http://www.geoscienceworld.org>)
+ * Arnaud Renevier (gisconverter.php) <https://github.com/arenevier/gisconverter.php>
  * Dave Tarc <https://github.com/dtarc>
-
-A special thanks to Elliott Hunston <https://github.com/ejh> for helping with documentation.
+ * Elliott Hunston (documentation) <https://github.com/ejh>
 
 This library is open-source and dual-licensed under both the Modified BSD License and GPLv2. Either license may be used at your option.           
