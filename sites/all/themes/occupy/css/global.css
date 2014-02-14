@@ -1694,7 +1694,7 @@ ul.primary li a {
 	display: block;
 	transition: color .8;
 	-webkit-transition: background-color .8;
-	background: rgba( 0, 0, 0, 0.8 );
+	background-color: rgba( 0, 0, 0, 0.8 );
 	border-right: 1px #222 solid;
 	border: none;
 	margin: 0 !important;

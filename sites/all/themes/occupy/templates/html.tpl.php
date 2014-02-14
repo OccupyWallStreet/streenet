@@ -35,38 +35,6 @@ or track your behavior.
     _paq.push(["setSiteId", "21"]);
     var d=document, g=d.createElement("script"), s=d.getElementsByTagName("script")[0]; g.type="text/javascript";
     g.defer=true; g.async=true; g.src=u+"piwik.js"; s.parentNode.insertBefore(g,s);
-
-    var page_title = $(document).attr( title );
-    console.log("page_title", page_title );
-    if( $( "#sidebars .block-owstech-share" ).length ) {
-      $( "#sidebars .block-owstech-share .icon.facebook" ).on( 'click', function(e) {
-        _paq.push(['trackPageView', page_title  + "shared on facebook via sidebar"]);
-      });
-      $( "#sidebars .block-owstech-share .icon.twitter" ).on( 'click', function(e) {
-        _paq.push(['trackPageView', page_title  + "shared on twitter via sidebar"]);
-      });
-      $( "#sidebars .block-owstech-share .icon.google-plus" ).on( 'click', function(e) {
-        _paq.push(['trackPageView', page_title  + "shared on google-plus via sidebar"]);
-      });
-      $( "#sidebars .block-owstech-share .icon.reddit" ).on( 'click', function(e) {
-        _paq.push(['trackPageView', page_title  + "shared on reddit via sidebar"]);
-      });
-    }
-
-    if( $( ".region-content .block-owstech-share" ).length ) {
-      $( ".region-content .block-owstech-share .icon.facebook" ).on( 'click', function(e) {
-        _paq.push(['trackPageView', page_title + "shared on facebook via sidebar"]);
-      });
-      $( ".region-content .block-owstech-share .icon.twitter" ).on( 'click', function(e) {
-        _paq.push(['trackPageView', page_title + "shared on twitter via sidebar"]);
-      });
-      $( ".region-content .block-owstech-share .icon.google-plus" ).on( 'click', function(e) {
-        _paq.push(['trackPageView', page_title + "shared on google-plus via sidebar"]);
-      });
-      $( ".region-content .block-owstech-share .icon.reddit" ).on( 'click', function(e) {
-        _paq.push(['trackPageView', page_title + "shared on reddit via sidebar"]);
-      });
-    }
   })();
 </script>
 </body>
