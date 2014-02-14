@@ -25,13 +25,12 @@ function occupy_content_types_field_group_info() {
     'children' => array(
       0 => 'field_source',
       1 => 'field_author',
-      2 => 'post_date',
     ),
     'format_type' => 'div',
     'format_settings' => array(
       'label' => 'Byline',
       'instance_settings' => array(
-        'classes' => 'story-byline',
+        'classes' => 'story-byline group-byline field-group-div',
         'description' => '',
         'show_label' => '0',
         'label_element' => 'h3',
@@ -54,7 +53,7 @@ function occupy_content_types_field_group_info() {
   $field_group->parent_name = '';
   $field_group->data = array(
     'label' => 'Event Details',
-    'weight' => '2',
+    'weight' => '1',
     'children' => array(
       0 => 'field_date',
       1 => 'field_address',
@@ -63,7 +62,7 @@ function occupy_content_types_field_group_info() {
     'format_settings' => array(
       'label' => 'Event Details',
       'instance_settings' => array(
-        'classes' => 'event-details',
+        'classes' => 'event-details group-event-details field-group-div',
         'description' => '',
         'show_label' => '0',
         'label_element' => 'h3',
@@ -95,7 +94,7 @@ function occupy_content_types_field_group_info() {
     'format_settings' => array(
       'label' => 'Image Metadata',
       'instance_settings' => array(
-        'classes' => 'image-metadata-wrapper',
+        'classes' => 'image-metadata-wrapper group-image-meta-wrapper field-group-div',
         'description' => '',
         'show_label' => '0',
         'label_element' => 'h3',
@@ -118,7 +117,7 @@ function occupy_content_types_field_group_info() {
   $field_group->parent_name = '';
   $field_group->data = array(
     'label' => 'Image wrapper',
-    'weight' => '1',
+    'weight' => '2',
     'children' => array(
       0 => 'field_image',
       1 => 'field_image_caption',
@@ -128,7 +127,7 @@ function occupy_content_types_field_group_info() {
     'format_settings' => array(
       'label' => 'Image wrapper',
       'instance_settings' => array(
-        'classes' => 'story-image-wrapper',
+        'classes' => 'story-image-wrapper group-image-wrapper field-group-div',
         'description' => '',
         'show_label' => '0',
         'label_element' => 'h3',
@@ -160,7 +159,7 @@ function occupy_content_types_field_group_info() {
     'format_settings' => array(
       'label' => 'Image wrapper',
       'instance_settings' => array(
-        'classes' => 'story-image-wrapper',
+        'classes' => 'story-image-wrapper group-image-wrapper field-group-div',
         'description' => '',
         'show_label' => '0',
         'label_element' => 'h3',
@@ -192,7 +191,7 @@ function occupy_content_types_field_group_info() {
     'format_settings' => array(
       'label' => 'Byline',
       'instance_settings' => array(
-        'classes' => 'story-byline',
+        'classes' => 'story-byline group-story-byline field-group-div',
         'description' => '',
         'show_label' => '0',
         'label_element' => 'h3',

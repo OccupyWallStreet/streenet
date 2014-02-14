@@ -13,7 +13,7 @@ function occupy_content_types_taxonomy_default_vocabularies() {
       'name' => 'Story Category',
       'machine_name' => 'story_category',
       'description' => 'Categorization of Story content.',
-      'hierarchy' => 1,
+      'hierarchy' => 0,
       'module' => 'taxonomy',
       'weight' => 0,
       'rdf_mapping' => array(
