@@ -177,6 +177,9 @@ function occupy_contexts_context_default_contexts() {
     'delta' => array(
       'delta_template' => 'contribute',
     ),
+    'theme_html' => array(
+      'class' => 'layout-contribute-page-delta',
+    ),
   );
   $context->condition_mode = 0;
 
@@ -327,8 +330,8 @@ function occupy_contexts_context_default_contexts() {
   $context->disabled = FALSE; /* Edit this to true to make a default context disabled initially */
   $context->api_version = 3;
   $context->name = 'read';
-  $context->description = 'Read page context';
-  $context->tag = 'Read Page';
+  $context->description = 'Stories page context';
+  $context->tag = 'Stories';
   $context->conditions = array(
     'path' => array(
       'values' => array(
@@ -337,32 +340,58 @@ function occupy_contexts_context_default_contexts() {
     ),
   );
   $context->reactions = array(
-    'block' => array(
-      'blocks' => array(
-        'views-nodequeue_3-block' => array(
-          'module' => 'views',
-          'delta' => 'nodequeue_3-block',
-          'region' => 'preface_first',
-          'weight' => '-10',
-        ),
-        'views-ows_stories_read_page_-block_1' => array(
-          'module' => 'views',
-          'delta' => 'ows_stories_read_page_-block_1',
-          'region' => 'preface_second',
-          'weight' => '-10',
-        ),
-      ),
-    ),
     'delta' => array(
       'delta_template' => 'read',
+    ),
+    'region' => array(
+      'occupy' => array(
+        'disable' => array(
+          'sidebar_first' => 'sidebar_first',
+          'sidebar_second' => 'sidebar_second',
+          'page_top' => 0,
+          'page_bottom' => 0,
+          'content' => 0,
+          'user_first' => 0,
+          'user_second' => 0,
+          'branding' => 0,
+          'branding_two' => 0,
+          'branding_three' => 0,
+          'branding_four' => 0,
+          'menu' => 0,
+          'header_first' => 0,
+          'header_second' => 0,
+          'preface_first' => 0,
+          'preface_second' => 0,
+          'preface_third' => 0,
+          'preface_fourth' => 0,
+          'preface_fifth' => 0,
+          'preface_sixth' => 0,
+          'preface_seventh' => 0,
+          'postscript_first' => 0,
+          'postscript_second' => 0,
+          'postscript_third' => 0,
+          'postscript_fourth' => 0,
+          'footer_first' => 0,
+          'footer_second' => 0,
+          'footer_third' => 0,
+          'footer_fourth' => 0,
+          'footer_fifth' => 0,
+          'footer_sixth' => 0,
+          'footer_seventh' => 0,
+          'footer_eighth' => 0,
+          'dashboard_main' => 0,
+          'dashboard_sidebar' => 0,
+          'dashboard_inactive' => 0,
+        ),
+      ),
     ),
   );
   $context->condition_mode = 0;
 
   // Translatables
   // Included for use with string extractors like potx.
-  t('Read Page');
-  t('Read page context');
+  t('Stories');
+  t('Stories page context');
   $export['read'] = $context;
 
   $context = new stdClass();
@@ -473,6 +502,7 @@ function occupy_contexts_context_default_contexts() {
   // Translatables
   // Included for use with string extractors like potx.
   t('Sitewide Context');
+  t('Sitewide context');
   $export['sitewide'] = $context;
 
   $context = new stdClass();
