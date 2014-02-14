@@ -493,7 +493,8 @@ ul.quicktabs-tabs li.active a{
 
 .view-ows-stories-read-page- .stories-block-row {
 	display: block;
-	background-color: white;
+/*	background-color: white;
+*/
 	float: left;
 	width: 50%;
 }
