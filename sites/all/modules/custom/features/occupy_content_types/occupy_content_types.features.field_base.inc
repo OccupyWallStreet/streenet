@@ -140,25 +140,6 @@ function occupy_content_types_field_default_field_bases() {
     'type' => 'list_boolean',
   );
 
-  // Exported field_base: 'field_geofield'
-  $field_bases['field_geofield'] = array(
-    'active' => 1,
-    'cardinality' => 1,
-    'deleted' => 0,
-    'entity_types' => array(),
-    'field_name' => 'field_geofield',
-    'foreign keys' => array(),
-    'indexes' => array(),
-    'locked' => 0,
-    'module' => 'geofield',
-    'settings' => array(
-      'backend' => 'default',
-      'srid' => 4326,
-    ),
-    'translatable' => 0,
-    'type' => 'geofield',
-  );
-
   // Exported field_base: 'field_geofield_leafleft'
   $field_bases['field_geofield_leafleft'] = array(
     'active' => 1,
