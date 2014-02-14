@@ -4,8 +4,11 @@
  
 /*--------------------------------------------TYPOGRAPHY-------------------------------------------*/
 
+body {
+	font-family: 'PTSans', helvetica, arial, sans-serif;
+}
 h1, h2, h3, h4, h4{
-	font-family: 'LeagueGothic';	
+	font-family: 'LeagueGothic', helvetica, "Arial Black", sans-serif;	
 	font-weight: normal;
 	text-transform: uppercase;
 }
