@@ -19,7 +19,7 @@ function occupy_preprocess_html(&$vars) {
   drupal_add_css('sites/all/themes/occupy/css/ows_infield_labels.css');
   drupal_add_css('sites/all/themes/occupy/css/typography.css');
   drupal_add_js('sites/all/libraries/jquery.infieldlabel/jquery.infieldlabel.min.js');
-  drupal_add_js('sites/all/themes/occupy/js/ows_infield_labels.js');
+  // drupal_add_js('sites/all/themes/occupy/js/ows_infield_labels.js');
   drupal_add_js('sites/all/themes/occupy/js/streetnet.js');  
   // add our civi newsletter form submission js
   drupal_add_js('sites/all/themes/occupy/js/ows_civi_form.js');
