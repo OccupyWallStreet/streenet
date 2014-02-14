@@ -160,7 +160,7 @@ Drupal.wysiwygAttach = function(context, params) {
  */
 Drupal.wysiwygDetach = function (context, params, trigger) {
   // Do not attempt to detach an unknown editor instance (Ajax).
-  if (typeof Drupal.wysiwyg.instances[params.field] == 'undefined') {
+  if (typeof params == 'undefined' || typeof Drupal.wysiwyg.instances[params.field] == 'undefined') {
     return;
   }
   trigger = trigger || 'unload';
