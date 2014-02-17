@@ -1,11 +1,11 @@
-name = Occupy Views
-description = Views for OWS
+name = Streetnet Views
+description = Streetnet story views, announcements and feed views
 core = 7.x
-package = Occupy
+package = Streetnet
 version = 7.x-1.4
 project = occupy_views
-dependencies[] = ctools
 dependencies[] = nodequeue
+dependencies[] = sgrid
 dependencies[] = views
 features[ctools][] = openlayers:openlayers_maps:1
 features[ctools][] = views:views_default:3.0

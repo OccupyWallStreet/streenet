@@ -544,10 +544,10 @@ There are many <a href="http://www.nycga.net/events/" target="_blank">OWS-affili
 
   $view = new view();
   $view->name = 'ows_stories';
-  $view->description = 'Block of 8 stories for the OWS home page.';
-  $view->tag = 'default';
+  $view->description = 'Streetnet story listings, stories page, homepage block, etc.';
+  $view->tag = '';
   $view->base_table = 'node';
-  $view->human_name = 'OWS Stories (Home page block)';
+  $view->human_name = 'Stories';
   $view->core = 7;
   $view->api_version = '3.0';
   $view->disabled = FALSE; /* Edit this to true to make a default view disabled initially */
@@ -574,24 +574,13 @@ There are many <a href="http://www.nycga.net/events/" target="_blank">OWS-affili
   $handler->display->display_options['header']['area']['id'] = 'area';
   $handler->display->display_options['header']['area']['table'] = 'views';
   $handler->display->display_options['header']['area']['field'] = 'area';
-  /* Relationship: Nodequeue: Queue */
-  $handler->display->display_options['relationships']['nodequeue_rel']['id'] = 'nodequeue_rel';
-  $handler->display->display_options['relationships']['nodequeue_rel']['table'] = 'node';
-  $handler->display->display_options['relationships']['nodequeue_rel']['field'] = 'nodequeue_rel';
-  $handler->display->display_options['relationships']['nodequeue_rel']['label'] = 'Single Featured queue';
-  $handler->display->display_options['relationships']['nodequeue_rel']['limit'] = 1;
-  $handler->display->display_options['relationships']['nodequeue_rel']['names'] = array(
-    'single_featured_story' => 'single_featured_story',
-    'featured_stories' => 0,
-    'featured_videos' => 0,
-  );
   /* Field: Content: Category */
   $handler->display->display_options['fields']['field_story_category']['id'] = 'field_story_category';
   $handler->display->display_options['fields']['field_story_category']['table'] = 'field_data_field_story_category';
   $handler->display->display_options['fields']['field_story_category']['field'] = 'field_story_category';
   $handler->display->display_options['fields']['field_story_category']['label'] = '';
   $handler->display->display_options['fields']['field_story_category']['alter']['alter_text'] = TRUE;
-  $handler->display->display_options['fields']['field_story_category']['alter']['text'] = '<div class="cat-head cat-head-[field_story_category]">[field_story_category]</div>';
+  $handler->display->display_options['fields']['field_story_category']['alter']['text'] = '<div class="cat-head cat-head-[field_story_category]"><a href="category/[field_story_category]">[field_story_category]</a></div>';
   $handler->display->display_options['fields']['field_story_category']['element_label_colon'] = FALSE;
   $handler->display->display_options['fields']['field_story_category']['type'] = 'taxonomy_term_reference_plain';
   /* Field: Content: GA Consensed */
@@ -651,6 +640,10 @@ There are many <a href="http://www.nycga.net/events/" target="_blank">OWS-affili
   $handler->display->display_options['sorts']['created']['table'] = 'node';
   $handler->display->display_options['sorts']['created']['field'] = 'created';
   $handler->display->display_options['sorts']['created']['order'] = 'DESC';
+  /* Sort criterion: Sortable Grid: Rank */
+  $handler->display->display_options['sorts']['rank']['id'] = 'rank';
+  $handler->display->display_options['sorts']['rank']['table'] = 'sgrid';
+  $handler->display->display_options['sorts']['rank']['field'] = 'rank';
   /* Filter criterion: Content: Published */
   $handler->display->display_options['filters']['status']['id'] = 'status';
   $handler->display->display_options['filters']['status']['table'] = 'node';
@@ -666,15 +659,10 @@ There are many <a href="http://www.nycga.net/events/" target="_blank">OWS-affili
     'event' => 'event',
     'story' => 'story',
   );
-  /* Filter criterion: Nodequeue: In queue */
-  $handler->display->display_options['filters']['in_queue']['id'] = 'in_queue';
-  $handler->display->display_options['filters']['in_queue']['table'] = 'nodequeue_nodes';
-  $handler->display->display_options['filters']['in_queue']['field'] = 'in_queue';
-  $handler->display->display_options['filters']['in_queue']['relationship'] = 'nodequeue_rel';
-  $handler->display->display_options['filters']['in_queue']['value'] = '0';
+  $handler->display->display_options['filters']['type']['group'] = 1;
 
   /* Display: Page */
-  $handler = $view->new_display('page', 'Page', 'page_1');
+  $handler = $view->new_display('page', 'Page', 'stories_page');
   $handler->display->display_options['defaults']['pager'] = FALSE;
   $handler->display->display_options['pager']['type'] = 'full';
   $handler->display->display_options['pager']['options']['items_per_page'] = '24';
@@ -683,12 +671,13 @@ There are many <a href="http://www.nycga.net/events/" target="_blank">OWS-affili
   $handler->display->display_options['pager']['options']['quantity'] = '9';
   $handler->display->display_options['pager']['options']['expose']['items_per_page_options_all'] = TRUE;
   $handler->display->display_options['defaults']['header'] = FALSE;
-  $handler->display->display_options['path'] = 'read';
+  $handler->display->display_options['path'] = 'stories';
   $handler->display->display_options['menu']['type'] = 'normal';
-  $handler->display->display_options['menu']['title'] = 'READ';
+  $handler->display->display_options['menu']['title'] = 'Stories';
   $handler->display->display_options['menu']['description'] = 'Stories Archive';
   $handler->display->display_options['menu']['weight'] = '0';
   $handler->display->display_options['menu']['context'] = 0;
+  $handler->display->display_options['menu']['context_only_inline'] = 0;
 
   /* Display: Block */
   $handler = $view->new_display('block', 'Block', 'block_2');
@@ -710,6 +699,16 @@ There are many <a href="http://www.nycga.net/events/" target="_blank">OWS-affili
     'single_featured_story' => 'single_featured_story',
     'featured_videos' => 0,
   );
+  $handler->display->display_options['defaults']['sorts'] = FALSE;
+  /* Sort criterion: Content: Post date */
+  $handler->display->display_options['sorts']['created']['id'] = 'created';
+  $handler->display->display_options['sorts']['created']['table'] = 'node';
+  $handler->display->display_options['sorts']['created']['field'] = 'created';
+  $handler->display->display_options['sorts']['created']['order'] = 'DESC';
+  /* Sort criterion: Sortable Grid: Rank */
+  $handler->display->display_options['sorts']['rank']['id'] = 'rank';
+  $handler->display->display_options['sorts']['rank']['table'] = 'sgrid';
+  $handler->display->display_options['sorts']['rank']['field'] = 'rank';
   $handler->display->display_options['defaults']['filter_groups'] = FALSE;
   $handler->display->display_options['defaults']['filters'] = FALSE;
   /* Filter criterion: Content: Published */
@@ -727,6 +726,93 @@ There are many <a href="http://www.nycga.net/events/" target="_blank">OWS-affili
     'event' => 'event',
     'story' => 'story',
   );
+
+  /* Display: Feed */
+  $handler = $view->new_display('feed', 'Feed', 'feed_1');
+  $handler->display->display_options['pager']['type'] = 'none';
+  $handler->display->display_options['pager']['options']['offset'] = '0';
+  $handler->display->display_options['style_plugin'] = 'rss';
+  $handler->display->display_options['row_plugin'] = 'node_rss';
+  $handler->display->display_options['path'] = 'stories/feed';
+
+  /* Display: Attachment */
+  $handler = $view->new_display('attachment', 'Attachment', 'attachment_1');
+  $handler->display->display_options['pager']['type'] = 'some';
+
+  /* Display: Stories sortable grid */
+  $handler = $view->new_display('page', 'Stories sortable grid', 'stories_sortable_grid');
+  $handler->display->display_options['defaults']['access'] = FALSE;
+  $handler->display->display_options['access']['type'] = 'role';
+  $handler->display->display_options['access']['role'] = array(
+    3 => '3',
+    6 => '6',
+    7 => '7',
+    5 => '5',
+  );
+  $handler->display->display_options['defaults']['pager'] = FALSE;
+  $handler->display->display_options['pager']['type'] = 'full';
+  $handler->display->display_options['pager']['options']['items_per_page'] = '24';
+  $handler->display->display_options['pager']['options']['offset'] = '0';
+  $handler->display->display_options['pager']['options']['id'] = '0';
+  $handler->display->display_options['pager']['options']['quantity'] = '';
+  $handler->display->display_options['defaults']['style_plugin'] = FALSE;
+  $handler->display->display_options['style_plugin'] = 'sgrid';
+  $handler->display->display_options['style_options']['default_row_class'] = FALSE;
+  $handler->display->display_options['style_options']['row_class_special'] = FALSE;
+  $handler->display->display_options['style_options']['wrapper_class'] = '';
+  $handler->display->display_options['defaults']['style_options'] = FALSE;
+  $handler->display->display_options['defaults']['row_plugin'] = FALSE;
+  $handler->display->display_options['row_plugin'] = 'sgrid_style';
+  $handler->display->display_options['row_options']['hide_empty'] = 0;
+  $handler->display->display_options['defaults']['row_options'] = FALSE;
+  $handler->display->display_options['defaults']['fields'] = FALSE;
+  /* Field: Content: Title */
+  $handler->display->display_options['fields']['title']['id'] = 'title';
+  $handler->display->display_options['fields']['title']['table'] = 'node';
+  $handler->display->display_options['fields']['title']['field'] = 'title';
+  $handler->display->display_options['fields']['title']['label'] = '';
+  $handler->display->display_options['fields']['title']['alter']['trim_whitespace'] = TRUE;
+  $handler->display->display_options['fields']['title']['alter']['max_length'] = '75';
+  $handler->display->display_options['fields']['title']['alter']['word_boundary'] = FALSE;
+  $handler->display->display_options['fields']['title']['alter']['trim'] = TRUE;
+  $handler->display->display_options['fields']['title']['element_type'] = 'div';
+  $handler->display->display_options['fields']['title']['element_class'] = 'stories-block-title';
+  $handler->display->display_options['fields']['title']['element_label_colon'] = FALSE;
+  $handler->display->display_options['fields']['title']['hide_empty'] = TRUE;
+  /* Field: Content: Post date */
+  $handler->display->display_options['fields']['created']['id'] = 'created';
+  $handler->display->display_options['fields']['created']['table'] = 'node';
+  $handler->display->display_options['fields']['created']['field'] = 'created';
+  $handler->display->display_options['fields']['created']['label'] = '';
+  $handler->display->display_options['fields']['created']['element_type'] = 'div';
+  $handler->display->display_options['fields']['created']['element_class'] = 'stories-block-date';
+  $handler->display->display_options['fields']['created']['element_label_colon'] = FALSE;
+  $handler->display->display_options['fields']['created']['hide_empty'] = TRUE;
+  $handler->display->display_options['fields']['created']['date_format'] = 'custom';
+  $handler->display->display_options['fields']['created']['custom_date_format'] = 'F j, Y';
+  /* Field: Content: Image */
+  $handler->display->display_options['fields']['field_image']['id'] = 'field_image';
+  $handler->display->display_options['fields']['field_image']['table'] = 'field_data_field_image';
+  $handler->display->display_options['fields']['field_image']['field'] = 'field_image';
+  $handler->display->display_options['fields']['field_image']['label'] = '';
+  $handler->display->display_options['fields']['field_image']['element_type'] = 'div';
+  $handler->display->display_options['fields']['field_image']['element_class'] = 'stories-block-image';
+  $handler->display->display_options['fields']['field_image']['element_label_colon'] = FALSE;
+  $handler->display->display_options['fields']['field_image']['empty'] = '<img src="/sites/all/themes/files/default-story-image.jpg">';
+  $handler->display->display_options['fields']['field_image']['hide_alter_empty'] = FALSE;
+  $handler->display->display_options['fields']['field_image']['click_sort_column'] = 'fid';
+  $handler->display->display_options['fields']['field_image']['settings'] = array(
+    'image_style' => '220x117',
+    'image_link' => 'content',
+  );
+  $handler->display->display_options['fields']['field_image']['delta_limit'] = '1';
+  $handler->display->display_options['fields']['field_image']['delta_offset'] = '0';
+  $handler->display->display_options['defaults']['sorts'] = FALSE;
+  /* Sort criterion: Sortable Grid: Rank */
+  $handler->display->display_options['sorts']['rank']['id'] = 'rank';
+  $handler->display->display_options['sorts']['rank']['table'] = 'sgrid';
+  $handler->display->display_options['sorts']['rank']['field'] = 'rank';
+  $handler->display->display_options['path'] = 'stories/sort';
   $export['ows_stories'] = $view;
 
   $view = new view();
