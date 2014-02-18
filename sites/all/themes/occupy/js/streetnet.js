@@ -6,6 +6,9 @@ var streetnet = {};
     attach: function( context, settings ){
       streetnet.log_shares();
       streetnet.init_form_placeholders();
+      if( $(".view-ows-stories .view-filters").length ) {
+        streetnet.enhance_story_filters();
+      }
     }
   }
   
@@ -14,6 +17,22 @@ var streetnet = {};
     $('label[form=email-Primary]').hide();
     $('#email-Primary').attr("placeholder", label );
   }
+
+  streetnet.enhance_story_filters = function(){
+
+    $("#edit-field-story-category-tid-wrapper label").hide();
+    // $("#edit-field-story-category-tid").attr('placeholder','Filter by category');
+    $("#edit-field-story-category-tid").attr('data-placeholder','Filter by category');
+
+    $("#edit-field-tags-tid-wrapper label").hide();
+    // $("#edit-field-tags-tid").attr('placeholder','Filter by tag');
+    $("#edit-field-tags-tid").attr('data-placeholder','Filter by tags');
+
+    $("#edit-keys-wrapper label").hide();
+    $("#edit-keys").attr( 'placeholder', 'Search' );
+
+  }
+
 
   streetnet.log_shares = function(){
     var page_title, sidebar_share_widget, article_footer_share_widget;

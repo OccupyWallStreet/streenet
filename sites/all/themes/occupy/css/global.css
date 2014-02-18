@@ -1491,149 +1491,6 @@ color: #000;
 	padding: 0;
 }
 
-/*-----------------------------------------------PAGER CUSTOMIZATION---------------------------------------*/
-
-/* Pagers Positioning */
-.item-list .pager {
-  padding:0;
-  margin: 0;
-}
-
-.item-list .pager li,
-.item-list .pager ul li {
-  margin: 0;
-  padding: 0;
-  float: left;
-}
-
-.item-list .pager {
-  position: relative;
-  margin: 0;
-  padding: 0;
-  font-size: 10px;
-  text-align: left;
-}
-
-.pager li a {
-  color: #ffde96;
-  display: inline-block;
-}
-
-.pager li.pager-ellipsis,
-.pager li.pager-current,
-.pager li a {
-  padding:4px 8px;
-  text-decoration: none;
-}
-
-.pager li.pager-current {
-  background-color: #a51d35;
-  color: white;
-  padding:4px 8px;
-  font-weight: bold;
-}
-
-#a51d35
-
-.pager li.pager-first a,
-.pager li.pager-previous a,
-.pager li.pager-next a,
-.pager li.pager-last a {
-  width: 50px;
-  text-align:center;
-  padding: 4px 0;
-  white-space:nowrap;
-}
-
-.pager li.pager-previous a {
-	width: 70px;
-}
-
-.pager li.pager-next {
-  position: absolute;
-  top: 0;
-  right: 50px;
-}
-
-.pager li.pager-last,
-.pager li.pager-next.last {
-  position: absolute;
-  top: 0;
-  right: 0;
-  border-right: 0;
-}
-
-/* Pagers color */
-
-ul.pager{}
-
-.pager li.pager-ellipsis,
-.pager li.pager-current,
-.pager li a {
-  color:#1a1a1a;
-}
-
-.pager li {
-  border-right: 1px solid;
-  border-color: #ddd #bbb #999;
-  color: #ffcc00;
-  font: bold 12px/1.2 Arial, sans-serif;
-  outline: 0;
-}
-
-.pager li.pager-current {
-  /*background: #ddd url(../images/button.png) repeat-x;
-  background: -webkit-gradient(linear, left top, left bottom, color-stop(0, #a51d35), color-stop(1, #a6080e));
-  background-color: #a51d35;
-  background: -moz-linear-gradient(top center, #a51d35 0%, #a6080e 100%);*/
-  background-color:#000;
-  color: #fff;
-  outline: 0;
-}
-
-.pager li.pager-next {
-  border-left: 1px solid;
-  border-color: #ddd #bbb #999;
-}
-
-.pager li a {
-  background: #ddd url(../images/button.png) repeat-x;
-  background: -webkit-gradient(linear, left top, left bottom, color-stop(0, #ffcc00), color-stop(1, #ffdf5f));
-  background: -moz-linear-gradient(top center, #ffcc00 0%, #ffdf5f 100%);
-  cursor: pointer;
-}
-
-.pager li a:hover {
-  background:#a51d35;
-  color: white;
-}
-
-/* Add default border radius to list items & links */
-.pager {
-  background:black;
-  border:1px solid;
-  border-color: #ddd #bbb #999;
-  border-radius: 5px;
-  -moz-border-radius: 5px;
-  -webkit-border-radius: 5px;
-}
-
-.pager li.first,
-.pager li.first a,
-.pager li.first a:hover {
-  border-radius: 5px 0 0 5px;
-  -moz-border-radius: 5px 0 0 5px;
-  -webkit-border-radius: 5px 0 0 5px;
-}
-
-.pager li.pager-last,
-.pager li.pager-last a,
-.pager li.pager-last a:hover {
-  border-radius: 0 5px 5px 0;
-  -moz-border-radius: 0 5px 5px 0;
-  -webkit-border-radius: 0 5px 5px 0;
-}
-
 .content .owstech-share {
 	float: left;
 }
@@ -1717,4 +1574,124 @@ ul.primary li.active a {
 	border: none;
 	background-color: #fc0 !important;
 	color: #000;
+}
+
+
+/*
+//////////////////////////////
+// Stories filter bit
+//
+*/
+
+.views-exposed-widgets {
+	font-size: 12px; /* .8rem !important */;
+	vertical-align: baseline;
+	margin-bottom: 1.5em;
+}
+
+.views-exposed-widgets label {
+	font-weight: normal;
+	color: #aaa;
+	margin-right: .5em;
+	line-height: 2;
+	display: inline-block;
+	float: left !important;
+	/* until we ditch omega entirely, were
+	still going to have shittiness with fonts
+	thanks for loading all your stylesheets after my theme...
+	*/
+}
+.views-exposed-widgets .views-widget {
+	display: inline-block;
+	font-size: 12px; /* .8rem !important */;
+	position: relative;
+}
+
+
+.views-exposed-widgets .chosen-container-single .chosen-single,
+.views-exposed-widgets .chosen-container-multi .chosen-choices {
+	border-radius: .975em;
+	background: #dedede;
+	border: none;
+	outline: none;
+	box-shadow: none;
+}
+
+.chosen-container-multi .chosen-choices li.search-field input[type="text"] {
+	padding: .25em .5em .35em 1em;
+}
+
+.views-exposed-widgets .chosen-container-multi .chosen-choices li.search-choice {
+	border-radius: .875em;
+	background: #333;
+	color: #dedede;
+	box-shadow: none;
+	outline-none;
+	border: none;
+	padding-right: 1.5em;
+	padding-left: .5em;
+	vertical-align: middle;
+}
+
+.views-exposed-widgets .chosen-drop {
+	border: none;
+	background: transparent !important;
+	margin: 0;
+	box-shadow: none;
+}
+
+.views-reset-button .form-submit,
+.views-submit-button .form-submit {
+	margin: 0 !important;
+	border: none;
+	border-radius: .125rem;
+	box-shadow: none;
+	background: #fc0;
+	color: #333;
+	text-shadow: none;
+}
+
+.views-reset-button .form-submit:hover,
+.views-submit-button .form-submit:hover {
+	color: #fc0;
+	background: #333;
+}
+
+.views-exposed-widgets .chosen-results {
+	padding: 0;
+	border-radius: .5em;
+	background: #dedede;
+	color: #333;
+	box-shadow: 1px 1px 2px rgba(0,0,0,.3);
+}
+
+.views-exposed-widgets .chosen-container-multi .chosen-choices li.search-choice span {
+	color: #dedede;	
+}
+
+.views-exposed-widgets .chosen-container-multi .chosen-choices li.search-choice .search-choice-close {
+	color: #dedede;
+	display: none;
+}
+
+.views-exposed-widgets .chosen-container-multi .chosen-choices li.search-choice .search-choice-close:hover {
+	color: #fc0 !important;
+}
+
+.views-exposed-widgets .chosen-container-multi .chosen-choices li.search-choice:hover .search-choice-close {
+	display: inline-block;
+}
+
+#edit-keys {
+	width: 16em;
+	border-radius: .875em;
+	border: none;
+	background-color: #dedede;
+	background-image: url( "/sites/all/themes/occupy/images/search.png");
+	background-repeat: no-repeat;
+	background-position: .325em .325em;
+	padding-left: 1.5em;
+	padding-right: .75em;
+	color: #333;
+	outline: none;
 }
