@@ -16,7 +16,7 @@ Type and Vertical Rythm Definitions
   src:  url("/sites/all/themes/occupy/fonts/league_gothic/webfonts/leaguegothic-regular-webfont.eot?#iefix") format("embedded-opentype"),
         url("/sites/all/themes/occupy/fonts/league_gothic/webfonts/leaguegothic-regular-webfont.ttf") format("truetype"),
         url("/sites/all/themes/occupy/fonts/league_gothic/webfonts/leaguegothic-regular-webfont.woff") format("woff"),
-        url("/sites/all/themes/occupy/fonts/league_gothic/webfonts/leaguegothic-regular-webfont.svg#dosislight") format("svg");
+        url("/sites/all/themes/occupy/fonts/league_gothic/webfonts/leaguegothic-regular-webfont.svg#LeaguGothic") format("svg");
         font-weight: 300;
 }
 
@@ -65,51 +65,57 @@ Type and Vertical Rythm Definitions
 }
 
 body{
-  font-size: .95em;
-  font-family: 'PTSans';
+  font-size: .8125em !important;
+  font-family: 'PTSans', helvetica, arial, sans-serif;
   font-weight: normal;
+  line-height: 1.5;
 }
 
+
 h1, h2, h3, h4, h4, h6{
-  font-family: 'LeagueGothic'; 
+  font-family: 'LeagueGothic', helvetica, "Arial Black", sans-serif;  
   font-weight: normal;
   text-transform: uppercase;
+  line-height: 1;
 }
 
 h2.block-title,
 h2 { font-size: 2.2rem; }
-
 h3 { font-size: 1.8rem; }
-
-h4 { font-size: 6rem; //23px; }
-
+h4 { font-size: 6rem; }
 h5 {
   font-size: 1rem;
   font-weight: bold;
+  font-family: 'PTSans';
 }
-
 h6 {
+  font-family: 'PTSans';
   font-size: .875rem;
   font-weight: normal;
+  margin: 0;
 }
-
 h2.block-title {
   letter-spacing: 1px;
 }
 
-#section-content article .group_byline h2,
-#page-title {
-  font-size: 4rem;
+p, div {
+/*  font-family: 'PTSans';
+*/  line-height: 1.5;
+}
+
+
+#page-title,
+.site-name {
+  font-size: 3.782rem;
+  white-space: nowrap;
   letter-spacing: .025em;
   line-height: 1.125;
   text-transform: uppercase;
+  font-weight: normal;
 }
 
-h1.site-name,
-h2.site-name {
-    margin-top: 1.333rem;;
-    font-weight: normal;
-    letter-spacing: 1.29px;
+.site-name {    
+  margin-top: 1.333rem;;
 }
 
 .site-name a,
@@ -169,10 +175,6 @@ article.node-teaser h4 {
   text-transform: none;
 }
 
-/*#mycontent {
-  font-size: 14px;
-}
-*/
 #region-menu ul.menu li a,
 #region-menu ul.menu li a:link {
   color: #FECD48;
@@ -206,7 +208,7 @@ ul.quicktabs-tabs li{
 
 #quicktabs-featured .view-footer a {
   font-family: 'PTSans';
-  font-size: .8rempx;
+  font-size: .8rem;
   text-decoration: none;
   color: #fff;
 }
@@ -228,12 +230,12 @@ ul.quicktabs-tabs li{
     text-decoration: none;
 }
 
-.views-field-field-story-category {
+/*.views-field-field-story-category {
     color: #000;
     font-family: 'LeagueGothic';
     font-size: .8rem;
 }
-
+*/
 .more-link {
   text-align: left;
   text-transform: uppercase;
@@ -260,6 +262,11 @@ ul.quicktabs-tabs li{
   Articles
 --------------------------------------------
 */
+
+#section-content,
+#region-content h1 {
+  margin: 0;
+}
 
 /*#region-content article p {
   line-height: 1.5;

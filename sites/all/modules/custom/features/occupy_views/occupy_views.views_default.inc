@@ -787,6 +787,10 @@ There are many <a href="http://www.nycga.net/events/" target="_blank">OWS-affili
   $handler->display->display_options['pager']['options']['id'] = '0';
   $handler->display->display_options['pager']['options']['quantity'] = '9';
   $handler->display->display_options['pager']['options']['expose']['items_per_page_options_all'] = TRUE;
+  $handler->display->display_options['pager']['options']['tags']['first'] = '⇤';
+  $handler->display->display_options['pager']['options']['tags']['previous'] = '⇠';
+  $handler->display->display_options['pager']['options']['tags']['next'] = '⇢';
+  $handler->display->display_options['pager']['options']['tags']['last'] = '⇥';
   $handler->display->display_options['defaults']['header'] = FALSE;
   $handler->display->display_options['path'] = 'stories';
   $handler->display->display_options['menu']['type'] = 'normal';

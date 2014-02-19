@@ -23,10 +23,12 @@ var streetnet = {};
     $("#edit-field-story-category-tid-wrapper label").hide();
     // $("#edit-field-story-category-tid").attr('placeholder','Filter by category');
     $("#edit-field-story-category-tid").attr('data-placeholder','Filter by category');
+    $("#edit_field_story_category_tid_chosen .chosen-choices .default").val('Filter by category');
 
     $("#edit-field-tags-tid-wrapper label").hide();
     // $("#edit-field-tags-tid").attr('placeholder','Filter by tag');
     $("#edit-field-tags-tid").attr('data-placeholder','Filter by tags');
+    $("#edit_field_tags_tid_chosen .chosen-choices .default").val('Filter by tags');
 
     $("#edit-keys-wrapper label").hide();
     $("#edit-keys").attr( 'placeholder', 'Search' );

@@ -16,23 +16,30 @@
  */
 function occupy_page_alter(&$vars) {
   $scripts = drupal_add_js();
-  /* 
-  we do a little juggling here, because we'd like to manipulate
-  some stuff in our selects and exposed filters in streetnet.js
-  before we have chosen do its thing
-  */
-  drupal_add_css('sites/all/themes/occupy/css/typography.css');
-  unset( $scripts['sites/​all/libraries/​chosen/chosen.jquery.min.js'] );
-  unset( $scripts['sites/all/modules/contrib/chosen/chosen.js'] );
-  drupal_add_js('sites/all/themes/occupy/js/streetnet.js');  
-  drupal_add_js( "sites/all/libraries/chosen/chosen.jquery.min.js" );
-  drupal_add_js( "sites/all/modules/chosen/chosen.js" );
+  drupal_add_js('sites/all/themes/occupy/js/streetnet.js');
   // add our civi newsletter form submission js
   drupal_add_js('sites/all/themes/occupy/js/ows_civi_form.js');
-  drupal_add_js('sites/all/themes/occupy/bower-components/REM-unit-polyfill/js/rem.min.js');
+  drupal_add_js('sites/all/themes/occupy/bower_components/REM-unit-polyfill/js/rem.min.js');
   // scss compiles in stylesheets... as we transition from omega, we'll be moving things into scss.
 	// drupal_add_css('sites/all/themes/occupy/stylesheets/style.css');
+  drupal_add_css('sites/all/themes/occupy/css/normalize.css');
+  drupal_add_css('sites/all/themes/occupy/css/typography.css');
 }
 
+function occupy_css_alter(&$css) {
+  // Because omega is shitty
+  // and loads it's css after the themes css... 
+  // which goes well beyond a philosophical difference
+  // and creates all kinds of unpredictable scenarios
+  // furthermore, the checkboxes in the themes settings, or messing
+  // with the info file, don't seem to actually help nor does changing
+  // css weights in the info file
+  // Solution... kill it, til we can move off it.
+  // Too much themeing work to do to just switch now... but we'll get
+	unset($css['sites/all/themes/omega/alpha/css/alpha-debug.css']);
+	unset($css['sites/all/themes/omega/alpha/css/alpha-reset.css']);
+	unset($css['sites/all/themes/omega/omega/css/omega-text.css']);
+	unset($css['sites/all/themes/omega/omega/css/omega-visuals.css']);
+}
 
 

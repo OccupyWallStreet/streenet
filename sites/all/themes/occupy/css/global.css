@@ -5,14 +5,14 @@
 /*--------------------------------------------TYPOGRAPHY-------------------------------------------*/
 
 body {
-	font-family: 'PTSans', helvetica, arial, sans-serif;
+	padding: 0;
+	margin: 0;
 }
-h1, h2, h3, h4, h4{
-	font-family: 'LeagueGothic', helvetica, "Arial Black", sans-serif;	
-	font-weight: normal;
-	text-transform: uppercase;
+ 
+a {
+	color: #333;
 }
-
+/*
 h1 { font-size: 40px; }
 
 h2 { font-size: 33px; }
@@ -23,21 +23,7 @@ h3 {
 h4 {
 	font-size: 23px;
 }
-
-h5 {
-	font-size: 14px;
-	font-family: 'PTSans';
-   font-weight: bold;
-}
-h6 {
-	font-size: 11px;
-	font-weight: normal;
-}
-p, div {
-    font-family: 'PTSans';
-    font-weight: normal;
-}
-
+*/
 #block-delta-blocks-site-slogan{
 	width: 100%;
 	white-space: nowrap;
@@ -56,48 +42,43 @@ tr:hover td, tr.even:hover td.active, tr.odd:hover td.active {
     background: url("/sites/all/themes/files/header_hashtag.jpg") no-repeat scroll center top transparent;
 }
 
-h1.site-name, h2.site-name {
-    font-size: 4.7em;
-    font-weight: normal;
-    letter-spacing: 1.29px;
-}
 .site-name a, .site-name a:active, .site-name a:link, .site-name a:hover {
-    color: #FFFFFF;
-    text-decoration: none;
+  color: #FFFFFF;
+  text-decoration: none;
 }
-.site-slogan, .block-menu {
-    color: #FECD48;
 
-    font-weight: normal;
-    letter-spacing: 2px;
+.site-slogan, .block-menu {
+  color: #FECD48;
+  font-weight: normal;
+  letter-spacing: 2px;
+}
+
+#region-header-first p {
+	margin-top: 0;
 }
 
 /*---------------------------------------------MAIN MENU-----------------------------------------*/
+
 li.expanded, li.collapsed, li.leaf {
 	padding: 0;
 	margin: 0;
 }
-ul li.leaf {
+
+#block-system-main-menu {
+	margin-top: 1em;
+}
+
+#block-system-main-menu ul li {
     list-style-image: none;
     list-style-type: none;
 }
-/*#block-system-main-menu ul li.leaf {
-	list-style-image: url('/sites/all/themes/files/active-menu-icon.png');
-	list-style-type: none;
-	padding: 0 10px 0;
-	float: left;
-}*/
 #block-system-main-menu ul.menu {
     border: medium none;
     list-style: none outside none;
-    padding: 47px 0 0 0px;
+    padding: 1em 0 0 0;
     text-align: left;
 }
-/*#block-system-main-menu .active-trail {
-	list-style-image: url(/sites/all/themes/files/active-menu-icon.png);
-	float: left;
-	margin: 0;
-}*/
+
 #block-system-main-menu li a, #block-system-main-menu li a:link {
     color: #FECD48;
     font-family: 'LeagueGothic';
@@ -602,8 +583,6 @@ ul.quicktabs-tabs li.active a{
 
 .views-field-field-story-category {
     color: #000000;
-    float: left;
-    font-family: 'LeagueGothic';
     font-size: 12px;
     margin: 0;
     width: 94%;
@@ -620,7 +599,7 @@ ul.quicktabs-tabs li.active a{
 }
 
 .stories-block-row .views-field-field-image {
-    margin: 24px 0 0;
+    margin: .25em 0 0 0;
     padding: 0;
     position: relative;
     z-index: 1;
@@ -891,10 +870,10 @@ article cite{
 	color:#666;
 }
 
-#storiestitle h2,
-.front-news-view-title {
+#storiestitle h2 {
 	font-family: 'LeagueGothic';
 	font-size: 27px;
+	margin: .25em 0 1em 0;
 	letter-spacing: 1px;
 }
 
@@ -1417,7 +1396,7 @@ clear: both;
 #region-footer-third,
 #region-footer-fourth	{
 	position: relative;
-	top: 12px;
+	top: .25em;
 }
 
 #zone-footer .block-title,
@@ -1519,7 +1498,7 @@ aside .owstech-share {
 
 /* hacky ass header fix */
 .block-block-12 p {
-	margin-bottom: 20px !important;
+	margin: 0 !important;
 
 }
 
@@ -1640,15 +1619,55 @@ ul.primary li.active a {
 	box-shadow: none;
 }
 
+.views-reset-button,
+.views-submit-button {
+	position: relative;
+	font-size: 1rem;
+	width: 6em;
+	margin: .4em 0 0 0;
+	padding: 0 !important;
+	height: 1.5rem;
+}
+
+.views-submit-button {
+	margin-right: .5em;
+}
+
 .views-reset-button .form-submit,
 .views-submit-button .form-submit {
 	margin: 0 !important;
 	border: none;
-	border-radius: .125rem;
+	vertical-align: bottom;
+	border-radius: .25em;
 	box-shadow: none;
 	background: #fc0;
 	color: #333;
+	line-height: 1.5;
 	text-shadow: none;
+	overflow: hidden;
+	opacity: .8;
+	width: 100%;
+}
+
+.views-reset-button .ajax-progress,
+.views-submit-button .ajax-progress{
+	position: absolute;
+	width: 100%;
+	top: 0;
+	left: 0;
+	height: 1.5em;
+	border-radius: .25em;
+	font-size: inherit;
+	background-color: #000;
+}
+
+.views-submit-button .ajax-progress .throbber,
+.views-reset-button .ajax-progress .throbber {
+	width: 100%;
+	height: 100%;
+	background-image: url( ../images/spinner_black_bg.gif );
+	background-position: center center;
+	background-repeat: no-repeat;
 }
 
 .views-reset-button .form-submit:hover,
@@ -1695,3 +1714,97 @@ ul.primary li.active a {
 	color: #333;
 	outline: none;
 }
+
+
+/*
+//////////////////////////////
+// Pager styles
+//
+*/
+
+.pager {
+  margin-top: 2em;
+  margin-bottom: 2em;
+}
+
+.item-list .pager li {
+  text-align: center;
+  margin: 0 .5em 0 0;
+  padding: 0;
+  min-width: 2em;
+  display: inline-block;
+  position: relative;
+}
+
+.item-list .pager li .ajax-progress {
+  position: absolute;
+  top: -1px;
+  left: -2px;
+
+}
+
+.item-list .pager li .ajax-progress .throbber{
+  font-size:.85rem;
+  background-color: #000;
+	background-image: url( ../images/spinner_black_bg.gif );
+	background-position: center center;
+	background-repeat: no-repeat;
+	width: 2em;
+	height: 2em;
+	line-height: 2;
+	border-radius: 2em;
+	overflow: hidden;
+}
+
+.item-list .pager li.pager-current {
+  display: inline-block;
+  vertical-align: middle;
+  border-radius: 2em;
+  min-width: 2em;
+  height: 2em;
+  font-size: .85rem;
+  line-height:2;
+  border: none;
+  font-weight: normal;
+  background: #000;
+  color: #eee;
+}
+
+.item-list .pager li a {
+  position: relative;
+  display: inline-block;
+  vertical-align: middle;
+  border-radius: 2em;
+  min-width: 2em;
+  height: 2em;
+  font-size: .85rem;
+  line-height:2;
+  border: none;
+  text-decoration: none;
+  font-weight: normal;
+  background: #eee;
+}
+
+.item-list .pager li a:hover {
+	background: #000;
+	color: #fc0;
+}
+
+.pager-previous,
+.pager-next,
+.pager-first,
+.pager-last {
+	position: relative;
+  background: transparent !important;
+  display: inline-block;
+  vertical-align: bottom;
+  border-radius: 2em;
+  min-width: 2em;
+  height: 2em;
+  font-size: 1em;
+  line-height:2;
+  border: none;
+  font-weight: normal;
+  background: #eee;
+}
+
