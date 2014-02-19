@@ -12,18 +12,7 @@ body {
 a {
 	color: #333;
 }
-/*
-h1 { font-size: 40px; }
 
-h2 { font-size: 33px; }
-
-h3 {
-	font-size: 27px;
-}
-h4 {
-	font-size: 23px;
-}
-*/
 #block-delta-blocks-site-slogan{
 	width: 100%;
 	white-space: nowrap;
@@ -111,12 +100,6 @@ li.expanded, li.collapsed, li.leaf {
 	width: 85%;
 	margin: 0 0 0;
 }
-/*.block-32 {
-	float: left;
-	margin: 23px 0 0 0;
-	padding: 0px;
-	width: 100%;
-}*/
 
 .newsletter-wrapper {
 	float: left;
@@ -413,9 +396,7 @@ ul.quicktabs-tabs li.active a{
   text-decoration: none;
   color: #FFF;
 }
-/*#views_slideshow_cycle_main_nodequeue_1-block {
-	position: relative;
-}*/
+
 /*------------------------------------------FEED BLOCK---------------------------------------*/
 .front .front-quicktab-feed-region {
 	min-height: 450px;
@@ -447,9 +428,6 @@ ul.quicktabs-tabs li.active a{
 	margin-right: 0;
 }
 
-#block-system-main {
-	
-}
 
 /*------------------------------------------ Story Cards ------------------------------------------*/ 
 
@@ -458,10 +436,6 @@ ul.quicktabs-tabs li.active a{
 	width: 85%;
 	padding: 5%;
 	max-height: 240px;
-}
-
-.node-teaser {
-
 }
 
 .node-teaser h5 a,
@@ -477,8 +451,6 @@ ul.quicktabs-tabs li.active a{
 
 .view-ows-stories-read-page- .stories-block-row {
 	display: block;
-/*	background-color: white;
-*/
 	float: left;
 	width: 50%;
 }
@@ -527,13 +499,11 @@ ul.quicktabs-tabs li.active a{
 	border-bottom: 1px #2F89BA solid
 }
 
-
 .block-syndicate {
 	float: left;
 	margin: 0;
 	padding: 8px 0 0 0;
 }
-
 
 #page-title {
 	letter-spacing: 1px;
