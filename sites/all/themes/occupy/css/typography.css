@@ -89,7 +89,7 @@ h5 {
   font-family: 'PTSans';
 }
 
-aside h2.block-title {
+.content-zone>aside h2.block-title {
   font-size: 1.5rem;
 }
 
