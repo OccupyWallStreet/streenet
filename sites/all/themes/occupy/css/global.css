@@ -1452,13 +1452,14 @@ color: #000;
 aside .owstech-share {
 	margin-bottom: 2em;
 }
+
 .owstech-share h4.actuator {
 	font-size: 18px !important;
 	letter-spacing: .075em;
 }
 
 .owstech-share h4.actuator a {
-	padding: 0 .5em;
+	padding: .25em .5em;
 	color: #fc0;
 }
 
