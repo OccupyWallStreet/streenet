@@ -132,13 +132,13 @@ function occupy_contexts_context_default_contexts() {
       'blocks' => array(
         'block-24' => array(
           'module' => 'block',
-          'delta' => 24,
+          'delta' => '24',
           'region' => 'preface_first',
           'weight' => '-10',
         ),
         'block-14' => array(
           'module' => 'block',
-          'delta' => 14,
+          'delta' => '14',
           'region' => 'preface_second',
           'weight' => '-10',
         ),
@@ -156,19 +156,19 @@ function occupy_contexts_context_default_contexts() {
         ),
         'block-16' => array(
           'module' => 'block',
-          'delta' => 16,
+          'delta' => '16',
           'region' => 'preface_fifth',
           'weight' => '-10',
         ),
         'block-17' => array(
           'module' => 'block',
-          'delta' => 17,
+          'delta' => '17',
           'region' => 'preface_sixth',
           'weight' => '-10',
         ),
         'block-18' => array(
           'module' => 'block',
-          'delta' => 18,
+          'delta' => '18',
           'region' => 'preface_seventh',
           'weight' => '-10',
         ),
@@ -213,7 +213,7 @@ function occupy_contexts_context_default_contexts() {
         ),
         'block-11' => array(
           'module' => 'block',
-          'delta' => 11,
+          'delta' => '11',
           'region' => 'user_second',
           'weight' => '-10',
         ),
@@ -231,7 +231,7 @@ function occupy_contexts_context_default_contexts() {
         ),
         'block-13' => array(
           'module' => 'block',
-          'delta' => 13,
+          'delta' => '13',
           'region' => 'preface_third',
           'weight' => '-10',
         ),
@@ -243,7 +243,7 @@ function occupy_contexts_context_default_contexts() {
         ),
         'block-10' => array(
           'module' => 'block',
-          'delta' => 10,
+          'delta' => '10',
           'region' => 'postscript_first',
           'weight' => '-10',
         ),
@@ -290,32 +290,23 @@ function occupy_contexts_context_default_contexts() {
         ),
         'block-26' => array(
           'module' => 'block',
-          'delta' => 26,
+          'delta' => '26',
           'region' => 'sidebar_second',
           'weight' => '-10',
         ),
-        'block-27' => array(
-          'module' => 'block',
-          'delta' => 27,
-          'region' => 'sidebar_second',
-          'weight' => '-9',
-        ),
         'block-28' => array(
           'module' => 'block',
-          'delta' => 28,
+          'delta' => '28',
           'region' => 'sidebar_second',
           'weight' => '-8',
         ),
         'block-29' => array(
           'module' => 'block',
-          'delta' => 29,
+          'delta' => '29',
           'region' => 'preface_first',
           'weight' => '-10',
         ),
       ),
-    ),
-    'delta' => array(
-      'delta_template' => 'learn_page',
     ),
   );
   $context->condition_mode = 0;
@@ -430,19 +421,19 @@ function occupy_contexts_context_default_contexts() {
         ),
         'block-2' => array(
           'module' => 'block',
-          'delta' => 2,
+          'delta' => '2',
           'region' => 'header_first',
           'weight' => '-10',
         ),
         'block-15' => array(
           'module' => 'block',
-          'delta' => 15,
+          'delta' => '15',
           'region' => 'header_second',
           'weight' => '-10',
         ),
         'block-12' => array(
           'module' => 'block',
-          'delta' => 12,
+          'delta' => '12',
           'region' => 'header_second',
           'weight' => '-9',
         ),
@@ -454,43 +445,37 @@ function occupy_contexts_context_default_contexts() {
         ),
         'block-6' => array(
           'module' => 'block',
-          'delta' => 6,
+          'delta' => '6',
           'region' => 'footer_first',
           'weight' => '-10',
         ),
         'block-7' => array(
           'module' => 'block',
-          'delta' => 7,
+          'delta' => '7',
           'region' => 'footer_second',
           'weight' => '-10',
         ),
         'block-8' => array(
           'module' => 'block',
-          'delta' => 8,
+          'delta' => '8',
           'region' => 'footer_third',
           'weight' => '-10',
         ),
         'block-9' => array(
           'module' => 'block',
-          'delta' => 9,
+          'delta' => '9',
           'region' => 'footer_fourth',
-          'weight' => '-10',
-        ),
-        'block-4' => array(
-          'module' => 'block',
-          'delta' => 4,
-          'region' => 'footer_fifth',
           'weight' => '-10',
         ),
         'block-5' => array(
           'module' => 'block',
-          'delta' => 5,
+          'delta' => '5',
           'region' => 'footer_sixth',
           'weight' => '-10',
         ),
         'block-3' => array(
           'module' => 'block',
-          'delta' => 3,
+          'delta' => '3',
           'region' => 'footer_eighth',
           'weight' => '-10',
         ),
@@ -518,11 +503,7 @@ function occupy_contexts_context_default_contexts() {
       ),
     ),
   );
-  $context->reactions = array(
-    'delta' => array(
-      'delta_template' => 'taxonomy_listing',
-    ),
-  );
+  $context->reactions = array();
   $context->condition_mode = 0;
 
   // Translatables
