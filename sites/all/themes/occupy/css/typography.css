@@ -89,8 +89,8 @@ h5 {
   font-family: 'PTSans';
 }
 
-aside h2 {
-  font-size: 1.2rem;
+aside h2.block-title {
+  font-size: 1.5rem;
 }
 
 h6 {
