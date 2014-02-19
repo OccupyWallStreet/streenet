@@ -88,6 +88,11 @@ h5 {
   font-weight: bold;
   font-family: 'PTSans';
 }
+
+aside h2 {
+  font-size: 1.2rem;
+}
+
 h6 {
   font-family: 'PTSans';
   font-size: .875rem;
