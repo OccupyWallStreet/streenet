@@ -791,6 +791,7 @@ There are many <a href="http://www.nycga.net/events/" target="_blank">OWS-affili
   $handler->display->display_options['pager']['options']['tags']['previous'] = '⇠';
   $handler->display->display_options['pager']['options']['tags']['next'] = '⇢';
   $handler->display->display_options['pager']['options']['tags']['last'] = '⇥';
+  $handler->display->display_options['exposed_block'] = TRUE;
   $handler->display->display_options['defaults']['header'] = FALSE;
   $handler->display->display_options['path'] = 'stories';
   $handler->display->display_options['menu']['type'] = 'normal';
@@ -804,9 +805,15 @@ There are many <a href="http://www.nycga.net/events/" target="_blank">OWS-affili
   $handler->display->display_options['defaults']['use_more'] = FALSE;
   $handler->display->display_options['use_more'] = TRUE;
   $handler->display->display_options['defaults']['pager'] = FALSE;
-  $handler->display->display_options['pager']['type'] = 'some';
+  $handler->display->display_options['pager']['type'] = 'full';
   $handler->display->display_options['pager']['options']['items_per_page'] = '16';
   $handler->display->display_options['pager']['options']['offset'] = '';
+  $handler->display->display_options['pager']['options']['id'] = '0';
+  $handler->display->display_options['pager']['options']['quantity'] = '9';
+  $handler->display->display_options['pager']['options']['tags']['first'] = '⇤';
+  $handler->display->display_options['pager']['options']['tags']['previous'] = '⇠';
+  $handler->display->display_options['pager']['options']['tags']['next'] = '⇢';
+  $handler->display->display_options['pager']['options']['tags']['last'] = '⇥';
   $handler->display->display_options['defaults']['relationships'] = FALSE;
   /* Relationship: Nodequeue: Queue */
   $handler->display->display_options['relationships']['nodequeue_rel']['id'] = 'nodequeue_rel';
@@ -836,6 +843,14 @@ There are many <a href="http://www.nycga.net/events/" target="_blank">OWS-affili
     'event' => 'event',
     'story' => 'story',
   );
+
+  /* Display: Feed */
+  $handler = $view->new_display('feed', 'Feed', 'feed_1');
+  $handler->display->display_options['pager']['type'] = 'none';
+  $handler->display->display_options['pager']['options']['offset'] = '0';
+  $handler->display->display_options['style_plugin'] = 'rss';
+  $handler->display->display_options['row_plugin'] = 'node_rss';
+  $handler->display->display_options['path'] = 'stories/feed';
   $export['ows_stories'] = $view;
 
   $view = new view();

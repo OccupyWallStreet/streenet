@@ -1533,13 +1533,13 @@ ul.primary li.active a {
 //
 */
 
-.views-exposed-widgets {
+.block-views-exp-ows-stories-stories-page {
 	font-size: 12px; /* .8rem !important */;
 	vertical-align: baseline;
 	margin-bottom: 1.5em;
 }
 
-.views-exposed-widgets label {
+.block-views-exp-ows-stories-stories-page label {
 	font-weight: normal;
 	color: #aaa;
 	margin-right: .5em;
@@ -1551,15 +1551,15 @@ ul.primary li.active a {
 	thanks for loading all your stylesheets after my theme...
 	*/
 }
-.views-exposed-widgets .views-widget {
+.block-views-exp-ows-stories-stories-page .views-widget {
 	display: inline-block;
 	font-size: 12px; /* .8rem !important */;
 	position: relative;
 }
 
 
-.views-exposed-widgets .chosen-container-single .chosen-single,
-.views-exposed-widgets .chosen-container-multi .chosen-choices {
+.block-views-exp-ows-stories-stories-page .chosen-container-single .chosen-single,
+.block-views-exp-ows-stories-stories-page .chosen-container-multi .chosen-choices {
 	border-radius: .975em;
 	background: #dedede;
 	border: none;
@@ -1567,7 +1567,7 @@ ul.primary li.active a {
 	box-shadow: none;
 }
 
-.chosen-container-multi .chosen-choices li.search-field input[type="text"] {
+.block-views-exp-ows-stories-stories-page .chosen-container-multi .chosen-choices li.search-field input[type="text"] {
 	padding: .25em .5em .35em 1em;
 }
 
@@ -1583,15 +1583,15 @@ ul.primary li.active a {
 	vertical-align: middle;
 }
 
-.views-exposed-widgets .chosen-drop {
+.block-views-exp-ows-stories-stories-page .views-exposed-widgets .chosen-drop {
 	border: none;
 	background: transparent !important;
 	margin: 0;
 	box-shadow: none;
 }
 
-.views-reset-button,
-.views-submit-button {
+.block-views-exp-ows-stories-stories-page .views-reset-button,
+.block-views-exp-ows-stories-stories-page .views-submit-button {
 	position: relative;
 	font-size: 1rem;
 	width: 6em;
@@ -1600,12 +1600,12 @@ ul.primary li.active a {
 	height: 1.5rem;
 }
 
-.views-submit-button {
+.block-views-exp-ows-stories-stories-page .views-submit-button {
 	margin-right: .5em;
 }
 
-.views-reset-button .form-submit,
-.views-submit-button .form-submit {
+.block-views-exp-ows-stories-stories-page .views-reset-button .form-submit,
+.block-views-exp-ows-stories-stories-page .views-submit-button .form-submit {
 	margin: 0 !important;
 	border: none;
 	vertical-align: bottom;
@@ -1620,8 +1620,8 @@ ul.primary li.active a {
 	width: 100%;
 }
 
-.views-reset-button .ajax-progress,
-.views-submit-button .ajax-progress{
+.block-views-exp-ows-stories-stories-page .views-reset-button .ajax-progress,
+.block-views-exp-ows-stories-stories-page .views-submit-button .ajax-progress{
 	position: absolute;
 	width: 100%;
 	top: 0;
@@ -1632,8 +1632,8 @@ ul.primary li.active a {
 	background-color: #000;
 }
 
-.views-submit-button .ajax-progress .throbber,
-.views-reset-button .ajax-progress .throbber {
+.block-views-exp-ows-stories-stories-page .views-submit-button .ajax-progress .throbber,
+.block-views-exp-ows-stories-stories-page .views-reset-button .ajax-progress .throbber {
 	width: 100%;
 	height: 100%;
 	background-image: url( ../images/spinner_black_bg.gif );
@@ -1641,13 +1641,13 @@ ul.primary li.active a {
 	background-repeat: no-repeat;
 }
 
-.views-reset-button .form-submit:hover,
-.views-submit-button .form-submit:hover {
+.block-views-exp-ows-stories-stories-page .views-reset-button .form-submit:hover,
+.block-views-exp-ows-stories-stories-page .views-submit-button .form-submit:hover {
 	color: #fc0;
 	background: #333;
 }
 
-.views-exposed-widgets .chosen-results {
+.block-views-exp-ows-stories-stories-page .chosen-results {
 	padding: 0;
 	border-radius: .5em;
 	background: #dedede;
@@ -1655,20 +1655,20 @@ ul.primary li.active a {
 	box-shadow: 1px 1px 2px rgba(0,0,0,.3);
 }
 
-.views-exposed-widgets .chosen-container-multi .chosen-choices li.search-choice span {
+.block-views-exp-ows-stories-stories-page .chosen-container-multi .chosen-choices li.search-choice span {
 	color: #dedede;	
 }
 
-.views-exposed-widgets .chosen-container-multi .chosen-choices li.search-choice .search-choice-close {
+.block-views-exp-ows-stories-stories-page .chosen-container-multi .chosen-choices li.search-choice .search-choice-close {
 	color: #dedede;
 	display: none;
 }
 
-.views-exposed-widgets .chosen-container-multi .chosen-choices li.search-choice .search-choice-close:hover {
+.block-views-exp-ows-stories-stories-page .chosen-container-multi .chosen-choices li.search-choice .search-choice-close:hover {
 	color: #fc0 !important;
 }
 
-.views-exposed-widgets .chosen-container-multi .chosen-choices li.search-choice:hover .search-choice-close {
+.block-views-exp-ows-stories-stories-page .chosen-container-multi .chosen-choices li.search-choice:hover .search-choice-close {
 	display: inline-block;
 }
 

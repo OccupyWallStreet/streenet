@@ -1,8 +1,8 @@
 name = Streetnet Views
-description = Streetnet story views, announcements and feed views
+description = Streetnet story views, announcements and feed views and exposed filters
 core = 7.x
 package = Streetnet
-version = 7.x-1.4
+version = 7.x-1.5
 project = occupy_views
 dependencies[] = better_exposed_filters
 dependencies[] = nodequeue

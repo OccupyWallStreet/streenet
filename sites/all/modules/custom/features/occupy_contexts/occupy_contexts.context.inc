@@ -132,13 +132,13 @@ function occupy_contexts_context_default_contexts() {
       'blocks' => array(
         'block-24' => array(
           'module' => 'block',
-          'delta' => '24',
+          'delta' => 24,
           'region' => 'preface_first',
           'weight' => '-10',
         ),
         'block-14' => array(
           'module' => 'block',
-          'delta' => '14',
+          'delta' => 14,
           'region' => 'preface_second',
           'weight' => '-10',
         ),
@@ -156,19 +156,19 @@ function occupy_contexts_context_default_contexts() {
         ),
         'block-16' => array(
           'module' => 'block',
-          'delta' => '16',
+          'delta' => 16,
           'region' => 'preface_fifth',
           'weight' => '-10',
         ),
         'block-17' => array(
           'module' => 'block',
-          'delta' => '17',
+          'delta' => 17,
           'region' => 'preface_sixth',
           'weight' => '-10',
         ),
         'block-18' => array(
           'module' => 'block',
-          'delta' => '18',
+          'delta' => 18,
           'region' => 'preface_seventh',
           'weight' => '-10',
         ),
@@ -205,11 +205,17 @@ function occupy_contexts_context_default_contexts() {
   $context->reactions = array(
     'block' => array(
       'blocks' => array(
+        'views--exp-ows_stories-stories_page' => array(
+          'module' => 'views',
+          'delta' => '-exp-ows_stories-stories_page',
+          'region' => 'content',
+          'weight' => '-10',
+        ),
         'views-ows_stories-block_2' => array(
           'module' => 'views',
           'delta' => 'ows_stories-block_2',
           'region' => 'content',
-          'weight' => '-10',
+          'weight' => '-9',
         ),
         'block-11' => array(
           'module' => 'block',
@@ -331,13 +337,19 @@ function occupy_contexts_context_default_contexts() {
     ),
   );
   $context->reactions = array(
-    'delta' => array(
-      'delta_template' => 'read',
+    'block' => array(
+      'blocks' => array(
+        'views--exp-ows_stories-stories_page' => array(
+          'module' => 'views',
+          'delta' => '-exp-ows_stories-stories_page',
+          'region' => 'content',
+          'weight' => '-10',
+        ),
+      ),
     ),
     'region' => array(
       'occupy' => array(
         'disable' => array(
-          'sidebar_first' => 'sidebar_first',
           'sidebar_second' => 'sidebar_second',
           'page_top' => 0,
           'page_bottom' => 0,
