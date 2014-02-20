@@ -180,6 +180,15 @@ function occupy_content_types_node_info() {
       'title_label' => t('Title'),
       'help' => '',
     ),
+    'internal_tout' => array(
+      'name' => t('Internal tout'),
+      'base' => 'node_content',
+      'description' => t('Nodes consisting of title, link, description.
+For use in views such as sidebar links, or other pages.'),
+      'has_title' => '1',
+      'title_label' => t('Title'),
+      'help' => '',
+    ),
     'story' => array(
       'name' => t('Story'),
       'base' => 'node_content',

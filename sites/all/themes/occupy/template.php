@@ -42,4 +42,13 @@ function occupy_css_alter(&$css) {
 	unset($css['sites/all/themes/omega/omega/css/omega-visuals.css']);
 }
 
+function occupy_views_pre_render(&$view) {
+  // pass the story category field to the related stories view templates.
+  if( $view->name == "similarterms" && $view->current_display == "related_stories" ){
+
+    // $cat = $view->field['field_story_category'];
+    // dpm( $view->field['field_story_category'] );
+    // dpm( $view->field );
+  }
+}
 
