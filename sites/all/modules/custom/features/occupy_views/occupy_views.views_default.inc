@@ -163,6 +163,88 @@ function occupy_views_views_default_views() {
   $export['ga_consense_docs'] = $view;
 
   $view = new view();
+  $view->name = 'nodequeue_4';
+  $view->description = 'Display a list of all nodes in queue \'Sorted Article Sidebar Links\'';
+  $view->tag = 'nodequeue';
+  $view->base_table = 'node';
+  $view->human_name = 'Article Sidebar Links Queue';
+  $view->core = 0;
+  $view->api_version = '3.0';
+  $view->disabled = FALSE; /* Edit this to true to make a default view disabled initially */
+
+  /* Display: Defaults */
+  $handler = $view->new_display('default', 'Defaults', 'default');
+  $handler->display->display_options['css_class'] = 'sidebar-links';
+  $handler->display->display_options['use_more'] = TRUE;
+  $handler->display->display_options['use_more_always'] = FALSE;
+  $handler->display->display_options['access']['type'] = 'none';
+  $handler->display->display_options['cache']['type'] = 'none';
+  $handler->display->display_options['query']['type'] = 'views_query';
+  $handler->display->display_options['exposed_form']['type'] = 'basic';
+  $handler->display->display_options['pager']['type'] = 'none';
+  $handler->display->display_options['style_plugin'] = 'default';
+  $handler->display->display_options['row_plugin'] = 'fields';
+  $handler->display->display_options['row_options']['default_field_elements'] = FALSE;
+  /* Relationship: Nodequeue: Queue */
+  $handler->display->display_options['relationships']['nodequeue_rel']['id'] = 'nodequeue_rel';
+  $handler->display->display_options['relationships']['nodequeue_rel']['table'] = 'node';
+  $handler->display->display_options['relationships']['nodequeue_rel']['field'] = 'nodequeue_rel';
+  $handler->display->display_options['relationships']['nodequeue_rel']['required'] = TRUE;
+  $handler->display->display_options['relationships']['nodequeue_rel']['limit'] = TRUE;
+  $handler->display->display_options['relationships']['nodequeue_rel']['names'] = array(
+    'sorted_article_sidebar_links' => 'sorted_article_sidebar_links',
+  );
+  /* Field: Content: Link */
+  $handler->display->display_options['fields']['field_link']['id'] = 'field_link';
+  $handler->display->display_options['fields']['field_link']['table'] = 'field_data_field_link';
+  $handler->display->display_options['fields']['field_link']['field'] = 'field_link';
+  $handler->display->display_options['fields']['field_link']['label'] = '';
+  $handler->display->display_options['fields']['field_link']['element_type'] = 'h5';
+  $handler->display->display_options['fields']['field_link']['element_class'] = 'title';
+  $handler->display->display_options['fields']['field_link']['element_label_colon'] = FALSE;
+  $handler->display->display_options['fields']['field_link']['element_wrapper_type'] = '0';
+  $handler->display->display_options['fields']['field_link']['element_default_classes'] = FALSE;
+  $handler->display->display_options['fields']['field_link']['click_sort_column'] = 'url';
+  /* Field: Content: Blurb */
+  $handler->display->display_options['fields']['field_blurb']['id'] = 'field_blurb';
+  $handler->display->display_options['fields']['field_blurb']['table'] = 'field_data_field_blurb';
+  $handler->display->display_options['fields']['field_blurb']['field'] = 'field_blurb';
+  $handler->display->display_options['fields']['field_blurb']['label'] = '';
+  $handler->display->display_options['fields']['field_blurb']['element_type'] = 'p';
+  $handler->display->display_options['fields']['field_blurb']['element_label_colon'] = FALSE;
+  $handler->display->display_options['fields']['field_blurb']['element_wrapper_type'] = '0';
+  $handler->display->display_options['fields']['field_blurb']['element_default_classes'] = FALSE;
+  /* Sort criterion: Nodequeue: Position */
+  $handler->display->display_options['sorts']['position']['id'] = 'position';
+  $handler->display->display_options['sorts']['position']['table'] = 'nodequeue_nodes';
+  $handler->display->display_options['sorts']['position']['field'] = 'position';
+  $handler->display->display_options['sorts']['position']['relationship'] = 'nodequeue_rel';
+  /* Filter criterion: Content: Published or admin */
+  $handler->display->display_options['filters']['status_extra']['id'] = 'status_extra';
+  $handler->display->display_options['filters']['status_extra']['table'] = 'node';
+  $handler->display->display_options['filters']['status_extra']['field'] = 'status_extra';
+  $handler->display->display_options['filters']['status_extra']['group'] = 0;
+  $handler->display->display_options['filters']['status_extra']['expose']['operator'] = FALSE;
+
+  /* Display: Page */
+  $handler = $view->new_display('page', 'Page', 'page');
+  $handler->display->display_options['path'] = 'nodequeue/4';
+
+  /* Display: Article Sidebar touts block */
+  $handler = $view->new_display('block', 'Article Sidebar touts block', 'article_sidebar_links');
+  $handler->display->display_options['display_description'] = 'Touts that appear on the sidebar of Stories, Videos and Events';
+  $handler->display->display_options['defaults']['style_plugin'] = FALSE;
+  $handler->display->display_options['style_plugin'] = 'list';
+  $handler->display->display_options['style_options']['default_row_class'] = FALSE;
+  $handler->display->display_options['style_options']['row_class_special'] = FALSE;
+  $handler->display->display_options['defaults']['style_options'] = FALSE;
+  $handler->display->display_options['defaults']['row_plugin'] = FALSE;
+  $handler->display->display_options['row_plugin'] = 'fields';
+  $handler->display->display_options['defaults']['row_options'] = FALSE;
+  $handler->display->display_options['block_description'] = 'Article Sidebar Links Queue';
+  $export['nodequeue_4'] = $view;
+
+  $view = new view();
   $view->name = 'ows_announcements';
   $view->description = '';
   $view->tag = 'default';
@@ -918,6 +1000,106 @@ There are many <a href="http://www.nycga.net/events/" target="_blank">OWS-affili
   $handler->display->display_options['display_description'] = 'Block for the home page widget.';
   $handler->display->display_options['link_url'] = 'http://news.occupy.net';
   $export['ows_twitter_widget'] = $view;
+
+  $view = new view();
+  $view->name = 'similarterms';
+  $view->description = 'Similar By Terms';
+  $view->tag = 'default';
+  $view->base_table = 'node';
+  $view->human_name = 'Related Stories';
+  $view->core = 7;
+  $view->api_version = '3.0';
+  $view->disabled = FALSE; /* Edit this to true to make a default view disabled initially */
+
+  /* Display: Master */
+  $handler = $view->new_display('default', 'Master', 'default');
+  $handler->display->display_options['css_class'] = 'related-stories';
+  $handler->display->display_options['use_more_always'] = FALSE;
+  $handler->display->display_options['access']['type'] = 'perm';
+  $handler->display->display_options['cache']['type'] = 'none';
+  $handler->display->display_options['query']['type'] = 'views_query';
+  $handler->display->display_options['query']['options']['query_comment'] = FALSE;
+  $handler->display->display_options['exposed_form']['type'] = 'basic';
+  $handler->display->display_options['pager']['type'] = 'some';
+  $handler->display->display_options['pager']['options']['items_per_page'] = '5';
+  $handler->display->display_options['style_plugin'] = 'list';
+  $handler->display->display_options['style_options']['default_row_class'] = FALSE;
+  $handler->display->display_options['style_options']['row_class_special'] = FALSE;
+  $handler->display->display_options['style_options']['wrapper_class'] = '';
+  $handler->display->display_options['row_plugin'] = 'fields';
+  /* Field: Content: Category */
+  $handler->display->display_options['fields']['field_story_category']['id'] = 'field_story_category';
+  $handler->display->display_options['fields']['field_story_category']['table'] = 'field_data_field_story_category';
+  $handler->display->display_options['fields']['field_story_category']['field'] = 'field_story_category';
+  $handler->display->display_options['fields']['field_story_category']['label'] = '';
+  $handler->display->display_options['fields']['field_story_category']['exclude'] = TRUE;
+  $handler->display->display_options['fields']['field_story_category']['element_type'] = '0';
+  $handler->display->display_options['fields']['field_story_category']['element_label_colon'] = FALSE;
+  $handler->display->display_options['fields']['field_story_category']['element_wrapper_type'] = '0';
+  $handler->display->display_options['fields']['field_story_category']['element_default_classes'] = FALSE;
+  $handler->display->display_options['fields']['field_story_category']['type'] = 'taxonomy_term_reference_plain';
+  /* Field: Content: Title */
+  $handler->display->display_options['fields']['title']['id'] = 'title';
+  $handler->display->display_options['fields']['title']['table'] = 'node';
+  $handler->display->display_options['fields']['title']['field'] = 'title';
+  $handler->display->display_options['fields']['title']['label'] = '';
+  $handler->display->display_options['fields']['title']['alter']['word_boundary'] = FALSE;
+  $handler->display->display_options['fields']['title']['alter']['ellipsis'] = FALSE;
+  $handler->display->display_options['fields']['title']['element_type'] = 'h4';
+  $handler->display->display_options['fields']['title']['element_class'] = 'related-story-title %1';
+  $handler->display->display_options['fields']['title']['element_label_colon'] = FALSE;
+  $handler->display->display_options['fields']['title']['element_wrapper_type'] = '0';
+  $handler->display->display_options['fields']['title']['element_default_classes'] = FALSE;
+  /* Field: Content: Author */
+  $handler->display->display_options['fields']['field_author']['id'] = 'field_author';
+  $handler->display->display_options['fields']['field_author']['table'] = 'field_data_field_author';
+  $handler->display->display_options['fields']['field_author']['field'] = 'field_author';
+  $handler->display->display_options['fields']['field_author']['label'] = '';
+  $handler->display->display_options['fields']['field_author']['element_type'] = 'h6';
+  $handler->display->display_options['fields']['field_author']['element_class'] = 'attribution author';
+  $handler->display->display_options['fields']['field_author']['element_label_colon'] = FALSE;
+  $handler->display->display_options['fields']['field_author']['element_wrapper_type'] = '0';
+  $handler->display->display_options['fields']['field_author']['element_default_classes'] = FALSE;
+  $handler->display->display_options['fields']['field_author']['type'] = 'text_plain';
+  /* Field: Content: Body */
+  $handler->display->display_options['fields']['body']['id'] = 'body';
+  $handler->display->display_options['fields']['body']['table'] = 'field_data_body';
+  $handler->display->display_options['fields']['body']['field'] = 'body';
+  $handler->display->display_options['fields']['body']['label'] = '';
+  $handler->display->display_options['fields']['body']['element_type'] = 'div';
+  $handler->display->display_options['fields']['body']['element_class'] = 'tooltip';
+  $handler->display->display_options['fields']['body']['element_label_colon'] = FALSE;
+  $handler->display->display_options['fields']['body']['element_wrapper_type'] = '0';
+  $handler->display->display_options['fields']['body']['element_default_classes'] = FALSE;
+  $handler->display->display_options['fields']['body']['type'] = 'text_summary_or_trimmed';
+  $handler->display->display_options['fields']['body']['settings'] = array(
+    'trim_length' => '255',
+  );
+  /* Sort criterion: Similar By Terms: Similarity */
+  $handler->display->display_options['sorts']['similarterms']['id'] = 'similarterms';
+  $handler->display->display_options['sorts']['similarterms']['table'] = 'node';
+  $handler->display->display_options['sorts']['similarterms']['field'] = 'similarterms';
+  /* Contextual filter: Similar By Terms: Nid */
+  $handler->display->display_options['arguments']['similar_nid']['id'] = 'similar_nid';
+  $handler->display->display_options['arguments']['similar_nid']['table'] = 'node';
+  $handler->display->display_options['arguments']['similar_nid']['field'] = 'similar_nid';
+  $handler->display->display_options['arguments']['similar_nid']['default_action'] = 'default';
+  $handler->display->display_options['arguments']['similar_nid']['default_argument_type'] = 'node';
+  $handler->display->display_options['arguments']['similar_nid']['summary']['number_of_records'] = '0';
+  $handler->display->display_options['arguments']['similar_nid']['summary']['format'] = 'default_summary';
+  $handler->display->display_options['arguments']['similar_nid']['summary_options']['items_per_page'] = '25';
+  /* Filter criterion: Content: Published */
+  $handler->display->display_options['filters']['status']['id'] = 'status';
+  $handler->display->display_options['filters']['status']['table'] = 'node';
+  $handler->display->display_options['filters']['status']['field'] = 'status';
+  $handler->display->display_options['filters']['status']['value'] = 1;
+  $handler->display->display_options['filters']['status']['group'] = 1;
+  $handler->display->display_options['filters']['status']['expose']['operator'] = FALSE;
+
+  /* Display: Related Stories Block */
+  $handler = $view->new_display('block', 'Related Stories Block', 'related_stories');
+  $handler->display->display_options['block_caching'] = '4';
+  $export['similarterms'] = $view;
 
   $view = new view();
   $view->name = 'tags_block';
