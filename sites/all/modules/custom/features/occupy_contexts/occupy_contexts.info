@@ -36,6 +36,7 @@ features_exclude[node][event] = event
 features_exclude[node][story] = story
 features_exclude[node][video] = video
 features_exclude[dependencies][field_group] = field_group
+features_exclude[dependencies][video_embed_field] = video_embed_field
 features_exclude[field_base][body] = body
 features_exclude[field_base][field_address] = field_address
 features_exclude[field_base][field_author] = field_author
