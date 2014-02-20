@@ -1,0 +1,27 @@
+.node-type-story,
+.node-type-event,
+.node-type-video {
+	
+	article.view-mode-full {
+		
+		@include background-grid($color: rgba(red,.25));
+
+		header {
+			background: rgba( red, .2 );
+		}
+		
+		section.group-left{
+
+			@include breakpoint( $screen-lg ) {
+				@include grid-span( 1, 1 );			
+			}
+
+		}
+
+		aside.group-right {
+			@include grid-span( 1, 2 );
+		}
+
+	}
+
+}

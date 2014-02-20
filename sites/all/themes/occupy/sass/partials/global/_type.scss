@@ -1,0 +1,79 @@
+////////////////////
+// Font definitions
+
+@include font-face('LeagueGothic', 'leaguegothic', '../fonts/league_gothic/webfonts/leaguegothic-regular-webfont' );
+@include font-face('SourceSansPro', 'source_sans_proregular', '../fonts/sourcesanspro/sourcesanspro-regular' );
+@include font-face('SourceSansPro', 'source_sans_proitalic', '../fonts/sourcesanspro/sourcesanspro-italic', normal, italic);
+@include font-face('SourceSansPro', 'source_sans_probold', 'sites/all/themes/occupy/fonts/sourcesanspro/sourcesanspro-bold', bold );
+@include font-face('SourceSansPro', 'source_sans_probold_italic', 'sites/all/themes/occupy/fonts/sourcesanspro/sourcesanspro-bolditalic', bold, italic);
+
+
+////////////////////
+// type vars
+
+$sans-font-family: 			SourceSansPro, Tahoma, sans-serif;
+$monoFontFamily:				Monaco, Menlo, Consolas, "Courier New", monospace;
+$headline-font-family: 	LeagueGothic, Helvetica, sans;
+$body-font-family: 			$sans-font-family;
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: $headline-font-family;
+  font-weight: normal;
+  text-transform: uppercase;
+  margin: 0;
+  line-height: 1.125;
+  a {
+  	color: inherit;
+  }
+}
+
+
+////////////////////
+// type sizes
+
+body {
+	font-family: $body-font-family;
+	font-color: $c-text;
+	font-size: 1em;
+	line-height: 1.2;
+}
+
+h2 {
+	font-size: 2.5rem;
+}
+
+h3 { 
+	font-size: 2rem;
+}
+
+h4 {
+	font-size: 1.5rem;
+}
+
+a {
+	text-decoration: none;
+}
+
+.site-name {
+	font-size: 5rem;
+	letter-spacing: .125rem;
+	a {
+		color: $c-accent;
+	}
+}
+
+.site-slogan {
+	font-size: 1.75rem;
+	letter-spacing: .125rem;
+}
+
+#header .menu {
+	font-family: $headline-font-family;
+	text-transform: uppercase;
+	font-size: 2rem;
+}

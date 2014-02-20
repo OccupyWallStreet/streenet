@@ -1,0 +1,18 @@
+//////////////////////////////
+// Set legacy support
+//
+// If you need support for IE6 or IE7, you should install the Box Sizing polyfill.
+// In your project's folder from the command line, type the following:
+// compass install singularitygs/box-sizing
+//////////////////////////////
+$legacy-support-for-ie6:     false;
+$legacy-support-for-ie7:     false;
+$legacy-support-for-mozilla: true;
+
+//////////////////////////////
+// Import Base
+//////////////////////////////
+@import "partials/global/base";
+@import "partials/layouts/layouts";
+@import "partials/modules/modules";
+

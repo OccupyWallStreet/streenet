@@ -1,0 +1,29 @@
+////////////////////////
+// Layouts Partials
+//
+// Your SMACSS Layouts go here
+// Build sub folders and partials in this folder, with everything being imported, in cascading order, into this file.
+////////////////////////
+
+// look in global/_variables/ for grid definitions.
+
+@import "singularitygs";
+
+* {
+  @include box-sizing('border-box');
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.stories-block-title {
+	border: 1px #f00 solid;
+}
+
+@import "header";
+@import "footer";
+@import "story_teasers";
+@import "stories";
+@import "feeds";

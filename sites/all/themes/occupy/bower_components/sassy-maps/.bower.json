@@ -1,0 +1,38 @@
+{
+  "name": "sassy-maps",
+  "version": "0.3.1",
+  "authors": [
+    "Sam Richard <snugug@gmail.com>"
+  ],
+  "main": "sass/_sassy-maps.scss",
+  "devDependencies": {},
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "components",
+    "test",
+    "tests",
+    "Gemfile",
+    "Gemfile.lock",
+    "Gruntfile.js",
+    "examples",
+    "sass/example.scss",
+    "images",
+    "fonts",
+    "js",
+    "package.json",
+    "config.*",
+    "*.gem"
+  ],
+  "homepage": "https://github.com/Team-Sass/Sassy-Maps",
+  "_release": "0.3.1",
+  "_resolution": {
+    "type": "version",
+    "tag": "v0.3.1",
+    "commit": "6eb04fd416da9fed6a2f1647b7b8b8a058882c7a"
+  },
+  "_source": "git://github.com/Team-Sass/Sassy-Maps.git",
+  "_target": "<1.0.0",
+  "_originalSource": "sassy-maps"
+}

@@ -1,0 +1,9 @@
+.node-teaser {
+	background: $c-accent;
+	header h2 {
+		text-transform: capitalize;
+		font-family: $sans-font-family;
+		font-weight: bold;
+		font-size: 1rem;
+	}
+}

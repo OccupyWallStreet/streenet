@@ -1,0 +1,70 @@
+////////////////////////
+// Mixins Partials
+//
+// All of your mixins should go in this file.
+////////////////////////
+
+// bulletproof syntax, with font-id specipied
+@mixin font-face($font-family, $font-id, $file-path, $weight: normal, $style: normal) {
+  @font-face {
+	  font-family: $font-family;
+	  src: url('#{$file-path}.eot');
+	  src: url('#{$file-path}.eot?#iefix') format('embedded-opentype'),
+	       url('#{$file-path}.woff') format('woff'),
+	       url('#{$file-path}.ttf') format('truetype'),
+	       url('#{$file-path}.svg##{$font-id}') format('svg');
+	  font-weight: $weight;
+	  font-style: $style;
+	  font-stretch: none;
+  }
+}
+
+// transtions with browser prefix support
+@mixin transition($transition-property, $transition-time, $method) {
+  -webkit-transition: $transition-property $transition-time $method;
+  -moz-transition: $transition-property $transition-time $method;
+  -ms-transition: $transition-property $transition-time $method;
+  -o-transition: $transition-property $transition-time $method;
+  transition: $transition-property $transition-time $method;
+}
+
+// Shift content offscreen, can be usefull when you reall need to do this
+@mixin offscreen {
+  position: absolute;
+  top: -99999em;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  outline: 0;
+}
+
+// form element placeholders
+@mixin placeholder {
+  &::-webkit-input-placeholder {
+    @content;
+  }
+  &:-moz-placeholder { /* Firefox 18- */
+    @content;
+  }
+  &::-moz-placeholder {  /* Firefox 19+ */
+    @content;
+  }
+  &:-ms-input-placeholder {
+    @content;
+  }
+}
+
+@mixin pager-item( $size: 28px ) {
+  @include border-radius( $size/2 );
+  min-width: $size;
+  height: $size;
+  // a little rem
+  font-size: 1em;
+  font-size: 1rem;
+  padding: $size * .25;
+  border:none;
+  font-weight: normal;
+}
+
+
+

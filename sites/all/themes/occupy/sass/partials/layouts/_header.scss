@@ -1,0 +1,46 @@
+#masthead,
+#header {
+	background-color: $c-backdrop;
+}
+
+#header {
+	margin: 0;
+	.content {
+		@include breakpoint( $screen-sm ){
+			max-width: $screen-sm;
+			margin: 0 auto;
+		}
+		@include breakpoint( $screen-md ){
+			max-width: $screen-md;
+		}
+		@include breakpoint( $screen-lg ){
+			max-width: $screen-lg;
+		}
+	}
+}
+
+#masthead {
+	position: relative;
+	#block-delta-blocks-site-name {
+		white-space: nowrap;
+		@include rotate( -3deg );
+		.site-name {
+			text-align: center;
+			font-size: 12rem;
+		}
+	}
+}
+#block-system-main-menu {
+.menu {
+	padding: 0;
+	li {
+		margin: 0 .5em 0 0;
+		display: inline-block;
+		&:last-child {
+			margin-right: 0;
+		}
+	}
+
+}
+
+}

@@ -1,0 +1,50 @@
+.view-interocc-newsfeed {
+	
+	@include clearfix;
+
+	.masonry-item {
+		margin-bottom: 1rem;
+		padding: 1em;
+	}
+
+	@include breakpoint( $screen-md-max ) {
+		max-width: $screen-md;
+		padding: 2rem;
+		@include layout( 2, $gutter: $gutter-sm ) {
+
+			.masonry-item {
+				@include float-span( 1 );
+			}
+			.masonry-item:nth-child(3n+0) {
+				@include float-span( 1, first );				
+			}
+			.masonry-item:nth-child(2n+2) {
+				@include float-span( 1, last );				
+			}
+		}
+	}
+
+	@include breakpoint( $screen-md ) {
+		background: rgba( #0af, .2 );
+		max-width: $screen-md;
+		margin: 0 auto;
+		@include layout(8) {
+			.masonry-item {
+				background: white;
+				box-shadow: 1px 1px 2px rgba( 0,0,0,.3 );
+				@include float-span( 2 );
+			}
+			.masonry-item:nth-child(5n+0) {
+				@include float-span( 2, first );				
+			}
+			.masonry-item:nth-child(4n+4) {
+				@include float-span( 2, last );				
+			}
+		}
+	}
+
+	@include breakpoint( $screen-lg ) {
+		max-width: $screen-lg;
+	}
+
+}

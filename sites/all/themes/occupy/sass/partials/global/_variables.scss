@@ -1,0 +1,32 @@
+////////////////////////
+// Variables Partials
+//
+// All of your variables should go in this file.
+////////////////////////
+
+$screen-lg: 1200px;
+$screen-md: 960px;
+$screen-sm: 480px;
+
+$c-text: #333;
+$c-text-light: #aaa;
+// $c-header-type : white;
+$c-accent: #fc0;
+$c-backdrop: #1a1a1a;
+$c-grey-lt: #dedede;
+
+$screen-lg: 1100px;
+$screen-md: 960px;
+$screen-md-max: max-width $screen-md;
+$screen-sm: 480px;
+$screen-sm-max: max-width $screen-sm;
+
+$grids: add-grid( 1 );
+$grids: add-grid( 2 at $screen-sm );
+$grids: add-grid( 16 at $screen-md );
+// $grids: add-grid( 2 8 2 at $screen-sm );
+$gutter-md: 1/4;
+$gutter-sm: 1/16;
+$gutters: add-gutter($gutter-md);
+
+$output: 'float';

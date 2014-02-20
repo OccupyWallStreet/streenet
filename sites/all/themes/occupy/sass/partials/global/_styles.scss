@@ -1,0 +1,112 @@
+html.js input.form-autocomplete {
+  background-image: url(/sites/all/themes/occupy/images/spinner.gif); /* tweak this according to your gif */
+  background-position: 100% 0px; /* tweak this according to your gif */
+  background-repeat: no-repeat;
+}
+html.js input.throbbing {
+  background-position: 100% -20px; /* tweak this according to your gif */
+}
+ 
+/* these apply to all ajax progresses */
+.ajax-progress {
+  display: inline-block;
+  *display: inline;
+  *zoom: 1;
+}
+.ajax-progress .throbber {
+  background: transparent url(/sites/all/themes/occupy/images/spinner.gif) no-repeat 0px 0px; /* tweak this according to your gif */
+  float: left;
+  height: 20px; /* tweak this according to your gif */
+  width: 20px; /* tweak this according to your gif */
+  margin: 2px;
+}
+
+
+////////////////////////////
+//
+// Pager
+//
+
+.pager {
+  margin-top: 2em;
+  margin-bottom: 2em;
+}
+
+.item-list .pager li {
+  text-align: center;
+  margin: 0 .25em 0 0;
+  padding: 0;
+  min-width: 28px;
+  display: inline-block;
+  position: relative;
+  .ajax-progress {
+    position: absolute;
+    top: 5px;
+    left: 6px;
+  }
+  &.pager-current {
+    @include pager-item;
+    background: #000;
+    color: $c-grey-lt;
+  }
+  a {
+    @include pager-item;
+    display: block;
+    background: $c-grey-lt;
+    position: relative;
+  }
+}
+
+#views_infinite_scroll-ajax-loader {
+  img {
+    display: none;
+  }
+  display: block;
+  margin: 0 auto;
+  width: 100% !important;
+  background-color: #dedede;
+  background-image: url(/sites/all/themes/occupy/images/spinner.gif);
+  background-position: center center;
+  background-repeat: no-repeat;
+  padding: .5em 0;
+  height: 2em;
+  margin-top: 1.5em;
+  border-radius: .5em;
+}
+
+.pager-previous,
+.pager-next,
+.pager-first,
+.pager-last {
+  text-indent: -3000px;
+  position: relative;
+  min-width: 28px;
+    background: transparent !important;
+  a {
+    background: transparent !important;
+  }
+  &::before {
+    @include pager-item( 24px );
+    line-height: 1 !important;
+    min-width: 28px;
+    background: $c-grey-lt;
+    text-indent: 0;
+    position: absolute;
+    top: 0;
+    left: 0;
+    font-size: 18px;
+  }
+}
+
+.pager-previous::before {
+  content: "⇠";
+}
+.pager-next::before {
+  content: "⇢";
+}
+.pager-first::before {
+  content: "⇤";
+}
+.pager-last::before {
+  content: "⇥";
+}
