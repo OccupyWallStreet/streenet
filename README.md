@@ -1,3 +1,4 @@
+[![Stories in Ready](https://badge.waffle.io/occupywallstreet/streenet.png?label=ready)](https://waffle.io/occupywallstreet/streenet)
 streenet
 ========
 
