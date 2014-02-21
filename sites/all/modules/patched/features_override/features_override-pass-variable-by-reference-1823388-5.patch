@@ -1,0 +1,14 @@
+diff --git a/features_override.export.inc b/features_override.export.inc
+index 99743b4..7b29990 100644
+--- a/features_override.export.inc
++++ b/features_override.export.inc
+@@ -147,7 +147,8 @@ function features_override_module_component_overrides($module, $component, $rese
+ 
+   // This indicates it is likely not controlled by features, so fetch manually.
+   if (!$normal && is_array($default)) {
+-    $code = array_pop(features_invoke($component, 'features_export_render', $module, array_keys($default), NULL));
++    $export = features_invoke($component, 'features_export_render', $module, array_keys($default), NULL);
++    $code = array_pop($export);
+     if (!$code) {
+       return FALSE;
+     }

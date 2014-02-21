@@ -42,4 +42,3 @@ function occupy_css_alter(&$css) {
 	unset($css['sites/all/themes/omega/omega/css/omega-visuals.css']);
 }
 
-

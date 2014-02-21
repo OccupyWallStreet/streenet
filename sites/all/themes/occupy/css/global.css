@@ -186,23 +186,44 @@ label[for=email-Primary]{
 	width: 45%;
 }
 
-/*------------------------------------------SOCIAL ICONS---------------------------------------*/
-.facebook-icon {
-	padding: 0 10px 0 0;
+
+/*
+//////////////////////////////
+// Header Share Links
+//
+*/
+
+.block-header-social-media-links h2.block-title,
+.block-quicktabs h2.block-title {
+	position: absolute;
+	font-size: 0;
+	left: -12000px;
 }
-/*------------------------------------------ANNOUNCEMENTS--------------------------------------*/
-#block-block-12 {
-	float: left;
-	margin: 20px 0 0 0px;
+
+.block-header-social-media-links .boxes-box-content a {
+	display: inline-block;
+	border: 1px #f00 solid;
 }
-#block-views-ows-announcements-block {
+
+.block-header-social-media-links .boxes-box-content a:first-child {
+	margin-right: .5em;
+}
+
+/*
+//////////////////////////////
+// Header Announcements
+//
+*/
+
+.view-header-announcements {
 	float: left;
 	margin: 0;
 	padding: 0;
-	border-top: 1px #A51D35 dashed;
+	border-top: 1px #a51d35 dashed;
 }
-.view-ows-announcements {
-	color: #A51D35;
+
+.view-header-announcements {
+	color: #a51d35;
 	float: left;
 	font-size: 18px;
 	font-weight: normal;
@@ -213,17 +234,18 @@ label[for=email-Primary]{
 	line-height: 1.2em;
 }
 
-#block-views-ows-announcements-block a,
-#block-views-ows-announcements-block a:link,
-#block-views-ows-announcements-block a:visited{
-	color: #A51D35;
+.view-header-announcements a,
+.view-header-announcements a:link,
+.view-header-announcements a:visited{
+	color: #a51d35;
 	text-decoration: underline;
 }
-#block-views-ows-announcements-block a:hover{
+
+.view-header-announcements a:hover{
 	color:#000;
 }
 
-#block-views-ows-announcements-block .views-row-first {
+.view-header-announcements .views-row-first {
 	border-right: 1px solid;
 	float: left;
 	margin: 0;
@@ -233,7 +255,7 @@ label[for=email-Primary]{
 	max-height: 65px;
 }
 
-#block-views-ows-announcements-block .views-row-last {
+.view-header-announcements .views-row-last {
   float: left;
   margin: 0;
   padding: 0 0 0 3%;
@@ -243,16 +265,16 @@ label[for=email-Primary]{
 	max-height: 75px;
 }
 
-.announcements-view {
-	font-family: 'LeagueGothic';
-	padding: 0 10px 0 0;
-}
-.announcements-view p {
+.view-header-announcements p {
   font-family: 'LeagueGothic';
   margin: 0;
 }
-/*--------------------------------------FEATURED SECTION--------------------------------------*/
-/*------------------------------------------Slideshow-----------------------------------------*/
+
+/*
+//////////////////////////////
+// Featured stories
+//
+*/
 
 .views-slideshow-cycle-main-frame-row-item {
 	position: relative;
@@ -465,40 +487,6 @@ ul.quicktabs-tabs li.active a{
 	padding: 0;
 }
 
-.cat-head{
-	border-bottom: 1px #666 solid;	
-}
-
-.cat-head-GA{
-	border-bottom: 1px #fc0 solid;
-	color: #fc0;
-}
-
-.cat-head-News{
-	border-bottom: 1px #B50028 solid;
-	color: #B50028
-}
-
-.cat-head-Feature{
-	color: #ffcc00;
-	border-bottom: 1px #fc0 solid
-}
-
-.cat-head-Event{
-	color: #F4922E;
-	border-bottom: 1px #F4922E solid
-}
-
-.cat-head-Editorial{
-	color: #3088B9;
-	border-bottom: 1px #3088B9 solid
-}
-
-.cat-head-Analysis{
-	color: #2F89BA;
-	border-bottom: 1px #2F89BA solid
-}
-
 .block-syndicate {
 	float: left;
 	margin: 0;
@@ -516,9 +504,11 @@ ul.quicktabs-tabs li.active a{
 }
 
 .stories-block-row {
+		box-sizing: border-box;
     display: block;
     float: left;
     width: 25%;
+    padding-right: 1em;
 }
 
 .stories-block-date a:visited,
@@ -529,7 +519,6 @@ ul.quicktabs-tabs li.active a{
 
 .stories-block-title {
     margin-bottom: 15px;
-		/*min-height: 40px;*/
 		font-size: 14px;
 		line-height: 1.2;
 }
@@ -545,17 +534,16 @@ ul.quicktabs-tabs li.active a{
     /*fix display when stories list 3 row story items*/
     min-height: 51px;
     padding: 5px 10px 15px;
-    width: 85.5%;
     color: #666 !important;
     font-weight: bold;
     text-decoration: none;
 }
 
 .views-field-field-story-category {
-    color: #000000;
+    color: #000;
     font-size: 12px;
     margin: 0;
-    width: 94%;
+    width: 100%;
 }
 
 .consensed-field-label {
@@ -578,8 +566,9 @@ ul.quicktabs-tabs li.active a{
 .stories-block-row .stories-block-image img,
 .stories-block-row .views-field-field-image img {
 	display: block;
+	width: 100%;
+	height: auto;
 }
-
 
 .more-link {
 	text-align: left;
@@ -589,20 +578,9 @@ ul.quicktabs-tabs li.active a{
 	font-family: 'LeagueGothic';
 	font-size: 20px;
 }
+
 .more-link a {
 	color: #000;
-}
-
-/*------------------------------------------STORIES BLOCK OF 4----------------------------------------*/
-.view-ows-stories-read-page- .stories-block-row {
-	display: block;
-	float: left;
-	width: 50%;
-}
-
-.block-ows-stories-read-page--block-1 .view-row-4,
-.block-ows-stories-read-page--block-1 .view-row-2{
-	margin-right: 0px !important;
 }
 
 .stories-block-date {
@@ -611,9 +589,9 @@ ul.quicktabs-tabs li.active a{
 	color: black !important;
 	margin: 0;
 	padding: 10px 10px 0;
-	width: 85.5%;
 	font-size: 11px;
 }
+
 .stories-block-title {
 	display: block;
 	background-color: #fc0;
@@ -621,27 +599,7 @@ ul.quicktabs-tabs li.active a{
 	margin-bottom: 15px;
 	min-height: 50px;
 	padding: 5px 10px 15px;
-	width: 85.5%;
 }
-#block-views-ows-stories-read-page-block-1 .stories-block-date {
-	display: block;
-	background-color: #fc0;
-	color: black !important;
-	margin: 0;
-	padding: 10px 10px 0;
-	width: 87%;
-	font-size: 11px;
-}
-#block-views-ows-stories-read-page-block-1 .stories-block-title {
-	display: block;
-	background-color: #fc0;
-	color: black !important;
-	margin-bottom: 15px;
-	min-height: 50px;
-	padding: 5px 10px 15px;
-	width: 87%;
-}
-
 
 /*---------------------------------------------ARTICLE NODES------------------------------------------*/
 article {
@@ -775,12 +733,6 @@ article cite{
 .field-name-body {
 	margin: 0;
 	padding: 0;
-}
-.node-blocks-background {
-	background: #231F20;
-	padding: 10px;
-	font-size: 0;
-	margin: 10px 0;
 }
 
 .block-views-tags-block-block h2.block-title{
@@ -1309,14 +1261,117 @@ clear: both;
 	padding: 10px;
 	font-size: 0;
 }
-.contact-number-text {
+
+
+aside .view-display-id-article_sidebar_links li {
+	font-size: 1rem;
+	margin: 0 0 1em 0;
+	background: #231F20;
+	padding: .75em 1em;
+}
+
+aside .view-display-id-article_sidebar_links li  h5 {
+	font-size: 1rem;
+	margin: 0;
+}
+
+aside .view-display-id-article_sidebar_links li  h5 a {
 	color: #fc0;
-	font-size: 15px;
+	text-decoration: none;
 }
-.contact-phone-text {
-	color: #fff;
-	font-size: 14px;
+
+aside .view-display-id-article_sidebar_links li p {
+	color: #dedede;
+	font-size: .875rem;
+	margin: .25em 0 0 0;
 }
+
+.related-stories ul {
+	list-style: none;
+	padding:0;
+}
+
+.related-stories ul>li {
+	margin: 0 0 .25em 0;
+	padding: .5em 1em;
+	border-left: 2px #666 solid;	
+	background: #eee;
+}
+
+.related-stories li {
+  position: relative;
+}
+
+.related-stories li .tooltip {
+	overflow: hidden;
+  transition: max-height .25s;
+  transition-timing-function: cubic-bezier(0.42,0,0.58,1);
+  max-height: 0;
+}
+
+.related-stories li:hover .tooltip {
+  max-height: 1000px;
+}
+
+
+.cat-head{
+	border-bottom: 1px #666 solid;	
+}
+
+.cat-head-GA{
+	border-bottom: 1px #fc0 solid;
+	color: #fc0;
+}
+
+.cat-head-News{
+	border-bottom: 1px #B50028 solid;
+	color: #B50028
+}
+
+.cat-head-Feature{
+	color: #ffcc00;
+	border-bottom: 1px #fc0 solid
+}
+
+.cat-head-Event{
+	color: #F4922E;
+	border-bottom: 1px #F4922E solid
+}
+
+.cat-head-Editorial{
+	color: #3088B9;
+	border-bottom: 1px #3088B9 solid
+}
+
+.cat-head-Analysis{
+	color: #2F89BA;
+	border-bottom: 1px #2F89BA solid
+}
+
+.related-stories .opinion {
+	border-left: 2px #1D8CBE solid;
+}
+
+.related-stories .news {
+	border-left: 2px #B50028 solid;
+}
+
+.related-stories .event {
+	border-left: 2px #F4922E solid;
+}
+
+.related-stories .video {
+	border-left: 2px #f00 solid;
+}
+
+.related-stories .analysis {
+	border-left: 2px #2F89BA solid
+}
+
+.related-stories .feature {
+	border-left: 2px #fc0 solid
+}
+
 /*---------------------------------POSTSCRIPT ZONE---------------------------------*/
 #zone-postscript-wrapper {
 	margin-top: 20px;
@@ -1505,8 +1560,8 @@ ul.primary li {
 
 ul.primary li a {
 	display: block;
-	transition: color .8;
-	-webkit-transition: background-color .8;
+	transition: .25s;
+	transition-timing-function: cubic-bezier(0.42,0,0.58,1);
 	background-color: rgba( 0, 0, 0, 0.8 );
 	border-right: 1px #222 solid;
 	border: none;
@@ -1709,9 +1764,8 @@ ul.primary li.active a {
 
 .item-list .pager li .ajax-progress {
   position: absolute;
-  top: -1px;
+  top: -2px;
   left: -2px;
-
 }
 
 .item-list .pager li .ajax-progress .throbber{

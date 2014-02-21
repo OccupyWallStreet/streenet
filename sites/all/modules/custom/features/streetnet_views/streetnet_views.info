@@ -1,0 +1,15 @@
+name = Streetnet Story Views
+description = Streetnet story listings, taxonomy pages, and exposed filters
+core = 7.x
+package = Streetnet
+version = 7.x-1.5
+project = streetnet_views
+dependencies[] = better_exposed_filters
+dependencies[] = taxonomy
+dependencies[] = views
+features[ctools][] = openlayers:openlayers_maps:1
+features[ctools][] = views:views_default:3.0
+features[features_api][] = api:2
+features[views_view][] = ga_consense_docs
+features[views_view][] = taxonomy
+features_exclude[dependencies][streetnet] = streetnet
