@@ -1,0 +1,7 @@
+<?php
+/**
+ * @file
+ * Code for the Streetnet Meeting Notes feature.
+ */
+
+include_once 'streetnet_meeting_notes.features.inc';
