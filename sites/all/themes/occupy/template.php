@@ -21,7 +21,7 @@ function occupy_page_alter(&$vars) {
   drupal_add_js('sites/all/themes/occupy/js/ows_civi_form.js');
   drupal_add_js('sites/all/themes/occupy/bower_components/REM-unit-polyfill/js/rem.min.js');
   // scss compiles in stylesheets... as we transition from omega, we'll be moving things into scss.
-	// drupal_add_css('sites/all/themes/occupy/stylesheets/style.css');
+	drupal_add_css('sites/all/themes/occupy/stylesheets/style.css');
   drupal_add_css('sites/all/themes/occupy/css/normalize.css');
   drupal_add_css('sites/all/themes/occupy/css/typography.css');
 }
@@ -36,6 +36,10 @@ function occupy_css_alter(&$css) {
   // css weights in the info file
   // Solution... kill it, til we can move off it.
   // Too much themeing work to do to just switch now... but we'll get
+  unset($css['sites/all/themes/occupy/occupy-alpha-default.css']);
+  unset($css['sites/all/themes/occupy/occupy-alpha-default-normal.css']);
+  unset($css['sites/all/themes/occupy//sites/all/themes/omega/alpha/css/alpha-mobile.css']);
+  unset($css['sites/all/themes/omega/alpha/css/grid/alpha_default/normal/alpha-default-normal-12.css']);
 	unset($css['sites/all/themes/omega/alpha/css/alpha-debug.css']);
 	unset($css['sites/all/themes/omega/alpha/css/alpha-reset.css']);
 	unset($css['sites/all/themes/omega/omega/css/omega-text.css']);

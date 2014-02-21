@@ -1,3 +1,19 @@
+#block-views-feeds-interocc-feed {
+	@include breakpoint( $screen-md ) {
+		@include layout( 2, $gutter: $gutter-sm ) {
+			.item-list ul>li {
+				@include float-span( 1 );
+			}
+			.item-list ul>li:nth-child(3n+0) {
+				@include float-span( 1, first );				
+			}
+			.item-list ul>li:nth-child(2n+2) {
+				@include float-span( 1, last );				
+			}
+		}
+	}
+}
+
 .view-interocc-newsfeed {
 	
 	@include clearfix;
@@ -25,7 +41,6 @@
 	}
 
 	@include breakpoint( $screen-md ) {
-		background: rgba( #0af, .2 );
 		max-width: $screen-md;
 		margin: 0 auto;
 		@include layout(8) {

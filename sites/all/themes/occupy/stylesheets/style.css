@@ -2666,24 +2666,51 @@ body {
   float: left;
 }
 
+@media (min-width: 960px) {
+  /* line 4, ../sass/partials/layouts/_feeds.scss */
+  #block-views-feeds-interocc-feed .item-list ul > li {
+    width: 48.48485%;
+    clear: right;
+    float: left;
+    margin-left: 0;
+    margin-right: 3.0303%;
+  }
+  /* line 7, ../sass/partials/layouts/_feeds.scss */
+  #block-views-feeds-interocc-feed .item-list ul > li:nth-child(3n+0) {
+    width: 48.48485%;
+    clear: right;
+    float: left;
+    margin-left: 0;
+    margin-right: 3.0303%;
+    clear: both;
+  }
+  /* line 10, ../sass/partials/layouts/_feeds.scss */
+  #block-views-feeds-interocc-feed .item-list ul > li:nth-child(2n+2) {
+    width: 48.48485%;
+    clear: right;
+    float: right;
+    margin-right: 0;
+  }
+}
+
 /* line 65, ../../../../../../../../opt/vagrant_ruby/lib/ruby/gems/1.8/gems/singularitygs-1.1.2/stylesheets/singularitygs/helpers/_clearfix.scss */
 .view-interocc-newsfeed:after {
   content: "";
   display: table;
   clear: both;
 }
-/* line 5, ../sass/partials/layouts/_feeds.scss */
+/* line 21, ../sass/partials/layouts/_feeds.scss */
 .view-interocc-newsfeed .masonry-item {
   margin-bottom: 1rem;
   padding: 1em;
 }
 @media (max-width: 960px) {
-  /* line 1, ../sass/partials/layouts/_feeds.scss */
+  /* line 17, ../sass/partials/layouts/_feeds.scss */
   .view-interocc-newsfeed {
     max-width: 960px;
     padding: 2rem;
   }
-  /* line 15, ../sass/partials/layouts/_feeds.scss */
+  /* line 31, ../sass/partials/layouts/_feeds.scss */
   .view-interocc-newsfeed .masonry-item {
     width: 48.48485%;
     clear: right;
@@ -2691,7 +2718,7 @@ body {
     margin-left: 0;
     margin-right: 3.0303%;
   }
-  /* line 18, ../sass/partials/layouts/_feeds.scss */
+  /* line 34, ../sass/partials/layouts/_feeds.scss */
   .view-interocc-newsfeed .masonry-item:nth-child(3n+0) {
     width: 48.48485%;
     clear: right;
@@ -2700,7 +2727,7 @@ body {
     margin-right: 3.0303%;
     clear: both;
   }
-  /* line 21, ../sass/partials/layouts/_feeds.scss */
+  /* line 37, ../sass/partials/layouts/_feeds.scss */
   .view-interocc-newsfeed .masonry-item:nth-child(2n+2) {
     width: 48.48485%;
     clear: right;
@@ -2709,13 +2736,12 @@ body {
   }
 }
 @media (min-width: 960px) {
-  /* line 1, ../sass/partials/layouts/_feeds.scss */
+  /* line 17, ../sass/partials/layouts/_feeds.scss */
   .view-interocc-newsfeed {
-    background: rgba(0, 170, 255, 0.2);
     max-width: 960px;
     margin: 0 auto;
   }
-  /* line 32, ../sass/partials/layouts/_feeds.scss */
+  /* line 47, ../sass/partials/layouts/_feeds.scss */
   .view-interocc-newsfeed .masonry-item {
     background: white;
     box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
@@ -2725,7 +2751,7 @@ body {
     margin-left: 0;
     margin-right: 2.5641%;
   }
-  /* line 37, ../sass/partials/layouts/_feeds.scss */
+  /* line 52, ../sass/partials/layouts/_feeds.scss */
   .view-interocc-newsfeed .masonry-item:nth-child(5n+0) {
     width: 23.07692%;
     clear: right;
@@ -2734,7 +2760,7 @@ body {
     margin-right: 2.5641%;
     clear: both;
   }
-  /* line 40, ../sass/partials/layouts/_feeds.scss */
+  /* line 55, ../sass/partials/layouts/_feeds.scss */
   .view-interocc-newsfeed .masonry-item:nth-child(4n+4) {
     width: 23.07692%;
     clear: right;
@@ -2743,7 +2769,7 @@ body {
   }
 }
 @media (min-width: 1100px) {
-  /* line 1, ../sass/partials/layouts/_feeds.scss */
+  /* line 17, ../sass/partials/layouts/_feeds.scss */
   .view-interocc-newsfeed {
     max-width: 1100px;
   }
