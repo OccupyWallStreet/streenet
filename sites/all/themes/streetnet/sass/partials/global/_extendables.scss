@@ -1,0 +1,90 @@
+////////////////////////
+// Extendables Partials
+//
+// All of your extendable classes, ids, and placeholder extendables
+//   should go in this file.
+////////////////////////
+
+.clearfix {
+
+  &::before,
+  &::after {
+    content: " ";
+    display: table;
+  }
+
+  &::after {
+    clear: both;
+  }
+
+  @if $legacy-support-for-ie6 or $legacy-support-for-ie7 {
+    *zoom: 1;
+  }
+
+}
+
+.centered-container {
+    margin-left: auto;
+    margin-right: auto;
+    @include breakpoint( $screen-md ) { 
+      max-width: $screen-md;
+    }
+    @include breakpoint( $screen-lg ) { 
+      max-width: $screen-lg;
+    }
+}
+  
+%responsive-image {
+  display: inline-block;
+  line-height: 1;
+  width: 100%;
+  height: auto;
+}
+
+%links-no-outlines {
+  a:link,
+  a:active,
+  a:hover,
+  a {
+    outline: none !important;
+    text-decoration: none;
+  }  
+}
+
+%inline-block-item {
+  display: inline-block !important;
+  line-height: 1.5;
+  vertical-align: baseline;
+  width: auto;
+  margin: .425em .25em 0 0;
+  padding: .25em .5em 0 .5em;
+}
+
+%sidebar-block {
+  margin-bottom: 1em;
+}
+
+%tags {
+  a{
+    border-radius: .25em;
+    background: $c-ui-panel-dk;
+    color: $c-ui-panel-lt;
+    text-decoration: none;
+    @extend %inline-block-item;
+    transition-duration: 0.1875s;
+    transition-timing-function: cubic-bezier(0.42,0,0.58,1);
+  }
+  a:hover{
+    background: $c-ui-panel-lt;
+    color: $c-ui-panel-dk;
+    text-decoration: none;
+    @extend %inline-block-item;
+  }
+}
+
+// Shift content offscreen, can be usefull when you reall need to do this
+.offscreen {
+  position: absolute;
+  right: 101%;
+  overflow: hidden;
+}

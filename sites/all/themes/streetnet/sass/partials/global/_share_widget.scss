@@ -1,0 +1,98 @@
+.owstech-share {
+	overflow: hidden;
+	height: 3rem;
+	position: relative;
+
+	.actuator {
+		position: relative;
+		@include transition-property( top, color, background-color );
+	  @include transition-duration(.25s);
+	  @include transition-timing-function(ease-in-out);
+		top: 0;
+		color: $c-accent;
+		background: #000;
+		line-height: 1;
+		a {
+			display: block;
+			font-size: inherit;
+			padding: .3125em .5em;
+			vertical-align: baseline;
+			letter-spacing: .075em;
+			text-decoration: none;
+			color: inherit;
+		}
+	}
+	&:hover .actuator {
+		top: 2em;
+		background-color: $c-ui-panel-lt;
+		color: $c-text;
+		a {
+			text-decoration: none;
+		}
+	}
+}
+
+.owstech-share {
+	
+	.drawer {
+		@include horizontal-list( 0 );
+	  @include transition-property( max-height, top );
+	  @include transition-duration(.25s);
+	  @include transition-timing-function(ease-in-out);
+		background-color: lighten( $c-ui-panel-lt, 5 );
+		white-space: nowrap;
+		max-height: 0;
+		position: relative;
+		top: -5em;
+	}
+
+	&:hover .drawer {
+		max-height: 12em;
+		top: -3em;
+	}
+
+	@extend %links-no-outlines;
+
+	.drawer a.icon {
+		color: lighten( $c-text, 30 );
+		font-size: 1.25rem;
+		line-height: 2.5;
+		width: 2.5em;
+		height: 2.5em;
+		padding: 0;
+		display: inline-block;
+		vertical-align: middle;
+		text-align: center;
+		font-family: zocial;
+		text-decoration: none;
+		span {
+			@extend .offscreen;
+		}
+	}
+
+	a.icon:hover {
+		background: $c-text;
+		color: $c-page-bg;
+	}
+
+	a.icon.facebook::before {
+			content: "f";
+	}
+
+	a.icon.twitter::before {
+			content: "t";
+	}
+
+	a.icon.google-plus::before {
+		content: "+";
+	}
+
+	a.icon.reddit::before {
+			content: ">";
+			position: relative;
+			top: -.125em;
+	}
+
+}
+
+

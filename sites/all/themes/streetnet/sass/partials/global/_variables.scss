@@ -1,0 +1,36 @@
+////////////////////////
+// Variables Partials
+//
+// All of your variables should go in this file.
+////////////////////////
+
+$d-share-slide: 375ms;
+
+$screen-lg: 1200px;
+$screen-md: 960px;
+$screen-sm: 480px;
+
+$c-text: #333;
+$c-text-light: #aaa;
+
+$c-page-bg: white;
+$c-accent: #fc0;
+$c-backdrop: #1a1a1a;
+$c-ui-panel-lt: #dedede;
+$c-ui-panel-dk: darken( #dedede, 80 );
+
+$screen-lg: 1200px;
+$screen-md: 960px;
+$screen-md-max: max-width $screen-md;
+$screen-sm: 770px;
+$screen-sm-max: max-width $screen-sm;
+$screen-xs: 550px;
+$screen-xs-max: max-width $screen-xs;
+
+//$fa-font-path: "../libraries/Font-Awesome/fonts/";
+
+$grids: add-grid( 4 );
+$grids: add-grid( 10.08 3.36 at $screen-md );
+$gutter-md: 1/2;
+$gutter-sm: 1/16;
+$gutters: add-gutter($gutter-md);

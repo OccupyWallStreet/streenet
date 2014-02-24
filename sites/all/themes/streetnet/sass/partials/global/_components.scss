@@ -1,0 +1,203 @@
+////////////////////////////
+//
+// Fields
+//
+
+.label-inline {
+  @extend %inline-block-item;
+}
+
+////////////////////////////
+//
+// Tabs
+//
+
+ul.primary {
+	margin: 0;
+	padding: 0;
+	position: fixed;
+	z-index: 100;
+	right: 0;
+	bottom: 0;
+	font-size: 1.25em;
+}
+
+ul.primary li {
+	display: block;
+	float: left;
+	border: none;
+	border-right: 1px #222 solid;
+	margin: 0;
+	padding: 0;
+}
+
+ul.primary li a {
+	display: block;
+	transition-duration: 0.1875s;
+	transition-timing-function: cubic-bezier(0.42,0,0.58,1);
+	background-color: rgba( 0, 0, 0, 0.8 );
+	border-right: 1px #222 solid;
+	border: none;
+	margin: 0 !important;
+	padding: .5em;
+	color: #dedede;
+}
+
+ul.primary li a:hover {
+	color: #fc0;
+	background-color: #000;
+}
+
+ul.primary li.active a {
+	border: none;
+	background-color: #fc0 !important;
+	color: #000;
+}
+
+
+
+////////////////////////////
+//
+// Ajax Progress
+//
+
+html.js input.form-autocomplete {
+  background-image: url(/sites/all/themes/occupy/images/spinner.gif); /* tweak this according to your gif */
+  background-position: 100% 0px; /* tweak this according to your gif */
+  background-repeat: no-repeat;
+}
+
+html.js input.throbbing {
+  background-position: 100% -20px; /* tweak this according to your gif */
+}
+ 
+/* these apply to all ajax progresses */
+.ajax-progress {
+  display: inline-block;
+  *display: inline;
+  *zoom: 1;
+}
+
+.ajax-progress .throbber {
+  background: transparent url(/sites/all/themes/occupy/images/spinner.gif) no-repeat 0px 0px; /* tweak this according to your gif */
+  float: left;
+  height: 20px; /* tweak this according to your gif */
+  width: 20px; /* tweak this according to your gif */
+  margin: 2px;
+}
+
+
+////////////////////////////
+//
+// Pager
+//
+
+.pager {
+  margin-top: 2em;
+  margin-bottom: 2em;
+  >ul {
+    @include horizontal-list(0);
+  }
+}
+
+.pager li {
+  margin: 0 .25em 0 0;
+  text-align: center;
+  min-width: 28px;
+  display: inline-block;
+  position: relative;
+  .ajax-progress {
+    position: absolute;
+    top: 5px;
+    left: 6px;
+  }
+  &.pager-current,
+  a {
+    position: relative;
+    display: inline-block;
+    border-radius: 1em;
+    font-size: 1rem;
+    min-width: 1em;
+    height: 1em;
+    padding: .25em;
+    border:none;
+    font-weight: normal;
+  }
+  &.pager-current {
+    background: $c-text;
+    color: $c-ui-panel-lt;
+  }
+  a {
+    background: $c-ui-panel-lt;
+  }
+}
+
+.pager-previous,
+.pager-next,
+.pager-first,
+.pager-last {
+  text-indent: -3000px;
+  position: relative;
+  min-width: 28px;
+  background: transparent !important;
+  a {
+    background: transparent !important;
+  }
+  &::before {
+    // @include pager-item( 24px );
+    line-height: 1 !important;
+    min-width: 28px;
+    background: $c-ui-panel-lt;
+    text-indent: 0;
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    left: 0;
+    font-size: 18px;
+  }
+}
+
+.pager-previous::before {
+  content: "⇠";
+}
+.pager-next::before {
+  content: "⇢";
+}
+.pager-first::before {
+  content: "⇤";
+}
+.pager-last::before {
+  content: "⇥";
+}
+
+
+////////////////////////////
+//
+// Tags
+//
+.field-name-field-tags {
+  @extend %tags;
+}
+
+aside .field-name-field-tags {
+  @extend %sidebar-block;
+}
+
+
+////////////////////////////
+//
+// Category Menu
+//
+aside .field-name-category-menu {
+  @extend %sidebar-block;
+}
+
+.field-name-category-menu {
+  ul {
+    @include horizontal-list(0);
+    @extend %tags;
+  }
+  a {
+    @extend .clearfix;
+  }
+}

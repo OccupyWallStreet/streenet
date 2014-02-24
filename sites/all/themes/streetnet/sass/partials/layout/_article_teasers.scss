@@ -1,0 +1,64 @@
+.content {
+
+	.stories {
+
+	  @extend .clearfix;
+
+		.story {
+			img {
+				@extend %responsive-image;
+			}
+		}
+
+		@include breakpoint( $screen-md-max ) {
+			
+			max-width: $screen-md;
+			padding: 2rem;
+			
+			@include layout( 2, $gutter: $gutter-sm ) {
+
+				.story {
+					@include grid-span( 1 );
+				}
+				
+				.story:nth-child(3n+0) {
+					@include grid-span( 1 );				
+				}
+				
+				.story:nth-child(2n+2) {
+					@include grid-span( 1 );				
+				}
+
+			}
+
+		}
+
+		@include breakpoint( $screen-md ) {
+			
+			max-width: $screen-md;
+			margin: 0 auto;
+			
+			@include layout(8) {
+			
+				.story{
+					@include grid-span( 2 );
+				}
+				.storyr:nth-child(5n+0) {
+					@include grid-span( 2 );				
+				}
+			
+				.story:nth-child(4n+4) {
+					@include grid-span( 2 );				
+				}
+			
+			}
+		
+		}
+
+		@include breakpoint( $screen-lg ) {
+			max-width: $screen-lg;
+		}
+
+	}
+
+}

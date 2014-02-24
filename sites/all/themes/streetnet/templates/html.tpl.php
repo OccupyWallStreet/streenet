@@ -1,74 +1,81 @@
-<?php print $doctype; ?>
-<html lang="<?php print $language->language; ?>" dir="<?php print $language->dir; ?>"<?php print $rdf->version . $rdf->namespaces; ?>>
-<head<?php print $rdf->profile; ?>>
-  <?php print $head; ?>
-  <title><?php print $head_title; ?></title>  
-  <?php print $styles; ?>
-  <?php print $scripts; ?>
-  <!--[if lt IE 9]><script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
-</head>
-<body<?php print $attributes;?>>
-  <div id="skip-link">
-    <a href="#main-content" class="element-invisible element-focusable"><?php print t('Skip to main content'); ?></a>
-  </div>
-  <?php print $page_top; ?>
-  <?php print $page; ?>
-  <?php print $page_bottom; ?>
+<?php
 
-<!-- Piwik -->
-<!-- On Privacy and Surveillance
-We only track internal pageviews and shares
-Our share module does no tracking on its own, 
-It only connects to the service it corresponds to when you click a share link
-The only link tracking we do via js, is logging which sharelinks you click
-Our analytics are hosted by occupy.net, and we dont sell your data to marketers
-or track your behavior.
- -->
-<script type="text/javascript">
-  var _paq = _paq || [];
-  _paq.push(["trackPageView"]);
-  _paq.push(["enableLinkTracking"]);
-  (function() {
-    var u=(("https:" == document.location.protocol) ? "https" : "http") + "://analytics.occupy.net/";
-    _paq.push(["setTrackerUrl", u+"piwik.php"]);
-    _paq.push(["setSiteId", "21"]);
-    var d=document, g=d.createElement("script"), s=d.getElementsByTagName("script")[0]; g.type="text/javascript";
-    g.defer=true; g.async=true; g.src=u+"piwik.js"; s.parentNode.insertBefore(g,s);
+/**
+ * @file
+ * Default theme implementation to display the basic html structure of a single
+ * Drupal page.
+ *
+ * Variables:
+ * - $css: An array of CSS files for the current page.
+ * - $language: (object) The language the site is being displayed in.
+ *   $language->langcode contains its textual representation.
+ *   $language->dir contains the language direction.
+ *   It will either be 'ltr' or 'rtl'.
+ * - $head_title: A modified version of the page title, for use in the TITLE
+ *   tag.
+ * - $head_title_array: (array) An associative array containing the string parts
+ *   that were used to generate the $head_title variable, already prepared to be
+ *   output as TITLE tag. The key/value pairs may contain one or more of the
+ *   following, depending on conditions:
+ *   - title: The title of the current page, if any.
+ *   - name: The name of the site.
+ *   - slogan: The slogan of the site, if any, and if there is no title.
+ * - $head: Markup for the HEAD section (including meta tags, keyword tags, and
+ *   so on).
+ * - $styles: Style tags necessary to import all CSS files for the page.
+ * - $scripts: Script tags necessary to load the JavaScript files and settings
+ *   for the page.
+ * - $page_top: Initial markup from any modules that have altered the
+ *   page. This variable should always be output first, before all other dynamic
+ *   content.
+ * - $page: The rendered page content.
+ * - $page_bottom: Final closing markup from any modules that have altered the
+ *   page. This variable should always be output last, after all other dynamic
+ *   content.
+ * - $classes String of classes that can be used to style contextually through
+ *   CSS.
+ *
+ * @see template_preprocess()
+ * @see template_preprocess_html()
+ * @see template_process()
+ */
+?><!DOCTYPE html>
+<!--[if lt IE <?php print $minie; ?> ]>    <html class="lt-ie<?php print $minie; ?> no-js" <?php print $html_attributes; ?>> <![endif]-->
+<!--[if gte IE <?php print $minie; ?>]><!--> <html class="no-js" <?php print $html_attributes; ?> <?php print $rdf_attributes; ?>> <!--<![endif]-->
+  <head>
+    <?php print $head; ?>
+    <title><?php print $head_title; ?></title>
 
-    var page_title = (document).attr( title );
-    console.log("page_title": page_title );
-    if( $( "#sidebars .block-owstech-share" ).length ) {
-      $( "#sidebars .block-owstech-share .icon.facebook" ).on( 'click', function(e) {
-        _paq.push(['trackPageView', page_title  + "shared on facebook via sidebar"]);
-      });
-      $( "#sidebars .block-owstech-share .icon.twitter" ).on( 'click', function(e) {
-        _paq.push(['trackPageView', page_title  + "shared on twitter via sidebar"]);
-      });
-      $( "#sidebars .block-owstech-share .icon.google-plus" ).on( 'click', function(e) {
-        _paq.push(['trackPageView', page_title  + "shared on google-plus via sidebar"]);
-      });
-      $( "#sidebars .block-owstech-share .icon.reddit" ).on( 'click', function(e) {
-        _paq.push(['trackPageView', page_title  + "shared on reddit via sidebar"]);
-      });
-    }
-
-    if( $( ".region-content .block-owstech-share" ).length ) {
-      $( ".region-content .block-owstech-share .icon.facebook" ).on( 'click', function(e) {
-        _paq.push(['trackPageView', page_title + "shared on facebook via sidebar"]);
-      });
-      $( ".region-content .block-owstech-share .icon.twitter" ).on( 'click', function(e) {
-        _paq.push(['trackPageView', page_title + "shared on twitter via sidebar"]);
-      });
-      $( ".region-content .block-owstech-share .icon.google-plus" ).on( 'click', function(e) {
-        _paq.push(['trackPageView', page_title + "shared on google-plus via sidebar"]);
-      });
-      $( ".region-content .block-owstech-share .icon.reddit" ).on( 'click', function(e) {
-        _paq.push(['trackPageView', page_title + "shared on reddit via sidebar"]);
-      });
-    }
-  })();
-</script>
-<!-- End Piwik Code -->
-
-</body>
+    <?php print $styles; ?>
+    <?php print $scripts; ?>
+  </head>
+  <body class="<?php print $classes; ?>" <?php print $body_attributes;?>>
+    <div id="skip-link">
+      <a href="#main" class="element-invisible element-focusable" role="link"><?php print t('Skip to main content'); ?></a>
+    </div>
+    <?php print $page_top; ?>
+    <?php print $page; ?>
+    <?php print $page_bottom; ?>
+    <!-- Piwik -->
+    <!-- On Privacy and Surveillance
+    We only track internal pageviews and article share counts
+    Our share module does no tracking on its own, 
+    It only connects to the service it corresponds to when you click a share link
+    The only link tracking we do via js, is logging which sharelinks you click
+    Our analytics are hosted by occupy.net, and we dont sell your data to marketers
+    or track your behavior.
+     -->
+    <script type="text/javascript">
+      var _paq = _paq || [];
+      _paq.push(["trackPageView"]);
+      _paq.push(["enableLinkTracking"]);
+      (function() {
+        var u=(("https:" == document.location.protocol) ? "https" : "http") + "://analytics.occupy.net/";
+        _paq.push(["setTrackerUrl", u+"piwik.php"]);
+        _paq.push(["setSiteId", "21"]);
+        var d=document, g=d.createElement("script"), s=d.getElementsByTagName("script")[0]; g.type="text/javascript";
+        g.defer=true; g.async=true; g.src=u+"piwik.js"; s.parentNode.insertBefore(g,s);
+      })();
+    </script>
+  </body>
 </html>

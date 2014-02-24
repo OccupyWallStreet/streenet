@@ -1,0 +1,30 @@
+////////////////////////
+// Mixins Partials
+//
+// All of your mixins should go in this file.
+////////////////////////
+
+
+@mixin social-icon( $utfcode ) {
+  @extend .social-icon;
+  &::before {
+    content: $utfcode;
+  }
+}
+
+
+// form element placeholders
+@mixin placeholder {
+  &::-webkit-input-placeholder {
+    @content;
+  }
+  &:-moz-placeholder { /* Firefox 18- */
+    @content;
+  }
+  &::-moz-placeholder {  /* Firefox 19+ */
+    @content;
+  }
+  &:-ms-input-placeholder {
+    @content;
+  }
+}
