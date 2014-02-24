@@ -1,0 +1,12 @@
+diff --git a/similarterms.info b/similarterms.info
+index 00c0ed6..ce32d70 100644
+--- a/similarterms.info
++++ b/similarterms.info
+@@ -1,6 +1,7 @@
+ name = Similar By Terms
+ core = 7.x
+ description = "Display a block of other content that is similar by keywords (taxonomy terms)."
++configure = admin/config/content/similarterms
+ 
+ files[] = similarterms.module
+ files[] = similarterms.install
