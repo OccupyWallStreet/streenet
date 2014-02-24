@@ -1,7 +1,0 @@
-<?php
-/**
- * @file
- * Code for the Streetnet Articles feature.
- */
-
-include_once 'streetnet_articles.features.inc';

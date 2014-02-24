@@ -1,7 +1,0 @@
-name = streetnet_boxes_contexts_deltas export module
-description = Export objects from CTools
-dependencies[] = boxes
-dependencies[] = context
-dependencies[] = delta
-package = Chaos tool suite
-core = 7.x

@@ -1,4 +1,0 @@
-name = Streetnet Story Views
-description = Module for storing streetnet views
-package = Streetnet
-core = 7.x
