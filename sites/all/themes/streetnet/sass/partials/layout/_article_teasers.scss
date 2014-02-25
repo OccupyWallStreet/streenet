@@ -1,63 +1,79 @@
-.content {
+.view-story-listings {
 
-	.stories {
+	@extend .centered-container;
+	padding: 0 2em;
 
-	  @extend .clearfix;
+	@include breakpoint( $screen-sm ) {
+		
 
-		.story {
-			img {
-				@extend %responsive-image;
+		
+		@include layout( 2, $gutter: $gutter-sm ) {
+
+			.story {
+				@include float-span( 1 );
 			}
-		}
-
-		@include breakpoint( $screen-md-max ) {
 			
-			max-width: $screen-md;
-			padding: 2rem;
+			.story:nth-child(3n+0) {
+				@include float-span( 1, first );				
+			}
 			
-			@include layout( 2, $gutter: $gutter-sm ) {
-
-				.story {
-					@include grid-span( 1 );
-				}
-				
-				.story:nth-child(3n+0) {
-					@include grid-span( 1 );				
-				}
-				
-				.story:nth-child(2n+2) {
-					@include grid-span( 1 );				
-				}
-
+			.story:nth-child(2n+2) {
+				@include float-span( 1, last );				
 			}
 
 		}
 
-		@include breakpoint( $screen-md ) {
+	}
+
+	@include breakpoint( $screen-md ) {
+		
+		padding: 0;
+		
+		@include layout(8, $gutter: $gutter-md ) {
+			@include background-grid( $color: rgba(#0f3,.2) );
 			
-			max-width: $screen-md;
-			margin: 0 auto;
+			.story {
+				@include float-span( 2 );
+			}
+		
+			.story:nth-child(3n+0) {
+				@include float-span( 2 );				
+			}
 			
-			@include layout(8) {
-			
-				.story{
-					@include grid-span( 2 );
-				}
-				.storyr:nth-child(5n+0) {
-					@include grid-span( 2 );				
-				}
-			
-				.story:nth-child(4n+4) {
-					@include grid-span( 2 );				
-				}
-			
+			.story:nth-child(2n+2) {
+				@include float-span( 2 );				
+			}
+
+			.story:nth-child(5n+0) {
+				@include float-span( 2, first );				
+			}
+		
+			.story:nth-child(4n+4) {
+				@include float-span( 2, last );				
 			}
 		
 		}
 
-		@include breakpoint( $screen-lg ) {
-			max-width: $screen-lg;
+	}
+
+}
+
+.view-story-listings {
+
+	.view-content {
+		@extend .clearfix;
+	}
+
+	.story {
+
+		img {
+			@extend %responsive-image;
 		}
+
+		a {
+			text-decoration: none;
+			color: $c-text;
+		}				
 
 	}
 

@@ -12,46 +12,55 @@
 // Tabs
 //
 
+ul.links.inline,
 ul.primary {
+  @extend %links-no-outlines;
 	margin: 0;
 	padding: 0;
 	position: fixed;
 	z-index: 100;
 	right: 0;
 	bottom: 0;
-	font-size: 1.25em;
-}
-
-ul.primary li {
-	display: block;
-	float: left;
-	border: none;
-	border-right: 1px #222 solid;
-	margin: 0;
-	padding: 0;
-}
-
-ul.primary li a {
-	display: block;
-	transition-duration: 0.1875s;
-	transition-timing-function: cubic-bezier(0.42,0,0.58,1);
-	background-color: rgba( 0, 0, 0, 0.8 );
-	border-right: 1px #222 solid;
-	border: none;
-	margin: 0 !important;
-	padding: .5em;
-	color: #dedede;
-}
-
-ul.primary li a:hover {
-	color: #fc0;
-	background-color: #000;
-}
-
-ul.primary li.active a {
-	border: none;
-	background-color: #fc0 !important;
-	color: #000;
+	font-size: 1rem;
+  @include horizontal-list(0);
+  li {
+    border: none;
+    margin: 0;
+    padding: 0;
+    border-right: 1px #222 solid;    
+    a {
+      display: block;
+      transition-duration: 0.1875s;
+      transition-timing-function: cubic-bezier(0.42,0,0.58,1);
+      background-color: rgba( 0, 0, 0, 0.8 );
+      border-right: 1px #222 solid;
+      border: none;
+      margin: 0 !important;
+      padding: .5em;
+      color: #dedede;
+    }
+    a:hover {
+      color: #fc0;
+      background-color: #000;
+    }
+    &.active a {
+      border: none;
+      background-color: #fc0 !important;
+      color: #000;
+    }
+  }
+  ul.links.inline {
+    bottom: auto;
+    top: 0 !important;
+    left: 0 !important;
+  }
+  ul.links.inline,
+  ul.primary {
+    @include breakpoint( $screen-md ) {
+      font-size: 4rem; 
+      //1.25rem;
+    }
+  }
 }
 
 
@@ -188,6 +197,7 @@ aside .field-name-field-tags {
 //
 // Category Menu
 //
+
 aside .field-name-category-menu {
   @extend %sidebar-block;
 }
@@ -196,8 +206,32 @@ aside .field-name-category-menu {
   ul {
     @include horizontal-list(0);
     @extend %tags;
+    li,
+    li:hover a,
+    li a:hover,
+    li a {
+      width: 100%;
+    }
+    li {
+      padding: 0;
+      margin: 0 0 .125em 0;
+    }
   }
   a {
     @extend .clearfix;
+  }
+}
+
+////////////////////////////
+//
+// Category Menu
+//
+
+.workbench-info-block {
+  @include breakpoint( md ) {
+    max-width: $screen-md;
+  }
+  @include breakpoint( lg ) {
+    max-width: $screen-lg;
   }
 }

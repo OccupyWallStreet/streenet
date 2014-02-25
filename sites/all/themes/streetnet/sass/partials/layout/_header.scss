@@ -1,25 +1,69 @@
-#masthead,
-#header {
-	background-color: $c-backdrop;
+// #header {
+// 	background-color: $c-backdrop;
+// }
+
+#site-name,
+#site-slogan,
+#block-system-main-menu {
+	display: block;
+	font-weight: normal;
+	text-align: center;
+	background: $c-ui-panel-dk;
+	margin: 0 auto !important;
+  color: #FECD48;
 }
 
-#header {
-	margin: 0;
-	.content {
+#site-slogan,
+#site-name {
+	padding: .25em;
+	background: #222;
+	letter-spacing: .025em;
+}
 
+#site-slogan {
+	padding: 1em 0;
+	margin-bottom: .5em;
+	@extend .clearfix;
+}
+
+
+#block-boxes-header-social-media-links {
+	h2 {
+		@extend .offscreen;
 	}
 }
 
+
 #block-system-main-menu {
+
+	@include horizontal-list( 0 );
+	margin: 0;
+	padding: 0;
+	.content {
+		position: relative;
+	}
 	.menu {
 		padding: 0;
+		@extend .clearfix;
+		display: inline-block;
+		margin: 0 auto;
 		li {
-			margin: 0 .5em 0 0;
-			display: inline-block;
-			&:last-child {
-				margin-right: 0;
+			padding: 0;
+			a {
+				display: block;
+				padding: .25em .5em;
 			}
 		}
+	}
+}
 
+@include breakpoint(sm) {
+	#site-name,
+	#site-slogan,
+	#block-system-main-menu {
+		text-align: left;		
+	}
+	#block-system-main-menu .menu {
+		margin: 0;
 	}
 }

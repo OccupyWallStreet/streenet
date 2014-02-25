@@ -33,12 +33,13 @@ tr:hover td, tr.even:hover td.active, tr.odd:hover td.active {
     background: url("/sites/all/themes/files/header_hashtag.jpg") no-repeat scroll center top transparent;
 }
 
-.site-name a, .site-name a:active, .site-name a:link, .site-name a:hover {
+.site-name {
   color: white;
   text-decoration: none;
 }
 
-.site-slogan, .block-menu {
+.site-slogan,
+.block-menu {
   color: #FECD48;
   font-weight: normal;
   letter-spacing: 2px;
@@ -669,20 +670,15 @@ article cite{
 		}
 	.field-name-field-source {}
 
-.group-image-wrapper {
-	float: left;
-	width: 380px;
-	padding: 5px 15px 15px 0;
-	/* border: 1px dotted green; */
-}
-	.field-type-image {}
+	.group-image-wrapper {
+		float: left;
+		width: 380px;
+		padding: 5px 15px 15px 0;
+		/* border: 1px dotted green; */
+	}
 	.image-metadata-wrapper {
 		padding-top: 3px;
 	}
-		.field-name-field-image-source {
-			text-align: right;
-			padding-bottom:5px;
-		}
 		.field-name-field-image-caption {}
 
 /*Event Content Type*/
@@ -1129,109 +1125,6 @@ article cite{
 	float: left;
 }
 
-/*--------------------------------------------BLOCKS (Bottom Row)------------------------------------*/
-
-.layout-contribute-page-delta .region-preface-fifth {
-clear: both;
-}
-
-.block-16, .block-17, .block-18 {
-	background: #EDEDED;
-	padding: 5px 15px 0px 10px;
-	min-height: 415px;
-	max-height: 415px;
-}
-.custom-block-16 {
-	font-size: 35px;
-	margin: 0;
-	letter-spacing: 1px;
-	text-transform: uppercase;
-	font-weight: normal;
-	font-family: 'LeagueGothic';
-	color: #3188B9;
-	padding: 0 5px 0 0;
-}
-.custom-block-17 {
-	font-size: 35px;
-	margin: 0;
-	letter-spacing: 1px;
-	text-transform: uppercase;
-	font-weight: normal;
-	font-family: 'LeagueGothic';
-	color: #B50028;
-	padding: 0 5px 0 0;
-}
-.custom-block-18 {
-	font-size: 35px;
-	margin: 0;
-	letter-spacing: 1px;
-	text-transform: uppercase;
-	font-weight: normal;
-	font-family: 'LeagueGothic';
-	color: #F4922F;
-	padding: 0 5px 0 0;
-}
-/*------------------------------------------END CONTRIBUTE PAGE----------------------------------*/
-/*------------------------------------------BEGIN CONTACT PAGE-----------------------------------*/
-
-.contact-page-block-wrapper {
-	padding: 10px 20px;
-	background: #ddd;
-	min-height: 250px;
-}
-.shipping-block-title {
-	font-size: 40px;
-	font-family: 'LeagueGothic';
-	text-transform: uppercase;
-	letter-spacing: 1px;
-	color: #3188B9;
-}
-.information-block-title {
-	font-size: 40px;
-	font-family: 'LeagueGothic';
-	text-transform: uppercase;
-	letter-spacing: 1px;
-	color: #B50028;
-}
-.press-block-title {
-	font-size: 40px;
-	font-family: 'LeagueGothic';
-	text-transform: uppercase;
-	letter-spacing: 1px;
-	color: #F4922F;
-}
-.contact-background {
-	padding: 15px;
-	background-color: #EDEDED;
-	font-size: 0;
-	margin: 10px 0 10px;
-}
-.contact-main-text {
-	font-size: 15px;
-	color: black;
-	font-weight: bolder;
-}
-.contact-text {
-	font-size: 14px;
-	color: black;
-	float: left;
-	padding: 4px 10px 0 0;
-}	
-.contact-icon {
-	background: url(/sites/all/themes/files/blackthing.png) no-repeat;
-	font-size: 0;
-	padding: 15px;
-	float: left;
-}
-.contact-bold-text {
-	font-size: 14px;
-	font-weight: bold;
-}
-.contact-phone-background {
-	background: #231F20;
-	padding: 10px;
-	font-size: 0;
-}
 
 
 aside .view-display-id-article_sidebar_links li {
@@ -1317,172 +1210,42 @@ aside .view-display-id-article_sidebar_links li p {
 	border-left: 2px #fc0 solid
 }
 
-/*---------------------------------POSTSCRIPT ZONE---------------------------------*/
-#zone-postscript-wrapper {
-	margin-top: 20px;
-}
-#zone-postscript {
-	margin-top: 20px;
-	border-top: 1px dashed #333;
-	padding-top: 30px;
-}
-.page-read #zone-postscript {
-	margin-top: 0;
-	border-top: 0px dashed #333;
-	padding-top: 0px;
-}
-.yellowthing {
-	background: url('/sites/all/themes/files/yellowthing.png') no-repeat;
-	padding: 15px 20px;
-	font-size: 0;
-	margin: 0 0px 10px 200px;
-}
-/*-------------------------------------------------FOOTER---------------------------------------------*/
-/*.footer-email-form {
-	margin: 20px 0 0;
-}*/
-
-#zone-footer-wrapper p {
-	margin: 0;
-	padding: 0;
-}
-
-#zone-footer{
-}
-
 #section-footer {
     background: url("/sites/all/themes/files/footer.jpg") repeat-x scroll center bottom transparent;
     margin: 0;
     padding: 12px 0 0 0;
     width: 100%;
 }
+
 #section-footer p {
 	margin: 0;
 	padding: 0;
 }
 
-#region-footer-first,
-#region-footer-second,
-#region-footer-third,
-#region-footer-fourth	{
-	position: relative;
-	top: .25em;
-}
 
-#zone-footer .block-title,
-#zone-footer .block-title a,
-#zone-footer .block-title a:link,
-#zone-footer .block-title a:active,
-#zone-footer .block-title a:visited {
-	margin: 20px 0 0 0;
-	letter-spacing: 1px;
-	text-transform: uppercase;
-	font-size: 24px;
-	font-weight: normal;
-	text-decoration: none;
-	color: #000;
-}
-.donate {
-    font-family: 'LeagueGothic';
-    font-size: 2.25em;
-    font-weight: normal;
-    letter-spacing: 2px;
-    text-decoration: underline;
-    margin: 10px 0 0 0;
-}
-.donate a {
-	color: #000;
-}
-.connect {
-    font-family: 'LeagueGothic';
-    font-size: 2.25em;
-    font-weight: normal;
-    letter-spacing: 2px;
-    text-decoration: underline;
-    margin: 10px 0 0 0;
-}
-#block-block-3, 
-#block-block-3--2 {
-    float: left;
-    margin: 23px 0 0 0;
-    padding: 0px;
-    width: 100%;
-}
-#block-block-3 p, 
-#block-block-3--2 p {
-    float: left;
-    margin: 0;
-    padding: 0px;
-    width: 100%;
-}
+// .owstech-share h4.actuator {
+// 	font-size: 18px !important;
+// 	letter-spacing: .075em;
+// }
 
-/* map blocks */
-.block-ows-locations-map-block-1 .field-content {
-  margin: 1px 0;
-  padding: 4px 8px 0px 8px;
-  background: #000;
-  color: #FFF;
-  text-transform: uppercase;
-  font-size: 15px;
-}
-/* yellow highlight
-background: #fc0;
-color: #000;
-*/
-.block-ows-locations-map-block-1 .field-content span {
-  font-size: 10px;
-}
+// .owstech-share h4.actuator a {
+// 	padding: .25em .5em;
+// 	color: #fc0;
+// }
 
-/*-----------------------------------------------NODE FORM (FIX)---------------------------------------*/
-.node-form .field-name-field-image {
-	float: none;
-	margin: 0;
-	padding: 0;
-}
-
-.content .owstech-share {
-	float: left;
-}
-
-.content .field-name-field-tags .field-items {
-	max-width: 490px;
-}
-
-
-aside .owstech-share {
-	margin-bottom: 2em;
-}
-
-.owstech-share h4.actuator {
-	font-size: 18px !important;
-	letter-spacing: .075em;
-}
-
-.owstech-share h4.actuator a {
-	padding: .25em .5em;
-	color: #fc0;
-}
-
-.owstech-share .drawer {
-	padding: .425em 0;
-}
-
-/* hacky ass header fix */
-.block-block-12 p {
-	margin: 0 !important;
-
-}
+// .owstech-share .drawer {
+// 	padding: .425em 0;
+// }
 
 .page-taxonomy-term  .stories-view-block {
 	margin-top: 1.5em;
 }
+
 .page-taxonomy-term  .stories-view-block .view-header {
 	background: #eee;
 	border-radius: .25em;
 	padding: .5em .5em .25em .5em;
-	font-size: 12px;
-	color: #777;
-	margin-bottom: 2em;
+	font-size: .925rem;
 }
 
 
@@ -1505,10 +1268,6 @@ aside .owstech-share {
 	line-height: 2;
 	display: inline-block;
 	float: left !important;
-	/* until we ditch omega entirely, were
-	still going to have shittiness with fonts
-	thanks for loading all your stylesheets after my theme...
-	*/
 }
 .block-views-exp-ows-stories-stories-page .views-widget {
 	display: inline-block;

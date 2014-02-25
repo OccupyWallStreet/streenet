@@ -1,3 +1,10 @@
+.node-page {
+	@extend .centered-container;
+	.content {
+		@extend %legible-column;
+	}
+}
+
 .node-type-story,
 .node-type-event,
 .node-type-video {
@@ -5,84 +12,79 @@
 	.view-mode-full {
 
 		@extend .centered-container;
+		
+		.byline {
+			margin-bottom: 1em;
+		}
 
-		&>aside {
+		.field-name-field-image-source {
+			padding-bottom:5px;
+		}
+
+		.group-left,
+		.group-right {
+			width: 100%;
+		}
+
+		.group-right {
 			.owstech-share,
-			.field-name-related-articles {
+			.related-articles {
 				@extend %sidebar-block;
 			}
 		}
 
 		@include breakpoint( $screen-md ) {
 
-			&>section{
-				@include grid-span( 1, 1 );
+			.group-left {
+				@include isolation-span( 12, 1 );
+				padding-top: 1em;
 			}
-	
-			&>aside {
-				@include grid-span( 1, 2 );
+
+			.group-right {
+				@include isolation-span( 4, 12 );
+				padding-top: 2.185em;
 			}
-			
+				
 			.article-meta {
 				margin-top: 2em;
 				@include pie-clearfix;
 				@include layout( 6 ) {
 					.owstech-share {
-						@include grid-span( 2, 1 );
+						@include isolation-span( 2, 1 );
 					}
 					.field-name-field-tags {
-						@include grid-span( 4	, 3 );
+						@include isolation-span( 4	, 3 );
 						padding-top: .375em;
 					}
 				}
 			}
 
 		}
-
 	}
+}
+
+// specific use cases
+
+.node-story.view-mode-full {
 	
-.related-articles ul {
+}
+
+.node-event.view-mode-full {
+	
+}
+
+.node-action.view-mode-full {
+	
+}
+
+.node-video.view-mode-full {
+	
+}
+
+.related-articles {
 	list-style: none;
 	padding:0;
-}
-
-.related-articles ul>li {
-	margin: 0 0 .25em 0;
-	padding: .5em 1em;
-	border-left: 2px #666 solid;	
-	background: #eee;
-}
-
-.related-articles li {
-  position: relative;
-}
-
-.related-articles li .tooltip {
-	overflow: hidden;
-  transition: max-height .25s;
-  transition-timing-function: cubic-bezier(0.42,0,0.58,1);
-  max-height: 0;
-}
-
-.related-articles li:hover .tooltip {
-  max-height: 12em;
-}
-
-
-	.node-story.view-mode-full {
-		
+	.related-article {
+		margin: 0 0 .25em 0;
 	}
-
-	.node-event.view-mode-full {
-		
-	}
-
-	.node-action.view-mode-full {
-		
-	}
-
-	.node-video.view-mode-full {
-		
-	}
-
 }
