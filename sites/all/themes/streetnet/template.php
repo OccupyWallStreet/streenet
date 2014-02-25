@@ -6,18 +6,17 @@
  * @param $vars
  *   An array of variables to pass to the theme template.
  */
-function streetnet_preprocess_maintenance_page(&$vars) {
+// function streetnet_preprocess_maintenance_page(&$vars) {
   // When a variable is manipulated or added in preprocess_html or
   // preprocess_page, that same work is probably needed for the maintenance page
   // as well, so we can just re-use those functions to do that work here.
   // streetnet_preprocess_html($vars);
   // streetnet_preprocess_page($vars);
-
   // This preprocessor will also be used if the db is inactive. To ensure your
   // theme is used, add the following line to your settings.php file:
   // $conf['maintenance_theme'] = 'streetnet';
   // Also, check $vars['db_is_active'] before doing any db queries.
-}
+// }
 
 /**
  * Implements hook_modernizr_load_alter().
@@ -132,10 +131,9 @@ function streetnet_preprocess_comment(&$vars) {
  * @param $vars
  *   An array of variables to pass to the theme template.
  */
-/* -- Delete this line if you want to use this function
-function streetnet_preprocess_views_view(&$vars) {
-  $view = $vars['view'];
-}
+// function streetnet_preprocess_views_view(&$vars) {
+//   $view = $vars['view'];
+// }
 // */
 
 
@@ -171,3 +169,25 @@ function streetnet_js_alter(&$js) {
 // */
 
 
+/**
+ * Mess with DS layouts right before they get sent to render
+ *
+ * @param $layout_render_array
+ * @param $context
+ * @param $vars
+ */
+// */ 
+//function streetnet_ds_pre_render_alter(&$layout_render_array, $context, &$vars) {
+  // dpm( $layout_render_array );
+  // dpm( $context );
+  // dpm( $vars );
+//}
+
+function streetnet_page_alter(&$vars) {
+  $scripts = drupal_add_js();
+  drupal_add_js('sites/all/themes/streetnet/js/mop.ui.js');
+  drupal_add_js('sites/all/themes/streetnet/js/streetnet.js');
+  //  add our civi newsletter form submission js
+  //  drupal_add_js('sites/all/themes/occupy/js/ows_civi_form.js');
+  drupal_add_js('sites/all/themes/occupy/bower_components/REM-unit-polyfill/js/rem.min.js');
+}
