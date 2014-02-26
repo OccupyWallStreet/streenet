@@ -10,15 +10,27 @@ $screen-lg: 1200px;
 $screen-md: 960px;
 $screen-sm: 480px;
 
+// text colors
 $c-text: #333;
 $c-text-light: #aaa;
 
+// other colors
 $c-page-bg: white;
 $c-accent: #fc0;
 $c-backdrop: #1a1a1a;
 $c-ui-panel-lt: #ddd;
 $c-ui-panel-dk: darken( #dedede, 70 );
 
+// category colors
+$c-analysis: #2f89ba;
+$c-ga: $c-accent;
+$c-news: #b50028;
+$c-feature: $c-accent;
+$c-event: #f4922e;
+$c-opinion: #1d8cbe;
+$c-editorial: #3088b9; 
+
+// breakpoints
 $screen-lg: 1200px;
 $screen-md: 960px;
 $screen-md-max: max-width $screen-md;
@@ -27,6 +39,7 @@ $screen-sm-max: max-width $screen-sm;
 $screen-xs: 550px;
 $screen-xs-max: max-width $screen-xs;
 
+// singularity grid settings
 $gutter-sm: 1/16;
 $gutter-md: 1/2;
 

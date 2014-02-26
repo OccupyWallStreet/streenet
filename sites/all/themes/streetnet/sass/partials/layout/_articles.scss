@@ -5,6 +5,48 @@
 	}
 }
 
+// main layout bit.
+.node-type-story,
+.node-type-event,
+.node-type-video {
+
+	.view-mode-full {
+		
+		// overriding css automatically added by displaysuite
+		// probably want to create a 'streetnet article responsive' layout of our own
+		// to avoidsome of this hacky stuff (that isnt that hacky).
+		.group-left,
+		.group-right {
+			width: 100%;
+		}
+
+		@include breakpoint( $screen-md ) {
+			.group-left {
+				@include isolation-span( 11, 1 );
+				padding-top: 1em;
+			}
+			.group-right {
+				@include isolation-span( 4, 12 );
+				padding-top: 2.185em;
+			}
+			.article-meta {
+				margin-top: 2em;
+				@include pie-clearfix;
+				@include layout( 6 ) {
+					.owstech-share {
+						@include isolation-span( 2, 1 );
+					}
+					.field-name-field-tags {
+						@include isolation-span( 4	, 3 );
+						padding-top: .375em;
+					}
+				}
+			}
+		}
+	}
+}
+
+// some finer bits
 .node-type-story,
 .node-type-event,
 .node-type-video {
@@ -21,49 +63,25 @@
 			padding-bottom:5px;
 		}
 
-		.group-left,
-		.group-right {
-			width: 100%;
+		.field-name-field-image img {
+			// looks like the upscaling is fine for the general image sizes we have
+			@extend %responsive-image;
 		}
 
-		.group-right {
-			.owstech-share,
-			.related-articles {
-				@extend %sidebar-block;
-			}
+		.related-articles {
+			// for defaults re: margin-bottoms and such but we might not need it.
+			// keeping it around for a bit though.
+			@extend %sidebar-block;
 		}
 
-		@include breakpoint( $screen-md ) {
-
-			.group-left {
-				@include isolation-span( 12, 1 );
-				padding-top: 1em;
-			}
-
-			.group-right {
-				@include isolation-span( 4, 12 );
-				padding-top: 2.185em;
-			}
-				
-			.article-meta {
-				margin-top: 2em;
-				@include pie-clearfix;
-				@include layout( 6 ) {
-					.owstech-share {
-						@include isolation-span( 2, 1 );
-					}
-					.field-name-field-tags {
-						@include isolation-span( 4	, 3 );
-						padding-top: .375em;
-					}
-				}
-			}
-
+		.owstech-share {
+		 	margin-bottom: 2.5em;
 		}
+
 	}
 }
 
-// specific use cases
+// specific article types cases
 
 .node-story.view-mode-full {
 	
@@ -81,6 +99,7 @@
 	
 }
 
+// not sure if this belongs here or in components
 .related-articles {
 	list-style: none;
 	padding:0;

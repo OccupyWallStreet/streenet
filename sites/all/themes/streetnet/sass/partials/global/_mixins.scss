@@ -28,3 +28,11 @@
     @content;
   }
 }
+
+@mixin teaser-category-link( $color ) {
+  font-size: .875em;
+  border-bottom: 1px $color solid;
+  margin-bottom: .25em;
+  line-height: 1;
+  color: $color !important;
+}

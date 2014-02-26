@@ -3,18 +3,53 @@
 	@extend .centered-container;
 	padding: 0 2em;
 
-	@include breakpoint( $screen-sm ) {
-		
+	.view-content {
+		@extend .clearfix;
+	}
 
+
+	.story {
+		
+		margin-bottom: 1em;
+
+		.content {
+			background: $c-accent;
+			padding: 1em;
+		}
+
+		img {
+			@extend %responsive-image;
+		}
+
+		h4 {
+			margin-bottom: .5em;
+		}
+
+		a {
+			display: block;
+			text-decoration: none;
+			color: $c-text;
+		}				
+
+	}
+
+	@include breakpoint( $screen-xs $screen-md ) {
 		
 		@include layout( 2, $gutter: $gutter-sm ) {
 
 			.story {
+				.view-mode-teaser .content {
+					min-height: 130px;
+				}
+				h4 {
+					// leep ttitles from getting to long
+					max-width: 20em;
+				}
 				@include float-span( 1 );
 			}
 			
-			.story:nth-child(3n+0) {
-				@include float-span( 1, first );				
+			.story:nth-child(2n+1) {
+				@include float-span( 1, first );		
 			}
 			
 			.story:nth-child(2n+2) {
@@ -29,23 +64,19 @@
 		
 		padding: 0;
 		
-		@include layout(8, $gutter: $gutter-md ) {
-			@include background-grid( $color: rgba(#0f3,.2) );
+		@include layout(8, $gutter: $gutter-sm ) {
 			
 			.story {
+				margin-left: 0;
+				margin-right: 0;
 				@include float-span( 2 );
-			}
-		
-			.story:nth-child(3n+0) {
-				@include float-span( 2 );				
-			}
-			
-			.story:nth-child(2n+2) {
-				@include float-span( 2 );				
+				.view-mode-teaser .content {
+					min-height: 130px;
+				}
 			}
 
-			.story:nth-child(5n+0) {
-				@include float-span( 2, first );				
+			.story:nth-child(4n+1) {
+				@include float-span( 2, first );	
 			}
 		
 			.story:nth-child(4n+4) {
@@ -53,27 +84,6 @@
 			}
 		
 		}
-
-	}
-
-}
-
-.view-story-listings {
-
-	.view-content {
-		@extend .clearfix;
-	}
-
-	.story {
-
-		img {
-			@extend %responsive-image;
-		}
-
-		a {
-			text-decoration: none;
-			color: $c-text;
-		}				
 
 	}
 

@@ -23,5 +23,7 @@
 @import 'mixins';
 @import 'extendables';
 @import 'components';
+
+// move share widget to something like "compoments"?
+// or just put the compiled scss little compass project in the module? 
 @import 'share_widget';
-@import 'styles';

@@ -1,18 +1,25 @@
 @charset "UTF-8";
-/* line 6, ../../../../../../../../../../Library/Ruby/Gems/2.0.0/gems/toolkit-1.2.2/stylesheets/toolkit/_border-box.scss */
+/* line 34, ../../../../../../../../.rbenv/versions/2.1.0/lib/ruby/gems/2.1.0/gems/singularitygs-1.1.2/stylesheets/singularitygs/helpers/_box-sizing.scss */
 *, *:after, *:before {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box;
 }
 
-/* line 4, ../../../../../../../../../../Library/Ruby/Gems/2.0.0/gems/toolkit-1.2.2/stylesheets/toolkit/_fluid-media.scss */
+/* line 36, ../../../../../../../../.rbenv/versions/2.1.0/lib/ruby/gems/2.1.0/gems/toolkit-1.3.8/stylesheets/toolkit/_box-sizing.scss */
+*, *:after, *:before {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+/* line 4, ../../../../../../../../.rbenv/versions/2.1.0/lib/ruby/gems/2.1.0/gems/toolkit-1.3.8/stylesheets/toolkit/_fluid-media.scss */
 img, video {
   max-width: 100%;
   height: auto;
 }
 
-/* line 24, ../sass/partials/global/_extendables.scss */
+/* line 60, ../sass/partials/global/_extendables.scss */
 ul.links.inline a:link,
 ul.primary a:link, .owstech-share a:link,
 ul.links.inline a:active,
@@ -28,7 +35,7 @@ ul.primary a,
   text-decoration: none;
 }
 
-/* line 30, ../sass/partials/global/_extendables.scss */
+/* line 66, ../sass/partials/global/_extendables.scss */
 .field-name-field-tags a, .field-name-category-menu ul a, .field-name-field-tags a:hover, .field-name-category-menu ul a:hover, .label-inline {
   display: inline-block !important;
   line-height: 1.5;
@@ -38,16 +45,16 @@ ul.primary a,
   padding: .25em .5em 0 .5em;
 }
 
-/* line 39, ../sass/partials/global/_extendables.scss */
+/* line 75, ../sass/partials/global/_extendables.scss */
 aside .field-name-field-tags, aside .field-name-category-menu {
   margin-bottom: 2em;
 }
 
-/* line 43, ../sass/partials/global/_extendables.scss */
+/* line 79, ../sass/partials/global/_extendables.scss */
 .field-name-field-tags, .field-name-category-menu ul {
   font-size: .925rem;
 }
-/* line 45, ../sass/partials/global/_extendables.scss */
+/* line 81, ../sass/partials/global/_extendables.scss */
 .field-name-field-tags a, .field-name-category-menu ul a {
   border-radius: .25em;
   background: #2c2c2c;
@@ -56,44 +63,44 @@ aside .field-name-field-tags, aside .field-name-category-menu {
   transition-duration: 0.1875s;
   transition-timing-function: cubic-bezier(0.42, 0, 0.58, 1);
 }
-/* line 54, ../sass/partials/global/_extendables.scss */
+/* line 90, ../sass/partials/global/_extendables.scss */
 .field-name-field-tags a:hover, .field-name-category-menu ul a:hover {
   background: #dddddd;
   color: #2c2c2c;
   text-decoration: none;
 }
 
-/* line 63, ../sass/partials/global/_extendables.scss */
+/* line 99, ../sass/partials/global/_extendables.scss */
 .offscreen, .owstech-share .drawer a.icon span {
   position: absolute;
   right: 101%;
   overflow: hidden;
 }
 
-/* line 69, ../sass/partials/global/_extendables.scss */
+/* line 105, ../sass/partials/global/_extendables.scss */
 .centered-container {
   margin-left: auto;
   margin-right: auto;
 }
 @media (min-width: 960px) {
-  /* line 69, ../sass/partials/global/_extendables.scss */
+  /* line 105, ../sass/partials/global/_extendables.scss */
   .centered-container {
     max-width: 960px;
   }
 }
 @media (min-width: 1200px) {
-  /* line 69, ../sass/partials/global/_extendables.scss */
+  /* line 105, ../sass/partials/global/_extendables.scss */
   .centered-container {
     max-width: 1200px;
   }
 }
 
-/* line 83, ../sass/partials/global/_extendables.scss */
+/* line 119, ../sass/partials/global/_extendables.scss */
 .clearfix::before, .field-name-category-menu a::before, .clearfix::after, .field-name-category-menu a::after {
   content: " ";
   display: table;
 }
-/* line 88, ../sass/partials/global/_extendables.scss */
+/* line 124, ../sass/partials/global/_extendables.scss */
 .clearfix::after, .field-name-category-menu a::after {
   clear: both;
 }
@@ -113,7 +120,7 @@ ul.primary {
   border: 0;
   overflow: hidden;
 }
-/* line 60, ../../../../../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/typography/lists/_horizontal-list.scss */
+/* line 60, ../../../../../../../../.rbenv/versions/2.1.0/lib/ruby/gems/2.1.0/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/typography/lists/_horizontal-list.scss */
 ul.links.inline li,
 ul.primary li {
   list-style-image: none;
@@ -125,18 +132,18 @@ ul.primary li {
   padding-left: 0;
   padding-right: 0;
 }
-/* line 48, ../../../../../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/typography/lists/_horizontal-list.scss */
+/* line 48, ../../../../../../../../.rbenv/versions/2.1.0/lib/ruby/gems/2.1.0/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/typography/lists/_horizontal-list.scss */
 ul.links.inline li:first-child, ul.links.inline li.first,
 ul.primary li:first-child,
 ul.primary li.first {
   padding-left: 0;
 }
-/* line 49, ../../../../../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/typography/lists/_horizontal-list.scss */
+/* line 49, ../../../../../../../../.rbenv/versions/2.1.0/lib/ruby/gems/2.1.0/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/typography/lists/_horizontal-list.scss */
 ul.links.inline li:last-child,
 ul.primary li:last-child {
   padding-right: 0;
 }
-/* line 50, ../../../../../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/typography/lists/_horizontal-list.scss */
+/* line 50, ../../../../../../../../.rbenv/versions/2.1.0/lib/ruby/gems/2.1.0/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/typography/lists/_horizontal-list.scss */
 ul.links.inline li.last,
 ul.primary li.last {
   padding-right: 0;
@@ -239,7 +246,7 @@ html.js input.throbbing {
   border: 0;
   overflow: hidden;
 }
-/* line 60, ../../../../../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/typography/lists/_horizontal-list.scss */
+/* line 60, ../../../../../../../../.rbenv/versions/2.1.0/lib/ruby/gems/2.1.0/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/typography/lists/_horizontal-list.scss */
 .pager > ul li {
   list-style-image: none;
   list-style-type: none;
@@ -250,15 +257,15 @@ html.js input.throbbing {
   padding-left: 0;
   padding-right: 0;
 }
-/* line 48, ../../../../../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/typography/lists/_horizontal-list.scss */
+/* line 48, ../../../../../../../../.rbenv/versions/2.1.0/lib/ruby/gems/2.1.0/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/typography/lists/_horizontal-list.scss */
 .pager > ul li:first-child, .pager > ul li.first {
   padding-left: 0;
 }
-/* line 49, ../../../../../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/typography/lists/_horizontal-list.scss */
+/* line 49, ../../../../../../../../.rbenv/versions/2.1.0/lib/ruby/gems/2.1.0/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/typography/lists/_horizontal-list.scss */
 .pager > ul li:last-child {
   padding-right: 0;
 }
-/* line 50, ../../../../../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/typography/lists/_horizontal-list.scss */
+/* line 50, ../../../../../../../../.rbenv/versions/2.1.0/lib/ruby/gems/2.1.0/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/typography/lists/_horizontal-list.scss */
 .pager > ul li.last {
   padding-right: 0;
 }
@@ -360,7 +367,7 @@ html.js input.throbbing {
   border: 0;
   overflow: hidden;
 }
-/* line 60, ../../../../../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/typography/lists/_horizontal-list.scss */
+/* line 60, ../../../../../../../../.rbenv/versions/2.1.0/lib/ruby/gems/2.1.0/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/typography/lists/_horizontal-list.scss */
 .field-name-category-menu ul li {
   list-style-image: none;
   list-style-type: none;
@@ -371,15 +378,15 @@ html.js input.throbbing {
   padding-left: 0;
   padding-right: 0;
 }
-/* line 48, ../../../../../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/typography/lists/_horizontal-list.scss */
+/* line 48, ../../../../../../../../.rbenv/versions/2.1.0/lib/ruby/gems/2.1.0/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/typography/lists/_horizontal-list.scss */
 .field-name-category-menu ul li:first-child, .field-name-category-menu ul li.first {
   padding-left: 0;
 }
-/* line 49, ../../../../../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/typography/lists/_horizontal-list.scss */
+/* line 49, ../../../../../../../../.rbenv/versions/2.1.0/lib/ruby/gems/2.1.0/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/typography/lists/_horizontal-list.scss */
 .field-name-category-menu ul li:last-child {
   padding-right: 0;
 }
-/* line 50, ../../../../../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/typography/lists/_horizontal-list.scss */
+/* line 50, ../../../../../../../../.rbenv/versions/2.1.0/lib/ruby/gems/2.1.0/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/typography/lists/_horizontal-list.scss */
 .field-name-category-menu ul li.last {
   padding-right: 0;
 }
@@ -480,7 +487,7 @@ html.js input.throbbing {
   position: relative;
   top: -5em;
 }
-/* line 60, ../../../../../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/typography/lists/_horizontal-list.scss */
+/* line 60, ../../../../../../../../.rbenv/versions/2.1.0/lib/ruby/gems/2.1.0/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/typography/lists/_horizontal-list.scss */
 .owstech-share .drawer li {
   list-style-image: none;
   list-style-type: none;
@@ -491,15 +498,15 @@ html.js input.throbbing {
   padding-left: 0;
   padding-right: 0;
 }
-/* line 48, ../../../../../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/typography/lists/_horizontal-list.scss */
+/* line 48, ../../../../../../../../.rbenv/versions/2.1.0/lib/ruby/gems/2.1.0/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/typography/lists/_horizontal-list.scss */
 .owstech-share .drawer li:first-child, .owstech-share .drawer li.first {
   padding-left: 0;
 }
-/* line 49, ../../../../../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/typography/lists/_horizontal-list.scss */
+/* line 49, ../../../../../../../../.rbenv/versions/2.1.0/lib/ruby/gems/2.1.0/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/typography/lists/_horizontal-list.scss */
 .owstech-share .drawer li:last-child {
   padding-right: 0;
 }
-/* line 50, ../../../../../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/typography/lists/_horizontal-list.scss */
+/* line 50, ../../../../../../../../.rbenv/versions/2.1.0/lib/ruby/gems/2.1.0/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/typography/lists/_horizontal-list.scss */
 .owstech-share .drawer li.last {
   padding-right: 0;
 }
@@ -544,31 +551,4 @@ html.js input.throbbing {
   content: ">";
   position: relative;
   top: -.125em;
-}
-
-/* line 3, ../sass/partials/global/_styles.scss */
-.related-articles .related-article {
-  padding: .5em 1em;
-  border-left: 2px #666 solid;
-  background: #eee;
-}
-/* line 8, ../sass/partials/global/_styles.scss */
-.related-articles .related-article h4 a {
-  text-decoration: none;
-}
-/* line 13, ../sass/partials/global/_styles.scss */
-.related-articles .related-article p {
-  font-size: .875em;
-  line-height: 1.125;
-}
-/* line 17, ../sass/partials/global/_styles.scss */
-.related-articles .related-article .tooltip {
-  overflow: hidden;
-  transition: max-height .25s;
-  transition-timing-function: cubic-bezier(0.42, 0, 0.58, 1);
-  max-height: 0;
-}
-/* line 23, ../sass/partials/global/_styles.scss */
-.related-articles .related-article:hover .tooltip {
-  max-height: 12em;
 }

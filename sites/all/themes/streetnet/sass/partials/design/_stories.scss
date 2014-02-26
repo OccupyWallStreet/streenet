@@ -2,3 +2,47 @@
 	padding: .5em;
 	background: lighten( $c-ui-panel-lt, 10 );
 }
+
+.view-mode-teaser {
+	.story {
+		.term.Analysis {
+			@include teaser-category-link( $c-analysis );
+		}
+		.term.Event {
+			@include teaser-category-link( $c-event );
+		}
+		.term.Opinion {
+			@include teaser-category-link( $c-opinion );
+		}
+		.term.GA {
+			@include teaser-category-link( $c-ga );
+		}
+		.term.Feature {
+			@include teaser-category-link( $c-feature );
+		}
+		.term.News {
+			@include teaser-category-link( $c-news );
+		}
+	}
+}
+
+
+.related-articles {
+	.related-article {
+		padding: .5em 1em;
+		border-left: 2px #666 solid;	
+		background: #eee;
+    .summary {
+      overflow: hidden;
+      transition: max-height .25s;
+      transition-timing-function: cubic-bezier(0.42,0,0.58,1);
+      max-height: 0;
+      p {
+      	margin-top: 0;
+      }
+    }
+    &:hover .summary {
+      max-height: 12em;
+    }
+	}
+}

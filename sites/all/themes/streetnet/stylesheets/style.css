@@ -1,27 +1,108 @@
 @charset "UTF-8";
+/* line 34, ../../../../../../../../.rbenv/versions/2.1.0/lib/ruby/gems/2.1.0/gems/singularitygs-1.1.2/stylesheets/singularitygs/helpers/_box-sizing.scss */
 *, *:after, *:before {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box;
 }
 
+/* line 36, ../../../../../../../../.rbenv/versions/2.1.0/lib/ruby/gems/2.1.0/gems/toolkit-1.3.8/stylesheets/toolkit/_box-sizing.scss */
+*, *:after, *:before {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+/* line 4, ../../../../../../../../.rbenv/versions/2.1.0/lib/ruby/gems/2.1.0/gems/toolkit-1.3.8/stylesheets/toolkit/_fluid-media.scss */
 img, video {
   max-width: 100%;
   height: auto;
 }
 
+/* line 13, ../sass/partials/global/_extendables.scss */
+body, h5,
+h6, article.view-mode-full .field-name-sidebar-tags h2,
+article.view-mode-full .field-name-related-articles h2,
+article.view-mode-full .field-name-category-menu h2, .story .view-mode-teaser h4 {
+  font-family: 'PTSans', helvetica, arial, sans-serif;
+  font-weight: normal;
+  text-transform: none;
+  line-height: 1.5;
+}
+/* line 18, ../sass/partials/global/_extendables.scss */
+body a, h5 a,
+h6 a, article.view-mode-full .field-name-sidebar-tags h2 a,
+article.view-mode-full .field-name-related-articles h2 a,
+article.view-mode-full .field-name-category-menu h2 a, .story .view-mode-teaser h4 a {
+  color: #1a1a1a;
+}
+
+/* line 23, ../sass/partials/global/_extendables.scss */
+h1, h2, h3, h4, h5, h6, #block-system-main-menu ul.menu li a,
+#block-system-main-menu ul.menu li a:link, #site-slogan,
+#block-system-main-menu, .newsletter-text, .view-header-announcements, blockquote,
+blockquote p, .related-articles .related-article h4 a {
+  font-family: 'LeagueGothic', helvetica, "Arial Black", sans-serif;
+  text-transform: uppercase;
+  font-weight: 300;
+  line-height: 1;
+  margin: 0;
+}
+/* line 31, ../sass/partials/global/_extendables.scss */
+h1 a, h2 a, h3 a, h4 a, h5 a, h6 a, #block-system-main-menu ul.menu li a a,
+#block-system-main-menu ul.menu li a:link a, #site-slogan a,
+#block-system-main-menu a, .newsletter-text a, .view-header-announcements a, blockquote a, .related-articles .related-article h4 a a,
+h1 a:link,
+h2 a:link,
+h3 a:link,
+h4 a:link,
+h5 a:link,
+h6 a:link,
+#block-system-main-menu ul.menu li a a:link,
+#site-slogan a:link,
+#block-system-main-menu a:link,
+.newsletter-text a:link,
+.view-header-announcements a:link,
+blockquote a:link,
+.related-articles .related-article h4 a a:link,
+h1 a:visited,
+h2 a:visited,
+h3 a:visited,
+h4 a:visited,
+h5 a:visited,
+h6 a:visited,
+#block-system-main-menu ul.menu li a a:visited,
+#site-slogan a:visited,
+#block-system-main-menu a:visited,
+.newsletter-text a:visited,
+.view-header-announcements a:visited,
+blockquote a:visited,
+.related-articles .related-article h4 a a:visited {
+  color: inherit;
+}
+
+/* line 36, ../sass/partials/global/_extendables.scss */
+.byline,
+.field-name-field-image-caption {
+  font-size: .875rem;
+}
+
+/* line 40, ../sass/partials/global/_extendables.scss */
 .node-page .content {
   max-width: 80ex;
   margin: 0 auto;
 }
 
-.view-story-listings .story img {
-  display: inline-block;
-  line-height: 1;
+/* line 50, ../sass/partials/global/_extendables.scss */
+.view-story-listings .story img, .node-type-story .view-mode-full .field-name-field-image img,
+.node-type-event .view-mode-full .field-name-field-image img,
+.node-type-video .view-mode-full .field-name-field-image img {
+  display: block;
   width: 100%;
   height: auto;
 }
 
+/* line 60, ../sass/partials/global/_extendables.scss */
 ul.links.inline a:link,
 ul.primary a:link, .owstech-share a:link,
 ul.links.inline a:active,
@@ -37,6 +118,7 @@ ul.primary a,
   text-decoration: none;
 }
 
+/* line 66, ../sass/partials/global/_extendables.scss */
 .field-name-field-tags a, .field-name-category-menu ul a, .field-name-field-tags a:hover, .field-name-category-menu ul a:hover, .label-inline {
   display: inline-block !important;
   line-height: 1.5;
@@ -46,18 +128,18 @@ ul.primary a,
   padding: .25em .5em 0 .5em;
 }
 
-aside .field-name-field-tags, aside .field-name-category-menu, .node-type-story .view-mode-full .group-right .owstech-share,
-.node-type-story .view-mode-full .group-right .related-articles,
-.node-type-event .view-mode-full .group-right .owstech-share,
-.node-type-event .view-mode-full .group-right .related-articles,
-.node-type-video .view-mode-full .group-right .owstech-share,
-.node-type-video .view-mode-full .group-right .related-articles {
+/* line 75, ../sass/partials/global/_extendables.scss */
+aside .field-name-field-tags, aside .field-name-category-menu, .node-type-story .view-mode-full .related-articles,
+.node-type-event .view-mode-full .related-articles,
+.node-type-video .view-mode-full .related-articles {
   margin-bottom: 2em;
 }
 
+/* line 79, ../sass/partials/global/_extendables.scss */
 .field-name-field-tags, .field-name-category-menu ul {
   font-size: .925rem;
 }
+/* line 81, ../sass/partials/global/_extendables.scss */
 .field-name-field-tags a, .field-name-category-menu ul a {
   border-radius: .25em;
   background: #2c2c2c;
@@ -66,18 +148,21 @@ aside .field-name-field-tags, aside .field-name-category-menu, .node-type-story 
   transition-duration: 0.1875s;
   transition-timing-function: cubic-bezier(0.42, 0, 0.58, 1);
 }
+/* line 90, ../sass/partials/global/_extendables.scss */
 .field-name-field-tags a:hover, .field-name-category-menu ul a:hover {
   background: #dddddd;
   color: #2c2c2c;
   text-decoration: none;
 }
 
+/* line 99, ../sass/partials/global/_extendables.scss */
 .offscreen, .owstech-share .drawer a.icon span, #block-boxes-header-social-media-links h2 {
   position: absolute;
   right: 101%;
   overflow: hidden;
 }
 
+/* line 105, ../sass/partials/global/_extendables.scss */
 .centered-container, .view-story-listings, .node-page, .node-type-story .view-mode-full,
 .node-type-event .view-mode-full,
 .node-type-video .view-mode-full {
@@ -85,6 +170,7 @@ aside .field-name-field-tags, aside .field-name-category-menu, .node-type-story 
   margin-right: auto;
 }
 @media (min-width: 960px) {
+  /* line 105, ../sass/partials/global/_extendables.scss */
   .centered-container, .view-story-listings, .node-page, .node-type-story .view-mode-full,
   .node-type-event .view-mode-full,
   .node-type-video .view-mode-full {
@@ -92,6 +178,7 @@ aside .field-name-field-tags, aside .field-name-category-menu, .node-type-story 
   }
 }
 @media (min-width: 1200px) {
+  /* line 105, ../sass/partials/global/_extendables.scss */
   .centered-container, .view-story-listings, .node-page, .node-type-story .view-mode-full,
   .node-type-event .view-mode-full,
   .node-type-video .view-mode-full {
@@ -99,14 +186,17 @@ aside .field-name-field-tags, aside .field-name-category-menu, .node-type-story 
   }
 }
 
+/* line 119, ../sass/partials/global/_extendables.scss */
 .clearfix::before, .field-name-category-menu a::before, #site-slogan::before, #block-system-main-menu .menu::before, .view-story-listings .view-content::before, .clearfix::after, .field-name-category-menu a::after, #site-slogan::after, #block-system-main-menu .menu::after, .view-story-listings .view-content::after {
   content: " ";
   display: table;
 }
+/* line 124, ../sass/partials/global/_extendables.scss */
 .clearfix::after, .field-name-category-menu a::after, #site-slogan::after, #block-system-main-menu .menu::after, .view-story-listings .view-content::after {
   clear: both;
 }
 
+/* line 16, ../sass/partials/global/_components.scss */
 ul.links.inline,
 ul.primary {
   margin: 0;
@@ -121,6 +211,7 @@ ul.primary {
   border: 0;
   overflow: hidden;
 }
+/* line 60, ../../../../../../../../.rbenv/versions/2.1.0/lib/ruby/gems/2.1.0/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/typography/lists/_horizontal-list.scss */
 ul.links.inline li,
 ul.primary li {
   list-style-image: none;
@@ -132,19 +223,23 @@ ul.primary li {
   padding-left: 0;
   padding-right: 0;
 }
+/* line 48, ../../../../../../../../.rbenv/versions/2.1.0/lib/ruby/gems/2.1.0/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/typography/lists/_horizontal-list.scss */
 ul.links.inline li:first-child, ul.links.inline li.first,
 ul.primary li:first-child,
 ul.primary li.first {
   padding-left: 0;
 }
+/* line 49, ../../../../../../../../.rbenv/versions/2.1.0/lib/ruby/gems/2.1.0/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/typography/lists/_horizontal-list.scss */
 ul.links.inline li:last-child,
 ul.primary li:last-child {
   padding-right: 0;
 }
+/* line 50, ../../../../../../../../.rbenv/versions/2.1.0/lib/ruby/gems/2.1.0/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/typography/lists/_horizontal-list.scss */
 ul.links.inline li.last,
 ul.primary li.last {
   padding-right: 0;
 }
+/* line 26, ../sass/partials/global/_components.scss */
 ul.links.inline li,
 ul.primary li {
   border: none;
@@ -152,6 +247,7 @@ ul.primary li {
   padding: 0;
   border-right: 1px #222 solid;
 }
+/* line 31, ../sass/partials/global/_components.scss */
 ul.links.inline li a,
 ul.primary li a {
   display: block;
@@ -164,17 +260,20 @@ ul.primary li a {
   padding: .5em;
   color: #dedede;
 }
+/* line 42, ../sass/partials/global/_components.scss */
 ul.links.inline li a:hover,
 ul.primary li a:hover {
   color: #fc0;
   background-color: #000;
 }
+/* line 46, ../sass/partials/global/_components.scss */
 ul.links.inline li.active a,
 ul.primary li.active a {
   border: none;
   background-color: #fc0 !important;
   color: #000;
 }
+/* line 52, ../sass/partials/global/_components.scss */
 ul.links.inline ul.links.inline,
 ul.primary ul.links.inline {
   bottom: auto;
@@ -182,6 +281,7 @@ ul.primary ul.links.inline {
   left: 0 !important;
 }
 @media (min-width: 960px) {
+  /* line 58, ../sass/partials/global/_components.scss */
   ul.links.inline ul.links.inline,
   ul.links.inline ul.primary,
   ul.primary ul.links.inline,
@@ -190,6 +290,7 @@ ul.primary ul.links.inline {
   }
 }
 
+/* line 73, ../sass/partials/global/_components.scss */
 html.js input.form-autocomplete {
   background-image: url(/sites/all/themes/occupy/images/spinner.gif);
   /* tweak this according to your gif */
@@ -198,18 +299,21 @@ html.js input.form-autocomplete {
   background-repeat: no-repeat;
 }
 
+/* line 79, ../sass/partials/global/_components.scss */
 html.js input.throbbing {
   background-position: 100% -20px;
   /* tweak this according to your gif */
 }
 
 /* these apply to all ajax progresses */
+/* line 84, ../sass/partials/global/_components.scss */
 .ajax-progress {
   display: inline-block;
   *display: inline;
   *zoom: 1;
 }
 
+/* line 90, ../sass/partials/global/_components.scss */
 .ajax-progress .throbber {
   background: transparent url(/sites/all/themes/occupy/images/spinner.gif) no-repeat 0px 0px;
   /* tweak this according to your gif */
@@ -221,16 +325,19 @@ html.js input.throbbing {
   margin: 2px;
 }
 
+/* line 104, ../sass/partials/global/_components.scss */
 .pager {
   margin-top: 2em;
   margin-bottom: 2em;
 }
+/* line 107, ../sass/partials/global/_components.scss */
 .pager > ul {
   margin: 0;
   padding: 0;
   border: 0;
   overflow: hidden;
 }
+/* line 60, ../../../../../../../../.rbenv/versions/2.1.0/lib/ruby/gems/2.1.0/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/typography/lists/_horizontal-list.scss */
 .pager > ul li {
   list-style-image: none;
   list-style-type: none;
@@ -241,16 +348,20 @@ html.js input.throbbing {
   padding-left: 0;
   padding-right: 0;
 }
+/* line 48, ../../../../../../../../.rbenv/versions/2.1.0/lib/ruby/gems/2.1.0/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/typography/lists/_horizontal-list.scss */
 .pager > ul li:first-child, .pager > ul li.first {
   padding-left: 0;
 }
+/* line 49, ../../../../../../../../.rbenv/versions/2.1.0/lib/ruby/gems/2.1.0/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/typography/lists/_horizontal-list.scss */
 .pager > ul li:last-child {
   padding-right: 0;
 }
+/* line 50, ../../../../../../../../.rbenv/versions/2.1.0/lib/ruby/gems/2.1.0/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/typography/lists/_horizontal-list.scss */
 .pager > ul li.last {
   padding-right: 0;
 }
 
+/* line 112, ../sass/partials/global/_components.scss */
 .pager li {
   margin: 0 .25em 0 0;
   text-align: center;
@@ -258,11 +369,13 @@ html.js input.throbbing {
   display: inline-block;
   position: relative;
 }
+/* line 118, ../sass/partials/global/_components.scss */
 .pager li .ajax-progress {
   position: absolute;
   top: 5px;
   left: 6px;
 }
+/* line 124, ../sass/partials/global/_components.scss */
 .pager li.pager-current,
 .pager li a {
   position: relative;
@@ -275,14 +388,17 @@ html.js input.throbbing {
   border: none;
   font-weight: normal;
 }
+/* line 135, ../sass/partials/global/_components.scss */
 .pager li.pager-current {
   background: #333333;
   color: #dddddd;
 }
+/* line 139, ../sass/partials/global/_components.scss */
 .pager li a {
   background: #dddddd;
 }
 
+/* line 147, ../sass/partials/global/_components.scss */
 .pager-previous,
 .pager-next,
 .pager-first,
@@ -292,12 +408,14 @@ html.js input.throbbing {
   min-width: 28px;
   background: transparent !important;
 }
+/* line 152, ../sass/partials/global/_components.scss */
 .pager-previous a,
 .pager-next a,
 .pager-first a,
 .pager-last a {
   background: transparent !important;
 }
+/* line 155, ../sass/partials/global/_components.scss */
 .pager-previous::before,
 .pager-next::before,
 .pager-first::before,
@@ -313,28 +431,34 @@ html.js input.throbbing {
   font-size: 18px;
 }
 
+/* line 169, ../sass/partials/global/_components.scss */
 .pager-previous::before {
   content: "⇠";
 }
 
+/* line 172, ../sass/partials/global/_components.scss */
 .pager-next::before {
   content: "⇢";
 }
 
+/* line 175, ../sass/partials/global/_components.scss */
 .pager-first::before {
   content: "⇤";
 }
 
+/* line 178, ../sass/partials/global/_components.scss */
 .pager-last::before {
   content: "⇥";
 }
 
+/* line 206, ../sass/partials/global/_components.scss */
 .field-name-category-menu ul {
   margin: 0;
   padding: 0;
   border: 0;
   overflow: hidden;
 }
+/* line 60, ../../../../../../../../.rbenv/versions/2.1.0/lib/ruby/gems/2.1.0/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/typography/lists/_horizontal-list.scss */
 .field-name-category-menu ul li {
   list-style-image: none;
   list-style-type: none;
@@ -345,42 +469,51 @@ html.js input.throbbing {
   padding-left: 0;
   padding-right: 0;
 }
+/* line 48, ../../../../../../../../.rbenv/versions/2.1.0/lib/ruby/gems/2.1.0/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/typography/lists/_horizontal-list.scss */
 .field-name-category-menu ul li:first-child, .field-name-category-menu ul li.first {
   padding-left: 0;
 }
+/* line 49, ../../../../../../../../.rbenv/versions/2.1.0/lib/ruby/gems/2.1.0/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/typography/lists/_horizontal-list.scss */
 .field-name-category-menu ul li:last-child {
   padding-right: 0;
 }
+/* line 50, ../../../../../../../../.rbenv/versions/2.1.0/lib/ruby/gems/2.1.0/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/typography/lists/_horizontal-list.scss */
 .field-name-category-menu ul li.last {
   padding-right: 0;
 }
+/* line 212, ../sass/partials/global/_components.scss */
 .field-name-category-menu ul li,
 .field-name-category-menu ul li:hover a,
 .field-name-category-menu ul li a:hover,
 .field-name-category-menu ul li a {
   width: 100%;
 }
+/* line 215, ../sass/partials/global/_components.scss */
 .field-name-category-menu ul li {
   padding: 0;
   margin: 0 0 .125em 0;
 }
 
 @media (min-width: md) {
+  /* line 230, ../sass/partials/global/_components.scss */
   .workbench-info-block {
     max-width: 960px;
   }
 }
 @media (min-width: lg) {
+  /* line 230, ../sass/partials/global/_components.scss */
   .workbench-info-block {
     max-width: 1200px;
   }
 }
 
+/* line 1, ../sass/partials/global/_share_widget.scss */
 .owstech-share {
   overflow: hidden;
   height: 3rem;
   position: relative;
 }
+/* line 7, ../sass/partials/global/_share_widget.scss */
 .owstech-share .actuator {
   position: relative;
   -webkit-transition-property: top, color, background-color;
@@ -400,6 +533,7 @@ html.js input.throbbing {
   background: #333333;
   line-height: 1;
 }
+/* line 16, ../sass/partials/global/_share_widget.scss */
 .owstech-share .actuator a {
   display: block;
   font-size: inherit;
@@ -409,15 +543,18 @@ html.js input.throbbing {
   text-decoration: none;
   color: inherit;
 }
+/* line 27, ../sass/partials/global/_share_widget.scss */
 .owstech-share.active .actuator, .owstech-share:hover .actuator {
   top: 2em;
   background-color: #dddddd;
   color: #333333;
 }
+/* line 31, ../sass/partials/global/_share_widget.scss */
 .owstech-share.active .actuator a, .owstech-share:hover .actuator a {
   text-decoration: none;
 }
 
+/* line 42, ../sass/partials/global/_share_widget.scss */
 .owstech-share .drawer {
   margin: 0;
   padding: 0;
@@ -441,6 +578,7 @@ html.js input.throbbing {
   position: relative;
   top: -5em;
 }
+/* line 60, ../../../../../../../../.rbenv/versions/2.1.0/lib/ruby/gems/2.1.0/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/typography/lists/_horizontal-list.scss */
 .owstech-share .drawer li {
   list-style-image: none;
   list-style-type: none;
@@ -451,19 +589,24 @@ html.js input.throbbing {
   padding-left: 0;
   padding-right: 0;
 }
+/* line 48, ../../../../../../../../.rbenv/versions/2.1.0/lib/ruby/gems/2.1.0/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/typography/lists/_horizontal-list.scss */
 .owstech-share .drawer li:first-child, .owstech-share .drawer li.first {
   padding-left: 0;
 }
+/* line 49, ../../../../../../../../.rbenv/versions/2.1.0/lib/ruby/gems/2.1.0/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/typography/lists/_horizontal-list.scss */
 .owstech-share .drawer li:last-child {
   padding-right: 0;
 }
+/* line 50, ../../../../../../../../.rbenv/versions/2.1.0/lib/ruby/gems/2.1.0/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/typography/lists/_horizontal-list.scss */
 .owstech-share .drawer li.last {
   padding-right: 0;
 }
+/* line 55, ../sass/partials/global/_share_widget.scss */
 .owstech-share.active .drawer, .owstech-share:hover .drawer {
   max-height: 12em;
   top: -3em;
 }
+/* line 61, ../sass/partials/global/_share_widget.scss */
 .owstech-share .drawer a.icon {
   color: gray;
   font-size: 1.25rem;
@@ -477,69 +620,55 @@ html.js input.throbbing {
   font-family: zocial;
   text-decoration: none;
 }
+/* line 78, ../sass/partials/global/_share_widget.scss */
 .owstech-share a.icon:hover {
   background: #333333;
   color: white;
 }
+/* line 83, ../sass/partials/global/_share_widget.scss */
 .owstech-share a.icon.facebook::before {
   content: "f";
 }
+/* line 87, ../sass/partials/global/_share_widget.scss */
 .owstech-share a.icon.twitter::before {
   content: "t";
 }
+/* line 91, ../sass/partials/global/_share_widget.scss */
 .owstech-share a.icon.google-plus::before {
   content: "+";
 }
+/* line 95, ../sass/partials/global/_share_widget.scss */
 .owstech-share a.icon.reddit::before {
   content: ">";
   position: relative;
   top: -.125em;
 }
 
-.related-articles .related-article {
-  padding: .5em 1em;
-  border-left: 2px #666 solid;
-  background: #eee;
-}
-.related-articles .related-article h4 a {
-  text-decoration: none;
-}
-.related-articles .related-article p {
-  font-size: .875em;
-  line-height: 1.125;
-}
-.related-articles .related-article .tooltip {
-  overflow: hidden;
-  transition: max-height .25s;
-  transition-timing-function: cubic-bezier(0.42, 0, 0.58, 1);
-  max-height: 0;
-}
-.related-articles .related-article:hover .tooltip {
-  max-height: 12em;
-}
-
+/* line 12, ../sass/partials/layout/_layout.scss */
 * {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box;
 }
 
+/* line 16, ../sass/partials/layout/_layout.scss */
 body {
   margin: 0;
   padding: 0;
 }
 
+/* line 2, ../sass/partials/layout/_header.scss */
 #site-name,
-#site-slogan,
-#block-system-main-menu {
+#site-slogan {
   display: block;
   font-weight: normal;
-  text-align: center;
   background: #2c2c2c;
-  margin: 0 auto !important;
+  text-align: center;
+  margin: 0 auto;
   color: #FECD48;
 }
 
+/* line 12, ../sass/partials/layout/_header.scss */
 #site-slogan,
 #site-name {
   padding: .25em;
@@ -547,23 +676,28 @@ body {
   letter-spacing: .025em;
 }
 
+/* line 18, ../sass/partials/layout/_header.scss */
 #site-slogan {
   padding: 1em 0;
   margin-bottom: .5em;
 }
 
+/* line 33, ../sass/partials/layout/_header.scss */
 #block-system-main-menu {
   margin: 0;
   padding: 0;
   border: 0;
-  margin: 0;
+  text-align: center;
+  margin: 0 auto;
   padding: 0;
 }
+/* line 65, ../../../../../../../../.rbenv/versions/2.1.0/lib/ruby/gems/2.1.0/gems/singularitygs-1.1.2/stylesheets/singularitygs/helpers/_clearfix.scss */
 #block-system-main-menu:after {
   content: "";
   display: table;
   clear: both;
 }
+/* line 60, ../../../../../../../../.rbenv/versions/2.1.0/lib/ruby/gems/2.1.0/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/typography/lists/_horizontal-list.scss */
 #block-system-main-menu li {
   list-style-image: none;
   list-style-type: none;
@@ -574,46 +708,82 @@ body {
   padding-left: 0;
   padding-right: 0;
 }
+/* line 48, ../../../../../../../../.rbenv/versions/2.1.0/lib/ruby/gems/2.1.0/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/typography/lists/_horizontal-list.scss */
 #block-system-main-menu li:first-child, #block-system-main-menu li.first {
   padding-left: 0;
 }
+/* line 49, ../../../../../../../../.rbenv/versions/2.1.0/lib/ruby/gems/2.1.0/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/typography/lists/_horizontal-list.scss */
 #block-system-main-menu li:last-child {
   padding-right: 0;
 }
+/* line 50, ../../../../../../../../.rbenv/versions/2.1.0/lib/ruby/gems/2.1.0/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/typography/lists/_horizontal-list.scss */
 #block-system-main-menu li.last {
   padding-right: 0;
 }
+/* line 38, ../sass/partials/layout/_header.scss */
 #block-system-main-menu .content {
   position: relative;
 }
+/* line 41, ../sass/partials/layout/_header.scss */
 #block-system-main-menu .menu {
   padding: 0;
   display: inline-block;
   margin: 0 auto;
 }
+/* line 46, ../sass/partials/layout/_header.scss */
 #block-system-main-menu .menu li {
   padding: 0;
 }
+/* line 48, ../sass/partials/layout/_header.scss */
 #block-system-main-menu .menu li a {
   display: block;
   padding: .25em .5em;
 }
-
-@media (min-width: sm) {
-  #site-name,
-  #site-slogan,
+@media (min-width: md) {
+  /* line 33, ../sass/partials/layout/_header.scss */
   #block-system-main-menu {
+    margin: 0;
     text-align: left;
   }
-
+  /* line 57, ../sass/partials/layout/_header.scss */
   #block-system-main-menu .menu {
     margin: 0;
+    display: block;
   }
 }
+
+@media (min-width: sm) {
+  /* line 66, ../sass/partials/layout/_header.scss */
+  #site-name,
+  #site-slogan {
+    text-align: left;
+  }
+}
+/* line 1, ../sass/partials/layout/_article_teasers.scss */
 .view-story-listings {
   padding: 0 2em;
 }
-@media (min-width: 770px) {
+/* line 11, ../sass/partials/layout/_article_teasers.scss */
+.view-story-listings .story {
+  margin-bottom: 1em;
+}
+/* line 15, ../sass/partials/layout/_article_teasers.scss */
+.view-story-listings .story .content {
+  background: #ffcc00;
+  padding: 1em;
+}
+/* line 24, ../sass/partials/layout/_article_teasers.scss */
+.view-story-listings .story h4 {
+  margin-bottom: .5em;
+}
+/* line 28, ../sass/partials/layout/_article_teasers.scss */
+.view-story-listings .story a {
+  display: block;
+  text-decoration: none;
+  color: #333333;
+}
+@media (min-width: 550px) and (max-width: 960px) {
+  /* line 40, ../sass/partials/layout/_article_teasers.scss */
   .view-story-listings .story {
     width: 48.48485%;
     clear: right;
@@ -621,7 +791,16 @@ body {
     margin-left: 0;
     margin-right: 3.0303%;
   }
-  .view-story-listings .story:nth-child(3n+0) {
+  /* line 41, ../sass/partials/layout/_article_teasers.scss */
+  .view-story-listings .story .view-mode-teaser .content {
+    min-height: 130px;
+  }
+  /* line 44, ../sass/partials/layout/_article_teasers.scss */
+  .view-story-listings .story h4 {
+    max-width: 20em;
+  }
+  /* line 51, ../sass/partials/layout/_article_teasers.scss */
+  .view-story-listings .story:nth-child(2n+1) {
     width: 48.48485%;
     clear: right;
     float: left;
@@ -629,6 +808,7 @@ body {
     margin-right: 3.0303%;
     clear: both;
   }
+  /* line 55, ../sass/partials/layout/_article_teasers.scss */
   .view-story-listings .story:nth-child(2n+2) {
     width: 48.48485%;
     clear: right;
@@ -637,66 +817,43 @@ body {
   }
 }
 @media (min-width: 960px) {
+  /* line 1, ../sass/partials/layout/_article_teasers.scss */
   .view-story-listings {
     padding: 0;
-    background-image: -webkit-gradient(linear, 0% 50%, 100% 50%, color-stop(0%, rgba(0, 255, 51, 0.5)), color-stop(8.69565%, rgba(0, 255, 51, 0.5)), color-stop(8.69565%, rgba(0, 255, 51, 0.25)), color-stop(13.04348%, rgba(0, 255, 51, 0.25)), color-stop(13.04348%, rgba(0, 255, 51, 0.5)), color-stop(21.73913%, rgba(0, 255, 51, 0.5)), color-stop(21.73913%, rgba(0, 255, 51, 0.25)), color-stop(26.08696%, rgba(0, 255, 51, 0.25)), color-stop(26.08696%, rgba(0, 255, 51, 0.5)), color-stop(34.78261%, rgba(0, 255, 51, 0.5)), color-stop(34.78261%, rgba(0, 255, 51, 0.25)), color-stop(39.13043%, rgba(0, 255, 51, 0.25)), color-stop(39.13043%, rgba(0, 255, 51, 0.5)), color-stop(47.82609%, rgba(0, 255, 51, 0.5)), color-stop(47.82609%, rgba(0, 255, 51, 0.25)), color-stop(52.17391%, rgba(0, 255, 51, 0.25)), color-stop(52.17391%, rgba(0, 255, 51, 0.5)), color-stop(60.86957%, rgba(0, 255, 51, 0.5)), color-stop(60.86957%, rgba(0, 255, 51, 0.25)), color-stop(65.21739%, rgba(0, 255, 51, 0.25)), color-stop(65.21739%, rgba(0, 255, 51, 0.5)), color-stop(73.91304%, rgba(0, 255, 51, 0.5)), color-stop(73.91304%, rgba(0, 255, 51, 0.25)), color-stop(78.26087%, rgba(0, 255, 51, 0.25)), color-stop(78.26087%, rgba(0, 255, 51, 0.5)), color-stop(86.95652%, rgba(0, 255, 51, 0.5)), color-stop(86.95652%, rgba(0, 255, 51, 0.25)), color-stop(91.30435%, rgba(0, 255, 51, 0.25)), color-stop(91.30435%, rgba(0, 255, 51, 0.5)), color-stop(100%, rgba(0, 255, 51, 0.5)));
-    background-image: -webkit-linear-gradient(left, rgba(0, 255, 51, 0.5), rgba(0, 255, 51, 0.5) 8.69565%, rgba(0, 255, 51, 0.25) 8.69565%, rgba(0, 255, 51, 0.25) 13.04348%, rgba(0, 255, 51, 0.5) 13.04348%, rgba(0, 255, 51, 0.5) 21.73913%, rgba(0, 255, 51, 0.25) 21.73913%, rgba(0, 255, 51, 0.25) 26.08696%, rgba(0, 255, 51, 0.5) 26.08696%, rgba(0, 255, 51, 0.5) 34.78261%, rgba(0, 255, 51, 0.25) 34.78261%, rgba(0, 255, 51, 0.25) 39.13043%, rgba(0, 255, 51, 0.5) 39.13043%, rgba(0, 255, 51, 0.5) 47.82609%, rgba(0, 255, 51, 0.25) 47.82609%, rgba(0, 255, 51, 0.25) 52.17391%, rgba(0, 255, 51, 0.5) 52.17391%, rgba(0, 255, 51, 0.5) 60.86957%, rgba(0, 255, 51, 0.25) 60.86957%, rgba(0, 255, 51, 0.25) 65.21739%, rgba(0, 255, 51, 0.5) 65.21739%, rgba(0, 255, 51, 0.5) 73.91304%, rgba(0, 255, 51, 0.25) 73.91304%, rgba(0, 255, 51, 0.25) 78.26087%, rgba(0, 255, 51, 0.5) 78.26087%, rgba(0, 255, 51, 0.5) 86.95652%, rgba(0, 255, 51, 0.25) 86.95652%, rgba(0, 255, 51, 0.25) 91.30435%, rgba(0, 255, 51, 0.5) 91.30435%, rgba(0, 255, 51, 0.5) 100%);
-    background-image: -moz-linear-gradient(left, rgba(0, 255, 51, 0.5), rgba(0, 255, 51, 0.5) 8.69565%, rgba(0, 255, 51, 0.25) 8.69565%, rgba(0, 255, 51, 0.25) 13.04348%, rgba(0, 255, 51, 0.5) 13.04348%, rgba(0, 255, 51, 0.5) 21.73913%, rgba(0, 255, 51, 0.25) 21.73913%, rgba(0, 255, 51, 0.25) 26.08696%, rgba(0, 255, 51, 0.5) 26.08696%, rgba(0, 255, 51, 0.5) 34.78261%, rgba(0, 255, 51, 0.25) 34.78261%, rgba(0, 255, 51, 0.25) 39.13043%, rgba(0, 255, 51, 0.5) 39.13043%, rgba(0, 255, 51, 0.5) 47.82609%, rgba(0, 255, 51, 0.25) 47.82609%, rgba(0, 255, 51, 0.25) 52.17391%, rgba(0, 255, 51, 0.5) 52.17391%, rgba(0, 255, 51, 0.5) 60.86957%, rgba(0, 255, 51, 0.25) 60.86957%, rgba(0, 255, 51, 0.25) 65.21739%, rgba(0, 255, 51, 0.5) 65.21739%, rgba(0, 255, 51, 0.5) 73.91304%, rgba(0, 255, 51, 0.25) 73.91304%, rgba(0, 255, 51, 0.25) 78.26087%, rgba(0, 255, 51, 0.5) 78.26087%, rgba(0, 255, 51, 0.5) 86.95652%, rgba(0, 255, 51, 0.25) 86.95652%, rgba(0, 255, 51, 0.25) 91.30435%, rgba(0, 255, 51, 0.5) 91.30435%, rgba(0, 255, 51, 0.5) 100%);
-    background-image: -o-linear-gradient(left, rgba(0, 255, 51, 0.5), rgba(0, 255, 51, 0.5) 8.69565%, rgba(0, 255, 51, 0.25) 8.69565%, rgba(0, 255, 51, 0.25) 13.04348%, rgba(0, 255, 51, 0.5) 13.04348%, rgba(0, 255, 51, 0.5) 21.73913%, rgba(0, 255, 51, 0.25) 21.73913%, rgba(0, 255, 51, 0.25) 26.08696%, rgba(0, 255, 51, 0.5) 26.08696%, rgba(0, 255, 51, 0.5) 34.78261%, rgba(0, 255, 51, 0.25) 34.78261%, rgba(0, 255, 51, 0.25) 39.13043%, rgba(0, 255, 51, 0.5) 39.13043%, rgba(0, 255, 51, 0.5) 47.82609%, rgba(0, 255, 51, 0.25) 47.82609%, rgba(0, 255, 51, 0.25) 52.17391%, rgba(0, 255, 51, 0.5) 52.17391%, rgba(0, 255, 51, 0.5) 60.86957%, rgba(0, 255, 51, 0.25) 60.86957%, rgba(0, 255, 51, 0.25) 65.21739%, rgba(0, 255, 51, 0.5) 65.21739%, rgba(0, 255, 51, 0.5) 73.91304%, rgba(0, 255, 51, 0.25) 73.91304%, rgba(0, 255, 51, 0.25) 78.26087%, rgba(0, 255, 51, 0.5) 78.26087%, rgba(0, 255, 51, 0.5) 86.95652%, rgba(0, 255, 51, 0.25) 86.95652%, rgba(0, 255, 51, 0.25) 91.30435%, rgba(0, 255, 51, 0.5) 91.30435%, rgba(0, 255, 51, 0.5) 100%);
-    background-image: linear-gradient(left, rgba(0, 255, 51, 0.5), rgba(0, 255, 51, 0.5) 8.69565%, rgba(0, 255, 51, 0.25) 8.69565%, rgba(0, 255, 51, 0.25) 13.04348%, rgba(0, 255, 51, 0.5) 13.04348%, rgba(0, 255, 51, 0.5) 21.73913%, rgba(0, 255, 51, 0.25) 21.73913%, rgba(0, 255, 51, 0.25) 26.08696%, rgba(0, 255, 51, 0.5) 26.08696%, rgba(0, 255, 51, 0.5) 34.78261%, rgba(0, 255, 51, 0.25) 34.78261%, rgba(0, 255, 51, 0.25) 39.13043%, rgba(0, 255, 51, 0.5) 39.13043%, rgba(0, 255, 51, 0.5) 47.82609%, rgba(0, 255, 51, 0.25) 47.82609%, rgba(0, 255, 51, 0.25) 52.17391%, rgba(0, 255, 51, 0.5) 52.17391%, rgba(0, 255, 51, 0.5) 60.86957%, rgba(0, 255, 51, 0.25) 60.86957%, rgba(0, 255, 51, 0.25) 65.21739%, rgba(0, 255, 51, 0.5) 65.21739%, rgba(0, 255, 51, 0.5) 73.91304%, rgba(0, 255, 51, 0.25) 73.91304%, rgba(0, 255, 51, 0.25) 78.26087%, rgba(0, 255, 51, 0.5) 78.26087%, rgba(0, 255, 51, 0.5) 86.95652%, rgba(0, 255, 51, 0.25) 86.95652%, rgba(0, 255, 51, 0.25) 91.30435%, rgba(0, 255, 51, 0.5) 91.30435%, rgba(0, 255, 51, 0.5) 100%);
   }
+  /* line 69, ../sass/partials/layout/_article_teasers.scss */
   .view-story-listings .story {
-    width: 21.73913%;
+    margin-left: 0;
+    margin-right: 0;
+    width: 24.44444%;
     clear: right;
     float: left;
     margin-left: 0;
-    margin-right: 4.34783%;
+    margin-right: 0.74074%;
   }
-  .view-story-listings .story:nth-child(3n+0) {
-    width: 21.73913%;
-    clear: right;
-    float: left;
-    margin-left: 0;
-    margin-right: 4.34783%;
+  /* line 73, ../sass/partials/layout/_article_teasers.scss */
+  .view-story-listings .story .view-mode-teaser .content {
+    min-height: 130px;
   }
-  .view-story-listings .story:nth-child(2n+2) {
-    width: 21.73913%;
+  /* line 78, ../sass/partials/layout/_article_teasers.scss */
+  .view-story-listings .story:nth-child(4n+1) {
+    width: 24.44444%;
     clear: right;
     float: left;
     margin-left: 0;
-    margin-right: 4.34783%;
-  }
-  .view-story-listings .story:nth-child(5n+0) {
-    width: 21.73913%;
-    clear: right;
-    float: left;
-    margin-left: 0;
-    margin-right: 4.34783%;
+    margin-right: 0.74074%;
     clear: both;
   }
+  /* line 82, ../sass/partials/layout/_article_teasers.scss */
   .view-story-listings .story:nth-child(4n+4) {
-    width: 21.73913%;
+    width: 24.44444%;
     clear: right;
     float: right;
     margin-right: 0;
   }
 }
 
-.view-story-listings .story a {
-  text-decoration: none;
-  color: #333333;
-}
-
-.node-type-story .view-mode-full .byline,
-.node-type-event .view-mode-full .byline,
-.node-type-video .view-mode-full .byline {
-  margin-bottom: 1em;
-}
-.node-type-story .view-mode-full .field-name-field-image-source,
-.node-type-event .view-mode-full .field-name-field-image-source,
-.node-type-video .view-mode-full .field-name-field-image-source {
-  padding-bottom: 5px;
-}
+/* line 19, ../sass/partials/layout/_articles.scss */
 .node-type-story .view-mode-full .group-left,
 .node-type-story .view-mode-full .group-right,
 .node-type-event .view-mode-full .group-left,
@@ -706,16 +863,18 @@ body {
   width: 100%;
 }
 @media (min-width: 960px) {
+  /* line 24, ../sass/partials/layout/_articles.scss */
   .node-type-story .view-mode-full .group-left,
   .node-type-event .view-mode-full .group-left,
   .node-type-video .view-mode-full .group-left {
-    width: 74.46809%;
+    width: 68.08511%;
     float: left;
     margin-right: -100%;
     margin-left: 0%;
     clear: none;
     padding-top: 1em;
   }
+  /* line 28, ../sass/partials/layout/_articles.scss */
   .node-type-story .view-mode-full .group-right,
   .node-type-event .view-mode-full .group-right,
   .node-type-video .view-mode-full .group-right {
@@ -726,11 +885,13 @@ body {
     clear: none;
     padding-top: 2.185em;
   }
+  /* line 32, ../sass/partials/layout/_articles.scss */
   .node-type-story .view-mode-full .article-meta,
   .node-type-event .view-mode-full .article-meta,
   .node-type-video .view-mode-full .article-meta {
     margin-top: 2em;
   }
+  /* line 38, ../../../../../../../../.rbenv/versions/2.1.0/lib/ruby/gems/2.1.0/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/utilities/general/_clearfix.scss */
   .node-type-story .view-mode-full .article-meta:after,
   .node-type-event .view-mode-full .article-meta:after,
   .node-type-video .view-mode-full .article-meta:after {
@@ -738,6 +899,7 @@ body {
     display: table;
     clear: both;
   }
+  /* line 36, ../sass/partials/layout/_articles.scss */
   .node-type-story .view-mode-full .article-meta .owstech-share,
   .node-type-event .view-mode-full .article-meta .owstech-share,
   .node-type-video .view-mode-full .article-meta .owstech-share {
@@ -747,6 +909,7 @@ body {
     margin-left: 0%;
     clear: none;
   }
+  /* line 39, ../sass/partials/layout/_articles.scss */
   .node-type-story .view-mode-full .article-meta .field-name-field-tags,
   .node-type-event .view-mode-full .article-meta .field-name-field-tags,
   .node-type-video .view-mode-full .article-meta .field-name-field-tags {
@@ -759,31 +922,127 @@ body {
   }
 }
 
+/* line 58, ../sass/partials/layout/_articles.scss */
+.node-type-story .view-mode-full .byline,
+.node-type-event .view-mode-full .byline,
+.node-type-video .view-mode-full .byline {
+  margin-bottom: 1em;
+}
+/* line 62, ../sass/partials/layout/_articles.scss */
+.node-type-story .view-mode-full .field-name-field-image-source,
+.node-type-event .view-mode-full .field-name-field-image-source,
+.node-type-video .view-mode-full .field-name-field-image-source {
+  padding-bottom: 5px;
+}
+/* line 77, ../sass/partials/layout/_articles.scss */
+.node-type-story .view-mode-full .owstech-share,
+.node-type-event .view-mode-full .owstech-share,
+.node-type-video .view-mode-full .owstech-share {
+  margin-bottom: 2.5em;
+}
+
+/* line 103, ../sass/partials/layout/_articles.scss */
 .related-articles {
   list-style: none;
   padding: 0;
 }
+/* line 106, ../sass/partials/layout/_articles.scss */
 .related-articles .related-article {
   margin: 0 0 .25em 0;
 }
 
+/* line 65, ../../../../../../../../.rbenv/versions/2.1.0/lib/ruby/gems/2.1.0/gems/singularitygs-1.1.2/stylesheets/singularitygs/helpers/_clearfix.scss */
 .view-interocc-newsfeed:after {
   content: "";
   display: table;
   clear: both;
 }
 
+/* line 1, ../sass/partials/design/_stories.scss */
 .article-meta {
   padding: .5em;
   background: #f7f7f7;
 }
 
+/* line 8, ../sass/partials/design/_stories.scss */
+.view-mode-teaser .story .term.Analysis {
+  font-size: .875em;
+  border-bottom: 1px #2f89ba solid;
+  margin-bottom: .25em;
+  line-height: 1;
+  color: #2f89ba !important;
+}
+/* line 11, ../sass/partials/design/_stories.scss */
+.view-mode-teaser .story .term.Event {
+  font-size: .875em;
+  border-bottom: 1px #f4922e solid;
+  margin-bottom: .25em;
+  line-height: 1;
+  color: #f4922e !important;
+}
+/* line 14, ../sass/partials/design/_stories.scss */
+.view-mode-teaser .story .term.Opinion {
+  font-size: .875em;
+  border-bottom: 1px #1d8cbe solid;
+  margin-bottom: .25em;
+  line-height: 1;
+  color: #1d8cbe !important;
+}
+/* line 17, ../sass/partials/design/_stories.scss */
+.view-mode-teaser .story .term.GA {
+  font-size: .875em;
+  border-bottom: 1px #ffcc00 solid;
+  margin-bottom: .25em;
+  line-height: 1;
+  color: #ffcc00 !important;
+}
+/* line 20, ../sass/partials/design/_stories.scss */
+.view-mode-teaser .story .term.Feature {
+  font-size: .875em;
+  border-bottom: 1px #ffcc00 solid;
+  margin-bottom: .25em;
+  line-height: 1;
+  color: #ffcc00 !important;
+}
+/* line 23, ../sass/partials/design/_stories.scss */
+.view-mode-teaser .story .term.News {
+  font-size: .875em;
+  border-bottom: 1px #b50028 solid;
+  margin-bottom: .25em;
+  line-height: 1;
+  color: #b50028 !important;
+}
+
+/* line 31, ../sass/partials/design/_stories.scss */
+.related-articles .related-article {
+  padding: .5em 1em;
+  border-left: 2px #666 solid;
+  background: #eee;
+}
+/* line 35, ../sass/partials/design/_stories.scss */
+.related-articles .related-article .summary {
+  overflow: hidden;
+  transition: max-height .25s;
+  transition-timing-function: cubic-bezier(0.42, 0, 0.58, 1);
+  max-height: 0;
+}
+/* line 40, ../sass/partials/design/_stories.scss */
+.related-articles .related-article .summary p {
+  margin-top: 0;
+}
+/* line 44, ../sass/partials/design/_stories.scss */
+.related-articles .related-article:hover .summary {
+  max-height: 12em;
+}
+
+/* line 2, ../sass/partials/design/_feeds.scss */
 .view-interocc-newsfeed .article {
   margin-bottom: 1em;
   padding: 1em;
   background: white;
   box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
 }
+/* line 3, ../sass/partials/design/_feeds.scss */
 .view-interocc-newsfeed .article h4 {
   font-size: 4rem;
 }
@@ -840,102 +1099,47 @@ Type and Vertical Rythm Definitions
   font-weight: 400;
 }
 
-body, h5,
-h6, article.view-mode-full .field-name-sidebar-tags h2,
-article.view-mode-full .field-name-related-articles h2,
-article.view-mode-full .field-name-category-menu h2 {
-  font-family: 'PTSans', helvetica, arial, sans-serif;
-  font-weight: normal;
-  text-transform: none;
-  line-height: 1.5;
-}
-body a, h5 a,
-h6 a, article.view-mode-full .field-name-sidebar-tags h2 a,
-article.view-mode-full .field-name-related-articles h2 a,
-article.view-mode-full .field-name-category-menu h2 a {
-  color: #1a1a1a;
-}
-
-.related-articles .related-article h4 a, h1, h2, h3, h4, h5, h6, #block-system-main-menu ul.menu li a,
-#block-system-main-menu ul.menu li a:link, #site-slogan,
-#block-system-main-menu, .newsletter-text, .view-header-announcements, blockquote,
-blockquote p {
-  font-family: 'LeagueGothic', helvetica, "Arial Black", sans-serif;
-  text-transform: uppercase;
-  font-weight: 300;
-  line-height: 1;
-  margin: 0;
-}
-.related-articles .related-article h4 a a, h1 a, h2 a, h3 a, h4 a, h5 a, h6 a, #block-system-main-menu ul.menu li a a,
-#block-system-main-menu ul.menu li a:link a, #site-slogan a,
-#block-system-main-menu a, .newsletter-text a, .view-header-announcements a, blockquote a,
-.related-articles .related-article h4 a a:link,
-h1 a:link,
-h2 a:link,
-h3 a:link,
-h4 a:link,
-h5 a:link,
-h6 a:link,
-#block-system-main-menu ul.menu li a a:link,
-#site-slogan a:link,
-#block-system-main-menu a:link,
-.newsletter-text a:link,
-.view-header-announcements a:link,
-blockquote a:link,
-.related-articles .related-article h4 a a:visited,
-h1 a:visited,
-h2 a:visited,
-h3 a:visited,
-h4 a:visited,
-h5 a:visited,
-h6 a:visited,
-#block-system-main-menu ul.menu li a a:visited,
-#site-slogan a:visited,
-#block-system-main-menu a:visited,
-.newsletter-text a:visited,
-.view-header-announcements a:visited,
-blockquote a:visited {
-  color: inherit;
-}
-
-.byline,
-.field-name-field-image-caption {
-  font-size: .875rem;
-}
-
+/* line 85, ../sass/partials/design/_type.scss */
 h2 {
   font-size: 2.2rem;
 }
 
+/* line 86, ../sass/partials/design/_type.scss */
 h3 {
   font-size: 1.8rem;
 }
 
+/* line 87, ../sass/partials/design/_type.scss */
 h4 {
   font-size: 1.5rem;
 }
 
+/* line 88, ../sass/partials/design/_type.scss */
 h5 {
   font-size: 1rem;
 }
 
+/* line 91, ../sass/partials/design/_type.scss */
 h5,
 h6 {
   text-transform: normal;
 }
 
+/* line 103, ../sass/partials/design/_type.scss */
 #block-system-main-menu ul.menu li a,
 #block-system-main-menu ul.menu li a:link {
   color: inherit;
   text-decoration: none;
 }
 
+/* line 110, ../sass/partials/design/_type.scss */
 #site-name {
   white-space: nowrap;
   margin: .5em 0 .25em 0;
   font-size: 2.5rem;
   line-height: 1.125;
 }
+/* line 118, ../sass/partials/design/_type.scss */
 #site-name a,
 #site-name a:active,
 #site-name a:link,
@@ -944,6 +1148,7 @@ h6 {
   text-decoration: none;
 }
 
+/* line 125, ../sass/partials/design/_type.scss */
 #site-slogan,
 #block-system-main-menu {
   font-size: 1.625rem;
@@ -952,28 +1157,34 @@ h6 {
   padding: 0;
 }
 
+/* line 135, ../sass/partials/design/_type.scss */
 #block-system-main-menu ul.menu li a,
 #block-system-main-menu ul.menu li a:link {
   color: #FECD48;
 }
 
+/* line 140, ../sass/partials/design/_type.scss */
 .newsletter-text {
   font-size: 1.4rem;
 }
 
+/* line 145, ../sass/partials/design/_type.scss */
 .view-header-announcements {
   font-size: 1.2rem;
 }
 
+/* line 150, ../sass/partials/design/_type.scss */
 .page-title {
   font-size: 5rem;
   letter-spacing: .025em;
 }
 
+/* line 160, ../sass/partials/design/_type.scss */
 p, div {
   line-height: 1.5;
 }
 
+/* line 164, ../sass/partials/design/_type.scss */
 .article-content {
   /*
   limiting the width of just .field-name-body
@@ -982,15 +1193,18 @@ p, div {
   */
   padding-bottom: 4em;
 }
+/* line 170, ../sass/partials/design/_type.scss */
 .article-content .field-name-body {
   max-width: 72ex;
   padding-left: 4em;
   font-size: 1rem;
 }
+/* line 174, ../sass/partials/design/_type.scss */
 .article-content .field-name-body p:first-child {
   font-size: 1.125rem;
 }
 
+/* line 182, ../sass/partials/design/_type.scss */
 blockquote,
 blockquote p {
   font-size: 2rem !important;
@@ -999,6 +1213,7 @@ blockquote p {
   text-indent: -.25em;
 }
 
+/* line 199, ../sass/partials/design/_type.scss */
 article.view-mode-full .field-name-sidebar-tags h2,
 article.view-mode-full .field-name-related-articles h2,
 article.view-mode-full .field-name-category-menu h2 {
@@ -1007,6 +1222,28 @@ article.view-mode-full .field-name-category-menu h2 {
   letter-spacing: .025em;
 }
 
+/* line 213, ../sass/partials/design/_type.scss */
+.related-articles .related-article h4 a {
+  text-decoration: none;
+}
+/* line 218, ../sass/partials/design/_type.scss */
+.related-articles .related-article .byline {
+  margin: .5em 0;
+}
+/* line 221, ../sass/partials/design/_type.scss */
+.related-articles .related-article .summary p {
+  font-size: .875em;
+  line-height: 1.25;
+}
+
+/* line 244, ../sass/partials/design/_type.scss */
+.story .view-mode-teaser h4 {
+  line-height: 1;
+  font-size: 1rem;
+  font-weight: bold;
+}
+
+/* line 253, ../sass/partials/design/_type.scss */
 .date-posted,
 .field-name-field-image-source,
 .field-name-field-author {

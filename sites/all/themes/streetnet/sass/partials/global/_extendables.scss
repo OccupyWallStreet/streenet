@@ -5,14 +5,50 @@
 //   should go in this file.
 ////////////////////////
 
+
+//////////////////////////////
+// Type specific extendables
+//
+
+%base-font {
+  font-family: 'PTSans', helvetica, arial, sans-serif;
+  font-weight: normal;
+  text-transform: none;
+  line-height: 1.5;
+  a {
+    color: $c-backdrop;
+  }
+}
+
+%header-font {
+  font-family: 'LeagueGothic', helvetica, "Arial Black", sans-serif;    
+  text-transform: uppercase;
+  font-weight: 300;
+  line-height: 1;
+  margin: 0;
+  a,
+  a:link,
+  a:visited {
+    color: inherit;
+  }
+}
+
+%smalltype {
+  font-size: .875rem;
+}
+
 %legible-column {
     max-width: 80ex;
     margin: 0 auto;
 }
 
+
+//////////////////////////////
+// Other
+//
+
 %responsive-image {
-  display: inline-block;
-  line-height: 1;
+  display: block;
   width: 100%;
   height: auto;
 }
