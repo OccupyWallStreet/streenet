@@ -69,32 +69,6 @@ Type and Vertical Rythm Definitions
   font-weight: 400;
 }
 
-%base-font {
-  font-family: 'PTSans', helvetica, arial, sans-serif;
-  font-weight: normal;
-  text-transform: none;
-  line-height: 1.5;
-  a {
-    color: $c-backdrop;
-  }
-}
-
-%header-font {
-  font-family: 'LeagueGothic', helvetica, "Arial Black", sans-serif;    
-  text-transform: uppercase;
-  font-weight: 300;
-  line-height: 1;
-  margin: 0;
-  a,
-  a:link,
-  a:visited {
-    color: inherit;
-  }
-}
-
-%smalltype {
-  font-size: .875rem;
-}
 
 ////////////////////////
 // General type styles
@@ -121,7 +95,7 @@ h6 {
 
 
 ////////////////////////
-// Header
+// Header and brand
 //
 
 #block-system-main-menu ul.menu li {
@@ -218,13 +192,6 @@ blockquote p {
   @extend %smalltype;
 }
 
-
-////////////////////////
-// Related stories
-//
-
-
-
 ////////////////////////
 // Teasers
 //
@@ -236,6 +203,34 @@ blockquote p {
   letter-spacing: .025em;
 }
 
+////////////////////////
+// Related Articles
+//
+
+.related-articles {
+  .related-article {
+    h4 {
+      a {
+        @extend %header-font;
+        text-decoration: none;
+      }
+    }
+    .byline {
+      margin: .5em 0;
+    }
+    .summary p {
+      font-size: .875em;
+      line-height: 1.25;
+    }
+  }
+}
+
+
+
+////////////////////////
+// Fields and ui
+//
+
 article.view-mode-full {
   .field-name-sidebar-tags,
   .field-name-related-articles,
@@ -246,14 +241,12 @@ article.view-mode-full {
   }  
 }
 
-// .more-link {
-//   text-align: left;
-//   @extend %header-font;
-//   font-size: 1.2rem;
-//   a {
-//     color: $c-text;
-//   }
-// }
+.story .view-mode-teaser h4 {
+  @extend %base-font;
+  line-height: 1;
+  font-size: 1rem;
+  font-weight: bold;
+}
 
 .date-posted,
 .field-name-field-image-source,
