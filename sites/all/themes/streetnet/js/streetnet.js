@@ -19,32 +19,34 @@ var streetnet = {};
         streetnet.initialize_share_widget_thouch_events();
       }
     },
-    
+
+    // @todo move into share widget module    
     initialize_share_widget_thouch_events: function() {
-
-      $('.owstech-share .actuator').on( mop.ui.events.click_string, function( e ) {
-
+      // if we're not on a touch interface, lets just skip this.
+      if( !( "ontouchstart" in document.documentElement) ) return;
+      // on click
+      $('.owstech-share .actuator').on( 'click', function( e ) {
+        // stop it doing stuff...
         e.stopPropagation();
         e.preventDefault();
 
         var widget, click_outside;
 
         widget = $(this);
+        // setting class to active opens up the icon drawer, thanks css3
         widget.parent().toggleClass('active');
-
-        console.log( widget );
-        
+        // just a little cleanup so we pile those clikc events onto the body.        
         if( widget.data('clickoutside') ) {
           $('body').unbind( "click", widget.data('clickoutside') );
         }
-
+        // when we click the body lets close the drawer
         click_outside = $( 'body' ).click( function( e ){
           if( widget.parent().hasClass('active') ) {
             console.log( "removing click outside" );
             widget.parent().removeClass('active');
           }
         });
-
+        // lets assign the handler to the element, so we can remove it later
         widget.data( 'clickoutside', click_outside );
 
       });
@@ -85,7 +87,7 @@ var streetnet = {};
           _paq.push(['trackPageView', "sidebar fb share: " + page_title ]);
           _paq.push(['trackGoal', 3]);
         });
-        sidebar_share_widget.find(".icon.twitter" ).on( 'click', function(e) {
+          sidebar_share_widget.find(".icon.twitter" ).on( 'click', function(e) {
           _paq.push(['trackPageView', "sidebar twitter share: " + page_title ]);
           _paq.push(['trackGoal', 2]);
         });

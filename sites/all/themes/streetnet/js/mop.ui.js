@@ -2,7 +2,7 @@
 if( !mop ) var mop = {};
 
 ( function() {
-
+// @todo move this to owstech_share or get rid of this file altogether.
 mop = {
   ui: {
     events: {
