@@ -1,0 +1,14 @@
+name = Streetnet Media
+description = Image Styles, Video fields and other media global bits.
+core = 7.x
+package = Streetnet
+version = 7.x-1.0-beta5
+project = streetnet_media
+dependencies[] = ctools
+dependencies[] = image
+dependencies[] = video_embed_field
+features[ctools][] = video_embed_field:default_video_embed_styles:1
+features[features_api][] = api:2
+features[image][] = featured_slideshow
+features[image][] = story_full_image
+features[image][] = story_teaser
