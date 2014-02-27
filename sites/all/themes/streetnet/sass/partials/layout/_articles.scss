@@ -68,6 +68,7 @@
 			@extend %responsive-image;
 		}
 
+		.sidebar-touts,
 		.related-articles {
 			// for defaults re: margin-bottoms and such but we might not need it.
 			// keeping it around for a bit though.
@@ -99,11 +100,4 @@
 	
 }
 
-// not sure if this belongs here or in components
-.related-articles {
-	list-style: none;
-	padding:0;
-	.related-article {
-		margin: 0 0 .25em 0;
-	}
-}
+

@@ -1,3 +1,7 @@
+////////////////////////////
+// Story Grid 
+//
+
 .view-story-listings {
 
 	@extend .centered-container;
@@ -6,7 +10,6 @@
 	.view-content {
 		@extend .clearfix;
 	}
-
 
 	.story {
 		
@@ -87,4 +90,16 @@
 
 	}
 
+}
+
+////////////////////////////
+// Related Article Teasers 
+//
+
+.related-articles {
+	list-style: none;
+	padding:0;
+	.related-article {
+		margin: 0 0 .25em 0;
+	}
 }

@@ -3,35 +3,62 @@
 	background: lighten( $c-ui-panel-lt, 10 );
 }
 
-.view-mode-teaser {
-	.story {
-		.term.Analysis {
+.story {
+	.view-mode-teaser {
+		.story-category.Analysis {
 			@include teaser-category-link( $c-analysis );
 		}
-		.term.Event {
+		.story-category.Event {
 			@include teaser-category-link( $c-event );
 		}
-		.term.Opinion {
+		.story-category.Opinion {
 			@include teaser-category-link( $c-opinion );
 		}
-		.term.GA {
+		.story-category.GA {
 			@include teaser-category-link( $c-ga );
 		}
-		.term.Feature {
+		.story-category.Feature {
 			@include teaser-category-link( $c-feature );
 		}
-		.term.News {
+		.story-category.News {
 			@include teaser-category-link( $c-news );
 		}
 	}
 }
 
+.node[role="article"] {
+	// some of this can probably go into an extendable
+	ul.sidebar-touts {
+		list-style: none;
+		padding:0;
+		li {
+			background: #000;
+			padding: 1em;
+			color: $c-text-lt;
+			h4 {
+				@extend %base-font;
+				font-size: 1.125rem;
+				margin-bottom: .25em;
+				a {
+					color: $c-accent;
+					text-decoration: none;
+				}
+			}
+			a {
+				display: block;
+			}
+		}
+	}
+}
 
 .related-articles {
 	.related-article {
 		padding: .5em 1em;
 		border-left: 2px #666 solid;	
 		background: #eee;
+		overflow: hidden;
+		// we could move partials for stuff like this into a 'states' folder
+		// thoughts?
     .summary {
       overflow: hidden;
       transition: max-height .25s;
@@ -40,6 +67,9 @@
       p {
       	margin-top: 0;
       }
+    }
+    .story-category {
+    	@extend .offscreen;
     }
     &:hover .summary {
       max-height: 12em;

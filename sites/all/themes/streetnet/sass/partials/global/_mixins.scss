@@ -36,3 +36,63 @@
   line-height: 1;
   color: $color !important;
 }
+
+@mixin admin-links( $top: false, $left: false, $bottom: false , $right: false ){
+  @extend %links-no-outlines;
+  position: fixed;
+  @if( $top ) {
+    top: $top;
+  }
+  @if( $right ) {
+    right: $right;
+  }
+  @if( $bottom ) {
+    bottom: $bottom;
+  }
+  @if( $left ) {
+    left: $left;
+  }
+  margin: 0;
+  padding: 0;
+  z-index: 100;
+  font-size: 1rem;
+  @include horizontal-list(0);
+  li {
+    border: none;
+    margin: 0;
+    padding: 0;
+    border-right: 1px #222 solid;    
+    a {
+      display: block;
+      transition-duration: 0.1875s;
+      transition-timing-function: cubic-bezier(0.42,0,0.58,1);
+      background-color: rgba( 0, 0, 0, 0.8 );
+      border-right: 1px #222 solid;
+      border: none;
+      margin: 0 !important;
+      padding: .5em;
+      color: #dedede;
+    }
+    a:hover {
+      color: #fc0;
+      background-color: #000;
+    }
+    &.active a {
+      border: none;
+      background-color: #fc0 !important;
+      color: #000;
+    }
+  }
+  ul.links.inline {
+    bottom: auto;
+    top: 0 !important;
+    left: 0 !important;
+  }
+  ul.links.inline,
+  ul.primary {
+    @include breakpoint( $screen-md ) {
+      font-size: 4rem; 
+      //1.25rem;
+    }
+  }
+}
